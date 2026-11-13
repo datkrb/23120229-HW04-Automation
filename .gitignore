@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Playwright transient output (official per-run reports live in automation/reports/ and ARE tracked)
+automation/test-results/
+automation/playwright-report/
+automation/blob-report/
+automation/.cache/
+automation/reports/_scratch/
+
+# Temporary work (scripts/outputs for packaging live in ../_tools/HW04/work, outside this repo)
+work/
+*.tmp
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
