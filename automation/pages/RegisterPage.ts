@@ -62,6 +62,13 @@ export class RegisterPage {
     return this.form.locator('div').filter({ has: label }).locator('input');
   }
 
+  /** Maps a visible label text from the test data back to its field (single source of truth: LABELS). */
+  static fieldOfLabel(label: string): RegisterField {
+    const field = (Object.keys(LABELS) as RegisterField[]).find((f) => LABELS[f] === label);
+    if (!field) throw new Error(`Unknown register label in test data: ${label}`);
+    return field;
+  }
+
   async goto() {
     await this.page.goto('/register');
     await this.heading.waitFor();

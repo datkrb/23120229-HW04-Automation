@@ -83,21 +83,22 @@ test.describe('FR-01 Đăng ký tài khoản', () => {
       try {
         if (expected.kind === 'structure') {
           // FR-01/21/22 form structure: independent checks, all reported in one run (soft assertions).
+          // The page is static once the heading is shown, so a short timeout per check is enough.
+          const quick = { timeout: 1500 };
           for (const label of expected.requiredLabels ?? []) {
-            const field = (['name', 'email', 'password', 'confirm'] as RegisterField[]).find((f) =>
-              ({ name: 'Họ Tên', email: 'Email', password: 'Mật khẩu', confirm: 'Xác nhận mật khẩu' })[f] === label,
-            )!;
-            await expect.soft(register.label(field), `FR-01: có nhãn "${label}"`).toHaveCount(1);
-            await expect.soft(register.label(field), `FR-22: nhãn "${label}" có dấu *`).toContainText('*', {
-              timeout: 1000,
-            });
+            const field = RegisterPage.fieldOfLabel(label);
+            await expect.soft(register.label(field), `FR-01: có nhãn "${label}"`).toHaveCount(1, quick);
+            await expect.soft(register.label(field), `FR-22: nhãn "${label}" có dấu *`).toContainText('*', quick);
           }
-          await expect.soft(register.input('confirm'), 'FR-01: có ô Xác nhận mật khẩu').toHaveCount(1);
+          await expect.soft(register.input('confirm'), 'FR-01: có ô Xác nhận mật khẩu').toHaveCount(1, quick);
           for (const [field, type] of Object.entries(expected.types ?? {})) {
-            await expect.soft(register.input(field as RegisterField), `FR-22: ô ${field} có type="${type}"`)
-              .toHaveAttribute('type', type, { timeout: 1000 });
+            await expect
+              .soft(register.input(field as RegisterField), `FR-22: ô ${field} có type="${type}"`)
+              .toHaveAttribute('type', type, quick);
           }
-          await expect.soft(page.locator('h1'), 'FR-21: trang có đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);
+          await expect
+            .soft(page.locator('h1'), 'FR-21: trang có đúng 1 thẻ h1')
+            .toHaveCount(expected.h1Count ?? 1, quick);
           return;
         }
 
