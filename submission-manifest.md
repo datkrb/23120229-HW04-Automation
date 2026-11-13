@@ -22,7 +22,7 @@ Student ID `23120229`. Phạm vi: A = FR-01 Đăng ký (Web :5173), B = FR-08 Ch
 | R10 | Assertion fail lộ defect thật → bug report Markdown **và** GitHub Issues, mỗi issue có screenshot | §6 T1, tr.4 | `bug-report.md`, issue trên `datkrb/SUT_Issue` | bắt buộc nếu có bug | planned (đăng ở bước sau, đã được phép) |
 | R11 | Liệt kê TC không automate được + lý do | §6 T1, tr.4 | mục trong report | bắt buộc | planned |
 | R12 | Video YouTube unlisted ≥5 phút, giọng Việt, chạy 1 script end-to-end gồm multi-browser + HTML report; kể ≥1 fix với script AI; có face-cam **hoặc** terminal `whoami` và `hostname` | §6 T2, tr.5; §11 tr.6 | link video | bắt buộc (15đ) | **sinh viên tự quay/upload**; AI chỉ soạn kịch bản |
-| R13 | Agent Skill tái dùng (data-driven, đa browser, sinh & bảo trì script) + video demo dùng skill end-to-end trên 1 feature | §7, tr.5 | skill + link YouTube | khuyến khích (10đ) | planned; upload video do sinh viên |
+| R13 | Agent Skill tái dùng (data-driven, đa browser, sinh & bảo trì script) + video demo dùng skill end-to-end trên 1 feature | §7, tr.5 | skill + link YouTube | khuyến khích (10đ) | skill xong P01 (`HW04/skills/playwright-data-driven-automation/`, script đã chạy thật); demo trên 1 feature + video do sinh viên: planned |
 | R14 | Khai công cụ trong AI Audit Report (AI, Playwright, reporter) | §8, tr.5 | `ai-audit.md` | bắt buộc | planned |
 | R15 | AI Audit Report: tên tool, ngày giờ, prompt, output cho từng tương tác; câu khai “I use AI tools for the following tasks” | §9, tr.5–6 | `ai-audit.md` + PDF, dẫn record ID của log B | bắt buộc | log B bắt đầu từ P00 |
 | R16 | AI Critique 200–300 từ (AI sai/thiên lệch/thiếu ở đâu, vì sao, nguyên tắc rút ra) | §10, tr.6 | `ai-critique.md` + PDF | bắt buộc | planned |

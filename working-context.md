@@ -1,6 +1,6 @@
 # HW04 — Working context (chat B thực hiện)
 
-Cập nhật: 2026-11-13 ~19:50 (+07:00), sau P00. Hỗ trợ tiếp tục công việc; không thay prompt/output nguyên văn trong AI log.
+Cập nhật: 2026-11-13 ~19:53 (+07:00), sau P01. Hỗ trợ tiếp tục công việc; không thay prompt/output nguyên văn trong AI log.
 
 ## Vai trò
 
@@ -17,8 +17,9 @@ Cập nhật: 2026-11-13 ~19:50 (+07:00), sau P00. Hỗ trợ tiếp tục công
 
 | Bước | Trạng thái | Ghi chú |
 |---|---|---|
-| P00 intake + setup | completed (chờ A đối soát) | manifest, git local, Playwright 3 browser, SUT up, smoke 3/3 browser pass |
-| P01–P07 | chưa nhận prompt | xem `HW04/docs/prompt-plan.md` |
+| P00 intake + setup | completed, A đã chấp nhận | manifest, git local, Playwright 3 browser, SUT up, smoke 3/3 browser pass |
+| P01 Agent Skill | completed (chờ A đối soát) | skill `playwright-data-driven-automation` (nguồn `_tools/skills/`, bản nộp `HW04/skills/`); 3 script chạy thật trên smoke; npm `matrix`, `matrix:smoke`, `verify:reports`, `check:data` |
+| P02–P07 | chưa nhận prompt | xem `HW04/docs/prompt-plan.md` |
 
 ## Hạ tầng
 
@@ -33,13 +34,17 @@ Cập nhật: 2026-11-13 ~19:50 (+07:00), sau P00. Hỗ trợ tiếp tục công
 - Khởi động: `powershell -NoProfile -ExecutionPolicy Bypass -File eshop-sut/start.ps1` (không `-Mobile`). Dừng: `stop.ps1`. Backend DROP + seed mỗi lần khởi động.
 - API đăng nhập thật là `POST /api/login` (không phải `/api/auth/login`).
 - Baseline SUT trước/sau: `_tools/HW04/work/sut-baseline-before.txt`, `sut-baseline-after-P00.txt` — không đổi ngoài `backend/database.sqlite` (runtime). Thay đổi có sẵn từ trước HW04: `frontend-mobile/App.js` modified, untracked `.gitignore`, `LOCAL_SETUP.md`, `start.ps1`, `stop.ps1`.
-- Quan sát ngoài phạm vi (chưa xác minh là bug, không thuộc FR-01/08/17): response `/api/login` trả `user.password` dạng plaintext. Ghi lại để A quyết định.
+- Quan sát ngoài phạm vi: response `/api/login` trả `user.password` plaintext. A quyết định (P01): chỉ ghi chú, không đăng issue.
 
 ## Evidence P00
 
 - `_tools/HW04/work/sut-health-P00.txt` (HTTP 200 ×3, 5 sản phẩm, login 2 tài khoản; token đã che).
 - `_tools/HW04/work/p00-smoke-reports/smoke-{chromium,firefox,webkit}/` + `p00-smoke-report-*.png`.
 
+## Evidence P01
+
+- `_tools/HW04/work/p01-skill-check/RESULTS.md` (bảng kiểm tra script, kể cả kiểm tra âm tính), `summary.{md,json}`, `failcheck-summary.md`, ảnh report, `fixtures/`.
+
 ## Bước tiếp
 
-Chờ prompt P01 (Agent Skill) hoặc P02 (FR-01) từ chat A.
+Chờ prompt P02 (FR-01) từ chat A. Khi làm feature: lưu bản AI đầu vào `automation/ai-draft/<feature>/` và commit riêng trước khi sửa; chạy `npm run matrix -- --feature …`, `npm run verify:reports`, `npm run check:data`.
