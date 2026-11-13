@@ -30,4 +30,13 @@ RUN_LABEL=fr01-chromium REPORT_DIR=reports/fr01-chromium npx playwright test tes
 The report title is `EShop HW04 — <label> — Run by: 23120229 — <ISO 8601 start time with offset>`, and the
 same values appear in the report Metadata section. The timestamp is taken at run start, never written by hand.
 
+## Matrix helpers (from the `playwright-data-driven-automation` skill in `../skills/`)
+
+| npm script | What it does |
+|---|---|
+| `npm run matrix -- --feature fr01=tests/fr01.spec.ts ...` | runs each feature on chromium/firefox/webkit → `reports/<feature>-<browser>/` + `reports/summary.{md,json}` |
+| `npm run matrix:smoke` | same for the smoke spec, into `reports/_scratch/smoke/` |
+| `npm run verify:reports` | opens every `reports/*/index.html`, checks "Run by: 23120229" + ISO timestamp |
+| `npm run check:data` | static check: specs load data files, no inline data arrays, ≥3 assertion patterns |
+
 `tests/smoke.spec.ts` is an infrastructure check only and is not counted toward the ≥12 test cases per feature.

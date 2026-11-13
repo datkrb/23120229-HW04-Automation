@@ -7,7 +7,11 @@
     "test": "playwright test",
     "test:smoke": "playwright test tests/smoke.spec.ts",
     "report:show": "playwright show-report",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "matrix": "node ../skills/playwright-data-driven-automation/scripts/run-matrix.mjs --project-dir . --student-id 23120229 --reports-dir reports",
+    "matrix:smoke": "node ../skills/playwright-data-driven-automation/scripts/run-matrix.mjs --project-dir . --student-id 23120229 --reports-dir reports/_scratch/smoke --feature smoke=tests/smoke.spec.ts",
+    "verify:reports": "node ../skills/playwright-data-driven-automation/scripts/verify-report.mjs --project-dir . --student-id 23120229 --reports-dir reports",
+    "check:data": "node ../skills/playwright-data-driven-automation/scripts/check-data-driven.mjs tests --ignore smoke"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1",
