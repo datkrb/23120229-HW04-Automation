@@ -1,0 +1,159 @@
+[
+  {
+    "id": "A-AUTO-01",
+    "title": "Mật khẩu dài 8, mỗi nhóm 2 ký tự → đăng ký thành công",
+    "type": "positive",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "AAaa11!!", "confirm": "AAaa11!!" },
+    "expected": { "kind": "success" },
+    "trace": ["FR-01", "HW02 A-TC-002", "A-BVA-L02"]
+  },
+  {
+    "id": "A-AUTO-02",
+    "title": "Mật khẩu dài 9, mỗi nhóm sát cận dưới → đăng ký thành công",
+    "type": "positive",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa1!bcdef", "confirm": "Aa1!bcdef" },
+    "expected": { "kind": "success" },
+    "trace": ["FR-01", "HW02 A-TC-003", "A-BVA-L03"]
+  },
+  {
+    "id": "A-AUTO-03",
+    "title": "Mật khẩu có đúng 1 chữ thường → đăng ký thành công",
+    "type": "edge",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "ABc12!@D", "confirm": "ABc12!@D" },
+    "expected": { "kind": "success" },
+    "trace": ["FR-01", "HW02 A-TC-008", "A-BVA-LO02"]
+  },
+  {
+    "id": "A-AUTO-04",
+    "title": "Mật khẩu dài 7 đủ 4 nhóm → từ chối",
+    "type": "edge",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa1!bcd", "confirm": "Aa1!bcd" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 mật khẩu mạnh: tối thiểu 8", "HW02 A-TC-001", "A-BVA-L01"]
+  },
+  {
+    "id": "A-AUTO-05",
+    "title": "Mật khẩu không có chữ hoa → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "aa1!bcdefg", "confirm": "aa1!bcdefg" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 mật khẩu mạnh: 1 chữ hoa", "HW02 A-TC-004"]
+  },
+  {
+    "id": "A-AUTO-06",
+    "title": "Mật khẩu không có chữ thường → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "AA1!BCDEFG", "confirm": "AA1!BCDEFG" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 mật khẩu mạnh: 1 chữ thường", "HW02 A-TC-005"]
+  },
+  {
+    "id": "A-AUTO-07",
+    "title": "Mật khẩu không có chữ số → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "AaB!bcdefg", "confirm": "AaB!bcdefg" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 mật khẩu mạnh: 1 chữ số", "HW02 A-TC-006"]
+  },
+  {
+    "id": "A-AUTO-08",
+    "title": "Mật khẩu không có ký tự đặc biệt → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa12bcdefg", "confirm": "Aa12bcdefg" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 mật khẩu mạnh: 1 ký tự đặc biệt", "HW02 A-TC-007"]
+  },
+  {
+    "id": "A-AUTO-09",
+    "title": "Ký tự đặc biệt ngoài tập (#) → từ chối",
+    "type": "edge",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa1#bcdefg", "confirm": "Aa1#bcdefg" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 ký tự đặc biệt thuộc @ $ ! % * ? &", "HW04 bổ sung (diễn giải AI, chờ SV xác nhận)"]
+  },
+  {
+    "id": "A-AUTO-10",
+    "title": "Mật khẩu và xác nhận để trống → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "", "confirm": "" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 bắt buộc Mật khẩu", "HW02 A-TC-009"]
+  },
+  {
+    "id": "A-AUTO-11",
+    "title": "Họ tên để trống → từ chối",
+    "type": "negative",
+    "input": { "name": "", "email": "{{unique}}@domain.com", "password": "Aa1!bcdefg", "confirm": "Aa1!bcdefg" },
+    "expected": { "kind": "reject", "field": "name" },
+    "trace": ["FR-01 bắt buộc Họ Tên", "HW02 A-TC-010"]
+  },
+  {
+    "id": "A-AUTO-12",
+    "title": "Email để trống → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "", "password": "Aa1!bcdefg", "confirm": "Aa1!bcdefg" },
+    "expected": { "kind": "reject", "field": "email" },
+    "trace": ["FR-01 bắt buộc Email", "HW02 A-TC-011"]
+  },
+  {
+    "id": "A-AUTO-13",
+    "title": "Email thiếu @ → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}domain.com", "password": "Aa1!bcdefg", "confirm": "Aa1!bcdefg" },
+    "expected": { "kind": "reject", "field": "email" },
+    "trace": ["FR-01 email định dạng user@domain.com", "HW02 A-TC-012"]
+  },
+  {
+    "id": "A-AUTO-14",
+    "title": "Email đã tồn tại (test@eshop.com) → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "test@eshop.com", "password": "Aa1!bcdefg", "confirm": "Aa1!bcdefg" },
+    "expected": { "kind": "reject", "field": "email" },
+    "trace": ["FR-01 email duy nhất", "SRS §1 tài khoản seed", "HW02 A-TC-013"]
+  },
+  {
+    "id": "A-AUTO-15",
+    "title": "Xác nhận mật khẩu khác mật khẩu → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa1!bcdefg", "confirm": "Aa1!bcdefh" },
+    "expected": { "kind": "reject", "field": "confirm" },
+    "trace": ["FR-01 xác nhận mật khẩu phải khớp", "HW02 A-TC-014"]
+  },
+  {
+    "id": "A-AUTO-16",
+    "title": "Xác nhận mật khẩu để trống → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa1!bcdefg", "confirm": "" },
+    "expected": { "kind": "reject", "field": "confirm" },
+    "trace": ["FR-01 xác nhận mật khẩu phải khớp", "HW02 A-TC-015"]
+  },
+  {
+    "id": "A-AUTO-17",
+    "title": "Email trùng và xác nhận lệch → từ chối",
+    "type": "negative",
+    "input": { "name": "Nguyen Van A", "email": "test@eshop.com", "password": "Aa1!bcdefg", "confirm": "Aa1!bcdefh" },
+    "expected": { "kind": "reject", "field": "email|confirm" },
+    "trace": ["FR-01 email duy nhất + xác nhận khớp", "HW02 A-TC-016"]
+  },
+  {
+    "id": "A-AUTO-18",
+    "title": "Đăng ký email mới thành công rồi đăng ký lại cùng email → lần 2 bị từ chối",
+    "type": "edge",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa1!bcdefg", "confirm": "Aa1!bcdefg" },
+    "expected": { "kind": "success-then-duplicate", "field": "email" },
+    "trace": ["FR-01 email duy nhất, chuyển trang Đăng nhập", "HW02 A-TC-017"]
+  },
+  {
+    "id": "A-AUTO-19",
+    "title": "Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
+    "type": "edge",
+    "input": {},
+    "expected": {
+      "kind": "structure",
+      "requiredLabels": ["Họ Tên", "Email", "Mật khẩu", "Xác nhận mật khẩu"],
+      "types": { "email": "email", "password": "password", "confirm": "password" },
+      "h1Count": 1
+    },
+    "trace": ["FR-01 trường Xác nhận mật khẩu", "FR-21 đúng 1 h1", "FR-22 *, type=email, type=password", "HW02 A-TC-018"]
+  }
+]

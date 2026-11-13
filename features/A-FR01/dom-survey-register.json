@@ -1,0 +1,314 @@
+[
+  {
+    "browser": "chromium",
+    "url": "http://localhost:5173/register",
+    "title": "frontend-web",
+    "aria": "- banner:\n  - link \"EShop\":\n    - /url: /\n  - navigation:\n    - link \"Giỏ hàng\":\n      - /url: /cart\n    - link \"Đăng nhập\":\n      - /url: /login\n    - link \"Đăng ký\":\n      - /url: /register\n- main:\n  - heading \"Đăng Ký Tài Khoản\" [level=2]\n  - text: Họ Tên\n  - textbox\n  - text: Email\n  - textbox\n  - text: Mật khẩu\n  - textbox\n  - paragraph: \"Yêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\"\n  - button \"Đăng Ký\"\n  - text: Đã có tài khoản?\n  - link \"Đăng nhập\":\n    - /url: /login\n- contentinfo: © 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+    "controls": [
+      {
+        "tag": "h2",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Đăng Ký Tài Khoản",
+        "testid": null,
+        "cls": "text-2xl font-bold mb-6 text-center"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Họ Tên",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Email",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Mật khẩu",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "password",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "button",
+        "type": "submit",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Đăng Ký",
+        "testid": null,
+        "cls": "w-full bg-red-500 text-white py-2 rounded hover:bg-red-600"
+      }
+    ]
+  },
+  {
+    "browser": "firefox",
+    "url": "http://localhost:5173/register",
+    "title": "frontend-web",
+    "aria": "- banner:\n  - link \"EShop\":\n    - /url: /\n  - navigation:\n    - link \"Giỏ hàng\":\n      - /url: /cart\n    - link \"Đăng nhập\":\n      - /url: /login\n    - link \"Đăng ký\":\n      - /url: /register\n- main:\n  - heading \"Đăng Ký Tài Khoản\" [level=2]\n  - text: Họ Tên\n  - textbox\n  - text: Email\n  - textbox\n  - text: Mật khẩu\n  - textbox\n  - paragraph: \"Yêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\"\n  - button \"Đăng Ký\"\n  - text: Đã có tài khoản?\n  - link \"Đăng nhập\":\n    - /url: /login\n- contentinfo: © 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+    "controls": [
+      {
+        "tag": "h2",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Đăng Ký Tài Khoản",
+        "testid": null,
+        "cls": "text-2xl font-bold mb-6 text-center"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Họ Tên",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Email",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Mật khẩu",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "password",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "button",
+        "type": "submit",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Đăng Ký",
+        "testid": null,
+        "cls": "w-full bg-red-500 text-white py-2 rounded hover:bg-red-600"
+      }
+    ]
+  },
+  {
+    "browser": "webkit",
+    "url": "http://localhost:5173/register",
+    "title": "frontend-web",
+    "aria": "- banner:\n  - link \"EShop\":\n    - /url: /\n  - navigation:\n    - link \"Giỏ hàng\":\n      - /url: /cart\n    - link \"Đăng nhập\":\n      - /url: /login\n    - link \"Đăng ký\":\n      - /url: /register\n- main:\n  - heading \"Đăng Ký Tài Khoản\" [level=2]\n  - text: Họ Tên\n  - textbox\n  - text: Email\n  - textbox\n  - text: Mật khẩu\n  - textbox\n  - paragraph: \"Yêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\"\n  - button \"Đăng Ký\"\n  - text: Đã có tài khoản?\n  - link \"Đăng nhập\":\n    - /url: /login\n- contentinfo: © 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+    "controls": [
+      {
+        "tag": "h2",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Đăng Ký Tài Khoản",
+        "testid": null,
+        "cls": "text-2xl font-bold mb-6 text-center"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Họ Tên",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Email",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Mật khẩu",
+        "testid": null,
+        "cls": "block text-gray-700 mb-2"
+      },
+      {
+        "tag": "input",
+        "type": "password",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": true,
+        "htmlFor": null,
+        "text": "",
+        "testid": null,
+        "cls": "w-full border p-2 rounded"
+      },
+      {
+        "tag": "button",
+        "type": "submit",
+        "name": null,
+        "id": null,
+        "placeholder": null,
+        "required": false,
+        "htmlFor": null,
+        "text": "Đăng Ký",
+        "testid": null,
+        "cls": "w-full bg-red-500 text-white py-2 rounded hover:bg-red-600"
+      }
+    ]
+  }
+]
