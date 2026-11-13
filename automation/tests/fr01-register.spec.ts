@@ -50,14 +50,22 @@ async function expectRejected(register: RegisterPage, fields: RegisterField[]) {
     const flags = await Promise.all(fields.map((f) => register.isNativelyInvalid(f)));
     return fields.filter((_, i) => flags[i]);
   };
-  // Web-first wait for *some* feedback (native invalid state or app banner) instead of a fixed sleep.
+  // Web-first wait for the outcome (native invalid state, app banner, or navigation away) instead of a
+  // fixed sleep. Navigation is part of the poll so that an accepted-but-invalid registration fails on the
+  // clear URL assertion below rather than on a vague "no feedback" message.
   await expect
-    .poll(async () => (await register.errorBanner.isVisible()) || (await nativeInvalid()).length > 0, {
-      message: 'có phản hồi validation sau khi bấm Đăng Ký',
-    })
+    .poll(
+      async () =>
+        !/\/register$/.test(page.url()) ||
+        (await register.errorBanner.isVisible()) ||
+        (await nativeInvalid()).length > 0,
+      { message: 'có phản hồi sau khi bấm Đăng Ký' },
+    )
     .toBe(true);
 
-  await expect(page, 'không được chuyển sang trang Đăng nhập').toHaveURL(/\/register$/);
+  await expect(page, 'dữ liệu sai: không được chuyển sang trang Đăng nhập (đăng ký phải bị từ chối)').toHaveURL(
+    /\/register$/,
+  );
   expect(register.registerResponses.filter((r) => r.ok()), 'không có POST /api/register thành công').toHaveLength(0);
 
   const invalid = await nativeInvalid();
