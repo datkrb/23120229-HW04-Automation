@@ -1,0 +1,3 @@
+[EXEC-P02-004 · bước D3 · prompt B tự soạn từ khung P-e của skill]
+Oracle (SRS FR-01/21/22, HW02 §3): OK = response đăng ký thành công + tới trang có chức năng Đăng nhập (/login); REJ = không hoàn tất đăng ký (không chuyển trang, không có request đăng ký thành công) + có tín hiệu validation gắn với trường sai (native validity của ô đó hoặc banner lỗi app nhắc tới trường), không ép wording; structure = có ô xác nhận, email type=email, password/confirm type=password, nhãn bắt buộc có *, đúng 1 h1.
+Với từng expected.kind chọn assertion web-first, dùng ít nhất 3 pattern khác nhau trong suite (URL, response, nội dung/visible, attribute/validity, count, soft). Negative phải kiểm "không được xảy ra". Không test.fail/test.skip để né; nghi SUT sai thì giữ assertion theo đặc tả.

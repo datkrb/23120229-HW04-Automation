@@ -1,0 +1,7 @@
+[EXEC-P02-002 · bước D1 · prompt B tự soạn từ khung P-c của skill playwright-data-driven-automation]
+Dùng locator đã chốt trong HW04/features/A-FR01/locator-inventory.md (khảo sát DOM thật /register trên 3 browser):
+- tiêu đề: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }); card = heading.locator('..')
+- input không có label liên kết: neo bằng div chứa <label> có text "Họ Tên" / "Email" / "Mật khẩu" / "Xác nhận mật khẩu" rồi lấy input trong div đó
+- nút: getByRole('button', { name: 'Đăng Ký' })
+- banner lỗi app: div con trực tiếp của card (không role)
+Viết automation/pages/RegisterPage.ts (Playwright + TypeScript): mỗi locator một thuộc tính, action goto(), fill(input) điền name/email/password/confirm, submit(). Không chứa assertion, không dùng waitForTimeout.
