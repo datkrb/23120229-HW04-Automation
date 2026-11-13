@@ -1,0 +1,17 @@
+{
+  "name": "hw04-eshop-automation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "HW04 Automation Testing (Playwright, data-driven, 3 browsers) for EShop SUT - student 23120229",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/smoke.spec.ts",
+    "report:show": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2"
+  }
+}
