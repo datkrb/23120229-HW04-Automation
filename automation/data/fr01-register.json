@@ -144,6 +144,14 @@
     "trace": ["FR-01 email duy nhất, chuyển trang Đăng nhập", "HW02 A-TC-017"]
   },
   {
+    "id": "A-AUTO-20",
+    "title": "Dấu cách thay cho ký tự đặc biệt → từ chối",
+    "type": "edge",
+    "input": { "name": "Nguyen Van A", "email": "{{unique}}@domain.com", "password": "Aa1 bcdefg", "confirm": "Aa1 bcdefg" },
+    "expected": { "kind": "reject", "field": "password" },
+    "trace": ["FR-01 ký tự đặc biệt thuộc @ $ ! % * ? & (dấu cách không thuộc tập)", "HW04 bổ sung sau probe khám phá P1 (features/A-FR01/evidence/probe-results.json)"]
+  },
+  {
     "id": "A-AUTO-19",
     "title": "Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
     "type": "edge",
