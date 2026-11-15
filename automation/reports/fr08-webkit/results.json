@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "Run by": "23120229",
-      "Run started (ISO 8601)": "2026-11-15T18:37:01+07:00",
+      "Run started (ISO 8601)": "2026-11-15T19:12:38+07:00",
       "Run label": "fr08-webkit",
       "Web URL": "http://localhost:5173",
       "Admin URL": "http://localhost:5174",
@@ -31,7 +31,7 @@
         {
           "outputFolder": "reports/fr08-webkit",
           "open": "never",
-          "title": "EShop HW04 — fr08-webkit — Run by: 23120229 — 2026-11-15T18:37:01+07:00"
+          "title": "EShop HW04 — fr08-webkit — Run by: 23120229 — 2026-11-15T19:12:38+07:00"
         }
       ],
       [
@@ -53,7 +53,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:37:01+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:12:38+07:00",
           "Run label": "fr08-webkit",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -76,7 +76,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:37:01+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:12:38+07:00",
           "Run label": "fr08-webkit",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -99,7 +99,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:37:01+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:12:38+07:00",
           "Run label": "fr08-webkit",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -156,12 +156,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1976,
+                      "duration": 1792,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:03.316Z",
+                      "startTime": "2026-11-15T12:12:39.923Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -192,12 +192,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2088,
+                      "duration": 2177,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:05.461Z",
+                      "startTime": "2026-11-15T12:12:41.808Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -233,7 +233,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 12377,
+                      "duration": 12256,
                       "error": {
                         "message": "Error: FR-08: sau thanh toán thành công giỏ được xóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-08: sau thanh toán thành công giỏ được xóa with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\u001b[22m\n",
                         "stack": "Error: FR-08: sau thanh toán thành công giỏ được xóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-08: sau thanh toán thành công giỏ được xóa with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:218:94",
@@ -257,7 +257,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:07.572Z",
+                      "startTime": "2026-11-15T12:12:44.006Z",
                       "annotations": [
                         {
                           "type": "fixture-workaround",
@@ -319,12 +319,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5802,
+                      "duration": 5618,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:21.617Z",
+                      "startTime": "2026-11-15T12:12:57.828Z",
                       "annotations": [
                         {
                           "type": "fixture-workaround",
@@ -360,7 +360,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10654,
+                      "duration": 10561,
                       "error": {
                         "message": "Error: không có ô tổng cho phép sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeEditable\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('main').getByRole('spinbutton')\nExpected: not editable\nReceived: editable\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - không có ô tổng cho phép sửa with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('main').getByRole('spinbutton')\u001b[22m\n\u001b[2m    5 × locator resolved to <input type=\"number\" value=\"4000000\" class=\"border p-2 rounded text-red-600 font-bold\"/>\u001b[22m\n\u001b[2m      - unexpected value \"editable\"\u001b[22m\n",
                         "stack": "Error: không có ô tổng cho phép sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeEditable\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('main').getByRole('spinbutton')\nExpected: not editable\nReceived: editable\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - không có ô tổng cho phép sửa with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('main').getByRole('spinbutton')\u001b[22m\n\u001b[2m    5 × locator resolved to <input type=\"number\" value=\"4000000\" class=\"border p-2 rounded text-red-600 font-bold\"/>\u001b[22m\n\u001b[2m      - unexpected value \"editable\"\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:168:84",
@@ -392,7 +392,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:27.512Z",
+                      "startTime": "2026-11-15T12:13:03.544Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -449,7 +449,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2363,
+                      "duration": 2335,
                       "error": {
                         "message": "Error: backend không được lưu total_amount client (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m1\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m1\u001b[27m]\u001b[39m",
                         "stack": "Error: backend không được lưu total_amount client (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m1\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m1\u001b[27m]\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97",
@@ -473,7 +473,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:39.855Z",
+                      "startTime": "2026-11-15T12:13:15.679Z",
                       "annotations": [
                         {
                           "type": "tamper",
@@ -535,7 +535,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2438,
+                      "duration": 2313,
                       "error": {
                         "message": "Error: backend không được lưu total_amount client (900000000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m900000000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m900000000\u001b[27m]\u001b[39m",
                         "stack": "Error: backend không được lưu total_amount client (900000000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m900000000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m900000000\u001b[27m]\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97",
@@ -559,7 +559,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:43.905Z",
+                      "startTime": "2026-11-15T12:13:19.641Z",
                       "annotations": [
                         {
                           "type": "tamper",
@@ -621,7 +621,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11963,
+                      "duration": 11899,
                       "error": {
                         "message": "Error: FR-21: trang có đúng 1 thẻ h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-21: trang có đúng 1 thẻ h1 with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    10 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
                         "stack": "Error: FR-21: trang có đúng 1 thẻ h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-21: trang có đúng 1 thẻ h1 with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    10 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:158:80",
@@ -645,7 +645,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:37:48.026Z",
+                      "startTime": "2026-11-15T12:13:23.561Z",
                       "annotations": [
                         {
                           "type": "fixture-workaround",
@@ -702,12 +702,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1262,
+                      "duration": 1308,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:38:01.667Z",
+                      "startTime": "2026-11-15T12:13:37.087Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -743,12 +743,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4578,
+                      "duration": 4508,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:38:03.026Z",
+                      "startTime": "2026-11-15T12:13:38.490Z",
                       "annotations": [
                         {
                           "type": "fixture-workaround",
@@ -784,12 +784,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2727,
+                      "duration": 2683,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:38:07.619Z",
+                      "startTime": "2026-11-15T12:13:43.014Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -825,7 +825,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2262,
+                      "duration": 2130,
                       "error": {
                         "message": "Error: backend không được lưu total_amount client (-100000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m-100000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m-100000\u001b[27m]\u001b[39m",
                         "stack": "Error: backend không được lưu total_amount client (-100000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m-100000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m-100000\u001b[27m]\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97",
@@ -849,7 +849,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:38:10.362Z",
+                      "startTime": "2026-11-15T12:13:45.712Z",
                       "annotations": [
                         {
                           "type": "tamper",
@@ -906,12 +906,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 428,
+                      "duration": 431,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:38:14.219Z",
+                      "startTime": "2026-11-15T12:13:49.385Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -931,8 +931,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-15T11:37:01.833Z",
-    "duration": 72958.039,
+    "startTime": "2026-11-15T12:12:38.451Z",
+    "duration": 71506.047,
     "expected": 7,
     "skipped": 0,
     "unexpected": 6,

@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "Run by": "23120229",
-      "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+      "Run started (ISO 8601)": "2026-11-15T19:14:50+07:00",
       "Run label": "fr17-firefox",
       "Web URL": "http://localhost:5173",
       "Admin URL": "http://localhost:5174",
@@ -31,7 +31,7 @@
         {
           "outputFolder": "reports/fr17-firefox",
           "open": "never",
-          "title": "EShop HW04 — fr17-firefox — Run by: 23120229 — 2026-11-15T18:55:17+07:00"
+          "title": "EShop HW04 — fr17-firefox — Run by: 23120229 — 2026-11-15T19:14:50+07:00"
         }
       ],
       [
@@ -53,7 +53,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:14:50+07:00",
           "Run label": "fr17-firefox",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -76,7 +76,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:14:50+07:00",
           "Run label": "fr17-firefox",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -99,7 +99,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:14:50+07:00",
           "Run label": "fr17-firefox",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -156,12 +156,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4491,
+                      "duration": 4242,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:55:19.327Z",
+                      "startTime": "2026-11-15T12:14:52.059Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -192,12 +192,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4434,
+                      "duration": 4319,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:55:28.481Z",
+                      "startTime": "2026-11-15T12:15:00.838Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -228,12 +228,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8323,
+                      "duration": 8334,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:55:32.927Z",
+                      "startTime": "2026-11-15T12:15:05.173Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -264,12 +264,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8469,
+                      "duration": 8375,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:55:41.269Z",
+                      "startTime": "2026-11-15T12:15:13.521Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -300,12 +300,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8429,
+                      "duration": 8394,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:55:49.755Z",
+                      "startTime": "2026-11-15T12:15:21.910Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -336,7 +336,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3676,
+                      "duration": 3594,
                       "error": {
                         "message": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
@@ -360,7 +360,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:55:58.200Z",
+                      "startTime": "2026-11-15T12:15:30.320Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -407,7 +407,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3737,
+                      "duration": 3614,
                       "error": {
                         "message": "Error: dữ liệu sai (uses) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: dữ liệu sai (uses) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
@@ -431,7 +431,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:56:04.069Z",
+                      "startTime": "2026-11-15T12:15:36.070Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -483,12 +483,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4310,
+                      "duration": 4142,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:56:14.653Z",
+                      "startTime": "2026-11-15T12:15:46.273Z",
                       "annotations": [
                         {
                           "type": "app-message",
@@ -524,7 +524,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3713,
+                      "duration": 3617,
                       "error": {
                         "message": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
@@ -548,7 +548,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:56:23.671Z",
+                      "startTime": "2026-11-15T12:15:54.955Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -595,7 +595,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3643,
+                      "duration": 3625,
                       "error": {
                         "message": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
@@ -619,7 +619,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:56:29.566Z",
+                      "startTime": "2026-11-15T12:16:00.682Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -666,7 +666,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3703,
+                      "duration": 3628,
                       "error": {
                         "message": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
@@ -690,7 +690,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:56:40.033Z",
+                      "startTime": "2026-11-15T12:16:10.997Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -737,12 +737,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8400,
+                      "duration": 8387,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:56:50.530Z",
+                      "startTime": "2026-11-15T12:16:21.335Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -773,12 +773,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4382,
+                      "duration": 4390,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:57:03.621Z",
+                      "startTime": "2026-11-15T12:16:34.310Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -809,12 +809,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2655,
+                      "duration": 2637,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:57:08.018Z",
+                      "startTime": "2026-11-15T12:16:38.713Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -846,12 +846,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3237,
+                      "duration": 3019,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:57:10.688Z",
+                      "startTime": "2026-11-15T12:16:41.365Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -882,12 +882,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3331,
+                      "duration": 3195,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:57:13.941Z",
+                      "startTime": "2026-11-15T12:16:44.399Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -918,7 +918,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 78,
+                      "duration": 76,
                       "error": {
                         "message": "Error: FR-12: token role=user phải bị từ chối (nhận 200)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: FR-12: token role=user phải bị từ chối (nhận 200)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:123:96",
@@ -944,13 +944,13 @@
                             "column": 109,
                             "line": 124
                           },
-                          "message": "Error: không có coupon nào được tạo bởi user thường\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"HW4FI1794743837297R0\", \"discount_value\": 1, \"expired_at\": \"2099-12-31\", \"id\": 61, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"percent\"}]\u001b[39m\n\n  122 |         });\n  123 |         expect.soft(res.ok(), `FR-12: token role=user phải bị từ chối (nhận ${res.status()})`).toBe(false);\n> 124 |         expect(await couponsWithCode(request, input.code!), 'không có coupon nào được tạo bởi user thường').toHaveLength(0);\n      |                                                                                                             ^\n  125 |         return;\n  126 |       }\n  127 |\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:124:109"
+                          "message": "Error: không có coupon nào được tạo bởi user thường\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"HW4FI1794745007618R0\", \"discount_value\": 1, \"expired_at\": \"2099-12-31\", \"id\": 24, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"percent\"}]\u001b[39m\n\n  122 |         });\n  123 |         expect.soft(res.ok(), `FR-12: token role=user phải bị từ chối (nhận ${res.status()})`).toBe(false);\n> 124 |         expect(await couponsWithCode(request, input.code!), 'không có coupon nào được tạo bởi user thường').toHaveLength(0);\n      |                                                                                                             ^\n  125 |         return;\n  126 |       }\n  127 |\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:124:109"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:57:17.286Z",
+                      "startTime": "2026-11-15T12:16:47.607Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -992,7 +992,7 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3467,
+                      "duration": 3429,
                       "error": {
                         "message": "Error: FR-22: trường bắt buộc \"code\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m",
                         "stack": "Error: FR-22: trường bắt buộc \"code\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106",
@@ -1056,7 +1056,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:57:19.563Z",
+                      "startTime": "2026-11-15T12:16:49.758Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1097,8 +1097,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-15T11:55:17.807Z",
-    "duration": 130933.43099999998,
+    "startTime": "2026-11-15T12:14:50.587Z",
+    "duration": 127909.051,
     "expected": 11,
     "skipped": 0,
     "unexpected": 7,

@@ -1,0 +1,1653 @@
+{
+  "generatedAt": "2026-11-15T19:18:16+07:00",
+  "projectDir": "D:\\KI7\\testing\\HW04\\automation",
+  "runs": [
+    {
+      "feature": "fr01",
+      "browser": "chromium",
+      "label": "fr01-chromium",
+      "report": "reports/fr01-chromium",
+      "spec": "tests/fr01-register.spec.ts",
+      "started": "2026-11-15T19:02:21+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:02:25.826Z",
+        "duration": 116915.772,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 11,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:02:25+07:00",
+        "Run label": "fr01-chromium",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-01 Mật khẩu dài 8, mỗi nhóm 2 ký tự → đăng ký thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7812
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-02 Mật khẩu dài 9, mỗi nhóm sát cận dưới → đăng ký thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7748
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-03 Mật khẩu có đúng 1 chữ thường → đăng ký thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7767
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-04 Mật khẩu dài 7 đủ 4 nhóm → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 725
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-05 Mật khẩu không có chữ hoa → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 571
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-06 Mật khẩu không có chữ thường → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 576
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-07 Mật khẩu không có chữ số → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 568
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-08 Mật khẩu không có ký tự đặc biệt → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 575
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-09 Ký tự đặc biệt ngoài tập (#) → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 579
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-10 Mật khẩu và xác nhận để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 627
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-11 Họ tên để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 604
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-12 Email để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 603
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-13 Email thiếu @ → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7653
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-14 Email đã tồn tại (test@eshop.com) → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7807
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-15 Xác nhận mật khẩu khác mật khẩu → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7546
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-16 Xác nhận mật khẩu để trống → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7656
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-17 Email trùng và xác nhận lệch → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7808
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-18 Đăng ký email mới thành công rồi đăng ký lại cùng email → lần 2 bị từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7734
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-20 Dấu cách thay cho ký tự đặc biệt → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7911
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-19 Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 14334
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr01",
+      "browser": "firefox",
+      "label": "fr01-firefox",
+      "report": "reports/fr01-firefox",
+      "spec": "tests/fr01-register.spec.ts",
+      "started": "2026-11-15T19:04:23+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:04:28.118Z",
+        "duration": 190541.564,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 11,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:04:28+07:00",
+        "Run label": "fr01-firefox",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-01 Mật khẩu dài 8, mỗi nhóm 2 ký tự → đăng ký thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11502
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-02 Mật khẩu dài 9, mỗi nhóm sát cận dưới → đăng ký thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11645
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-03 Mật khẩu có đúng 1 chữ thường → đăng ký thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11299
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-04 Mật khẩu dài 7 đủ 4 nhóm → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4148
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-05 Mật khẩu không có chữ hoa → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3024
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-06 Mật khẩu không có chữ thường → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3196
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-07 Mật khẩu không có chữ số → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3173
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-08 Mật khẩu không có ký tự đặc biệt → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3020
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-09 Ký tự đặc biệt ngoài tập (#) → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3047
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-10 Mật khẩu và xác nhận để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3175
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-11 Họ tên để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3023
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-12 Email để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3033
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-13 Email thiếu @ → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10240
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-14 Email đã tồn tại (test@eshop.com) → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11344
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-15 Xác nhận mật khẩu khác mật khẩu → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10956
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-16 Xác nhận mật khẩu để trống → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10973
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-17 Email trùng và xác nhận lệch → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11387
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-18 Đăng ký email mới thành công rồi đăng ký lại cùng email → lần 2 bị từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11291
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-20 Dấu cách thay cho ký tự đặc biệt → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11454
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-19 Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 17925
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr01",
+      "browser": "webkit",
+      "label": "fr01-webkit",
+      "report": "reports/fr01-webkit",
+      "spec": "tests/fr01-register.spec.ts",
+      "started": "2026-11-15T19:07:38+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:07:43.550Z",
+        "duration": 130585.95300000001,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 11,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:07:43+07:00",
+        "Run label": "fr01-webkit",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-01 Mật khẩu dài 8, mỗi nhóm 2 ký tự → đăng ký thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8499
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-02 Mật khẩu dài 9, mỗi nhóm sát cận dưới → đăng ký thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8517
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-03 Mật khẩu có đúng 1 chữ thường → đăng ký thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8543
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-04 Mật khẩu dài 7 đủ 4 nhóm → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1554
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-05 Mật khẩu không có chữ hoa → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1355
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-06 Mật khẩu không có chữ thường → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1409
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-07 Mật khẩu không có chữ số → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1403
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-08 Mật khẩu không có ký tự đặc biệt → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1430
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-09 Ký tự đặc biệt ngoài tập (#) → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1483
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-10 Mật khẩu và xác nhận để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1403
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-11 Họ tên để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1475
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-12 Email để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1424
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-13 Email thiếu @ → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8647
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-14 Email đã tồn tại (test@eshop.com) → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8623
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-15 Xác nhận mật khẩu khác mật khẩu → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7879
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-16 Xác nhận mật khẩu để trống → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7904
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-17 Email trùng và xác nhận lệch → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8619
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-18 Đăng ký email mới thành công rồi đăng ký lại cùng email → lần 2 bị từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8491
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-20 Dấu cách thay cho ký tự đặc biệt → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8706
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-19 Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 14725
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr08",
+      "browser": "chromium",
+      "label": "fr08-chromium",
+      "report": "reports/fr08-chromium",
+      "spec": "tests/fr08-checkout.spec.ts",
+      "started": "2026-11-15T19:09:54+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:09:59.132Z",
+        "duration": 52347.55,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:09:59+07:00",
+        "Run label": "fr08-chromium",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-01 Guest có giỏ P×1 không thanh toán được",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 756
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-02 Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 732
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-03 Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 9721
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-04 Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2859
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-05 Tổng tiền không cho người dùng sửa trực tiếp",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 9396
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-06 Client gửi total_amount = 1 → đơn không lưu 1",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 1000
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-07 Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 996
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-08 Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 9758
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-09 Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 655
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-10 Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2466
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-11 Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 870
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-12 Client gửi total_amount âm → đơn không lưu giá trị âm",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 836
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-13 POST /api/checkout không có token bị từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 213
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr08",
+      "browser": "firefox",
+      "label": "fr08-firefox",
+      "report": "reports/fr08-firefox",
+      "spec": "tests/fr08-checkout.spec.ts",
+      "started": "2026-11-15T19:10:51+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:10:56.245Z",
+        "duration": 97430.371,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:10:56+07:00",
+        "Run label": "fr08-firefox",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-01 Guest có giỏ P×1 không thanh toán được",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4202
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-02 Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3212
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-03 Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 12564
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-04 Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 6375
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-05 Tổng tiền không cho người dùng sửa trực tiếp",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 12054
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-06 Client gửi total_amount = 1 → đơn không lưu 1",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 4628
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-07 Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 4514
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-08 Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 13423
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-09 Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3939
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-10 Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5039
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-11 Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3444
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-12 Client gửi total_amount âm → đơn không lưu giá trị âm",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3425
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-13 POST /api/checkout không có token bị từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1286
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr08",
+      "browser": "webkit",
+      "label": "fr08-webkit",
+      "report": "reports/fr08-webkit",
+      "spec": "tests/fr08-checkout.spec.ts",
+      "started": "2026-11-15T19:12:33+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:12:38.451Z",
+        "duration": 71506.047,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:12:38+07:00",
+        "Run label": "fr08-webkit",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-01 Guest có giỏ P×1 không thanh toán được",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1792
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-02 Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2177
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-03 Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 12256
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-04 Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5618
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-05 Tổng tiền không cho người dùng sửa trực tiếp",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10561
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-06 Client gửi total_amount = 1 → đơn không lưu 1",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2335
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-07 Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2313
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-08 Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11899
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-09 Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1308
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-10 Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4508
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-11 Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2683
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-12 Client gửi total_amount âm → đơn không lưu giá trị âm",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2130
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-13 POST /api/checkout không có token bị từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 431
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr17",
+      "browser": "chromium",
+      "label": "fr17-chromium",
+      "report": "reports/fr17-chromium",
+      "spec": "tests/fr17-coupon.spec.ts",
+      "started": "2026-11-15T19:13:50+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:13:54.653Z",
+        "duration": 51214.771,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 7,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:13:54+07:00",
+        "Run label": "fr17-chromium",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-01 Tạo coupon percent hợp lệ (d=1, m=0, u=1) và xem trong danh sách",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1246
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-02 Tạo coupon fixed hợp lệ (d=10, m=1, u=2) và xem trong danh sách",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1163
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-03 Mã coupon để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5690
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-04 Giá trị giảm để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5746
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-05 Ngày hết hạn để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5752
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-06 Đơn tối thiểu để trống → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 876
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-07 Số lần dùng/người để trống → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 877
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-08 Mã trùng với coupon đã tồn tại → từ chối, chỉ còn 1 bản ghi",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1252
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-09 Giá trị giảm âm (-1) → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 864
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-10 Giá trị giảm bằng 0 → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 890
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-11 Đơn tối thiểu âm (-1) → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 891
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-12 Số lần dùng/người = 0 → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5774
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-13 Xóa coupon của chính test → không còn trong danh sách",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1265
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-14 Guest không vào được quản lý coupon",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 327
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-15 User thường (test@eshop.com) không vào được quản lý coupon",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 570
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-16 Ô loại chỉ cho chọn percent / fixed",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 542
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-17 API: token user thường tạo coupon → bị từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 69
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-18 Form có dấu * cho 6 trường bắt buộc, trang có đúng 1 h1",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 682
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr17",
+      "browser": "firefox",
+      "label": "fr17-firefox",
+      "report": "reports/fr17-firefox",
+      "spec": "tests/fr17-coupon.spec.ts",
+      "started": "2026-11-15T19:14:46+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:14:50.587Z",
+        "duration": 127909.051,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 7,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:14:50+07:00",
+        "Run label": "fr17-firefox",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-01 Tạo coupon percent hợp lệ (d=1, m=0, u=1) và xem trong danh sách",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4242
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-02 Tạo coupon fixed hợp lệ (d=10, m=1, u=2) và xem trong danh sách",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4319
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-03 Mã coupon để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 8334
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-04 Giá trị giảm để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 8375
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-05 Ngày hết hạn để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 8394
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-06 Đơn tối thiểu để trống → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3594
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-07 Số lần dùng/người để trống → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3614
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-08 Mã trùng với coupon đã tồn tại → từ chối, chỉ còn 1 bản ghi",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4142
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-09 Giá trị giảm âm (-1) → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3617
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-10 Giá trị giảm bằng 0 → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3625
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-11 Đơn tối thiểu âm (-1) → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3628
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-12 Số lần dùng/người = 0 → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 8387
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-13 Xóa coupon của chính test → không còn trong danh sách",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4390
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-14 Guest không vào được quản lý coupon",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2637
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-15 User thường (test@eshop.com) không vào được quản lý coupon",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3019
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-16 Ô loại chỉ cho chọn percent / fixed",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3195
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-17 API: token user thường tạo coupon → bị từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 76
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-18 Form có dấu * cho 6 trường bắt buộc, trang có đúng 1 h1",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3429
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr17",
+      "browser": "webkit",
+      "label": "fr17-webkit",
+      "report": "reports/fr17-webkit",
+      "spec": "tests/fr17-coupon.spec.ts",
+      "started": "2026-11-15T19:16:58+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T12:17:03.175Z",
+        "duration": 73047.99799999999,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 7,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T19:17:03+07:00",
+        "Run label": "fr17-webkit",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-01 Tạo coupon percent hợp lệ (d=1, m=0, u=1) và xem trong danh sách",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2848
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-02 Tạo coupon fixed hợp lệ (d=10, m=1, u=2) và xem trong danh sách",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2824
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-03 Mã coupon để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 6312
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-04 Giá trị giảm để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 6469
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-05 Ngày hết hạn để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 6414
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-06 Đơn tối thiểu để trống → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2200
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-07 Số lần dùng/người để trống → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2035
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-08 Mã trùng với coupon đã tồn tại → từ chối, chỉ còn 1 bản ghi",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3038
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-09 Giá trị giảm âm (-1) → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2135
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-10 Giá trị giảm bằng 0 → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2157
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-11 Đơn tối thiểu âm (-1) → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2205
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-12 Số lần dùng/người = 0 → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 6477
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-13 Xóa coupon của chính test → không còn trong danh sách",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3168
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-14 Guest không vào được quản lý coupon",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 666
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-15 User thường (test@eshop.com) không vào được quản lý coupon",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1092
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-16 Ô loại chỉ cho chọn percent / fixed",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1290
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-17 API: token user thường tạo coupon → bị từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 66
+        },
+        {
+          "file": "fr17-coupon.spec.ts",
+          "title": "FR-17 Quản lý mã giảm giá › C-AUTO-18 Form có dấu * cho 6 trường bắt buộc, trang có đúng 1 h1",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 1613
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

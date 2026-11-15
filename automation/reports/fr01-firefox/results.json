@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "Run by": "23120229",
-      "Run started (ISO 8601)": "2026-11-15T18:11:17+07:00",
+      "Run started (ISO 8601)": "2026-11-15T19:04:28+07:00",
       "Run label": "fr01-firefox",
       "Web URL": "http://localhost:5173",
       "Admin URL": "http://localhost:5174",
@@ -31,7 +31,7 @@
         {
           "outputFolder": "reports/fr01-firefox",
           "open": "never",
-          "title": "EShop HW04 — fr01-firefox — Run by: 23120229 — 2026-11-15T18:11:17+07:00"
+          "title": "EShop HW04 — fr01-firefox — Run by: 23120229 — 2026-11-15T19:04:28+07:00"
         }
       ],
       [
@@ -53,7 +53,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:11:17+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:04:28+07:00",
           "Run label": "fr01-firefox",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -76,7 +76,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:11:17+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:04:28+07:00",
           "Run label": "fr01-firefox",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -99,7 +99,7 @@
         "retries": 0,
         "metadata": {
           "Run by": "23120229",
-          "Run started (ISO 8601)": "2026-11-15T18:11:17+07:00",
+          "Run started (ISO 8601)": "2026-11-15T19:04:28+07:00",
           "Run label": "fr01-firefox",
           "Web URL": "http://localhost:5173",
           "Admin URL": "http://localhost:5174",
@@ -165,7 +165,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11648,
+                      "duration": 11502,
                       "error": {
                         "message": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n",
                         "stack": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n\n    at expectRegistered (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:38:91)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:128:17",
@@ -189,7 +189,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:11:18.843Z",
+                      "startTime": "2026-11-15T12:04:29.731Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -259,7 +259,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11569,
+                      "duration": 11645,
                       "error": {
                         "message": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n",
                         "stack": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n\n    at expectRegistered (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:38:91)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:128:17",
@@ -283,7 +283,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:11:34.297Z",
+                      "startTime": "2026-11-15T12:04:44.117Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -353,7 +353,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11403,
+                      "duration": 11299,
                       "error": {
                         "message": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n",
                         "stack": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n\n    at expectRegistered (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:38:91)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:128:17",
@@ -377,7 +377,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:11:49.198Z",
+                      "startTime": "2026-11-15T12:04:58.615Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -447,12 +447,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4339,
+                      "duration": 4148,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:03.419Z",
+                      "startTime": "2026-11-15T12:05:12.756Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -501,12 +501,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3116,
+                      "duration": 3024,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:08.355Z",
+                      "startTime": "2026-11-15T12:05:17.535Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -555,12 +555,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3014,
+                      "duration": 3196,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:11.494Z",
+                      "startTime": "2026-11-15T12:05:20.579Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -609,12 +609,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3005,
+                      "duration": 3173,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:14.520Z",
+                      "startTime": "2026-11-15T12:05:23.792Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -663,12 +663,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2994,
+                      "duration": 3020,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:17.539Z",
+                      "startTime": "2026-11-15T12:05:26.980Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -717,12 +717,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2971,
+                      "duration": 3047,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:20.545Z",
+                      "startTime": "2026-11-15T12:05:30.013Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -767,12 +767,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3052,
+                      "duration": 3175,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:23.529Z",
+                      "startTime": "2026-11-15T12:05:33.071Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -813,12 +813,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2974,
+                      "duration": 3023,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:26.595Z",
+                      "startTime": "2026-11-15T12:05:36.260Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -859,12 +859,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2954,
+                      "duration": 3033,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:29.582Z",
+                      "startTime": "2026-11-15T12:05:39.295Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -909,7 +909,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10287,
+                      "duration": 10240,
                       "error": {
                         "message": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    11 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n",
                         "stack": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    11 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:74:100)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11",
@@ -933,7 +933,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:32.549Z",
+                      "startTime": "2026-11-15T12:05:42.341Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -1004,10 +1004,10 @@
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11518,
+                      "duration": 11344,
                       "error": {
-                        "message": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    10 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n",
-                        "stack": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    10 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:74:100)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11",
+                        "message": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    11 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n",
+                        "stack": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    11 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:74:100)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11",
                         "location": {
                           "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts",
                           "column": 100,
@@ -1022,13 +1022,13 @@
                             "column": 100,
                             "line": 74
                           },
-                          "message": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    10 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n\n\n  72 |   if (invalid.length === 0) {\n  73 |     const keyword = new RegExp(fields.map((f) => FIELD_KEYWORD[f].source).join('|'), 'i');\n> 74 |     await expect(register.errorBanner, `thông báo lỗi phải gắn với trường: ${fields.join(' / ')}`).toContainText(\n     |                                                                                                    ^\n  75 |       keyword,\n  76 |     );\n  77 |   }\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:74:100)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11"
+                          "message": "Error: thông báo lỗi phải gắn với trường: email\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    11 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n\n\n  72 |   if (invalid.length === 0) {\n  73 |     const keyword = new RegExp(fields.map((f) => FIELD_KEYWORD[f].source).join('|'), 'i');\n> 74 |     await expect(register.errorBanner, `thông báo lỗi phải gắn với trường: ${fields.join(' / ')}`).toContainText(\n     |                                                                                                    ^\n  75 |       keyword,\n  76 |     );\n  77 |   }\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:74:100)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:45.234Z",
+                      "startTime": "2026-11-15T12:05:54.888Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -1089,7 +1089,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10914,
+                      "duration": 10956,
                       "error": {
                         "message": "Error: FR-01: phải có trường Xác nhận mật khẩu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-01: phải có trường Xác nhận mật khẩu with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\u001b[22m\n\u001b[2m    11 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
                         "stack": "Error: FR-01: phải có trường Xác nhận mật khẩu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-01: phải có trường Xác nhận mật khẩu with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\u001b[22m\n\u001b[2m    11 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:116:94",
@@ -1113,7 +1113,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:12:59.562Z",
+                      "startTime": "2026-11-15T12:06:09.097Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1165,7 +1165,7 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11029,
+                      "duration": 10973,
                       "error": {
                         "message": "Error: FR-01: phải có trường Xác nhận mật khẩu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-01: phải có trường Xác nhận mật khẩu with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\u001b[22m\n\u001b[2m    10 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
                         "stack": "Error: FR-01: phải có trường Xác nhận mật khẩu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-01: phải có trường Xác nhận mật khẩu with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('div').filter({ has: locator('label').filter({ hasText: /^\\s*Xác nhận mật khẩu\\s*\\*?\\s*$/ }) }).locator('input')\u001b[22m\n\u001b[2m    10 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:116:94",
@@ -1189,7 +1189,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:13:13.253Z",
+                      "startTime": "2026-11-15T12:06:22.937Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1250,7 +1250,7 @@
                       "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11360,
+                      "duration": 11387,
                       "error": {
                         "message": "Error: thông báo lỗi phải gắn với trường: email / confirm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email|xác nhận/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email / confirm with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    10 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n",
                         "stack": "Error: thông báo lỗi phải gắn với trường: email / confirm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email|xác nhận/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email / confirm with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    10 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:74:100)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11",
@@ -1269,15 +1269,12 @@
                             "line": 74
                           },
                           "message": "Error: thông báo lỗi phải gắn với trường: email / confirm\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\nExpected pattern: \u001b[32m/email|xác nhận/i\u001b[39m\nReceived string:  \u001b[31m\"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - thông báo lỗi phải gắn với trường: email / confirm with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator(':scope > div')\u001b[22m\n\u001b[2m    10 × locator resolved to <div class=\"bg-red-100 text-red-700 p-3 mb-4 rounded\">Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Mật khẩu quá yếu! Phải dài tối thiểu 8 ký tự, gồm chữ hoa, chữ thường, số và KÝ TỰ ĐẶC BIỆT.\"\u001b[22m\n\n\n  72 |   if (invalid.length === 0) {\n  73 |     const keyword = new RegExp(fields.map((f) => FIELD_KEYWORD[f].source).join('|'), 'i');\n> 74 |     await expect(register.errorBanner, `thông báo lỗi phải gắn với trường: ${fields.join(' / ')}`).toContainText(\n     |                                                                                                    ^\n  75 |       keyword,\n  76 |     );\n  77 |   }\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:74:100)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11"
-                        },
-                        {
-                          "message": "Error: browserContext.close: Protocol error (Browser.removeBrowserContext): can't access property \"_maybeDontRestoreTabs\", this._windows[aWindow.__SSi] is undefined"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:13:27.076Z",
+                      "startTime": "2026-11-15T12:06:36.708Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -1347,7 +1344,7 @@
                       "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11316,
+                      "duration": 11291,
                       "error": {
                         "message": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n",
                         "stack": "Error: FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/register\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - FR-01: sau khi đăng ký thành công phải chuyển tới trang Đăng nhập with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/register\"\u001b[22m\n\n    at expectRegistered (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:38:91)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:132:17",
@@ -1371,7 +1368,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:13:41.153Z",
+                      "startTime": "2026-11-15T12:06:50.931Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -1437,7 +1434,7 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11678,
+                      "duration": 11454,
                       "error": {
                         "message": "Error: dữ liệu sai: không được chuyển sang trang Đăng nhập (đăng ký phải bị từ chối)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/register$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/login\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - dữ liệu sai: không được chuyển sang trang Đăng nhập (đăng ký phải bị từ chối) with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/login\"\u001b[22m\n",
                         "stack": "Error: dữ liệu sai: không được chuyển sang trang Đăng nhập (đăng ký phải bị từ chối)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/register$/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/login\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - dữ liệu sai: không được chuyển sang trang Đăng nhập (đăng ký phải bị từ chối) with timeout 7000ms\u001b[22m\n\u001b[2m    11 × unexpected value \"http://localhost:5173/login\"\u001b[22m\n\n    at expectRejected (D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:66:103)\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:130:11",
@@ -1461,7 +1458,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:13:55.229Z",
+                      "startTime": "2026-11-15T12:07:05.040Z",
                       "annotations": [
                         {
                           "type": "missing-control",
@@ -1518,7 +1515,7 @@
                       "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 17975,
+                      "duration": 17925,
                       "error": {
                         "message": "Error: FR-22: nhãn \"Họ Tên\" có dấu *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('label').filter({ hasText: /^\\s*Họ Tên\\s*\\*?\\s*$/ })\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"Họ Tên\"\u001b[39m\nTimeout: 1500ms\n\nCall log:\n\u001b[2m  - FR-22: nhãn \"Họ Tên\" có dấu * with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('label').filter({ hasText: /^\\s*Họ Tên\\s*\\*?\\s*$/ })\u001b[22m\n\u001b[2m    5 × locator resolved to <label class=\"block text-gray-700 mb-2\">Họ Tên</label>\u001b[22m\n\u001b[2m      - unexpected value \"Họ Tên\"\u001b[22m\n",
                         "stack": "Error: FR-22: nhãn \"Họ Tên\" có dấu *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('label').filter({ hasText: /^\\s*Họ Tên\\s*\\*?\\s*$/ })\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"Họ Tên\"\u001b[39m\nTimeout: 1500ms\n\nCall log:\n\u001b[2m  - FR-22: nhãn \"Họ Tên\" có dấu * with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Đăng Ký Tài Khoản' }).locator('..').locator('form').locator('label').filter({ hasText: /^\\s*Họ Tên\\s*\\*?\\s*$/ })\u001b[22m\n\u001b[2m    5 × locator resolved to <label class=\"block text-gray-700 mb-2\">Họ Tên</label>\u001b[22m\n\u001b[2m      - unexpected value \"Họ Tên\"\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr01-register.spec.ts:99:89",
@@ -1606,7 +1603,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-15T11:14:09.654Z",
+                      "startTime": "2026-11-15T12:07:19.277Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1647,8 +1644,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-15T11:11:17.263Z",
-    "duration": 191836.614,
+    "startTime": "2026-11-15T12:04:28.118Z",
+    "duration": 190541.564,
     "expected": 9,
     "skipped": 0,
     "unexpected": 11,
