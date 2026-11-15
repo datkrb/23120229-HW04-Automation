@@ -247,7 +247,7 @@ Chi tiết ở [bug-report.md](bug-report.md) (theo S08). Có 15 bug được su
 
 ## 10. Agent Skill (§7)
 
-Skill `playwright-data-driven-automation` nằm ở [skills/playwright-data-driven-automation/](skills/playwright-data-driven-automation/SKILL.md), gồm 8 bước gắn với slide, 4 tài liệu tham khảo, template config và 3 script. Cả 3 feature đều chạy qua `run-matrix` / `verify-report` / `check-data-driven`. Video demo: xem `demo/` (upload YouTube do sinh viên).
+Skill `playwright-data-driven-automation` nằm ở [skills/playwright-data-driven-automation/](skills/playwright-data-driven-automation/SKILL.md), gồm 8 bước gắn với slide, 4 tài liệu tham khảo, template config và 3 script. Cả 3 feature đều chạy qua `run-matrix` / `verify-report` / `check-data-driven`. Video demo: [https://youtu.be/TD4otNQzsFU](https://youtu.be/TD4otNQzsFU) (Unlisted, do **chat A** upload ngày 2026-11-15 qua Claude in Chrome theo đồng ý của sinh viên; bản upload là bản nén 8 fps từ `demo/skill-demo.webm`); metadata ở `demo/`.
 
 ## 11. Giới hạn và trung thực
 

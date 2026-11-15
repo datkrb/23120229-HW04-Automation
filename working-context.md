@@ -58,4 +58,4 @@ Cập nhật: 2026-11-15 ~19:58 (+07:00), sau P06. Hỗ trợ tiếp tục công
 
 ## Bước tiếp
 
-P07 xong. P08: repo public https://github.com/datkrb/23120229-HW04-Automation (chat A push tới dcb14ed); chat B điền link, không push. Còn phần sinh viên trong `user-handoff.md`: review & ký, video Task 2 + YouTube, upload video skill, chọn điểm rồi `python _tools/HW04/package_submission.py --grade NNN` để tạo bản nộp ở `HW04-submission/`.
+P07 xong. P08: repo public https://github.com/datkrb/23120229-HW04-Automation (chat A push tới dcb14ed); chat B điền link, không push. P09: video skill YouTube https://youtu.be/TD4otNQzsFU (chat A upload bản nén 8 fps). Còn phần sinh viên trong `user-handoff.md`: review & ký, video Task 2 + YouTube, upload video skill, chọn điểm rồi `python _tools/HW04/package_submission.py --grade NNN` để tạo bản nộp ở `HW04-submission/`.

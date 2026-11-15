@@ -29,7 +29,7 @@ Số liệu từ lần chạy chính thức 2026-11-15, chi tiết ở [test-sum
 | Bug | **15**: 5 mới (HW04-BUG-01…05) + 10 đã có issue từ HW02/HW03 được automation tái hiện |
 | GitHub Issues | **đã đăng**: [#39](https://github.com/datkrb/SUT_Issue/issues/39), [#40](https://github.com/datkrb/SUT_Issue/issues/40), [#41](https://github.com/datkrb/SUT_Issue/issues/41), [#42](https://github.com/datkrb/SUT_Issue/issues/42), [#43](https://github.com/datkrb/SUT_Issue/issues/43) + 10 comment vào #1, #2, #4, #5, #6, #8, #9, #10, #11, #15; ảnh chụp ở `evidence/issues/`; xem [docs/github-issues.md](docs/github-issues.md) |
 | Video Task 2 (YouTube Unlisted) | `<điền link sau khi upload>` |
-| Video demo Agent Skill | `<điền link sau khi upload>` (bản ghi local `demo/skill-demo.webm`, 29 MB > 20 MB/tệp của Moodle nên **không có trong ZIP**; nộp bằng link YouTube, tệp giữ trong repo) |
+| Video demo Agent Skill | [https://youtu.be/TD4otNQzsFU](https://youtu.be/TD4otNQzsFU) (Unlisted, do **chat A** upload ngày 2026-11-15 qua Claude in Chrome theo đồng ý của sinh viên; bản upload là bản nén 8 fps từ `demo/skill-demo.webm`). Bản ghi gốc local `demo/skill-demo.webm`, 29 MB > 20 MB/tệp của Moodle nên **không có trong ZIP**; nộp bằng link YouTube, tệp giữ trong repo) |
 | Repo GitHub public | [https://github.com/datkrb/23120229-HW04-Automation](https://github.com/datkrb/23120229-HW04-Automation) (chat A tạo/push theo đồng ý của sinh viên; commit sau `dcb14ed` được chat A push sau khi đối soát) |
 
 ## Self-assessment (§15)
@@ -40,8 +40,8 @@ Số liệu từ lần chạy chính thức 2026-11-15, chi tiết ở [test-sum
 | 1 | Task 1 – Feature B (FR-08) | 25 | 24 | 25 | 13 TC, fixture user/giỏ độc lập, tamper bằng `page.route`, review 12 lỗi AI, 4 bug trùng issue cũ (đã comment bằng chứng #4/#5/#6/#15). Trừ như trên |
 | 1 | Task 1 – Feature C (FR-17) | 25 | 24 | 25 | 18 TC, `storageState`, cleanup, kiểm FR-12 ở API, review 12 lỗi AI, 2 bug mới (issue #42/#43) + comment #8–#11. Trừ như trên |
 | 2 | Task 2 – Demo video | 15 | 0 | 15 | Kịch bản ở [demo/task2-video-script.md](demo/task2-video-script.md). Đủ điểm chỉ khi sinh viên đã quay bằng giọng thật, có `whoami`/`hostname`, đã upload Unlisted và điền link |
-| 3 | Agent Skills | 10 | 5 | 10 | Skill [playwright-data-driven-automation](skills/playwright-data-driven-automation/SKILL.md) đã dùng cho cả 3 feature. Video demo local đã ghi; đủ điểm khi upload YouTube và điền link |
-| | **Total** | **100** | **77** | **100** | Tên ZIP dùng điểm sinh viên tự quyết sau khi review, ví dụ `23120229_HW04_AI_Automation_<NNN>.zip` |
+| 3 | Agent Skills | 10 | 10 | 10 | Skill [playwright-data-driven-automation](skills/playwright-data-driven-automation/SKILL.md) đã dùng cho cả 3 feature. Video demo quay màn hình thật 6:20, đã có trên YouTube Unlisted (https://youtu.be/TD4otNQzsFU) |
+| | **Total** | **100** | **82** | **100** | Tên ZIP dùng điểm sinh viên tự quyết sau khi review, ví dụ `23120229_HW04_AI_Automation_<NNN>.zip` |
 
 Điểm do AI đề xuất theo căn cứ trên; sinh viên quyết định điểm cuối cùng.
 

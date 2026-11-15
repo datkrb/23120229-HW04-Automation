@@ -22,6 +22,22 @@
     "skill-demo-000505.png",
     "skill-demo-000545.png"
   ],
-  "youtube": "<chưa upload — sinh viên upload Unlisted và điền link>",
+  "youtube": {
+    "url": "https://youtu.be/TD4otNQzsFU",
+    "visibility": "Unlisted",
+    "title": "HW04 23120229 — Agent Skill playwright-data-driven-automation: FR-08 end-to-end",
+    "duration": "6:21",
+    "uploaded": "2026-11-15",
+    "uploaded_by": "chat A via Claude in Chrome, with the student's consent",
+    "verified": "anonymous oEmbed returned the title (reported by chat A)",
+    "uploaded_file": {
+      "path": "_tools/HW04/work/youtube/skill-demo-yt.webm",
+      "bytes": 7868806,
+      "sha256": "b5d8fb999aab8d361d77fa31b5c6b0d585b134c550a45e32701f238ad6f6caa7",
+      "video": "VP8 1280x720, 8 fps",
+      "command": "ffmpeg (Playwright bundled) -r 8 -c:v libvpx -b:v 150k",
+      "reason": "upload tool limit 10 MB; original demo/skill-demo.webm unchanged"
+    }
+  },
   "events": "skill-demo-events.json"
 }

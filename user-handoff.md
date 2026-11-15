@@ -23,10 +23,9 @@ Repo public [https://github.com/datkrb/23120229-HW04-Automation](https://github.
 - [ ] Làm theo `demo/task2-video-script.md`: tối thiểu 5 phút, **giọng tiếng Việt của chính em**, terminal `whoami` + `hostname` (hoặc face-cam), chạy FR-17 trên 3 browser, mở report thấy “Run by: 23120229” + ISO time, kể fix placeholder của C-AUTO-02.
 - [ ] Upload YouTube ở chế độ **Unlisted**, điền link vào `README.md`.
 
-## 4. Upload video demo Agent Skill (§7)
+## 4. Upload video demo Agent Skill (§7) — **ĐÃ XONG** (2026-11-15)
 
-- [ ] Xem `demo/skill-demo.webm`. Đây là video màn hình thật do script ghi, không có âm thanh; thông tin ở `demo/metadata.json`.
-- [ ] Upload YouTube Unlisted, hoặc tự quay bản có lời theo cùng trình tự nếu muốn. Điền link vào `README.md`.
+[https://youtu.be/TD4otNQzsFU](https://youtu.be/TD4otNQzsFU) (Unlisted, do **chat A** upload ngày 2026-11-15 qua Claude in Chrome theo đồng ý của sinh viên; bản upload là bản nén 8 fps từ `demo/skill-demo.webm`). Em chỉ cần mở link kiểm tra lại.
 
 ## 5. Hoàn tất và đóng gói
 
