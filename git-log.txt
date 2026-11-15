@@ -1,3 +1,50 @@
+commit dc18208e574781e55a9644d948c86241f79d405e
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:14:55 +0700
+
+    log(P08): EXEC-P08-001 + checkpoint
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P08-prompt.txt    |  1 +
+ ai-log/execution/chat-b/checkpoint-P08.md |  8 +++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |  1 +
+ ai-log/execution/chat-b/prompt_log.md     | 58 +++++++++++++++++++++++++++++++
+ 4 files changed, 68 insertions(+)
+
+commit e71a4a4acd163ecddd152755d91831a2b9695495
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:14:31 +0700
+
+    docs(P08): fill public repo link (created/pushed by chat A with student consent); re-render PDFs
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ README.md              |   4 ++--
+ ai-audit.md            |   2 +-
+ pdf/README.pdf         | Bin 139210 -> 141008 bytes
+ pdf/ai-audit.pdf       | Bin 112342 -> 112559 bytes
+ pdf/ai-critique.pdf    | Bin 67466 -> 67466 bytes
+ pdf/bug-report.pdf     | Bin 2226333 -> 2226333 bytes
+ pdf/report.pdf         | Bin 193974 -> 195232 bytes
+ pdf/test-summary.pdf   | Bin 84216 -> 84216 bytes
+ report.md              |   3 ++-
+ submission-manifest.md |   2 +-
+ user-handoff.md        |  17 ++++-------------
+ working-context.md     |   2 +-
+ 12 files changed, 11 insertions(+), 19 deletions(-)
+
+commit dcb14ed0c4c08373015b6935654888f88fae0699
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:08:43 +0700
+
+    chore(P07): regenerate git-log.txt
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ git-log.txt | 129 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 129 insertions(+)
+
 commit 202ada3f76be37d0a46b9caffeacf33bbe1cf4e0
 Author: datkrb <nguyenhadatkrb2k5@gmail.com>
 Date:   2026-11-15 21:08:42 +0700
