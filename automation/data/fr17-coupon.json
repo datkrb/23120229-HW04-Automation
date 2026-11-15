@@ -4,7 +4,7 @@
     "title": "Tạo coupon percent hợp lệ (d=1, m=0, u=1) và xem trong danh sách",
     "type": "positive",
     "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "1" },
-    "expected": { "kind": "created", "row": { "type": "Phần trăm", "value": "1%", "expiry": "2099-12-31", "uses": "1 lần" } },
+    "expected": { "kind": "created", "row": { "type": "Phần trăm", "value": "1%", "minimum": "0 ₫", "expiry": "2099-12-31", "uses": "1 lần" } },
     "trace": ["FR-17 Thêm/Xem", "FR-17 discount dương, min ≥ 0, uses ≥ 1", "HW02 C-TC-001"]
   },
   {
@@ -12,7 +12,7 @@
     "title": "Tạo coupon fixed hợp lệ (d=10, m=1, u=2) và xem trong danh sách",
     "type": "positive",
     "input": { "code": "{{code}}", "type": "fixed", "discount": "10", "minimum": "1", "expiry": "2099-12-31", "uses": "2" },
-    "expected": { "kind": "created", "row": { "type": "Cố định", "value": "10", "expiry": "2099-12-31", "uses": "2 lần" } },
+    "expected": { "kind": "created", "row": { "type": "Cố định", "value": "10 ₫", "minimum": "1 ₫", "expiry": "2099-12-31", "uses": "2 lần" } },
     "trace": ["FR-17 Thêm/Xem", "HW02 C-TC-002"]
   },
   {
