@@ -1,0 +1,109 @@
+[
+  {
+    "id": "HW04-BUG-01",
+    "at": "2026-11-15T19:35:25+07:00",
+    "email": "repro01-1794746124543@domain.com",
+    "password": "Aa1 bcdefg",
+    "url": "http://localhost:5173/login",
+    "status": 200,
+    "body": {
+      "message": "User registered successfully",
+      "id": 75
+    },
+    "shots": [
+      "HW04-BUG-01-1-before-submit.png",
+      "HW04-BUG-01-2-after-submit.png"
+    ]
+  },
+  {
+    "id": "HW04-BUG-02",
+    "at": "2026-11-15T19:35:26+07:00",
+    "email": "repro02-1794746124543domain.com",
+    "password": "Aa1 bcdef",
+    "url": "http://localhost:5173/login",
+    "status": 200,
+    "body": {
+      "message": "User registered successfully",
+      "id": 76
+    },
+    "shots": [
+      "HW04-BUG-02-1-before-submit.png",
+      "HW04-BUG-02-2-after-submit.png"
+    ]
+  },
+  {
+    "id": "HW04-BUG-03",
+    "at": "2026-11-15T19:35:27+07:00",
+    "email": "test@eshop.com",
+    "password": "Aa1 bcdef",
+    "url": "http://localhost:5173/login",
+    "status": 200,
+    "body": {
+      "message": "User registered successfully",
+      "id": 77
+    },
+    "shots": [
+      "HW04-BUG-03-1-before-submit.png",
+      "HW04-BUG-03-2-after-submit.png",
+      "HW04-BUG-03-3-admin-users.png"
+    ],
+    "usersWithEmail": [
+      {
+        "id": 2,
+        "name": "Test User",
+        "email": "test@eshop.com",
+        "role": "user"
+      },
+      {
+        "id": 77,
+        "name": "Repro Duplicate",
+        "email": "test@eshop.com",
+        "role": "user"
+      }
+    ]
+  },
+  {
+    "id": "HW04-BUG-04",
+    "at": "2026-11-15T19:35:28+07:00",
+    "code": "HW4REPRO041794746124543",
+    "status": 200,
+    "stored": {
+      "id": 65,
+      "code": "HW4REPRO041794746124543",
+      "type": "percent",
+      "discount_value": 1,
+      "min_order_amount": 0,
+      "expired_at": "2099-12-31",
+      "is_active": 1,
+      "max_uses_per_user": 1
+    },
+    "shots": [
+      "HW04-BUG-04-1-before-submit.png",
+      "HW04-BUG-04-2-after-submit.png"
+    ]
+  },
+  {
+    "id": "HW04-BUG-05",
+    "at": "2026-11-15T19:35:28+07:00",
+    "userRole": "user",
+    "request": "POST /api/admin/coupons with role=user token",
+    "status": 200,
+    "body": {
+      "message": "Coupon created",
+      "id": 66
+    },
+    "stored": {
+      "id": 66,
+      "code": "HW4REPRO051794746124543",
+      "type": "percent",
+      "discount_value": 1,
+      "min_order_amount": 0,
+      "expired_at": "2099-12-31",
+      "is_active": 1,
+      "max_uses_per_user": 1
+    },
+    "shots": [
+      "HW04-BUG-05-1-admin-list-shows-user-created-coupon.png"
+    ]
+  }
+]

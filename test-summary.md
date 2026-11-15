@@ -57,5 +57,11 @@ So từng test × browser: **153/153 có cùng trạng thái** ở 2 lần chạ
 
 ## 5. Bug
 
-Xem `bug-report.md` và `docs/github-issues.md`.
+| Loại | Số |
+|---|---|
+| Bug mới HW04 (issue mới) | 5 (HW04-BUG-01…05) |
+| Bug đã có issue HW02/HW03 được automation tái hiện (comment) | 10 |
+| Tổng bug phát hiện/tái hiện | 15 |
+
+Chi tiết: `bug-report.md`; URL: `docs/github-issues.md`.
 
