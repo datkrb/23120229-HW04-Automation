@@ -1948,3 +1948,159 @@ Còn 1 commit chứa docs GitHub, log và context; hash nằm ở tin nhắn tr�
 Dừng sau P05. Cần người dùng quyết định cách đăng GitHub: cấp quyền cho phiên, hoặc tự chạy 3 lệnh trong `docs/github-issues.md`.
 ```
 
+
+## EXEC-P06-001
+
+```text
+{
+  "id": "EXEC-P06-001",
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) authored and sent this prompt as a cross-session message; not student-authored",
+  "occurred_at": "2026-11-15T19:41:22+07:00",
+  "timestamp_source": "observed",
+  "capture_status": "partial",
+  "source": "Prompt: cross-session message, saved verbatim to P06-prompt.txt. Output: checkpoint-P06.md (verbatim). occurred_at is the first tool-observed time in the turn.",
+  "missing": [
+    "occurred_at is the first tool-observed time in the turn, not the exact receipt time.",
+    "The full tool call/result transcript is not exported, and short progress notes sent mid-turn are not included.",
+    "The hash of the final commit (log + git-log.txt) is only in the final chat reply."
+  ],
+  "artifact_paths": [
+    "HW04/report.md",
+    "HW04/ai-audit.md",
+    "HW04/ai-critique.md",
+    "HW04/README.md",
+    "HW04/user-handoff.md",
+    "HW04/git-log.txt",
+    "HW04/docs/spec-commit-count.md",
+    "HW04/demo/",
+    "_tools/HW04/record_skill_demo.js",
+    "_tools/HW04/count_words.py"
+  ],
+  "redactions": [],
+  "recorded_at": "2026-11-15T19:53:27+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Vai trò: Chat thực hiện. Tiếp tục HW04 (P06 — tài liệu nộp). A đã đối soát P05 bước 1–4 (9 run 153 lượt 81P/72F, rerun trùng 153/153, bug-report 5 mới + 10 trùng; commit 959305b…4d3a8da). Bước 5 (đăng Issues) chờ sinh viên quyết định — A sẽ xử lý riêng; KHÔNG tự thử push/đăng lại. Trong tài liệu, URL issue mới để placeholder `<issue URL sau khi đăng>` và trỏ `docs/github-issues.md`; issue cũ #1–#15 dùng URL có sẵn.
+
+Mọi số liệu phải lấy từ artifact thật (results/summary/review/bug-report/AI log); chưa làm thì ghi chưa làm. Tiếng Việt, Markdown.
+
+1. `HW04/report.md` — báo cáo chính: thông tin SV/SUT/môi trường (version Playwright/browser/OS), phạm vi 3 feature, quy trình AI-first từng bước (dẫn record ID log), thiết kế framework (POM, data-driven, fixture, config 3 browser, reporter Run by), bảng TC automated cho mỗi feature (ID, HW02 trace, loại, assertion pattern), bảng ≥3 assertion pattern, kết quả 9 run (link report local), **review & gap analysis** tổng hợp từ `features/*/review.md` (AI sai/thiếu gì, bằng chứng, sửa, vì sao: prompt / giới hạn model / đặc tính feature), TC không automate + lý do, bug summary + link issue, giới hạn.
+2. `HW04/ai-audit.md` — AI Audit Report (§9): câu khai "I use AI tools for the following tasks", với mỗi tương tác: tool, ngày giờ, prompt, output (nguyên văn hoặc dẫn snapshot/hash trong `ai-log/`), verdict VALID/INVALID/INCOMPLETE + lý do + bản sửa theo mẫu AI-02 (`_tools/skills/software-testing-ai-first/references/templates.md`); thống kê verdict. Khai trung thực: prompt do chat A (Claude Code) soạn, chat B thực hiện; human review của sinh viên ghi `pending` nếu chưa có.
+3. `HW04/ai-critique.md` — 200–300 từ (đếm bằng script, ghi số từ), trả lời 3 câu hỏi §10, dựa trên lỗi AI thật trong review.
+4. `HW04/ai-disclosure.md` nếu cần theo mẫu AI-03 (gộp được vào audit).
+5. `HW04/git-log.txt` — `git log --stat --date=iso` đầy đủ; thêm `HW04/docs/spec-commit-count.md` đếm số commit chạm `*.spec.ts` (phải ≥8; nếu thiếu báo ngay, **không** tạo commit giả).
+6. `HW04/demo/task2-video-script.md` — kịch bản ≥5 phút cho **sinh viên tự quay, tự nói tiếng Việt**: mở terminal `whoami` + `hostname`, giới thiệu suite, chạy 1 spec (đề xuất feature có bug) trên 3 browser bằng lệnh thật, mở HTML report thấy "Run by: 23120229" + ISO time, mở review.md và **kể 1 fix cụ thể** đối với script AI (chọn fix có diff rõ), tổng kết; có timeline theo phút và câu thoại gợi ý; checklist upload YouTube Unlisted. Không tạo giọng/AI voice.
+7. Video demo Agent Skill (§7): ghi một video màn hình thật (Playwright/ffmpeg như HW03 `HW03/demo/README.md`) cho thấy dùng skill `playwright-data-driven-automation` end-to-end trên một feature (đọc SKILL → data → spec → run-matrix 3 browser → verify-report → review), lưu `HW04/demo/skill-demo.webm` + `metadata.json` (thời lượng, SHA). Nếu không quay được, ghi rõ và soạn kịch bản để sinh viên quay. Upload YouTube do sinh viên.
+8. `HW04/README.md` — bảng self-assessment theo §15 (A25/B25/C25/Video15/Skill10) với điểm tự chấm có căn cứ (phần video/skill-video ghi điều kiện: đủ điểm khi sinh viên đã upload và điền link), test summary (số feature; TC automated/executed/passed/failed; browser runs; số bug; link video), link repo public (placeholder `<điền sau khi push>`), mục lục tệp nộp, hướng dẫn chạy lại (`npm ci`, `npx playwright install`, start SUT, `npm run matrix`).
+9. `HW04/user-handoff.md` — danh sách việc sinh viên phải tự làm, theo thứ tự: review & ký nhận, tạo repo GitHub public + push (lệnh cụ thể), quay/upload video Task 2, upload video skill, điền link vào README/report, chạy lại bước đóng gói.
+10. Commit từng phần.
+
+AI log `EXEC-P06-…`. Checkpoint: tệp, số từ critique, số commit spec, commit. Dừng sau P06.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P06 — tài liệu nộp (chat B)
+
+**Kết quả:** đã soạn đủ tài liệu P06 từ artifact thật. Đã quay video demo skill. Video Task 2, upload YouTube, repo public và đăng Issues vẫn chờ sinh viên. Trong lượt này không thử push hay đăng lại.
+
+### Tệp
+
+| Tệp | Nội dung |
+|---|---|
+| `report.md` | Báo cáo chính (§1–11), xem chi tiết bên dưới |
+| `ai-audit.md` | Câu khai §9; 17 tương tác (EXEC-P00…P06) theo mẫu AI-02, có hash prompt/output, verdict, bản sửa, Human review = pending; mục AI Disclosure (AI-03) gộp ở cuối |
+| `ai-critique.md` | 295 từ, đếm bằng `_tools/HW04/count_words.py`; trả lời đủ 3 câu §10 dựa trên lỗi thật |
+| `docs/spec-commit-count.md` | Bảng các commit chạm `*.spec.ts` |
+| `git-log.txt` | `git log --stat --date=iso`, sinh ở commit cuối của P06 |
+| `demo/task2-video-script.md` | Kịch bản Task 2 cho sinh viên tự quay (xem bên dưới) |
+| `demo/skill-demo.webm` | Video demo skill (xem bên dưới) |
+| `README.md` | Self-assessment, test summary, mục lục tệp nộp, hướng dẫn chạy lại |
+| `user-handoff.md` | Việc sinh viên phải làm (xem bên dưới) |
+| `_tools/HW04/` | `record_skill_demo.js`, `count_words.py` |
+
+**`report.md`** gồm:
+- môi trường: Playwright 1.56.1, Chromium 141.0.7390.37, Firefox 142.0.1, WebKit 26.0, Windows 11 10.0.26200, Node 22.21.0;
+- phạm vi; quy trình AI-first dẫn record ID; framework;
+- 3 bảng TC kèm assertion pattern; bảng 8 nhóm pattern;
+- 9 run có link report;
+- gap analysis tổng hợp **34 lỗi AI** (10 + 12 + 12) theo nhóm và nguyên nhân (prompt / model / feature);
+- TC không automate; bug (URL issue mới để placeholder, issue cũ dùng link thật); giới hạn.
+
+**`ai-audit.md`**, thống kê verdict:
+
+| Verdict | Số |
+|---|---|
+| VALID | 6 |
+| INVALID | 6 (đều là bản AI draft D1/D3) |
+| INCOMPLETE | 5 |
+
+**`demo/task2-video-script.md`**:
+- timeline 0:00–7:00: `whoami`/`hostname` → giới thiệu suite → data/spec → chạy FR-17 trên 3 browser vào `reports/_scratch/video` → mở report Run by → kể fix placeholder ở C-AUTO-02 (`git diff 61518fd 1065a4a`) → tổng kết;
+- checklist upload YouTube Unlisted.
+
+**`demo/skill-demo.webm`**:
+- quay màn hình thật bằng Playwright recordVideo, ngày 2026-11-15 lúc 19:45:53–19:52:14;
+- dài **6:20.84**, 1280×720, VP8, không âm thanh, 29.427.236 byte, SHA-256 `419e54dba1e17c7a…`;
+- nội dung: SKILL → data → spec/POM → check-data-driven → **run-matrix chạy thật FR-08 trên 3 browser** (mỗi browser 7P/6F, giống lần chạy chính thức) → verify-report → 3 report → summary → review;
+- kèm `demo/metadata.json`, `skill-demo-events.json` và 5 frame đã xem lại.
+
+**`README.md`**, self-assessment:
+
+| Hạng mục | Hiện tại | Khi hoàn tất phần sinh viên |
+|---|---|---|
+| A | 22 | 25 |
+| B | 22 | 25 |
+| C | 22 | 25 |
+| Video | 0 | 15 |
+| Skill | 5 | 10 |
+| **Tổng** | **71** | **100** |
+
+Link video và link repo để placeholder.
+
+**`user-handoff.md`**, thứ tự việc của sinh viên:
+1. review và ký;
+2. đăng Issues bằng 3 lệnh `publish_p05.py`;
+3. tạo repo public và push (có lệnh);
+4. video Task 2;
+5. upload video skill;
+6. cập nhật điểm, git-log, đóng gói (lưu ý giới hạn 20 MB).
+
+### Số commit chạm spec
+**9** (≥8, đạt). Nếu không tính commit smoke `7529ef7` thì còn 8. Không tạo commit giả.
+
+### Commit P06
+
+| Commit | Nội dung |
+|---|---|
+| `cb1bff3` | report |
+| `fcae188` | audit + critique |
+| `e0a1a9f` | kịch bản video Task 2 |
+| `11cc787` | README, handoff, đếm commit spec |
+| `2747f68` | video skill |
+
+Còn 1 commit chứa log, context và git-log; hash nằm trong tin nhắn trả lời.
+
+### Giới hạn
+- Video skill 29 MB, vượt giới hạn Moodle 20 MB/tệp, nên chỉ nộp bằng link YouTube.
+- Trong video, lệnh `run-matrix` thoát với mã 1 vì có test fail do bug SUT; đây là kết quả đúng.
+- Human review của sinh viên vẫn pending.
+
+### Log
+`EXEC-P06-001`.
+
+Dừng sau P06.
+```
+
