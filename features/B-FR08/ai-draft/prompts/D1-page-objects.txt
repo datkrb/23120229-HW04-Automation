@@ -1,0 +1,5 @@
+[EXEC-P03-002 · bước D1 · prompt B tự soạn từ khung P-c của skill playwright-data-driven-automation]
+Dùng locator đã chốt trong HW04/features/B-FR08/locator-inventory.md (khảo sát DOM thật trên 3 browser). Viết hai Page Object Playwright + TypeScript:
+- automation/pages/CartPage.ts: thêm sản phẩm theo tên từ trang chủ (nút "Thêm vào giỏ" trong thẻ có h2 tên) với số lượng (qty>1 qua trang chi tiết: ô spinbutton + nút "Thêm vào giỏ hàng"), mở giỏ qua link "Giỏ hàng" ở header, đọc dòng giỏ, xóa dòng, bấm "Tiến hành thanh toán", nhận biết giỏ rỗng.
+- automation/pages/CheckoutPage.ts: heading "Xác Nhận Đơn Hàng", listitem sản phẩm, ô tổng, dòng "Tổng thanh toán:", nút "Xác Nhận Thanh Toán", heading thành công "Thanh toán thành công!".
+Lưu ý: giỏ chỉ nằm ở state client, page.goto làm mất giỏ — điều hướng bằng link. Action không chứa assertion, không waitForTimeout.
