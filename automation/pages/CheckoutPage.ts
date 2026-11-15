@@ -4,6 +4,7 @@ export class CheckoutPage {
   readonly page: Page;
   readonly heading: Locator;
   readonly items: Locator;
+  /** Any control that holds the payable total (SUT renders an <input type=number>). */
   readonly totalInput: Locator;
   readonly totalText: Locator;
   readonly confirmButton: Locator;
@@ -11,12 +12,17 @@ export class CheckoutPage {
 
   constructor(page: Page) {
     this.page = page;
+    const main = page.getByRole('main');
     this.heading = page.getByRole('heading', { name: 'Xác Nhận Đơn Hàng' });
-    this.items = page.getByRole('main').getByRole('listitem');
-    this.totalInput = page.getByRole('main').getByRole('spinbutton');
-    this.totalText = page.getByText(/^Tổng thanh toán:/);
+    this.items = main.getByRole('listitem');
+    this.totalInput = main.getByRole('spinbutton');
+    this.totalText = main.getByText(/^Tổng thanh toán:/);
     this.confirmButton = page.getByRole('button', { name: 'Xác Nhận Thanh Toán' });
     this.successHeading = page.getByRole('heading', { name: 'Thanh toán thành công!' });
+  }
+
+  item(product: string): Locator {
+    return this.items.filter({ hasText: product });
   }
 
   async confirm() {
