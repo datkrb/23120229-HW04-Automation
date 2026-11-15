@@ -50,7 +50,7 @@ Riêng bước sinh script, chat B tự soạn prompt theo khung của skill và
 | FR-01 | Chọn TC → khảo sát DOM thật → data JSON → AI draft (D1/D2/D3) → chạy draft 3 browser → review/sửa → chạy cuối | EXEC-P02-001…005 |
 | FR-08 | Như trên | EXEC-P03-001…004 |
 | FR-17 | Như trên | EXEC-P04-001…004 |
-| Chạy cuối + bug | 9 run chính thức, chạy lại kiểm độ ổn định, bug report, chuẩn bị GitHub Issues | EXEC-P05-001 |
+| Chạy cuối + bug | 9 run chính thức, chạy lại kiểm độ ổn định, bug report, chuẩn bị GitHub Issues; sau P06 điền URL #39–#43 + chụp trang Issues (đăng do chat A, SV đồng ý) | EXEC-P05-001, EXEC-P05-002 |
 | Tài liệu | Báo cáo này, audit, critique, README | EXEC-P06-001 |
 
 Mỗi feature có bản AI draft nguyên văn được commit **trước** khi sửa: `ea21d8a` (FR-01), `7e01cf6` (FR-08), `61518fd` (FR-17). Diff từ bản draft đến bản cuối là bằng chứng cho phần human review và gap analysis.

@@ -63,5 +63,5 @@ So từng test × browser: **153/153 có cùng trạng thái** ở 2 lần chạ
 | Bug đã có issue HW02/HW03 được automation tái hiện (comment) | 10 |
 | Tổng bug phát hiện/tái hiện | 15 |
 
-Chi tiết: `bug-report.md`; URL: `docs/github-issues.md`.
+Chi tiết: `bug-report.md`; URL: `docs/github-issues.md` — đã đăng 2026-11-15: issue mới #39–#43, comment vào #1, #2, #4, #5, #6, #8, #9, #10, #11, #15; ảnh trang Issues ở `evidence/issues/`.
 
