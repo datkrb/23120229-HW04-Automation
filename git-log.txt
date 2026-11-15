@@ -1,3 +1,51 @@
+commit d0af2b69fd68bf2df2d1727097a2a0c9e1c1b6e8
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:24:49 +0700
+
+    log(P09): EXEC-P09-001 + checkpoint
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P09-prompt.txt    |  1 +
+ ai-log/execution/chat-b/checkpoint-P09.md | 12 ++++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |  1 +
+ ai-log/execution/chat-b/prompt_log.md     | 64 +++++++++++++++++++++++++++++++
+ 4 files changed, 78 insertions(+)
+
+commit b72149ac18dce76a313d29616299ec8adba8afee
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:24:25 +0700
+
+    docs(P09): fill Agent Skill demo YouTube link (uploaded by chat A with student consent); Skill 10/10, total 82; re-render PDFs
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ README.md            |   6 +++---
+ ai-audit.md          |   2 +-
+ demo/README.md       |   2 +-
+ demo/metadata.json   |  20 ++++++++++++++++++--
+ pdf/README.pdf       | Bin 141008 -> 143022 bytes
+ pdf/ai-audit.pdf     | Bin 112559 -> 112770 bytes
+ pdf/ai-critique.pdf  | Bin 67466 -> 67466 bytes
+ pdf/bug-report.pdf   | Bin 2226333 -> 2226333 bytes
+ pdf/report.pdf       | Bin 195232 -> 197041 bytes
+ pdf/test-summary.pdf | Bin 84216 -> 84216 bytes
+ report.md            |   2 +-
+ user-handoff.md      |   5 ++---
+ working-context.md   |   2 +-
+ 13 files changed, 27 insertions(+), 12 deletions(-)
+
+commit 0b94bc091e9c91f198b9492be376002ea8719bed
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:14:57 +0700
+
+    chore(P08): regenerate git-log.txt
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ git-log.txt | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 47 insertions(+)
+
 commit dc18208e574781e55a9644d948c86241f79d405e
 Author: datkrb <nguyenhadatkrb2k5@gmail.com>
 Date:   2026-11-15 21:14:55 +0700
