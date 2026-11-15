@@ -1,6 +1,6 @@
 # HW04 — Working context (chat B thực hiện)
 
-Cập nhật: 2026-11-15 ~18:45 (+07:00), sau P03. Hỗ trợ tiếp tục công việc; không thay prompt/output nguyên văn trong AI log.
+Cập nhật: 2026-11-15 ~19:05 (+07:00), sau P04. Hỗ trợ tiếp tục công việc; không thay prompt/output nguyên văn trong AI log.
 
 ## Vai trò
 
@@ -20,8 +20,9 @@ Cập nhật: 2026-11-15 ~18:45 (+07:00), sau P03. Hỗ trợ tiếp tục công
 | P00 intake + setup | completed, A đã chấp nhận | manifest, git local, Playwright 3 browser, SUT up, smoke 3/3 browser pass |
 | P01 Agent Skill | completed, A đã chấp nhận | skill `playwright-data-driven-automation` (nguồn `_tools/skills/`, bản nộp `HW04/skills/`); 3 script chạy thật trên smoke; npm `matrix`, `matrix:smoke`, `verify:reports`, `check:data` |
 | P02 FR-01 | completed, A đã chấp nhận | 20 TC; final 3 browser 9 pass/11 fail mỗi browser (2026-11-15, code 4993ad4); reports `automation/reports/fr01-*`; BC-A1/A2 trùng #1/#2, BC-A3/A4/A5 mới (chưa đăng) — `features/A-FR01/results.md` |
-| P03 FR-08 | completed (chờ A đối soát) | 13 TC; final 3 browser 7 pass/6 fail mỗi browser (2026-11-15, code c1888f8); reports `automation/reports/fr08-*`; bug đều trùng #4/#5/#6/#15 — `features/B-FR08/results.md` |
-| P04–P07 | chưa nhận prompt | xem `HW04/docs/prompt-plan.md` |
+| P03 FR-08 | completed, A đã chấp nhận | 13 TC; final 3 browser 7 pass/6 fail mỗi browser (2026-11-15, code c1888f8); reports `automation/reports/fr08-*`; bug đều trùng #4/#5/#6/#15 — `features/B-FR08/results.md` |
+| P04 FR-17 | completed (chờ A đối soát) | 18 TC; final 3 browser 11 pass/7 fail mỗi browser (2026-11-15, code ec9c5ae); reports `automation/reports/fr17-*`; BC-C2 (uses rỗng) + BC-C5 (FR-12 API) mới, còn lại trùng #8–#11 — `features/C-FR17/results.md` |
+| P05–P07 | chưa nhận prompt | xem `HW04/docs/prompt-plan.md` |
 
 ## Hạ tầng
 
@@ -55,4 +56,4 @@ Cập nhật: 2026-11-15 ~18:45 (+07:00), sau P03. Hỗ trợ tiếp tục công
 
 ## Bước tiếp
 
-Chờ prompt P04 (FR-17) từ chat A. Commit chạm `.spec.ts` tới P03: 7 (cần ≥8 cho cả bài). Khi làm feature: lưu bản AI đầu vào `automation/ai-draft/<feature>/` và commit riêng trước khi sửa; chạy `npm run matrix -- --feature …`, `npm run verify:reports`, `npm run check:data`.
+Chờ prompt P05 từ chat A. Commit chạm `.spec.ts`: 9 (đạt ≥8). Bug mới chưa đăng: BC-A3/A4/A5 (FR-01), BC-C2/C5 (FR-17). 9 report ~55 MB (trace) — cần quyết định trước ZIP. Khi làm feature: lưu bản AI đầu vào `automation/ai-draft/<feature>/` và commit riêng trước khi sửa; chạy `npm run matrix -- --feature …`, `npm run verify:reports`, `npm run check:data`.

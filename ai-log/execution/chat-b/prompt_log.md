@@ -1288,3 +1288,524 @@ test.describe('FR-08 Checkout', () => {
 });
 ```
 
+
+## EXEC-P04-001
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P04-001",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) authored and sent this prompt as a cross-session message; not student-authored",
+  "occurred_at": "2026-11-15T18:41:26+07:00",
+  "timestamp_source": "observed",
+  "capture_status": "partial",
+  "source": "Prompt: cross-session message, saved verbatim to P04-prompt.txt. Output: checkpoint-P04.md (verbatim). occurred_at is the first tool-observed time after receipt (`date -Iseconds` at the start of the turn).",
+  "missing": [
+    "occurred_at is the first tool-observed time in the turn, not the exact receipt time.",
+    "The full tool call/result transcript is not exported, and short progress notes sent mid-turn are not included.",
+    "The hash of the commit containing this log is only in the final chat reply."
+  ],
+  "artifact_paths": [
+    "HW04/features/C-FR17/",
+    "HW04/automation/data/fr17-coupon.json",
+    "HW04/automation/pages/AdminCouponPage.ts",
+    "HW04/automation/tests/fr17-coupon.spec.ts",
+    "HW04/automation/reports/fr17-chromium/",
+    "HW04/automation/reports/fr17-firefox/",
+    "HW04/automation/reports/fr17-webkit/",
+    "_tools/HW04/survey-fr17.js",
+    "_tools/HW04/work/p04-draft-leftover-coupons.txt"
+  ],
+  "recorded_at": "2026-11-15T19:00:51+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Vai trò: Chat thực hiện. Tiếp tục HW04 (P04 — Feature C: FR-17 Quản lý coupon CRUD, Admin :5174). A đã đối soát P03: chấp nhận (13 TC × 3 browser, review 12 mục, commit c1888f8…5eb4262). Giữ cùng chuẩn review như FR-01/FR-08.
+
+Áp dụng skill `playwright-data-driven-automation` (đọc SKILL.md của nó trước) + software-testing-ai-first. Oracle = SRS FR-17 (+FR-12 phân quyền admin) (`eshop-sut/README.md`), không lấy hành vi code làm expected.
+
+Làm theo từng bước, **commit sau mỗi bước** có chạm `.spec.ts` khi phù hợp (đề §12 yêu cầu ≥8 commit chạm spec cho cả bài):
+1. Chọn ≥12 TC từ `HW02/features/c-fr17-coupon-admin/04-test-cases.md` (20 TC): tạo hợp lệ, mã trùng, biên giá trị %/số tiền, ngày hết hạn quá khứ/biên, giới hạn lượt dùng, sửa, xóa có xác nhận, danh sách cập nhật, user thường không vào được trang admin coupon… Mapping + TC không automate tại `HW04/features/C-FR17/selection.md`. Mã coupon duy nhất theo run; dọn dữ liệu tạo ra sau test nếu có thể.
+2. Khảo sát DOM thật Admin login + trang coupon (form, bảng, dialog xác nhận) và ghi locator inventory.
+3. Data file `HW04/automation/data/fr17-coupon.json` (không inline array trong spec); dùng `storageState` cho đăng nhập admin.
+4. Sinh bản **AI draft** của POM + spec (`pages/AdminCouponPage.ts`, `tests/fr17-coupon.spec.ts`) bằng prompt riêng từng bước; lưu nguyên văn bản draft vào `HW04/features/C-FR17/ai-draft/` và commit nguyên trạng (`test(fr17): AI draft data-driven coupon spec`).
+5. Chạy draft trên chromium/firefox/webkit, ghi kết quả thật.
+6. Human-review checklist của skill: liệt kê lỗi AI (selector, assertion, edge thiếu, wait, isolation, oracle), sửa, commit từng nhóm sửa (`fix(fr17): ...`). ≥3 assertion pattern khác nhau, ghi pattern nào ở TC nào. Lưu diff draft→final `HW04/features/C-FR17/review.md` (lỗi | bằng chứng | sửa | vì sao AI sai).
+7. Chạy bản cuối từng browser ra report riêng: `HW04/automation/reports/fr17-<browser>/index.html` (Run by: 23120229 + ISO). Fail do SUT giữ nguyên fail (không `test.fail`/skip để che), xác minh là bug thật bằng tay/ảnh; flaky thì sửa test. Ghi bảng kết quả `HW04/features/C-FR17/results.md` (TC × browser) và bug candidates (kèm screenshot) — chưa đăng Issues ở bước này. Đối chiếu bug HW02 đã có ở `datkrb/SUT_Issue` (#1–#11) để tránh trùng.
+
+AI log: `HW04/ai-log/execution/chat-b/`, ID `EXEC-P04-…`, ghi riêng từng prompt sinh code của bước 4 (đó là bằng chứng "drive AI step by step"); prompt này do chat A soạn và gửi.
+Checkpoint: số TC automated/pass/fail theo browser, bug candidates, tệp, commit hash, log ID. Dừng sau P04.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P04 — Feature C: FR-17 Quản lý mã giảm giá (chat B)
+
+**Kết quả:** 18 TC được automate (16 lấy từ HW02, 2 bổ sung ở HW04). Chạy cuối trên 3 browser ngày 2026-11-15, code `ec9c5ae`:
+
+| Browser | Pass | Fail |
+|---|---|---|
+| chromium | 11 | 7 |
+| firefox | 11 | 7 |
+| webkit | 11 | 7 |
+
+- Tổng 54 lượt chạy: 33 pass, 21 fail, 0 flaky.
+- 3/3 report có “Run by: 23120229” + ISO timestamp.
+- Mọi fail là bug SUT. Không dùng `test.fail` hay `skip`.
+- Cleanup hoạt động: sau lần chạy, DB chỉ còn 4 coupon seed.
+
+### Bug candidates (chưa đăng)
+
+Trùng issue đã có:
+- BC-C1, minimum rỗng vẫn tạo được: #8.
+- BC-C3, discount −1 và 0 được chấp nhận: #9.
+- BC-C4, minimum −1 được chấp nhận: #10.
+- BC-C6, 6 trường bắt buộc không có `*`/nhãn: #11.
+
+**Mới:**
+- **BC-C2:** để trống “Số lần dùng tối đa/người” vẫn tạo được coupon, hệ thống tự gán 1 (C-AUTO-07, có ảnh).
+- **BC-C5 (FR-12, đề xuất High):** user thường gọi `POST /api/admin/coupons` bằng token của mình thì nhận HTTP 200 và coupon được lưu (C-AUTO-17). Bằng chứng là thông điệp assertion kèm JSON coupon trong report. Ảnh chụp trang report sẽ làm khi đăng issue.
+
+Ảnh ở `features/C-FR17/evidence/failures/`.
+
+### Bản AI draft → review
+
+- Bản draft (commit `61518fd`, prompt D1–D3) chạy 10/18 pass trên mỗi browser.
+- C-AUTO-02 timeout vì placeholder ô giá trị đổi theo loại coupon.
+- C-AUTO-14/15 pass với assertion phủ định không có điểm đồng bộ, nên có thể là pass rỗng.
+- C-AUTO-17 ép đúng mã 403.
+- Locator dấu `*` lọc theo chữ `code`.
+- Cleanup chỉ chạy khi test pass, nên **18 coupon `HW4…` bị rò**. Đã xóa qua API admin (18 × HTTP 200); danh sách lưu ở `_tools/HW04/work/p04-draft-leftover-coupons.txt`.
+- `review.md` ghi 12 lỗi kèm commit sửa và nguyên nhân. Sửa theo 2 nhóm commit:
+  - `1065a4a`: page object và data. Riêng commit này không biên dịch được vì spec vẫn là bản draft; đã ghi rõ trong review.
+  - `ec9c5ae`: spec.
+- 8 nhóm assertion pattern; bảng pattern theo TC có trong review.
+
+### Ngoài SRS / không automate
+
+- Prompt điều phối có nhắc “sửa coupon”, “xóa có xác nhận”, “ngày hết hạn quá khứ”. SRS FR-17 chỉ yêu cầu Thêm/Xem/Xóa, không có quy tắc ngày, và HW02 dặn không ép dialog. Không có oracle nên không automate; lý do ở `selection.md`.
+- Không automate các TC: C-TC-004/010 phần server, C-TC-016, C-TC-019 phần màu, C-TC-020.
+
+### Tệp
+
+- `features/C-FR17/`: `selection.md`, `locator-inventory.md`, `dom-survey-coupon.json`, `ai-draft/**`, `draft-run-summary.md`, `review.md`, `results.md`, `final-run/summary.{md,json}`, `evidence/{failures,report-shots}`.
+- `automation/`: `data/fr17-coupon.json`, `pages/AdminCouponPage.ts`, `tests/fr17-coupon.spec.ts`, `reports/fr17-{chromium,firefox,webkit}/` (5.1 / 5.0 / 4.6 MB).
+- `_tools/HW04/survey-fr17.js`, `_tools/HW04/work/p04-*`.
+
+### Commit
+
+| Commit | Nội dung | Đổi spec? |
+|---|---|---|
+| `3a921a8` | chọn TC, khảo sát, data | không |
+| `61518fd` | AI draft | có |
+| `1065a4a` | fix page object + data | không |
+| `ec9c5ae` | fix spec | có |
+| `5832bd5` | reports + docs | không |
+
+Còn 1 commit log/context; hash nằm trong tin nhắn trả lời.
+
+Tổng số commit thay đổi `.spec.ts` từ đầu bài: **9** (smoke 1, fr01 4, fr08 2, fr17 2), đạt yêu cầu ≥8 của §12.
+
+### Lưu ý cho A
+
+- 9 report chính thức (fr01/fr08/fr17 × 3) tổng khoảng 55 MB vì có trace. Cần quyết định trước P07: tắt trace và chạy lại, hoặc tách ZIP.
+- Human review của sinh viên: pending.
+
+### Log
+
+`EXEC-P04-001` (prompt P04 → checkpoint này), `EXEC-P04-002`, `003`, `004` (các bước D1–D3 sinh draft).
+
+Dừng sau P04, chờ prompt tiếp theo.
+```
+
+
+## EXEC-P04-002
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P04-002",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P04 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/C-FR17/ai-draft/prompts/D1-page-object.txt (verbatim). Output: draft file(s) written verbatim by B in reply, committed unchanged in 61518fd.",
+  "missing": [
+    "Exact time unknown. The draft was generated between 18:41 and 18:44 +07:00 on 2026-11-15; the draft run started at 18:44:24.",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat."
+  ],
+  "artifact_paths": [
+    "HW04/features/C-FR17/ai-draft/prompts/D1-page-object.txt",
+    "HW04/features/C-FR17/ai-draft/pages/AdminCouponPage.ts"
+  ],
+  "recorded_at": "2026-11-15T19:00:52+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P04-002 · bước D1 · prompt B tự soạn từ khung P-c của skill playwright-data-driven-automation]
+Dùng locator đã chốt trong HW04/features/C-FR17/locator-inventory.md (khảo sát DOM thật Admin :5174 trên 3 browser). Viết automation/pages/AdminCouponPage.ts (Playwright + TypeScript):
+- login(email, password) qua form Admin Login (placeholder Email/Password, nút Login);
+- openCoupons(): bấm mục "Mã Giảm Giá" ở sidebar (là <li>, không phải link), chờ heading "Quản lý Mã Giảm Giá";
+- fillForm(data) cho 6 trường (placeholder như inventory; type là select percent/fixed; expiry là input date), submit() bấm "Tạo mã";
+- row(code) dòng bảng có ô mã đúng code; deleteCoupon(code) bấm "Xóa" trong dòng đó.
+Không chứa assertion, không waitForTimeout.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/C-FR17/ai-draft/pages/AdminCouponPage.ts =====
+import { Locator, Page } from '@playwright/test';
+
+export interface CouponInput {
+  code?: string;
+  type?: string;
+  discount?: string;
+  minimum?: string;
+  expiry?: string;
+  uses?: string;
+}
+
+export class AdminCouponPage {
+  readonly page: Page;
+  readonly heading: Locator;
+  readonly code: Locator;
+  readonly type: Locator;
+  readonly discount: Locator;
+  readonly minimum: Locator;
+  readonly expiry: Locator;
+  readonly uses: Locator;
+  readonly createButton: Locator;
+  readonly rows: Locator;
+
+  constructor(page: Page) {
+    this.page = page;
+    this.heading = page.getByRole('heading', { name: 'Quản lý Mã Giảm Giá' });
+    this.code = page.getByPlaceholder('Mã coupon (VD: SAVE10)');
+    this.type = page.locator('select');
+    this.discount = page.getByPlaceholder('Giá trị % (VD: 10)');
+    this.minimum = page.getByPlaceholder('Đơn tối thiểu (₫)');
+    this.expiry = page.getByPlaceholder('Ngày hết hạn');
+    this.uses = page.getByPlaceholder('Số lần dùng tối đa/người');
+    this.createButton = page.getByRole('button', { name: 'Tạo mã' });
+    this.rows = page.locator('tbody tr');
+  }
+
+  async login(email: string, password: string) {
+    await this.page.goto('/');
+    await this.page.getByPlaceholder('Email').fill(email);
+    await this.page.getByPlaceholder('Password').fill(password);
+    await this.page.getByRole('button', { name: 'Login' }).click();
+  }
+
+  async openCoupons() {
+    await this.page.getByText('Mã Giảm Giá').click();
+    await this.heading.waitFor();
+  }
+
+  async fillForm(data: CouponInput) {
+    if (data.code !== undefined) await this.code.fill(data.code);
+    if (data.type !== undefined) await this.type.selectOption(data.type);
+    if (data.discount !== undefined) await this.discount.fill(data.discount);
+    if (data.minimum !== undefined) await this.minimum.fill(data.minimum);
+    if (data.expiry !== undefined) await this.expiry.fill(data.expiry);
+    if (data.uses !== undefined) await this.uses.fill(data.uses);
+  }
+
+  async submit() {
+    await this.createButton.click();
+  }
+
+  row(code: string): Locator {
+    return this.rows.filter({ hasText: code });
+  }
+
+  async deleteCoupon(code: string) {
+    await this.row(code).getByRole('button', { name: 'Xóa' }).click();
+  }
+}
+```
+
+
+## EXEC-P04-003
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P04-003",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P04 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/C-FR17/ai-draft/prompts/D2-spec.txt (verbatim). Output: draft file(s) written verbatim by B in reply, committed unchanged in 61518fd.",
+  "missing": [
+    "Exact time unknown. The draft was generated between 18:41 and 18:44 +07:00 on 2026-11-15; the draft run started at 18:44:24.",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat."
+  ],
+  "artifact_paths": [
+    "HW04/features/C-FR17/ai-draft/prompts/D2-spec.txt",
+    "HW04/features/C-FR17/ai-draft/tests/fr17-coupon.spec.d2-skeleton.ts"
+  ],
+  "recorded_at": "2026-11-15T19:00:52+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P04-003 · bước D2 · prompt B tự soạn từ khung P-d của skill]
+Viết automation/tests/fr17-coupon.spec.ts: import rows từ ../data/fr17-coupon.json (không định nghĩa dữ liệu trong spec), sinh test `${row.id} ${row.title}` theo 3A. Admin: đăng nhập một lần qua form Admin Login (admin@eshop.com / Admin123! theo SRS §1) và lưu storageState (localStorage adminToken), các test admin dùng lại storageState đó; baseURL = ADMIN_URL. Thay {{code}} bằng mã duy nhất theo project + thời gian (chữ hoa). Với input.precreate tạo trước coupon cùng mã qua form. Dọn coupon do test tạo sau mỗi test (DELETE /api/admin/coupons/:id bằng token admin). Rẽ nhánh theo expected.kind: created, rejected, rejected-duplicate, deleted, access-denied, type-options, api-forbidden, structure. Assertion chi tiết ở D3.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/C-FR17/ai-draft/tests/fr17-coupon.spec.d2-skeleton.ts =====
+import { test } from '@playwright/test';
+import rows from '../data/fr17-coupon.json';
+import { AdminCouponPage, CouponInput } from '../pages/AdminCouponPage';
+import { ADMIN_URL, API_URL } from '../support/env';
+
+type Row = (typeof rows)[number];
+const AUTH_FILE = 'test-results/.auth/admin.json';
+
+test.use({ baseURL: ADMIN_URL });
+
+test.beforeAll(async ({ browser }) => {
+  const page = await browser.newPage({ baseURL: ADMIN_URL });
+  const admin = new AdminCouponPage(page);
+  await admin.login('admin@eshop.com', 'Admin123!');
+  await page.getByRole('heading', { name: 'EShop Admin' }).waitFor();
+  await page.context().storageState({ path: AUTH_FILE });
+  await page.close();
+});
+
+test.describe('FR-17 Quản lý mã giảm giá', () => {
+  for (const row of rows as Row[]) {
+    test(`${row.id} ${row.title}`, async ({ browser, request }, testInfo) => {
+      const code = `HW4${testInfo.project.name}${Date.now()}`.toUpperCase();
+      const input = { ...(row.input as CouponInput) };
+      if (input.code === '{{code}}') input.code = code;
+
+      const context = await browser.newContext({ baseURL: ADMIN_URL, storageState: AUTH_FILE });
+      const page = await context.newPage();
+      const admin = new AdminCouponPage(page);
+
+      // Act + Assert theo row.expected.kind — chi tiết ở D3
+      switch (row.expected.kind) {
+        default:
+          break;
+      }
+      void admin; void request; void API_URL;
+      await context.close();
+    });
+  }
+});
+```
+
+
+## EXEC-P04-004
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P04-004",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P04 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/C-FR17/ai-draft/prompts/D3-assertions.txt (verbatim). Output: draft file(s) written verbatim by B in reply, committed unchanged in 61518fd.",
+  "missing": [
+    "Exact time unknown. The draft was generated between 18:41 and 18:44 +07:00 on 2026-11-15; the draft run started at 18:44:24.",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat."
+  ],
+  "artifact_paths": [
+    "HW04/features/C-FR17/ai-draft/prompts/D3-assertions.txt",
+    "HW04/features/C-FR17/ai-draft/tests/fr17-coupon.spec.ts"
+  ],
+  "recorded_at": "2026-11-15T19:00:52+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P04-004 · bước D3 · prompt B tự soạn từ khung P-e của skill]
+Oracle (SRS FR-17/FR-12/FR-21/22, HW02 C-TC): created = coupon xuất hiện trong bảng với mã, loại, giá trị, hạn, giới hạn đúng dữ liệu và vẫn còn sau reload; rejected = không tạo bản ghi có mã đó (kiểm bảng + GET /api/coupons), có tín hiệu từ chối (native validity của ô sai hoặc alert lỗi), không ép wording/HTTP code; rejected-duplicate = chỉ một coupon mang mã đó; deleted = dòng biến mất và không còn sau reload; access-denied = guest/user thường không thấy heading quản lý coupon/sidebar admin; type-options = select chỉ có percent/fixed; api-forbidden = POST /api/admin/coupons bằng token user thường không 2xx và không tạo coupon; structure = mỗi trường bắt buộc có * cạnh nhãn, đúng 1 h1.
+Dùng ≥3 pattern khác nhau (visible/count, attribute/validity, response/API, soft). Không waitForTimeout. Không test.fail/test.skip để né; nghi SUT sai thì giữ assertion theo đặc tả.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/C-FR17/ai-draft/tests/fr17-coupon.spec.ts =====
+import { expect, test } from '@playwright/test';
+import rows from '../data/fr17-coupon.json';
+import { AdminCouponPage, CouponInput } from '../pages/AdminCouponPage';
+import { ADMIN_URL, API_URL } from '../support/env';
+
+type Row = (typeof rows)[number];
+const AUTH_FILE = 'test-results/.auth/admin.json';
+
+test.use({ baseURL: ADMIN_URL });
+
+let adminToken = '';
+
+test.beforeAll(async ({ browser, request }) => {
+  const page = await browser.newPage({ baseURL: ADMIN_URL });
+  const admin = new AdminCouponPage(page);
+  await admin.login('admin@eshop.com', 'Admin123!');
+  await page.getByRole('heading', { name: 'EShop Admin' }).waitFor();
+  await page.context().storageState({ path: AUTH_FILE });
+  await page.close();
+  const res = await request.post(`${API_URL}/api/login`, { data: { email: 'admin@eshop.com', password: 'Admin123!' } });
+  adminToken = (await res.json()).token;
+});
+
+test.describe('FR-17 Quản lý mã giảm giá', () => {
+  for (const row of rows as Row[]) {
+    test(`${row.id} ${row.title}`, async ({ browser, request }, testInfo) => {
+      const code = `HW4${testInfo.project.name}${Date.now()}`.toUpperCase();
+      const input = { ...(row.input as any) };
+      if (input.code === '{{code}}') input.code = code;
+      const expected = row.expected as any;
+
+      if (expected.kind === 'api-forbidden') {
+        const login = await request.post(`${API_URL}/api/login`, { data: { email: input.email, password: input.password } });
+        const userToken = (await login.json()).token;
+        const res = await request.post(`${API_URL}/api/admin/coupons`, {
+          headers: { Authorization: `Bearer ${userToken}` },
+          data: {
+            code: input.code,
+            type: input.type,
+            discount_value: Number(input.discount),
+            min_order_amount: Number(input.minimum),
+            expired_at: input.expiry,
+            max_uses_per_user: Number(input.uses),
+          },
+        });
+        expect(res.status()).toBe(403);
+        return;
+      }
+
+      if (expected.kind === 'access-denied') {
+        const context = await browser.newContext({ baseURL: ADMIN_URL });
+        const page = await context.newPage();
+        if (input.auth === 'user') {
+          const admin = new AdminCouponPage(page);
+          page.on('dialog', (d) => d.accept());
+          await admin.login(input.email, input.password);
+        } else {
+          await page.goto('/');
+        }
+        await expect(page.getByRole('heading', { name: 'Quản lý Mã Giảm Giá' })).not.toBeVisible();
+        await expect(page.getByRole('heading', { name: 'EShop Admin' })).not.toBeVisible();
+        await context.close();
+        return;
+      }
+
+      const context = await browser.newContext({ baseURL: ADMIN_URL, storageState: AUTH_FILE });
+      const page = await context.newPage();
+      const admin = new AdminCouponPage(page);
+      await page.goto('/');
+      await admin.openCoupons();
+
+      if (expected.kind === 'type-options') {
+        const values = await admin.type.locator('option').evaluateAll((os) => os.map((o) => (o as HTMLOptionElement).value));
+        expect(values).toEqual(expected.options);
+        await context.close();
+        return;
+      }
+
+      if (expected.kind === 'structure') {
+        await expect.soft(page.locator('h1')).toHaveCount(expected.h1Count);
+        for (const field of expected.requiredFields) {
+          await expect.soft(page.locator('label', { hasText: '*' }).filter({ hasText: field })).toHaveCount(1);
+        }
+        await context.close();
+        return;
+      }
+
+      if (input.precreate) {
+        await admin.fillForm(input);
+        await admin.submit();
+        await expect(admin.row(input.code)).toBeVisible();
+      }
+
+      if (expected.kind === 'deleted') {
+        await admin.deleteCoupon(input.code);
+        await expect(admin.row(input.code)).toHaveCount(0);
+        await page.reload();
+        await admin.openCoupons();
+        await expect(admin.row(input.code)).toHaveCount(0);
+        await context.close();
+        return;
+      }
+
+      page.on('dialog', (d) => d.accept());
+      await admin.fillForm(input);
+      await admin.submit();
+
+      if (expected.kind === 'created') {
+        const row = admin.row(input.code);
+        await expect(row).toBeVisible();
+        await expect(row).toContainText(expected.row.type);
+        await expect(row).toContainText(expected.row.value);
+        await expect(row).toContainText(expected.row.expiry);
+        await expect(row).toContainText(expected.row.uses);
+        await page.reload();
+        await admin.openCoupons();
+        await expect(admin.row(input.code)).toBeVisible();
+      } else {
+        await page.waitForTimeout(1000);
+        const list = await (await request.get(`${API_URL}/api/coupons`, { headers: { Authorization: `Bearer ${adminToken}` } })).json();
+        const matches = list.filter((c: any) => c.code === input.code);
+        expect(matches.length).toBe(expected.kind === 'rejected-duplicate' ? 1 : 0);
+      }
+
+      // cleanup
+      const list = await (await request.get(`${API_URL}/api/coupons`, { headers: { Authorization: `Bearer ${adminToken}` } })).json();
+      for (const c of list.filter((c: any) => c.code === input.code)) {
+        await request.delete(`${API_URL}/api/admin/coupons/${c.id}`, { headers: { Authorization: `Bearer ${adminToken}` } });
+      }
+      await context.close();
+    });
+  }
+});
+```
+
