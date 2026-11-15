@@ -2327,3 +2327,67 @@ Thông tin từ chat A (P08 nhỏ): sinh viên đã cho phép và chat A đã t�
 - Còn lại của sinh viên: review & ký; video Task 2 + YouTube; upload video skill; chọn điểm → `package_submission.py --grade NNN`.
 - Log `EXEC-P08-001`.
 ```
+
+## EXEC-P09-001
+
+```text
+{
+  "id": "EXEC-P09-001",
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "occurred_at": "2026-11-15T21:35:00+07:00",
+  "timestamp_source": "estimated",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) sent this as a cross-session message; not student-authored. The YouTube upload was done by chat A with the student's consent, not by B.",
+  "source": "Prompt: cross-session message, saved verbatim to P09-prompt.txt. Output: checkpoint-P09.md (verbatim).",
+  "capture_status": "partial",
+  "missing": [
+    "occurred_at estimated; exact receipt time not observed.",
+    "The full tool call/result transcript is not exported.",
+    "B did not independently open the YouTube link; the title/oEmbed check is as reported by chat A.",
+    "Final QA ZIP sizes/SHA-256 and the commit hashes after b72149a are only in the final chat reply and _tools/HW04/work/P07/qa-package/."
+  ],
+  "artifact_paths": [
+    "HW04/README.md",
+    "HW04/report.md",
+    "HW04/demo/README.md",
+    "HW04/demo/metadata.json",
+    "HW04/user-handoff.md",
+    "HW04/ai-audit.md",
+    "HW04/working-context.md",
+    "HW04/pdf/",
+    "HW04/git-log.txt",
+    "_tools/HW04/sync_p09_youtube.py",
+    "_tools/HW04/work/P07/qa-package/"
+  ],
+  "redactions": [],
+  "recorded_at": "2026-11-15T21:24:49+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Thông tin từ chat A (P09 nhỏ): sinh viên đã cho phép và chat A đã upload video demo skill lên YouTube **Unlisted** qua Claude in Chrome ngày 2026-11-15: https://youtu.be/TD4otNQzsFU — tiêu đề "HW04 23120229 — Agent Skill playwright-data-driven-automation: FR-08 end-to-end", 6:21; oEmbed ẩn danh trả về đúng tiêu đề. Bản upload là bản nén lại (công cụ upload giới hạn 10 MB): `_tools/HW04/work/youtube/skill-demo-yt.webm`, VP8 1280×720 **8 fps**, 7,868,806 byte, SHA-256 `b5d8fb999aab8d361d77fa31b5c6b0d585b134c550a45e32701f238ad6f6caa7`, nén bằng ffmpeg của Playwright (`-r 8 -c:v libvpx -b:v 150k`); bản gốc `demo/skill-demo.webm` giữ nguyên. Việc của bạn: điền link vào README (test summary + self-assessment: Agent Skills 10/10, tổng hiện tại cập nhật), `report.md`, `demo/README.md`/`metadata.json` (thêm mục youtube + thông tin bản nén), `user-handoff.md` (đánh dấu bước 4 xong do chat A); render lại PDF bị ảnh hưởng, regenerate `git-log.txt`, chạy lại `package_submission.py` bản QA, commit, log `EXEC-P09-…`. KHÔNG push. Video Task 2 vẫn là việc của sinh viên. Trả checkpoint ngắn.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P09 — link YouTube video demo skill (chat B)
+
+- Video https://youtu.be/TD4otNQzsFU (Unlisted) do **chat A** upload theo đồng ý của sinh viên. Chat B không upload, không push.
+- Kiểm bản nén `_tools/HW04/work/youtube/skill-demo-yt.webm`: 7.868.806 byte, SHA-256 `b5d8fb99…caa7`, khớp thông tin của A. Chat B không tự mở YouTube để kiểm.
+- Điền link bằng `_tools/HW04/sync_p09_youtube.py`:
+  - `README.md`: dòng video skill; Agent Skills **10/10**; tổng hiện tại **77 → 82**.
+  - `report.md` §10; `demo/README.md` (link, tiêu đề, thông tin bản nén); `demo/metadata.json` (mục `youtube` có thông tin `uploaded_file`).
+  - `user-handoff.md`: bước 4 ĐÃ XONG. `ai-audit.md`: ghi rõ chat A upload. `working-context.md`.
+- Render lại 6 PDF: 0 link hỏng; README.pdf và report.pdf có link video.
+- `git-log.txt` tạo lại; ZIP QA đổi tên thành **082** ở `_tools/HW04/work/P07/qa-package/` (không phải bản nộp; kích thước/SHA trong `SHA256SUMS.txt` và tin nhắn trả lời).
+- Còn lại của sinh viên: review & ký; quay video Task 2 + upload YouTube + điền link; chọn điểm → `package_submission.py --grade NNN`.
+- Log `EXEC-P09-001`.
+```
