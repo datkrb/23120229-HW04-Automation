@@ -1,0 +1,1302 @@
+commit ea745ca39443c08a451b04dc77a5147b86e75de1
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:53:28 +0700
+
+    docs(hw04): P06 checkpoint, working context and chat-B AI log (EXEC-P06-001)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P06-prompt.txt    |  16 +++
+ ai-log/execution/chat-b/checkpoint-P06.md |  90 +++++++++++++++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |   1 +
+ ai-log/execution/chat-b/prompt_log.md     | 156 ++++++++++++++++++++++++++++++
+ working-context.md                        |   7 +-
+ 5 files changed, 267 insertions(+), 3 deletions(-)
+
+commit 2747f68ab16f39497142833a826db332b495b700
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:52:52 +0700
+
+    docs(hw04): Agent Skill demo video (real screen recording, 6:20, FR-08 end-to-end) + metadata
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ demo/README.md                    |  15 +++++++
+ demo/frames/skill-demo-000003.png | Bin 0 -> 334961 bytes
+ demo/frames/skill-demo-000120.png | Bin 0 -> 259986 bytes
+ demo/frames/skill-demo-000330.png | Bin 0 -> 805275 bytes
+ demo/frames/skill-demo-000505.png | Bin 0 -> 908216 bytes
+ demo/frames/skill-demo-000545.png | Bin 0 -> 529343 bytes
+ demo/metadata.json                |  27 +++++++++++
+ demo/skill-demo-events.json       |  91 ++++++++++++++++++++++++++++++++++++++
+ demo/skill-demo.webm              | Bin 0 -> 29427236 bytes
+ 9 files changed, 133 insertions(+)
+
+commit 11cc787ecc4a08d20428a70806378a681b331b42
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:46:43 +0700
+
+    docs(hw04): README (self-assessment, summary, how to rerun), student handoff, spec commit count (9)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ README.md                 | 80 +++++++++++++++++++++++++++++++++++++++++++++++
+ docs/spec-commit-count.md | 19 +++++++++++
+ user-handoff.md           | 65 ++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 164 insertions(+)
+
+commit e0a1a9fe77e8e0993bead90799f57b9054b76873
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:45:12 +0700
+
+    docs(hw04): Task 2 video script for the student (FR-17 run, Run-by report, AI fix narration)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ demo/task2-video-script.md | 65 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 65 insertions(+)
+
+commit fcae188d38b921d9ba9796cf79b2985d57e3e9a6
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:44:37 +0700
+
+    docs(hw04): AI audit report (17 interactions, verdicts) with disclosure, and AI critique (295 words)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-audit.md    | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ai-critique.md | 13 +++++++++
+ 2 files changed, 101 insertions(+)
+
+commit cb1bff308123e347bb678fc98f19c58cc8f5b244
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:43:17 +0700
+
+    docs(hw04): main report - environment, framework, TCs, patterns, 9 runs, gap analysis, bugs
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ report.md | 259 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 259 insertions(+)
+
+commit 4d3a8dad56c503a84c2f017a137095eaef0f202a
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:39:58 +0700
+
+    docs(hw04): prepared GitHub issue bodies/mapping (not published), P05 checkpoint and AI log
+    
+    Push of the evidence branch to datkrb/SUT_Issue was denied by the session
+    permission policy; no issue/comment was posted. 5 new-issue and 10 comment
+    bodies + publish script are ready for the user's decision.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P05-prompt.txt    |  10 ++
+ ai-log/execution/chat-b/checkpoint-P05.md |  72 +++++++++++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |   1 +
+ ai-log/execution/chat-b/prompt_log.md     | 139 +++++++++++++++++++++++++
+ docs/github-issues.md                     |  53 ++++++++++
+ docs/issue-bodies/HW04-BUG-01.md          |  34 ++++++
+ docs/issue-bodies/HW04-BUG-02.md          |  33 ++++++
+ docs/issue-bodies/HW04-BUG-03.md          |  35 +++++++
+ docs/issue-bodies/HW04-BUG-04.md          |  34 ++++++
+ docs/issue-bodies/HW04-BUG-05.md          |  32 ++++++
+ docs/issue-bodies/HW04-DUP-01.md          |  10 ++
+ docs/issue-bodies/HW04-DUP-02.md          |  11 ++
+ docs/issue-bodies/HW04-DUP-03.md          |  10 ++
+ docs/issue-bodies/HW04-DUP-04.md          |  11 ++
+ docs/issue-bodies/HW04-DUP-05.md          |  10 ++
+ docs/issue-bodies/HW04-DUP-06.md          |  10 ++
+ docs/issue-bodies/HW04-DUP-07.md          |  10 ++
+ docs/issue-bodies/HW04-DUP-08.md          |  11 ++
+ docs/issue-bodies/HW04-DUP-09.md          |  10 ++
+ docs/issue-bodies/HW04-DUP-10.md          |  10 ++
+ docs/issue-bodies/publication-batch.json  | 166 ++++++++++++++++++++++++++++++
+ working-context.md                        |   9 +-
+ 22 files changed, 717 insertions(+), 4 deletions(-)
+
+commit c31cd6a85c3242f64340373c133a2d8fd6410d67
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:36:38 +0700
+
+    docs(hw04): bug report (S08) with independent reproduction evidence
+    
+    5 new bugs (FR-01 x3, FR-17, FR-12) reproduced outside the suite by
+    _tools/HW04/repro_p05.js with screenshots + API readback; 10 bugs already
+    filed (HW02/HW03) re-detected by automation and to be commented on.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ bug-report.md                                      | 154 +++++++++++++++++++++
+ .../bugs/repro/HW04-BUG-01-1-before-submit.png     | Bin 0 -> 25150 bytes
+ evidence/bugs/repro/HW04-BUG-01-2-after-submit.png | Bin 0 -> 18523 bytes
+ .../bugs/repro/HW04-BUG-02-1-before-submit.png     | Bin 0 -> 25031 bytes
+ evidence/bugs/repro/HW04-BUG-02-2-after-submit.png | Bin 0 -> 18523 bytes
+ .../bugs/repro/HW04-BUG-03-1-before-submit.png     | Bin 0 -> 24643 bytes
+ evidence/bugs/repro/HW04-BUG-03-2-after-submit.png | Bin 0 -> 18523 bytes
+ evidence/bugs/repro/HW04-BUG-03-3-admin-users.png  | Bin 0 -> 51312 bytes
+ .../repro/HW04-BUG-03-4-admin-users-filtered.png   | Bin 0 -> 6628 bytes
+ .../bugs/repro/HW04-BUG-04-1-before-submit.png     | Bin 0 -> 46058 bytes
+ evidence/bugs/repro/HW04-BUG-04-2-after-submit.png | Bin 0 -> 46367 bytes
+ ...G-05-1-admin-list-shows-user-created-coupon.png | Bin 0 -> 51172 bytes
+ evidence/bugs/repro/repro-p05-results.json         | 109 +++++++++++++++
+ test-summary.md                                    |   8 +-
+ 14 files changed, 270 insertions(+), 1 deletion(-)
+
+commit eda249a37b2635b4f0f0a4c64f85cb7c23b020e7
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:35:23 +0700
+
+    docs(hw04): test summary from official run + stability rerun comparison
+    
+    153 executions (51 TCs x 3 browsers): 81 pass, 72 fail, 0 flaky; second full run
+    (_tools/HW04/work/p05-rerun) has the same status for 153/153 test x browser.
+    Failure screenshots copied from Playwright attachments, named by TC id.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ evidence/bugs/attachments/A-AUTO-01-chromium.png | Bin 0 -> 27157 bytes
+ evidence/bugs/attachments/A-AUTO-01-firefox.png  | Bin 0 -> 44442 bytes
+ evidence/bugs/attachments/A-AUTO-01-webkit.png   | Bin 0 -> 84073 bytes
+ evidence/bugs/attachments/A-AUTO-02-chromium.png | Bin 0 -> 27255 bytes
+ evidence/bugs/attachments/A-AUTO-02-firefox.png  | Bin 0 -> 44500 bytes
+ evidence/bugs/attachments/A-AUTO-02-webkit.png   | Bin 0 -> 84078 bytes
+ evidence/bugs/attachments/A-AUTO-03-chromium.png | Bin 0 -> 27278 bytes
+ evidence/bugs/attachments/A-AUTO-03-firefox.png  | Bin 0 -> 44454 bytes
+ evidence/bugs/attachments/A-AUTO-03-webkit.png   | Bin 0 -> 84366 bytes
+ evidence/bugs/attachments/A-AUTO-13-chromium.png | Bin 0 -> 27116 bytes
+ evidence/bugs/attachments/A-AUTO-13-firefox.png  | Bin 0 -> 44288 bytes
+ evidence/bugs/attachments/A-AUTO-13-webkit.png   | Bin 0 -> 83663 bytes
+ evidence/bugs/attachments/A-AUTO-14-chromium.png | Bin 0 -> 26517 bytes
+ evidence/bugs/attachments/A-AUTO-14-firefox.png  | Bin 0 -> 43591 bytes
+ evidence/bugs/attachments/A-AUTO-14-webkit.png   | Bin 0 -> 80505 bytes
+ evidence/bugs/attachments/A-AUTO-15-chromium.png | Bin 0 -> 21339 bytes
+ evidence/bugs/attachments/A-AUTO-15-firefox.png  | Bin 0 -> 38042 bytes
+ evidence/bugs/attachments/A-AUTO-15-webkit.png   | Bin 0 -> 64617 bytes
+ evidence/bugs/attachments/A-AUTO-16-chromium.png | Bin 0 -> 21339 bytes
+ evidence/bugs/attachments/A-AUTO-16-firefox.png  | Bin 0 -> 38042 bytes
+ evidence/bugs/attachments/A-AUTO-16-webkit.png   | Bin 0 -> 64617 bytes
+ evidence/bugs/attachments/A-AUTO-17-chromium.png | Bin 0 -> 26517 bytes
+ evidence/bugs/attachments/A-AUTO-17-firefox.png  | Bin 0 -> 43591 bytes
+ evidence/bugs/attachments/A-AUTO-17-webkit.png   | Bin 0 -> 80505 bytes
+ evidence/bugs/attachments/A-AUTO-18-chromium.png | Bin 0 -> 27326 bytes
+ evidence/bugs/attachments/A-AUTO-18-firefox.png  | Bin 0 -> 44424 bytes
+ evidence/bugs/attachments/A-AUTO-18-webkit.png   | Bin 0 -> 83917 bytes
+ evidence/bugs/attachments/A-AUTO-19-chromium.png | Bin 0 -> 21339 bytes
+ evidence/bugs/attachments/A-AUTO-19-firefox.png  | Bin 0 -> 38042 bytes
+ evidence/bugs/attachments/A-AUTO-19-webkit.png   | Bin 0 -> 64617 bytes
+ evidence/bugs/attachments/A-AUTO-20-chromium.png | Bin 0 -> 18013 bytes
+ evidence/bugs/attachments/A-AUTO-20-firefox.png  | Bin 0 -> 34806 bytes
+ evidence/bugs/attachments/A-AUTO-20-webkit.png   | Bin 0 -> 57145 bytes
+ evidence/bugs/attachments/B-AUTO-03-chromium.png | Bin 0 -> 24614 bytes
+ evidence/bugs/attachments/B-AUTO-03-firefox.png  | Bin 0 -> 42064 bytes
+ evidence/bugs/attachments/B-AUTO-03-webkit.png   | Bin 0 -> 78990 bytes
+ evidence/bugs/attachments/B-AUTO-05-chromium.png | Bin 0 -> 28370 bytes
+ evidence/bugs/attachments/B-AUTO-05-firefox.png  | Bin 0 -> 46020 bytes
+ evidence/bugs/attachments/B-AUTO-05-webkit.png   | Bin 0 -> 78044 bytes
+ evidence/bugs/attachments/B-AUTO-06-chromium.png | Bin 0 -> 18611 bytes
+ evidence/bugs/attachments/B-AUTO-06-firefox.png  | Bin 0 -> 30359 bytes
+ evidence/bugs/attachments/B-AUTO-06-webkit.png   | Bin 0 -> 52816 bytes
+ evidence/bugs/attachments/B-AUTO-07-chromium.png | Bin 0 -> 18611 bytes
+ evidence/bugs/attachments/B-AUTO-07-firefox.png  | Bin 0 -> 30359 bytes
+ evidence/bugs/attachments/B-AUTO-07-webkit.png   | Bin 0 -> 52816 bytes
+ evidence/bugs/attachments/B-AUTO-08-chromium.png | Bin 0 -> 30724 bytes
+ evidence/bugs/attachments/B-AUTO-08-firefox.png  | Bin 0 -> 48641 bytes
+ evidence/bugs/attachments/B-AUTO-08-webkit.png   | Bin 0 -> 88191 bytes
+ evidence/bugs/attachments/B-AUTO-12-chromium.png | Bin 0 -> 18611 bytes
+ evidence/bugs/attachments/B-AUTO-12-firefox.png  | Bin 0 -> 30359 bytes
+ evidence/bugs/attachments/B-AUTO-12-webkit.png   | Bin 0 -> 52816 bytes
+ evidence/bugs/attachments/C-AUTO-06-chromium.png | Bin 0 -> 45783 bytes
+ evidence/bugs/attachments/C-AUTO-06-firefox.png  | Bin 0 -> 62621 bytes
+ evidence/bugs/attachments/C-AUTO-06-webkit.png   | Bin 0 -> 136661 bytes
+ evidence/bugs/attachments/C-AUTO-07-chromium.png | Bin 0 -> 45908 bytes
+ evidence/bugs/attachments/C-AUTO-07-firefox.png  | Bin 0 -> 62553 bytes
+ evidence/bugs/attachments/C-AUTO-07-webkit.png   | Bin 0 -> 136994 bytes
+ evidence/bugs/attachments/C-AUTO-09-chromium.png | Bin 0 -> 45757 bytes
+ evidence/bugs/attachments/C-AUTO-09-firefox.png  | Bin 0 -> 62732 bytes
+ evidence/bugs/attachments/C-AUTO-09-webkit.png   | Bin 0 -> 137091 bytes
+ evidence/bugs/attachments/C-AUTO-10-chromium.png | Bin 0 -> 45579 bytes
+ evidence/bugs/attachments/C-AUTO-10-firefox.png  | Bin 0 -> 62682 bytes
+ evidence/bugs/attachments/C-AUTO-10-webkit.png   | Bin 0 -> 137564 bytes
+ evidence/bugs/attachments/C-AUTO-11-chromium.png | Bin 0 -> 45701 bytes
+ evidence/bugs/attachments/C-AUTO-11-firefox.png  | Bin 0 -> 62593 bytes
+ evidence/bugs/attachments/C-AUTO-11-webkit.png   | Bin 0 -> 137139 bytes
+ evidence/bugs/attachments/C-AUTO-18-chromium.png | Bin 0 -> 40826 bytes
+ evidence/bugs/attachments/C-AUTO-18-firefox.png  | Bin 0 -> 59239 bytes
+ evidence/bugs/attachments/C-AUTO-18-webkit.png   | Bin 0 -> 125697 bytes
+ test-summary.md                                  |  61 +++++++++++++++++++++++
+ 70 files changed, 61 insertions(+)
+
+commit 959305b679453656aadad64f169df100396c85ff
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:19:07 +0700
+
+    test(hw04): final official run - 3 features x 3 browsers (9 HTML reports)
+    
+    Clean SUT restart (seed: 2 users, 4 coupons), code beec3c8, run-matrix:
+    153 executions, 81 pass, 72 fail, 0 flaky; verify-report 9/9 show
+    'Run by: 23120229' + ISO start time. Replaces the P02-P04 report folders.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ .../069cce3389311bd9a164e90f97556e8f6fa88ffb.png   |  Bin 0 -> 27278 bytes
+ ...> 09147c3b67e586ebb0fb7d46dcb8bc745ca40412.zip} |  Bin 154523 -> 200520 bytes
+ ...=> 10dde0c1bc2cb73a707083448458c8cc640bc434.md} |    2 +-
+ ...> 2c595d51892bd4aefe4d5780910c17afca18d291.png} |  Bin 27282 -> 27116 bytes
+ ...=> 2e9286ddf9737ff1c7e25f7d8544a2d39ceb1d77.md} |    2 +-
+ ...> 2ea1df3bb8784e5c96f1ba9ac7473cd914edf85d.zip} |  Bin 155139 -> 155082 bytes
+ ...> 44a9c0611c4b5f5b4b7869876662874743f7bbf7.png} |  Bin 27280 -> 27326 bytes
+ .../4e07b303ff167029b616ff6fc8ce8272e75a5aa4.zip   |  Bin 184140 -> 0 bytes
+ ...> 6dcf5909149aacdbfe1fd1f420fbb0dc67aad636.zip} |  Bin 67236 -> 80880 bytes
+ .../727959792617bedf98bdfefcfdb85c8e10a8982e.zip   |  Bin 191131 -> 0 bytes
+ .../79d3a70db2efcb172344a6959843fbaea7c33f97.zip   |  Bin 0 -> 172980 bytes
+ .../981ebe6a55f69ffdbc18c0db106745e5204ff514.zip   |  Bin 0 -> 186131 bytes
+ .../9cb9dbc7ae67e183ccb2e1bec0895b129ecd2a92.zip   |  Bin 0 -> 157543 bytes
+ .../a10d521bb80c413b195c981f86cd57172fecac16.png   |  Bin 27102 -> 0 bytes
+ ...> a195a775e96d9106735e93cd82a13b55a47d56b1.zip} |  Bin 80875 -> 80867 bytes
+ .../accebb12fa709da2d159e1372776e5bc92900f66.png   |  Bin 27374 -> 0 bytes
+ .../adcdc235f7bfc04f5c90bfa2cc06ceed0ae2ec1d.png   |  Bin 0 -> 27255 bytes
+ .../ae994491bef78c4ab7a861084ea4969763f48616.zip   |  Bin 0 -> 191239 bytes
+ .../b80f2c406bb73dcac80ae4c3e8a15bb27a188a6c.zip   |  Bin 191738 -> 0 bytes
+ .../bf49f71b3d76273a366947cd7a7e8e3a9109a022.png   |  Bin 0 -> 27157 bytes
+ .../c26adeafdf6da854af550eb18c4d4bce0ede1ba4.png   |  Bin 27244 -> 0 bytes
+ .../d37cb47b0134012c178c173a6be465838ec4e819.zip   |  Bin 0 -> 197762 bytes
+ .../de7930c51ced6be73760317bf93b76c6ab426a49.zip   |  Bin 204533 -> 0 bytes
+ ...> ed0b302def0c10a737127bc34fe356735de5061d.zip} |  Bin 85356 -> 85378 bytes
+ ...=> ef2b09c16cc08b9b21e1796eeffa24485862e84d.md} |    2 +-
+ .../f13966701c616936ac053335604bfaec7f473166.zip   |  Bin 190346 -> 0 bytes
+ ...=> f4cdb30b00d2a93a6a7f88eaa1a121c0931351d4.md} |    2 +-
+ ...=> f698ae5a543eb7291e830da430fe7f8caa23d8e3.md} |    2 +-
+ .../f88ff03bf80834c41bf5a8788f45f7395aa2628c.zip   |  Bin 0 -> 186032 bytes
+ .../fa1f47936f5c1ff3100b21fc00e812d7460d47ee.zip   |  Bin 186520 -> 0 bytes
+ automation/reports/fr01-chromium/index.html        |    2 +-
+ automation/reports/fr01-chromium/results.json      |  100 +-
+ .../120d3ee0be7bf2364b090d906df5ceb9d8813182.png   |  Bin 44266 -> 0 bytes
+ ...> 1726e101befdca77fc8fefddee1b966eca7350aa.zip} |  Bin 843983 -> 716700 bytes
+ .../1b83b7f8d6113b6932f55c0d64c52cf3a4be6b69.png   |  Bin 0 -> 44500 bytes
+ .../2b6f010db67b74e323637a40020f1db7eb875478.png   |  Bin 0 -> 44424 bytes
+ .../33fc757043771dc485118bb66737b1c9361937b6.zip   |  Bin 1022049 -> 0 bytes
+ ...=> 3955d599ca4b3c939a148c601df211c70b96ccc5.md} |    2 +-
+ .../3a01fda4960429be3a2d7344baaff4c4dc96f227.zip   |  Bin 0 -> 988406 bytes
+ ...=> 3ead677023b6295e23773017f6bc5a7df0e56375.md} |    2 +-
+ .../442938591a21eac54e1434b9b5bf18ad9624f3ce.png   |  Bin 0 -> 44442 bytes
+ .../53ea5689f620b63d81ea4ee523efd7450abc001c.zip   |  Bin 0 -> 1000249 bytes
+ .../54e92c7beca9255f208ce9183c07c3318761894f.zip   |  Bin 1001321 -> 0 bytes
+ ...=> 6668cdbf08c3658d9f5e49aca50f3806f00ab04d.md} |    2 +-
+ ...> 743f57de8cd4c2ef280c2f70c6f92311ab941191.zip} |  Bin 1075784 -> 1008989 bytes
+ .../78e2bad5ba2042672b846d4ba069624d454f6c50.png   |  Bin 0 -> 44454 bytes
+ ...> 8050e765d1f756188eecf2bbe626bfd0bde7a4f5.zip} |  Bin 691958 -> 692959 bytes
+ ...=> 90cb3d9b565655875197917042a90e38343b664a.md} |    2 +-
+ ...=> 942d5011b9589dbcbfeaa3258afaea149d065315.md} |    2 +-
+ .../9e5a2399249174b9b32a25e48400fee4c0c17041.zip   |  Bin 0 -> 1001523 bytes
+ .../a7188eb1302ba695d4fc0209c418319bd640fc31.png   |  Bin 44426 -> 0 bytes
+ .../b2300926c4d41671a47cac3e345963c44cda6c25.zip   |  Bin 1025528 -> 0 bytes
+ ...> b77a70a4a2d1edd22e244fce7fbc822f631fb990.zip} |  Bin 705211 -> 679303 bytes
+ .../be19d7aee640e128c3930399b82ae586227089bd.png   |  Bin 0 -> 44288 bytes
+ .../c44a1ac7281d57203a4e820573e02e78eeb4d15a.zip   |  Bin 1021809 -> 0 bytes
+ .../cd1617bb9963a8adf69372bf36fb1855f47cbc6e.png   |  Bin 44436 -> 0 bytes
+ .../d78d9a5ea3eb42dc6c207fc7115223b2dd002f16.zip   |  Bin 0 -> 1037390 bytes
+ .../d836a4703f1ec622013e2c63175ee69dbf68f9f0.png   |  Bin 44425 -> 0 bytes
+ ...> f06e975f1f6955979f91c2631bbe745acf839036.zip} |  Bin 2043600 -> 1989569 bytes
+ .../f3b2a39310b7aedda1349f790487fbcf7392a85c.zip   |  Bin 1035649 -> 0 bytes
+ .../fd896e50d4515c8c969ae4d8a1127fad3021b21b.png   |  Bin 44419 -> 0 bytes
+ ...> fe57d88d420072a8199a3fd5874710c67a1c90d7.zip} |  Bin 1060065 -> 1008351 bytes
+ .../fed139292958923f22ea3bd1cb7c8af597dda02d.zip   |  Bin 0 -> 1006899 bytes
+ automation/reports/fr01-firefox/index.html         |    2 +-
+ automation/reports/fr01-firefox/results.json       |  103 +-
+ .../11f683916b21738b85cf92f24225c64e4496b861.zip   |  Bin 129689 -> 0 bytes
+ ...> 2d58874fc95b6d14c7c7ac87e75f6ff62b51bbe2.zip} |  Bin 85536 -> 85503 bytes
+ ...> 45e747649e0a4bfe9fa9b1c2ef89f439dd62e498.png} |  Bin 83687 -> 84073 bytes
+ .../4662d73f10f78ee90721d5989d3057a59975e30b.zip   |  Bin 0 -> 218868 bytes
+ ...> 505aed17bbc95956b2c824f49b09a361561afd23.zip} |  Bin 196556 -> 196580 bytes
+ .../5992e954f0ce21a4b0a6c9c7c50f1ead3eb79257.png   |  Bin 0 -> 83917 bytes
+ ...=> 5d97e561a7aa94a64954fef7faa03854c677c578.md} |    2 +-
+ .../5d9f70d0c3ac5c903ee4f29eb8e203664429e1fd.zip   |  Bin 0 -> 202746 bytes
+ ...> 6bdea7b3438e1127ca0c1feb87a160008b1f55c3.zip} |  Bin 85497 -> 85480 bytes
+ .../79f73fecfde09ac1c41e5f6e36b3a07c9d443310.zip   |  Bin 218433 -> 0 bytes
+ ...> 7a4940a812354b90fa655b10e91202d5b8324b8f.zip} |  Bin 196697 -> 196732 bytes
+ ...=> 8b363ee690940e6787b0a361a86cfe23fdd68586.md} |    2 +-
+ .../9168ec0fdc03af7c10bcbdbab98891b8a9d98b8e.zip   |  Bin 0 -> 219837 bytes
+ ...=> 925d937523653b2931639bbf3a30d20fed17adb7.md} |    2 +-
+ .../985f71c7ced54133e8b15a6304b943c20a7b0cf2.png   |  Bin 84097 -> 0 bytes
+ .../a9b1f18d929af2d91ca479149c200651e4b045ab.zip   |  Bin 217897 -> 0 bytes
+ ...> aba9f93a1bb6c08e5f618c11c77e3cd219bb7425.png} |  Bin 83890 -> 84366 bytes
+ .../b0157934cf29b3872b88a75e5920884b66fec0ef.zip   |  Bin 202889 -> 0 bytes
+ ...> b17d6b0085b58895fa41db2a9bc575d17ce133c0.png} |  Bin 83564 -> 83663 bytes
+ ...=> b84d24ac671c236485c256cbecd66494e2ca1de9.md} |    2 +-
+ ...=> bfbbb5c73c217083ec2bc52c1f64a43bea3db9ba.md} |    2 +-
+ .../c3fc35895f812be037ea5b4aafdb1dcb3f8e84b3.zip   |  Bin 202505 -> 0 bytes
+ .../c507d1b9c333d4fd46a0a6789bf251c1f5acf7f2.zip   |  Bin 0 -> 202703 bytes
+ ...> ce045d6318046c26bd6b6ac4cb3d0b71a1ddd770.png} |  Bin 84324 -> 84078 bytes
+ .../ce1d1403de8fac58025e63fd704c63b2a8a10920.zip   |  Bin 236635 -> 0 bytes
+ .../e5f27f63a8097dc80c733dffbcbd228f8695c41c.zip   |  Bin 0 -> 163223 bytes
+ ...> ece7fdc4248ddde2588b80db3a6f305697861432.zip} |  Bin 89931 -> 89942 bytes
+ .../eea8e4fe624b57d91968135866a8daf75522d98e.zip   |  Bin 0 -> 218756 bytes
+ automation/reports/fr01-webkit/index.html          |    2 +-
+ automation/reports/fr01-webkit/results.json        |  112 +-
+ ...> 0c104b8360012a96be15ac2a27dc409834f0dc0a.zip} |  Bin 257901 -> 278772 bytes
+ ...> 71444af870a8e73ef190b0325f6c208440db05da.zip} |  Bin 632228 -> 597262 bytes
+ ...> 996eb8f3d600026e2ed594ab298669025a053117.zip} |  Bin 532750 -> 450573 bytes
+ ...> bed84e9e61ae399bdbd4083f2c8b6dfc620afbdf.zip} |  Bin 349646 -> 278719 bytes
+ ...> e361d2759ad809fd69fb052e69bc21da208bb259.zip} |  Bin 570649 -> 511823 bytes
+ ...> ef9220cfbfa10216165c027031cd4dd7c755009b.zip} |  Bin 245548 -> 278678 bytes
+ automation/reports/fr08-chromium/index.html        |    2 +-
+ automation/reports/fr08-chromium/results.json      |   66 +-
+ .../02b4a23c9265824b5cf5da16d3f068b0c704d189.zip   |  Bin 0 -> 386317 bytes
+ ...> 5d2dd555f382045c73179fbb9585470d42782ae3.zip} |  Bin 1969081 -> 1775106 bytes
+ ...> 6238ce12852129f6f1ebba985750ffa01ac55c8d.zip} |  Bin 399263 -> 433014 bytes
+ .../7f13c42a8d73d76ba2ed1e1b8fe5be51016596af.zip   |  Bin 641857 -> 0 bytes
+ ...> 83a1edca5f0e7aafebf238ea6c5e834a3033c43a.zip} |  Bin 1777643 -> 1663130 bytes
+ ...> 99fa4a0965fa0d67440a2533e00efd936cbf0fac.zip} |  Bin 559804 -> 404650 bytes
+ ...> 9d49ff60f5401871d8dde358ab997747b0b4113d.zip} |  Bin 2021559 -> 1930672 bytes
+ automation/reports/fr08-firefox/index.html         |    2 +-
+ automation/reports/fr08-firefox/results.json       |   66 +-
+ ...> 08ea9e609e64b5a823ed11bc1dbfb60fc71053dd.zip} |  Bin 306722 -> 320502 bytes
+ ...> 433357ba7b5973f408411c5e4c1dee200b7e6afb.zip} |  Bin 476116 -> 484985 bytes
+ ...> 48ec682703ed3202310396bdbf5913d3c415a84b.zip} |  Bin 309884 -> 254933 bytes
+ ...> 9411f86361bdf841977766223887f7f060f2d7da.zip} |  Bin 286079 -> 258609 bytes
+ ...> c0012742728e0e011a9b47a08271a0b54c166847.zip} |  Bin 616570 -> 578298 bytes
+ ...> c1c30c62bbca00a6429c47aea999f07acb2595e9.zip} |  Bin 500889 -> 462883 bytes
+ automation/reports/fr08-webkit/index.html          |    2 +-
+ automation/reports/fr08-webkit/results.json        |   66 +-
+ .../0730621356e47338d6cf830fe6f8ab2278e0f2d7.zip   |  Bin 502060 -> 0 bytes
+ .../1aa1240ce5306b48f489cab99f43912d563f12f4.zip   |  Bin 0 -> 498697 bytes
+ ...> 313f60f3142f33d99bd38e353504ad882f645251.png} |  Bin 45566 -> 45757 bytes
+ .../3fd7ac0c678da4d85b2e5dd8086cf16a4a3d106f.png   |  Bin 45839 -> 0 bytes
+ .../4ea68d26fef9367a1923a0a8ff458fbd386b937f.zip   |  Bin 601755 -> 0 bytes
+ .../52c5e6122aae92fa670545f9776b1371b752013d.zip   |  Bin 594990 -> 0 bytes
+ .../5cb348445233964addffd22671c4a7912d21350b.zip   |  Bin 499517 -> 0 bytes
+ .../5fbb85122cb2707df8c66542dbdbeb2f779cd701.zip   |  Bin 585808 -> 0 bytes
+ ...> 6ece5434433bad33f6ffb45302027ebb23d60bec.png} |  Bin 45772 -> 45908 bytes
+ ...> 895c061b3d31ecd4e90111650f28b133dd305954.png} |  Bin 45525 -> 45579 bytes
+ .../9fb6a96f9c905256f4e9e92d47c282a035c09714.zip   |  Bin 0 -> 13097 bytes
+ ...> a28466f657db61e835dc529d663f69cff785e27b.zip} |  Bin 152007 -> 150900 bytes
+ .../aafa2a14ba4c65df9bd182c81a6b54c339d4fc01.png   |  Bin 0 -> 45783 bytes
+ .../ab920c27ca7682cb202b657dba40cec2b4eca54c.zip   |  Bin 13108 -> 0 bytes
+ .../c8fc56ca5e602d26a85d2a55ce50c0886f90f148.zip   |  Bin 0 -> 501304 bytes
+ .../d2e85c5d3dc95dde8bab67077cdaef601cf626f0.zip   |  Bin 0 -> 566078 bytes
+ .../dd6b4f3634a8634f1b43c7333e0c787b52fd5278.zip   |  Bin 0 -> 599466 bytes
+ .../f15e396d5f94948a8ba035c213096f152efd3eb2.zip   |  Bin 0 -> 551104 bytes
+ ...> fa6461e2ba2404a6e7a5b825e201b6aa7c05f78e.png} |  Bin 45677 -> 45701 bytes
+ automation/reports/fr17-chromium/index.html        |    2 +-
+ automation/reports/fr17-chromium/results.json      |   88 +-
+ .../06c61e5915f6b7f88ad86f2e03ed12a17d380a77.png   |  Bin 0 -> 62621 bytes
+ .../2a5106c2af65eb5edfe3bc50b4196b19e826368e.zip   |  Bin 0 -> 499667 bytes
+ .../2e7c034bdf6f5dcbbde27191aed549814516e09c.zip   |  Bin 0 -> 424295 bytes
+ .../3faf6f3f51d1d5ece7988f25913377329670dfc3.zip   |  Bin 500438 -> 0 bytes
+ .../4856eeafa356475c3fd4e31b776c3a42b8f0f62c.zip   |  Bin 529017 -> 0 bytes
+ .../4c7137a77adbba36be58a5fb25ec6560eb65f5de.png   |  Bin 0 -> 62593 bytes
+ .../4d61ca4d07ef754c8f7c2d7c1896358bff686fa9.png   |  Bin 62881 -> 0 bytes
+ .../537532bcde499ef3fb600a539bdacbbb100ceb3f.zip   |  Bin 13095 -> 0 bytes
+ .../5713b8da6e79606079dae1a4afd68be2d262366c.zip   |  Bin 0 -> 387114 bytes
+ .../61d5ba66d3de29ad08057f7a23434af621c66f7f.zip   |  Bin 424512 -> 0 bytes
+ .../7d729efce4b001f084cb3f11330048c9b0aa5875.zip   |  Bin 0 -> 505128 bytes
+ .../822b49b9eebb4485b0b7ac5b49bdb0b44acdd346.zip   |  Bin 0 -> 13124 bytes
+ .../86c5673a46405a9d7ca49a8f3fff5c2368ef0be8.png   |  Bin 62898 -> 0 bytes
+ .../a8b56dae32ba461a3286932cb0785b59191608f4.zip   |  Bin 0 -> 496487 bytes
+ .../be6b9ced0c1082bc8804611254736de7103cf0a3.png   |  Bin 0 -> 62553 bytes
+ .../c46e2c8e2ed22eaaed3bcba77efbbc9eae59b516.png   |  Bin 0 -> 62732 bytes
+ ...> c63b7e96f7fd1dd3161eb6261e3d25e6e69e51c0.zip} |  Bin 350291 -> 353717 bytes
+ .../c7d62e75ee2e5615672ed709dcab5e29d43eb84a.zip   |  Bin 425154 -> 0 bytes
+ ...> c9ecf8bddbd4631b3b2b141c84ca7c645cd4eff9.png} |  Bin 62667 -> 62682 bytes
+ .../d04e29842f505ac72e8ea069dcd71599ae6271f3.zip   |  Bin 540992 -> 0 bytes
+ .../d6d74c99bbeb4be90de6a687f08e4567898177de.png   |  Bin 62808 -> 0 bytes
+ .../f43a0a2a2f56d0fffc2a1fecb5f96395e9d633f5.png   |  Bin 62904 -> 0 bytes
+ automation/reports/fr17-firefox/index.html         |    2 +-
+ automation/reports/fr17-firefox/results.json       |   88 +-
+ .../01a6ff4b17d724262f5b1e0b0529d4e0c92c09ee.zip   |  Bin 360896 -> 0 bytes
+ ...> 17fe89efdcbeb24745754916ed6c7a808fadd82c.png} |  Bin 137290 -> 136994 bytes
+ .../18e38eb736378b4952f8cdd8efd8cbdcab203889.png   |  Bin 0 -> 137139 bytes
+ .../288c24539d4973efdd636298aacced0845746b54.zip   |  Bin 400442 -> 0 bytes
+ .../3a18d909188c434ba92c7f21c9b1d88ff2633d85.zip   |  Bin 301729 -> 0 bytes
+ .../3a1b3406d5b903fc07376223b3cd385973a73037.zip   |  Bin 0 -> 298083 bytes
+ .../473504172edfb4ef75d818071ee26813d745569f.zip   |  Bin 367590 -> 0 bytes
+ .../65454dd7b6016e753b6f70a756f3654e17d84733.zip   |  Bin 0 -> 13092 bytes
+ ...> 6dd2d7d39a3c94a9817bf33d2bd4599cbb4b5761.png} |  Bin 137781 -> 137564 bytes
+ ...> 7c7b4ba55043543f452edf8ff894ac2bc61503b6.png} |  Bin 136885 -> 136661 bytes
+ .../81a5c5d9d6ce9dbfa29ebe4ccc3c3cc6378e792f.zip   |  Bin 0 -> 301804 bytes
+ .../843a52361f73b2df479f20999132a1a39dd3d194.zip   |  Bin 303082 -> 0 bytes
+ .../95451ee3d934c9a3929271042144d848877ed298.zip   |  Bin 0 -> 107648 bytes
+ .../d27e76e8728f482000ee767e17b271db6f04b2f2.zip   |  Bin 13098 -> 0 bytes
+ .../d31f3bde61715532a71df55fd5a2bd87bd8555b8.zip   |  Bin 0 -> 302606 bytes
+ .../d8c1b8d9089d57cdaf1f0867ce0de1482fc4e7c2.zip   |  Bin 0 -> 309071 bytes
+ ...> dee7288c18e3bc1dc5ae0c15cc6ce97ae150f78c.png} |  Bin 137504 -> 137091 bytes
+ .../e7b80d96cabb305c5392013c46e4c19a4ed6a3d4.zip   |  Bin 0 -> 300321 bytes
+ .../f2d8734d68f598667f4f45a7a069a5e234a50a61.zip   |  Bin 119892 -> 0 bytes
+ .../ff9c9b6453daefff04ba845b521124e67a873196.png   |  Bin 137630 -> 0 bytes
+ automation/reports/fr17-webkit/index.html          |    2 +-
+ automation/reports/fr17-webkit/results.json        |   88 +-
+ automation/reports/summary.json                    | 1653 ++++++++++++++++++++
+ automation/reports/summary.md                      |   83 +
+ evidence/reports/fr01-chromium-report.png          |  Bin 0 -> 267243 bytes
+ evidence/reports/fr01-firefox-report.png           |  Bin 0 -> 264013 bytes
+ evidence/reports/fr01-webkit-report.png            |  Bin 0 -> 265589 bytes
+ evidence/reports/fr08-chromium-report.png          |  Bin 0 -> 185605 bytes
+ evidence/reports/fr08-firefox-report.png           |  Bin 0 -> 182352 bytes
+ evidence/reports/fr08-webkit-report.png            |  Bin 0 -> 184398 bytes
+ evidence/reports/fr17-chromium-report.png          |  Bin 0 -> 243326 bytes
+ evidence/reports/fr17-firefox-report.png           |  Bin 0 -> 240033 bytes
+ evidence/reports/fr17-webkit-report.png            |  Bin 0 -> 242294 bytes
+ 198 files changed, 2147 insertions(+), 414 deletions(-)
+
+commit beec3c8da940304d6188a8932127938486faf803
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:00:53 +0700
+
+    docs(hw04): P04 checkpoint, working context and chat-B AI log (EXEC-P04-001..004)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P04-prompt.txt    |  15 +
+ ai-log/execution/chat-b/checkpoint-P04.md |  77 +++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |   4 +
+ ai-log/execution/chat-b/prompt_log.md     | 521 ++++++++++++++++++++++++++++++
+ working-context.md                        |   9 +-
+ 5 files changed, 622 insertions(+), 4 deletions(-)
+
+commit 5832bd5a65ebd146f93db5b17dcf1fd802cd99ba
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:00:11 +0700
+
+    test(fr17): final 3-browser run reports, review gap analysis, results and bug candidates
+    
+    - reports/fr17-{chromium,firefox,webkit}: 18 TCs each, 11 pass / 7 fail, 0 flaky,
+      Run by: 23120229 + ISO start time (2026-11-15), code ec9c5ae
+    - review.md: draft 10/18 per browser -> final, 12 AI defects incl. 18 leaked
+      coupons from the draft run (removed via API)
+    - results.md: BC-C1/C3/C4/C6 duplicate #8/#9/#10/#11; new BC-C2 (blank uses
+      accepted) and BC-C5 (FR-12: user token creates coupon via admin API)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ .../0730621356e47338d6cf830fe6f8ab2278e0f2d7.zip   |  Bin 0 -> 502060 bytes
+ .../0ae31ef41f8493cc21f4fa942ed86901d68134af.png   |  Bin 0 -> 45525 bytes
+ .../3fd7ac0c678da4d85b2e5dd8086cf16a4a3d106f.png   |  Bin 0 -> 45839 bytes
+ .../4ea68d26fef9367a1923a0a8ff458fbd386b937f.zip   |  Bin 0 -> 601755 bytes
+ .../52c5e6122aae92fa670545f9776b1371b752013d.zip   |  Bin 0 -> 594990 bytes
+ .../5cb348445233964addffd22671c4a7912d21350b.zip   |  Bin 0 -> 499517 bytes
+ .../5fbb85122cb2707df8c66542dbdbeb2f779cd701.zip   |  Bin 0 -> 585808 bytes
+ .../ab920c27ca7682cb202b657dba40cec2b4eca54c.zip   |  Bin 0 -> 13108 bytes
+ .../ade97d15576c08aae65307cc0812c128926544c6.zip   |  Bin 0 -> 152007 bytes
+ .../aee753dbabe639dcfcf1adb3a8ad1df88952e201.png   |  Bin 0 -> 45677 bytes
+ .../c5d4826b418284789503e18bc569bbe408a030b2.md    |   77 ++
+ .../dbe4123993c9991d4becfe5b19ed8f1197e25d0d.png   |  Bin 0 -> 40826 bytes
+ .../edd1c4df8001e40ac6cedbd8ba7f83e75abb39d8.png   |  Bin 0 -> 45566 bytes
+ .../f63fbdc403f2f43e9b8e3db16115d4e44db75529.png   |  Bin 0 -> 45772 bytes
+ automation/reports/fr17-chromium/index.html        |   85 ++
+ automation/reports/fr17-chromium/results.json      | 1107 ++++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |   24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   |  265 +++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |    1 +
+ .../fr17-chromium/trace/codicon.DCmgc-ay.ttf       |  Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |    1 +
+ .../reports/fr17-chromium/trace/index.Bx16ehp1.js  |    2 +
+ .../reports/fr17-chromium/trace/index.I8N9v4jT.css |    1 +
+ automation/reports/fr17-chromium/trace/index.html  |   43 +
+ .../fr17-chromium/trace/playwright-logo.svg        |    9 +
+ .../reports/fr17-chromium/trace/snapshot.html      |   21 +
+ .../reports/fr17-chromium/trace/sw.bundle.js       |    3 +
+ .../fr17-chromium/trace/uiMode.Btcz36p_.css        |    1 +
+ .../reports/fr17-chromium/trace/uiMode.DRQ310U5.js |    5 +
+ automation/reports/fr17-chromium/trace/uiMode.html |   17 +
+ .../fr17-chromium/trace/xtermModule.DYP7pi_n.css   |   32 +
+ .../0d2f8a4aff1edf45e953eb8150204beff29cb353.png   |  Bin 0 -> 59239 bytes
+ .../3faf6f3f51d1d5ece7988f25913377329670dfc3.zip   |  Bin 0 -> 500438 bytes
+ .../4856eeafa356475c3fd4e31b776c3a42b8f0f62c.zip   |  Bin 0 -> 529017 bytes
+ .../4d61ca4d07ef754c8f7c2d7c1896358bff686fa9.png   |  Bin 0 -> 62881 bytes
+ .../537532bcde499ef3fb600a539bdacbbb100ceb3f.zip   |  Bin 0 -> 13095 bytes
+ .../61d5ba66d3de29ad08057f7a23434af621c66f7f.zip   |  Bin 0 -> 424512 bytes
+ .../6d61545fe3e253129f4dde1cf30dd8bc2142f11a.png   |  Bin 0 -> 62667 bytes
+ .../80040629ed8fa45d01d782c77ceea5ab1006c155.zip   |  Bin 0 -> 350291 bytes
+ .../86c5673a46405a9d7ca49a8f3fff5c2368ef0be8.png   |  Bin 0 -> 62898 bytes
+ .../c5d4826b418284789503e18bc569bbe408a030b2.md    |   77 ++
+ .../c7d62e75ee2e5615672ed709dcab5e29d43eb84a.zip   |  Bin 0 -> 425154 bytes
+ .../d04e29842f505ac72e8ea069dcd71599ae6271f3.zip   |  Bin 0 -> 540992 bytes
+ .../d6d74c99bbeb4be90de6a687f08e4567898177de.png   |  Bin 0 -> 62808 bytes
+ .../f43a0a2a2f56d0fffc2a1fecb5f96395e9d633f5.png   |  Bin 0 -> 62904 bytes
+ automation/reports/fr17-firefox/index.html         |   85 ++
+ automation/reports/fr17-firefox/results.json       | 1107 ++++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |   24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   |  265 +++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |    1 +
+ .../fr17-firefox/trace/codicon.DCmgc-ay.ttf        |  Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |    1 +
+ .../reports/fr17-firefox/trace/index.Bx16ehp1.js   |    2 +
+ .../reports/fr17-firefox/trace/index.I8N9v4jT.css  |    1 +
+ automation/reports/fr17-firefox/trace/index.html   |   43 +
+ .../reports/fr17-firefox/trace/playwright-logo.svg |    9 +
+ .../reports/fr17-firefox/trace/snapshot.html       |   21 +
+ automation/reports/fr17-firefox/trace/sw.bundle.js |    3 +
+ .../reports/fr17-firefox/trace/uiMode.Btcz36p_.css |    1 +
+ .../reports/fr17-firefox/trace/uiMode.DRQ310U5.js  |    5 +
+ automation/reports/fr17-firefox/trace/uiMode.html  |   17 +
+ .../fr17-firefox/trace/xtermModule.DYP7pi_n.css    |   32 +
+ .../01a6ff4b17d724262f5b1e0b0529d4e0c92c09ee.zip   |  Bin 0 -> 360896 bytes
+ .../233d386cf53908737f360f0988e293c4a2916730.png   |  Bin 0 -> 136885 bytes
+ .../288c24539d4973efdd636298aacced0845746b54.zip   |  Bin 0 -> 400442 bytes
+ .../3733942c0eeff8f8c2164bae7aef029e1cf2add4.png   |  Bin 0 -> 125697 bytes
+ .../3a18d909188c434ba92c7f21c9b1d88ff2633d85.zip   |  Bin 0 -> 301729 bytes
+ .../3d65a382a0d2593c74e654be2fa06fe79d56bab2.png   |  Bin 0 -> 137504 bytes
+ .../473504172edfb4ef75d818071ee26813d745569f.zip   |  Bin 0 -> 367590 bytes
+ .../843a52361f73b2df479f20999132a1a39dd3d194.zip   |  Bin 0 -> 303082 bytes
+ .../ae961adc704c4dfae38344993b742c55fcad1b46.png   |  Bin 0 -> 137290 bytes
+ .../d27e76e8728f482000ee767e17b271db6f04b2f2.zip   |  Bin 0 -> 13098 bytes
+ .../f2d8734d68f598667f4f45a7a069a5e234a50a61.zip   |  Bin 0 -> 119892 bytes
+ .../f6c6292c6c48c724d7abcc8272b0b3599a305c53.md    |   76 ++
+ .../fb4ebe2456afb181886f97a68a3e7af1d98fc489.png   |  Bin 0 -> 137781 bytes
+ .../ff9c9b6453daefff04ba845b521124e67a873196.png   |  Bin 0 -> 137630 bytes
+ automation/reports/fr17-webkit/index.html          |   85 ++
+ automation/reports/fr17-webkit/results.json        | 1107 ++++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |   24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   |  265 +++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |    1 +
+ .../reports/fr17-webkit/trace/codicon.DCmgc-ay.ttf |  Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |    1 +
+ .../reports/fr17-webkit/trace/index.Bx16ehp1.js    |    2 +
+ .../reports/fr17-webkit/trace/index.I8N9v4jT.css   |    1 +
+ automation/reports/fr17-webkit/trace/index.html    |   43 +
+ .../reports/fr17-webkit/trace/playwright-logo.svg  |    9 +
+ automation/reports/fr17-webkit/trace/snapshot.html |   21 +
+ automation/reports/fr17-webkit/trace/sw.bundle.js  |    3 +
+ .../reports/fr17-webkit/trace/uiMode.Btcz36p_.css  |    1 +
+ .../reports/fr17-webkit/trace/uiMode.DRQ310U5.js   |    5 +
+ automation/reports/fr17-webkit/trace/uiMode.html   |   17 +
+ .../fr17-webkit/trace/xtermModule.DYP7pi_n.css     |   32 +
+ .../evidence/failures/C-AUTO-06-chromium.png       |  Bin 0 -> 45772 bytes
+ .../evidence/failures/C-AUTO-07-chromium.png       |  Bin 0 -> 45677 bytes
+ .../evidence/failures/C-AUTO-09-chromium.png       |  Bin 0 -> 45566 bytes
+ .../evidence/failures/C-AUTO-10-chromium.png       |  Bin 0 -> 45839 bytes
+ .../evidence/failures/C-AUTO-11-chromium.png       |  Bin 0 -> 45525 bytes
+ .../evidence/failures/C-AUTO-18-chromium.png       |  Bin 0 -> 40826 bytes
+ .../evidence/report-shots/fr17-chromium-report.png |  Bin 0 -> 243555 bytes
+ .../evidence/report-shots/fr17-firefox-report.png  |  Bin 0 -> 240599 bytes
+ .../evidence/report-shots/fr17-webkit-report.png   |  Bin 0 -> 242621 bytes
+ features/C-FR17/final-run/summary.json             |  582 ++++++++++
+ features/C-FR17/final-run/summary.md               |   34 +
+ features/C-FR17/results.md                         |   70 ++
+ features/C-FR17/review.md                          |   62 ++
+ 106 files changed, 5829 insertions(+)
+
+commit ec9c5ae49b4892dc68695b94a0e30db5a94f77a7
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:54:08 +0700
+
+    fix(fr17): isolation, rejection oracle, access-denied waits, FR-12 API and * checks
+    
+    - cleanup in afterEach (draft only cleaned on success: 18 HW4 coupons leaked
+      from the draft run, removed via API)
+    - storageState per browser project; unique code includes retry
+    - REJ: no waitForTimeout; poll for native invalid / app message / POST,
+      then no 2xx, no new record (API + table) and a rejection signal
+    - access-denied: wait for the login outcome before asserting (draft
+      not.toBeVisible passed vacuously), assert still on Admin Login
+    - FR-12 API: not 2xx (soft) and no coupon created, instead of exactly 403
+    - FR-22 '*': read each control's label text (draft matched label text 'code')
+    - created: exact cell per column incl. minimum, POST ok, persists after reload
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/tests/fr17-coupon.spec.ts | 272 ++++++++++++++++++++++++-----------
+ 1 file changed, 192 insertions(+), 80 deletions(-)
+
+commit 1065a4a0627e07756ffeb75577d2625edc5bd7a9
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:54:08 +0700
+
+    fix(fr17): page object - type-dependent discount placeholder, form-scoped exact locators
+    
+    Draft C-AUTO-02 timed out on all browsers: selecting type=fixed changes the
+    discount placeholder, so the percent-only placeholder never matched (and type
+    was selected after filling). Fields are now scoped to the form, discount uses a
+    regex placeholder, type is filled first; rows match the exact code cell;
+    column-level cells, native-validity and label helpers added.
+    data: expected rows also check the minimum column and '10 ₫' (draft '10' could
+    match '100').
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/data/fr17-coupon.json     |  4 +-
+ automation/pages/AdminCouponPage.ts  | 90 ++++++++++++++++++++++++++----------
+ features/C-FR17/draft-run-summary.md | 34 ++++++++++++++
+ 3 files changed, 101 insertions(+), 27 deletions(-)
+
+commit 61518fd0fcb55ebfd8372363cd792ca0a0e1ee98
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:44:11 +0700
+
+    test(fr17): AI draft data-driven coupon spec
+    
+    Verbatim AI draft (D1 page object, D2 spec skeleton, D3 assertions) with the
+    step prompts in features/C-FR17/ai-draft/prompts. Not yet reviewed.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/pages/AdminCouponPage.ts                |  69 +++++++++++
+ automation/tests/fr17-coupon.spec.ts               | 133 +++++++++++++++++++++
+ features/C-FR17/ai-draft/pages/AdminCouponPage.ts  |  69 +++++++++++
+ .../C-FR17/ai-draft/prompts/D1-page-object.txt     |   7 ++
+ features/C-FR17/ai-draft/prompts/D2-spec.txt       |   2 +
+ features/C-FR17/ai-draft/prompts/D3-assertions.txt |   3 +
+ .../ai-draft/tests/fr17-coupon.spec.d2-skeleton.ts |  40 +++++++
+ features/C-FR17/ai-draft/tests/fr17-coupon.spec.ts | 133 +++++++++++++++++++++
+ 8 files changed, 456 insertions(+)
+
+commit 3a921a8b6df5348c5be3f9f9fc423b873719718b
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:43:22 +0700
+
+    test(fr17): select 18 TCs, survey admin coupon DOM, add JSON test data
+    
+    - selection.md: HW02 C-TC -> C-AUTO mapping (16 + 2 HW04), fixture rules
+      (admin storageState, unique codes, API cleanup), non-automated TCs/out-of-SRS
+      asks (edit, delete confirm, past expiry)
+    - locator-inventory.md + dom-survey-coupon.json (3 browsers)
+    - data/fr17-coupon.json: 18 rows
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/data/fr17-coupon.json       | 146 +++++++++++++
+ features/C-FR17/dom-survey-coupon.json | 383 +++++++++++++++++++++++++++++++++
+ features/C-FR17/locator-inventory.md   |  55 +++++
+ features/C-FR17/selection.md           |  47 ++++
+ 4 files changed, 631 insertions(+)
+
+commit 5eb42626c8efaacb54832aeaaa62821d97b9ca4e
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:40:43 +0700
+
+    docs(hw04): P03 checkpoint, working context and chat-B AI log (EXEC-P03-001..004)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P03-prompt.txt    |  15 +
+ ai-log/execution/chat-b/checkpoint-P03.md |  67 ++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |   4 +
+ ai-log/execution/chat-b/prompt_log.md     | 520 ++++++++++++++++++++++++++++++
+ working-context.md                        |   9 +-
+ 5 files changed, 611 insertions(+), 4 deletions(-)
+
+commit 7cff12d78912253fd7acc3588acf634c24a59fc6
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:40:03 +0700
+
+    test(fr08): final 3-browser run reports, review gap analysis, results and bug candidates
+    
+    - reports/fr08-{chromium,firefox,webkit}: 13 TCs each, 7 pass / 6 fail, 0 flaky,
+      Run by: 23120229 + ISO start time (2026-11-15), code c1888f8
+    - review.md: draft 5/13 per browser -> final, 12 AI defects with fix commit/cause
+    - results.md: all fails are SUT bugs duplicating #4, #5, #6, #15; no new bug
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ .../01452d95a0ebd1d183df1adf86907b37f757a788.png   | Bin 0 -> 24614 bytes
+ .../09ed248dda794b384ff711399fe9e054ab2afc23.zip   | Bin 0 -> 570649 bytes
+ .../51e44cf5c8ff5dbcaf803260295a0f74795ca7d5.png   | Bin 0 -> 30724 bytes
+ .../55c8312d552bcce7b415f4b9be6c5803c6f61359.md    |  50 ++
+ .../62e5ae9495cd41d4d5a76deac47c7e799789035c.md    |  33 +
+ .../aa0adc48bd6a2d27e458ca78b242d897edb50371.md    |  34 +
+ .../ab536b2451743a4fc890fa6b186cdf2dbb068b9b.zip   | Bin 0 -> 632228 bytes
+ .../b1b325d9588407f4d6423d0c25cdf9b9e4fcdc3a.md    |  21 +
+ .../e4ccdac6dcd87906d8c39ebc6bb6fe8c36d4a4ff.zip   | Bin 0 -> 349646 bytes
+ .../e6761f9faa75c8b4ffeac78db850358518dd341a.zip   | Bin 0 -> 245548 bytes
+ .../f1d2c141e27e763883728a75043a4387fdf06fbb.png   | Bin 0 -> 28370 bytes
+ .../f43237ee90a92ca4f5388a29f339bd4b28317b07.png   | Bin 0 -> 18611 bytes
+ .../f62a4729fbec9363c0759fbc324499061581cd0d.zip   | Bin 0 -> 257901 bytes
+ .../fe291e05a67282228debf2edcb569c0e0e3c29de.zip   | Bin 0 -> 532750 bytes
+ automation/reports/fr08-chromium/index.html        |  85 ++
+ automation/reports/fr08-chromium/results.json      | 941 +++++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |  24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   | 265 ++++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |   1 +
+ .../fr08-chromium/trace/codicon.DCmgc-ay.ttf       | Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |   1 +
+ .../reports/fr08-chromium/trace/index.Bx16ehp1.js  |   2 +
+ .../reports/fr08-chromium/trace/index.I8N9v4jT.css |   1 +
+ automation/reports/fr08-chromium/trace/index.html  |  43 +
+ .../fr08-chromium/trace/playwright-logo.svg        |   9 +
+ .../reports/fr08-chromium/trace/snapshot.html      |  21 +
+ .../reports/fr08-chromium/trace/sw.bundle.js       |   3 +
+ .../fr08-chromium/trace/uiMode.Btcz36p_.css        |   1 +
+ .../reports/fr08-chromium/trace/uiMode.DRQ310U5.js |   5 +
+ automation/reports/fr08-chromium/trace/uiMode.html |  17 +
+ .../fr08-chromium/trace/xtermModule.DYP7pi_n.css   |  32 +
+ .../17f597d007e187592e5f9e81559136daae8238e8.zip   | Bin 0 -> 1777643 bytes
+ .../55c8312d552bcce7b415f4b9be6c5803c6f61359.md    |  50 ++
+ .../62e5ae9495cd41d4d5a76deac47c7e799789035c.md    |  33 +
+ .../640650e52ab7a4ded09a53cc87848b4705a775b4.zip   | Bin 0 -> 559804 bytes
+ .../685612b59e1a006482b34b596b1079756d6df6a1.zip   | Bin 0 -> 399263 bytes
+ .../7f13c42a8d73d76ba2ed1e1b8fe5be51016596af.zip   | Bin 0 -> 641857 bytes
+ .../81b4f9f9f95dc33b6a10384f2958915aedcb2ecd.zip   | Bin 0 -> 2021559 bytes
+ .../8d9b5a38e7af2e211304ae64b3be217c21ccbb8b.png   | Bin 0 -> 46020 bytes
+ .../9c18da000dcc8f5e3f1b689a7186897c96c89749.png   | Bin 0 -> 30359 bytes
+ .../aa0adc48bd6a2d27e458ca78b242d897edb50371.md    |  34 +
+ .../b1b325d9588407f4d6423d0c25cdf9b9e4fcdc3a.md    |  21 +
+ .../b757b85a5660d8a4cda76f38586ce418a0ab345c.zip   | Bin 0 -> 1969081 bytes
+ .../c76c0efd53e2fdf946012f06785f54a23c11ab54.png   | Bin 0 -> 48641 bytes
+ .../f22d57a17a5972dae02f9b889a2b0129eebe8c60.png   | Bin 0 -> 42064 bytes
+ automation/reports/fr08-firefox/index.html         |  85 ++
+ automation/reports/fr08-firefox/results.json       | 941 +++++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |  24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   | 265 ++++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |   1 +
+ .../fr08-firefox/trace/codicon.DCmgc-ay.ttf        | Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |   1 +
+ .../reports/fr08-firefox/trace/index.Bx16ehp1.js   |   2 +
+ .../reports/fr08-firefox/trace/index.I8N9v4jT.css  |   1 +
+ automation/reports/fr08-firefox/trace/index.html   |  43 +
+ .../reports/fr08-firefox/trace/playwright-logo.svg |   9 +
+ .../reports/fr08-firefox/trace/snapshot.html       |  21 +
+ automation/reports/fr08-firefox/trace/sw.bundle.js |   3 +
+ .../reports/fr08-firefox/trace/uiMode.Btcz36p_.css |   1 +
+ .../reports/fr08-firefox/trace/uiMode.DRQ310U5.js  |   5 +
+ automation/reports/fr08-firefox/trace/uiMode.html  |  17 +
+ .../fr08-firefox/trace/xtermModule.DYP7pi_n.css    |  32 +
+ .../01cedfb20da8b394cf99e452310003dd674ccb3b.png   | Bin 0 -> 78044 bytes
+ .../1289467be3f5e87ffb97bfca19bc75253350732c.zip   | Bin 0 -> 306722 bytes
+ .../27239eec457142219873b68c5b5e0cd818d2528a.md    |  33 +
+ .../4688490e4944103111d29fa75e47f2669cc340f5.png   | Bin 0 -> 88191 bytes
+ .../669fd64f1d0ee1ce38b0eadcbc2ec70de5cc99e1.zip   | Bin 0 -> 476116 bytes
+ .../6ebf52fff5f98ff59ec628f1a73fb7d10a682230.zip   | Bin 0 -> 616570 bytes
+ .../7fa5e87f3dfa2cf13a729b45b6299da41c4662dd.png   | Bin 0 -> 78990 bytes
+ .../856a9ddb6873ed3688b91837b5eaaf8f9aba88f2.md    |  21 +
+ .../85b857e6e4f744fea1c315c801b113b1eafba8b8.zip   | Bin 0 -> 286079 bytes
+ .../a6af1f0233fd98c03d7ef6c68fec5252f6dffa64.zip   | Bin 0 -> 500889 bytes
+ .../ad305bd6927077e9e718100741496405221c1473.png   | Bin 0 -> 52816 bytes
+ .../b8ee440fff14f7c27c0fa756933476756d62a732.md    |  34 +
+ .../bf03f0c3eed9e67188095cd007b07c90a6676382.zip   | Bin 0 -> 309884 bytes
+ .../f43681275f92858fd11d53f60e27520e5d460fbd.md    |  50 ++
+ automation/reports/fr08-webkit/index.html          |  85 ++
+ automation/reports/fr08-webkit/results.json        | 941 +++++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |  24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   | 265 ++++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |   1 +
+ .../reports/fr08-webkit/trace/codicon.DCmgc-ay.ttf | Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |   1 +
+ .../reports/fr08-webkit/trace/index.Bx16ehp1.js    |   2 +
+ .../reports/fr08-webkit/trace/index.I8N9v4jT.css   |   1 +
+ automation/reports/fr08-webkit/trace/index.html    |  43 +
+ .../reports/fr08-webkit/trace/playwright-logo.svg  |   9 +
+ automation/reports/fr08-webkit/trace/snapshot.html |  21 +
+ automation/reports/fr08-webkit/trace/sw.bundle.js  |   3 +
+ .../reports/fr08-webkit/trace/uiMode.Btcz36p_.css  |   1 +
+ .../reports/fr08-webkit/trace/uiMode.DRQ310U5.js   |   5 +
+ automation/reports/fr08-webkit/trace/uiMode.html   |  17 +
+ .../fr08-webkit/trace/xtermModule.DYP7pi_n.css     |  32 +
+ .../evidence/failures/B-AUTO-03-chromium.png       | Bin 0 -> 24614 bytes
+ .../evidence/failures/B-AUTO-05-chromium.png       | Bin 0 -> 28370 bytes
+ .../evidence/failures/B-AUTO-06-chromium.png       | Bin 0 -> 18611 bytes
+ .../evidence/failures/B-AUTO-08-chromium.png       | Bin 0 -> 30724 bytes
+ .../evidence/failures/B-AUTO-12-chromium.png       | Bin 0 -> 18611 bytes
+ .../evidence/report-shots/fr08-chromium-report.png | Bin 0 -> 184773 bytes
+ .../evidence/report-shots/fr08-firefox-report.png  | Bin 0 -> 182676 bytes
+ .../evidence/report-shots/fr08-webkit-report.png   | Bin 0 -> 184072 bytes
+ features/B-FR08/final-run/summary.json             | 447 ++++++++++
+ features/B-FR08/final-run/summary.md               |  29 +
+ features/B-FR08/results.md                         |  58 ++
+ features/B-FR08/review.md                          |  59 ++
+ 105 files changed, 5360 insertions(+)
+
+commit c1888f8b186fce883205bf8aa2373eb17f724515
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:33:20 +0700
+
+    fix(fr08): oracles per SRS/HW02 - guest, tamper, editable total, fixture check
+    
+    - guest: no forced /login redirect; wait for the click outcome, try to pay if
+      the confirm button is reachable, assert no success and no 2xx checkout
+    - tamper: rejection OR cart total both satisfy FR-08; only storing the client
+      value fails (draft demanded success + exact total)
+    - API no-token: any 4xx instead of exactly 401
+    - editable total: user types into the field, total must stay computed
+    - verify cart fixture (rows, qty) before acting; amounts matched with any
+      thousands separator; structure via soft asserts; exactly one order created
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/tests/fr08-checkout.spec.ts | 215 +++++++++++++++++++++++++--------
+ 1 file changed, 164 insertions(+), 51 deletions(-)
+
+commit a61087b027fa1add1f00f7cde1f4fba5aad22eb5
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:33:20 +0700
+
+    fix(fr08): cart fixtures - in-app navigation, detail add workaround, fixture verification
+    
+    Draft: 5/13 pass per browser; B-AUTO-03/04/08/10 failed in the fixture, not in
+    FR-08: addAll() called page.goto('/') after items were added (client-only cart
+    is wiped), and the detail-page add ignores the first click (issue #21), so
+    qty>1 lines were never added.
+    - start() is the only full page load; later moves use header links
+    - detail add clicks until 'Đã thêm' (max 2) and records a fixture-workaround
+    - exact product/cell locators, data rows only (header row excluded)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/pages/CartPage.ts         | 78 +++++++++++++++++++++++++++---------
+ automation/pages/CheckoutPage.ts     | 12 ++++--
+ features/B-FR08/draft-run-summary.md | 29 ++++++++++++++
+ 3 files changed, 97 insertions(+), 22 deletions(-)
+
+commit 7e01cf65e1f25e469ab6a9a6e658c5437826485f
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:23:51 +0700
+
+    test(fr08): AI draft data-driven checkout spec
+    
+    Verbatim AI draft (D1 page objects, D2 spec skeleton, D3 assertions) with the
+    step prompts in features/B-FR08/ai-draft/prompts. Not yet reviewed.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/pages/CartPage.ts                       |  72 ++++++++++++++
+ automation/pages/CheckoutPage.ts                   |  25 +++++
+ automation/tests/fr08-checkout.spec.ts             | 109 +++++++++++++++++++++
+ features/B-FR08/ai-draft/pages/CartPage.ts         |  72 ++++++++++++++
+ features/B-FR08/ai-draft/pages/CheckoutPage.ts     |  25 +++++
+ .../B-FR08/ai-draft/prompts/D1-page-objects.txt    |   5 +
+ features/B-FR08/ai-draft/prompts/D2-spec.txt       |   2 +
+ features/B-FR08/ai-draft/prompts/D3-assertions.txt |   3 +
+ .../tests/fr08-checkout.spec.d2-skeleton.ts        |  44 +++++++++
+ .../B-FR08/ai-draft/tests/fr08-checkout.spec.ts    | 109 +++++++++++++++++++++
+ 10 files changed, 466 insertions(+)
+
+commit 3a9bf45af2d62405037a529a978124a04400da54
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:22:51 +0700
+
+    test(fr08): select 13 TCs, survey cart/checkout DOM, add JSON test data
+    
+    - selection.md: HW02 B-TC -> B-AUTO mapping (9 + 4 HW04 additions), fixture
+      rules (per-test API user, UI cart, catalog prices at runtime), non-automated TCs
+    - locator-inventory.md + dom-survey-checkout.json (3 browsers)
+    - data/fr08-checkout.json: cart fixtures by product name/qty, tamper values
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/data/fr08-checkout.json       | 110 +++++++++++++
+ features/B-FR08/dom-survey-checkout.json | 257 +++++++++++++++++++++++++++++++
+ features/B-FR08/locator-inventory.md     |  47 ++++++
+ features/B-FR08/selection.md             |  52 +++++++
+ 4 files changed, 466 insertions(+)
+
+commit ff5f10f7d675b75fdc26cb1af284fe02a3a84898
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:19:08 +0700
+
+    docs(hw04): P02 checkpoint, working context and chat-B AI log (EXEC-P02-001..005)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ .../chat-b/P02-interim-outputs-2026-11-13.md       |  24 +
+ ai-log/execution/chat-b/P02-prompt.txt             |  15 +
+ ai-log/execution/chat-b/P02-resume-prompt.txt      |   1 +
+ ai-log/execution/chat-b/checkpoint-P02.md          |  75 +++
+ ai-log/execution/chat-b/prompt_log.jsonl           |   5 +
+ ai-log/execution/chat-b/prompt_log.md              | 515 +++++++++++++++++++++
+ working-context.md                                 |  15 +-
+ 7 files changed, 646 insertions(+), 4 deletions(-)
+
+commit d1a7706c30d826cf747dfa01ebda7a8a71bab11c
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 18:18:02 +0700
+
+    test(fr01): final 3-browser run reports, review gap analysis, results and bug candidates
+    
+    - reports/fr01-{chromium,firefox,webkit}: 20 TCs each, 9 pass / 11 fail, 0 flaky,
+      Run by: 23120229 + ISO start time (2026-11-15), code 4993ad4
+    - review.md: draft (0/19 on all browsers) -> final, 10 AI defects with fix commit
+      and cause; assertion pattern per TC
+    - results.md: TC x browser table, BC-A1/A2 duplicate #1/#2, BC-A3/A4/A5 new
+    - evidence: failure screenshots, report screenshots
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ .../1e3522009f0256bade25e50bac023698109d94be.md    |   36 +
+ .../2ea748b8bbc65c31d6964133ea290938568d106b.png   |  Bin 0 -> 27280 bytes
+ .../3640a4ac1c4c80d20ea8349a43e513db0d2af374.md    |   33 +
+ .../4e07b303ff167029b616ff6fc8ce8272e75a5aa4.zip   |  Bin 0 -> 184140 bytes
+ .../6f2103b4ad5a6f3f2d9e9c9e391226c0769520ee.zip   |  Bin 0 -> 67236 bytes
+ .../727959792617bedf98bdfefcfdb85c8e10a8982e.zip   |  Bin 0 -> 191131 bytes
+ .../8a70360521208a38078486abbdf90f5d0557672f.md    |   36 +
+ .../8b0a5e27f4016459af5d603d6a6f499491427f47.zip   |  Bin 0 -> 154523 bytes
+ .../9078baebc007871e723b1b0888376648056eb192.zip   |  Bin 0 -> 80875 bytes
+ .../968acc29929e456b0c66fd658bbbc741d1dc1017.md    |   36 +
+ .../9b276a1b454292bcb304e87c54893800e82df9ee.md    |   36 +
+ .../a10d521bb80c413b195c981f86cd57172fecac16.png   |  Bin 0 -> 27102 bytes
+ .../a7ceb8e64d03e1a4477e0588319ab5fe2ec19370.zip   |  Bin 0 -> 85356 bytes
+ .../accebb12fa709da2d159e1372776e5bc92900f66.png   |  Bin 0 -> 27374 bytes
+ .../ae27bbdc8ad2b69a232c12a00e0f63ff4fba5f4b.zip   |  Bin 0 -> 155139 bytes
+ .../b80f2c406bb73dcac80ae4c3e8a15bb27a188a6c.zip   |  Bin 0 -> 191738 bytes
+ .../b930a43ce06827d5739d6087ab2cdd3b01b8b3a4.png   |  Bin 0 -> 26517 bytes
+ .../bf03c8baa97dda92c96cdb9729f97e0ffbcdc0f3.md    |   35 +
+ .../c26adeafdf6da854af550eb18c4d4bce0ede1ba4.png   |  Bin 0 -> 27244 bytes
+ .../c5f40a7f7c80d3e4ac1de0baae42fce4d5c2dc73.md    |   36 +
+ .../cd228d1dd0a6248ee6b98cc4271595fd468b88c5.png   |  Bin 0 -> 21339 bytes
+ .../d0e64ff1de49eaf590194d9f0cc72e6caf23f512.png   |  Bin 0 -> 18013 bytes
+ .../de7930c51ced6be73760317bf93b76c6ab426a49.zip   |  Bin 0 -> 204533 bytes
+ .../f0b99509b1c06d1ed5f88328dbdfb011d2754653.md    |   36 +
+ .../f13966701c616936ac053335604bfaec7f473166.zip   |  Bin 0 -> 190346 bytes
+ .../f74419376d864ec3ba17545fdd2c261e577b7879.png   |  Bin 0 -> 27282 bytes
+ .../fa1f47936f5c1ff3100b21fc00e812d7460d47ee.zip   |  Bin 0 -> 186520 bytes
+ automation/reports/fr01-chromium/index.html        |   85 +
+ automation/reports/fr01-chromium/results.json      | 1654 +++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |   24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   |  265 ++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |    1 +
+ .../fr01-chromium/trace/codicon.DCmgc-ay.ttf       |  Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |    1 +
+ .../reports/fr01-chromium/trace/index.Bx16ehp1.js  |    2 +
+ .../reports/fr01-chromium/trace/index.I8N9v4jT.css |    1 +
+ automation/reports/fr01-chromium/trace/index.html  |   43 +
+ .../fr01-chromium/trace/playwright-logo.svg        |    9 +
+ .../reports/fr01-chromium/trace/snapshot.html      |   21 +
+ .../reports/fr01-chromium/trace/sw.bundle.js       |    3 +
+ .../fr01-chromium/trace/uiMode.Btcz36p_.css        |    1 +
+ .../reports/fr01-chromium/trace/uiMode.DRQ310U5.js |    5 +
+ automation/reports/fr01-chromium/trace/uiMode.html |   17 +
+ .../fr01-chromium/trace/xtermModule.DYP7pi_n.css   |   32 +
+ .../117d22833117cfa6673d68dea6aae971cef731af.zip   |  Bin 0 -> 691958 bytes
+ .../120d3ee0be7bf2364b090d906df5ceb9d8813182.png   |  Bin 0 -> 44266 bytes
+ .../1b896ce0248a832220a9573cdcd1dc5048f808c7.png   |  Bin 0 -> 38042 bytes
+ .../2862872c2b5bc2fe9792871a68d2fec65e6e1a34.png   |  Bin 0 -> 34806 bytes
+ .../33fc757043771dc485118bb66737b1c9361937b6.zip   |  Bin 0 -> 1022049 bytes
+ .../3598b749b73c3d0a2bb25669efc46b2668c8c362.md    |   36 +
+ .../3640a4ac1c4c80d20ea8349a43e513db0d2af374.md    |   33 +
+ .../380ec5a39cd63176a1e306574a64873b49160707.zip   |  Bin 0 -> 1060065 bytes
+ .../3981a168f4d5e18fbd2a0c97f469dd300bf923ec.zip   |  Bin 0 -> 843983 bytes
+ .../3ea1fda8637dec9e955c96fe20328799757c2a7c.zip   |  Bin 0 -> 2043600 bytes
+ .../54e92c7beca9255f208ce9183c07c3318761894f.zip   |  Bin 0 -> 1001321 bytes
+ .../5bd19ccebe9cd19686f77ee2db27965e13c0a710.md    |   36 +
+ .../5e3d99933cb854f7b43774f7bbdc8881036c4e32.png   |  Bin 0 -> 43591 bytes
+ .../6ab095037ec7a83bd7fd4a8437a1029cd03d517c.zip   |  Bin 0 -> 705211 bytes
+ .../79b009ad969c0cb2914ea105714fed19e9710fdf.md    |   36 +
+ .../8a70360521208a38078486abbdf90f5d0557672f.md    |   36 +
+ .../99091d9ca0623b18eb2f9c72c16e7c5eaf4d3d2d.md    |   36 +
+ .../a64159fefe84a1964af2fdc10e23ed982b0d95cb.md    |   36 +
+ .../a7188eb1302ba695d4fc0209c418319bd640fc31.png   |  Bin 0 -> 44426 bytes
+ .../b2300926c4d41671a47cac3e345963c44cda6c25.zip   |  Bin 0 -> 1025528 bytes
+ .../bf03c8baa97dda92c96cdb9729f97e0ffbcdc0f3.md    |   35 +
+ .../c44a1ac7281d57203a4e820573e02e78eeb4d15a.zip   |  Bin 0 -> 1021809 bytes
+ .../cbc3ff1a34514f18ce0dafa7a889c85483ce37d1.zip   |  Bin 0 -> 1075784 bytes
+ .../cd1617bb9963a8adf69372bf36fb1855f47cbc6e.png   |  Bin 0 -> 44436 bytes
+ .../d836a4703f1ec622013e2c63175ee69dbf68f9f0.png   |  Bin 0 -> 44425 bytes
+ .../f3b2a39310b7aedda1349f790487fbcf7392a85c.zip   |  Bin 0 -> 1035649 bytes
+ .../fd896e50d4515c8c969ae4d8a1127fad3021b21b.png   |  Bin 0 -> 44419 bytes
+ automation/reports/fr01-firefox/index.html         |   85 +
+ automation/reports/fr01-firefox/results.json       | 1657 ++++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |   24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   |  265 ++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |    1 +
+ .../fr01-firefox/trace/codicon.DCmgc-ay.ttf        |  Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |    1 +
+ .../reports/fr01-firefox/trace/index.Bx16ehp1.js   |    2 +
+ .../reports/fr01-firefox/trace/index.I8N9v4jT.css  |    1 +
+ automation/reports/fr01-firefox/trace/index.html   |   43 +
+ .../reports/fr01-firefox/trace/playwright-logo.svg |    9 +
+ .../reports/fr01-firefox/trace/snapshot.html       |   21 +
+ automation/reports/fr01-firefox/trace/sw.bundle.js |    3 +
+ .../reports/fr01-firefox/trace/uiMode.Btcz36p_.css |    1 +
+ .../reports/fr01-firefox/trace/uiMode.DRQ310U5.js  |    5 +
+ automation/reports/fr01-firefox/trace/uiMode.html  |   17 +
+ .../fr01-firefox/trace/xtermModule.DYP7pi_n.css    |   32 +
+ .../003cfa52e8282555ab6087c7c5fc23b6a42123f9.zip   |  Bin 0 -> 85497 bytes
+ .../0e52e569c4f9efba5d16b73cf3e00879ab2fc428.png   |  Bin 0 -> 83890 bytes
+ .../11f683916b21738b85cf92f24225c64e4496b861.zip   |  Bin 0 -> 129689 bytes
+ .../15ca5a802a9c24627bbaa67634136084e8db685f.zip   |  Bin 0 -> 85536 bytes
+ .../17f3b0becaba2a278330eb8840911ad7acf36add.md    |   33 +
+ .../1c15ad875074d9e8398777d003c3af91cb802760.md    |   36 +
+ .../1f4fa4f1e5d01560e19a1f675fe77dc8fa3d307e.md    |   36 +
+ .../260d7e9e53095b790f001826b83dc052d47608b8.zip   |  Bin 0 -> 89931 bytes
+ .../280b8dac14890a0b888761cbdc0af371644531d2.png   |  Bin 0 -> 84324 bytes
+ .../2e13068ac63bc863fcc37245cac14ba6c6708c29.md    |   35 +
+ .../38ee566e3009b5b1871eb0129c6f6fc85ab13274.png   |  Bin 0 -> 83564 bytes
+ .../59cafa8edcbbb2223f0598ab879527a304e605bb.md    |   36 +
+ .../5c0da06e8be5aa323892ab2383c8783ecc3a6351.md    |   36 +
+ .../70743cdf53f8889b9c7166e6439bc48a2efd2537.png   |  Bin 0 -> 80505 bytes
+ .../73ba9b82bb8d53102d7548a95b6e0e11f3d12050.md    |   36 +
+ .../79f73fecfde09ac1c41e5f6e36b3a07c9d443310.zip   |  Bin 0 -> 218433 bytes
+ .../985f71c7ced54133e8b15a6304b943c20a7b0cf2.png   |  Bin 0 -> 84097 bytes
+ .../a00e1bfe1e6fa91208020182b4a7dcab97c6a59d.zip   |  Bin 0 -> 196697 bytes
+ .../a9b1f18d929af2d91ca479149c200651e4b045ab.zip   |  Bin 0 -> 217897 bytes
+ .../aec9f0194bff9c9a8c48d44a922dec69d4a3a383.md    |   36 +
+ .../b0157934cf29b3872b88a75e5920884b66fec0ef.zip   |  Bin 0 -> 202889 bytes
+ .../bc644fa8c263160ac9697acdf338ba0e5334884a.zip   |  Bin 0 -> 196556 bytes
+ .../c3fc35895f812be037ea5b4aafdb1dcb3f8e84b3.zip   |  Bin 0 -> 202505 bytes
+ .../ce1d1403de8fac58025e63fd704c63b2a8a10920.zip   |  Bin 0 -> 236635 bytes
+ .../d470c9926799d9eb99fea3d04d8a90e317afc73a.png   |  Bin 0 -> 83687 bytes
+ .../e42567b10cb24e8aadff8faae8b17f84a5346a5d.png   |  Bin 0 -> 64617 bytes
+ .../f59e233d39f84c89102f2cd2cf30d478fab07b6c.png   |  Bin 0 -> 57145 bytes
+ automation/reports/fr01-webkit/index.html          |   85 +
+ automation/reports/fr01-webkit/results.json        | 1654 +++++++++++++++++++
+ .../trace/assets/codeMirrorModule-eyVcHN77.js      |   24 +
+ .../trace/assets/defaultSettingsView-w0zYjHsW.js   |  265 ++++
+ .../trace/codeMirrorModule.C3UTv-Ge.css            |    1 +
+ .../reports/fr01-webkit/trace/codicon.DCmgc-ay.ttf |  Bin 0 -> 80340 bytes
+ .../trace/defaultSettingsView.TQ8_7ybu.css         |    1 +
+ .../reports/fr01-webkit/trace/index.Bx16ehp1.js    |    2 +
+ .../reports/fr01-webkit/trace/index.I8N9v4jT.css   |    1 +
+ automation/reports/fr01-webkit/trace/index.html    |   43 +
+ .../reports/fr01-webkit/trace/playwright-logo.svg  |    9 +
+ automation/reports/fr01-webkit/trace/snapshot.html |   21 +
+ automation/reports/fr01-webkit/trace/sw.bundle.js  |    3 +
+ .../reports/fr01-webkit/trace/uiMode.Btcz36p_.css  |    1 +
+ .../reports/fr01-webkit/trace/uiMode.DRQ310U5.js   |    5 +
+ automation/reports/fr01-webkit/trace/uiMode.html   |   17 +
+ .../fr01-webkit/trace/xtermModule.DYP7pi_n.css     |   32 +
+ .../evidence/failures/A-AUTO-01-chromium.png       |  Bin 0 -> 27282 bytes
+ .../evidence/failures/A-AUTO-13-chromium.png       |  Bin 0 -> 27102 bytes
+ .../evidence/failures/A-AUTO-15-chromium.png       |  Bin 0 -> 21339 bytes
+ .../evidence/failures/A-AUTO-19-chromium.png       |  Bin 0 -> 21339 bytes
+ .../evidence/failures/A-AUTO-20-chromium.png       |  Bin 0 -> 18013 bytes
+ .../evidence/report-shots/fr01-chromium-report.png |  Bin 0 -> 267314 bytes
+ .../evidence/report-shots/fr01-firefox-report.png  |  Bin 0 -> 262748 bytes
+ .../evidence/report-shots/fr01-webkit-report.png   |  Bin 0 -> 265417 bytes
+ features/A-FR01/final-run/summary.json             |  636 ++++++++
+ features/A-FR01/final-run/summary.md               |   36 +
+ features/A-FR01/results.md                         |   70 +
+ features/A-FR01/review.md                          |   61 +
+ 144 files changed, 8150 insertions(+)
+
+commit 4993ad4f5f7611b4580b91ffe6e1ccee46648206
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 20:57:19 +0700
+
+    fix(fr01): REJ assertion reports accepted-invalid registration as a URL failure
+    
+    The feedback poll now also ends on navigation, so a wrongly accepted
+    registration fails with 'must stay on /register' instead of 'no feedback'.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/tests/fr01-register.spec.ts | 18 +++++++++++++-----
+ 1 file changed, 13 insertions(+), 5 deletions(-)
+
+commit 1fb505596d129d18744d05c611851d1644480a28
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 20:57:18 +0700
+
+    test(fr01): add A-AUTO-20 whitespace-instead-of-special edge case and probe evidence
+    
+    Exploratory probe (_tools/HW04/probe-fr01.js) showed a password with a space and
+    no listed special character is accepted; SRS FR-01 lists the allowed specials.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/data/fr01-register.json                 |   8 +++++
+ features/A-FR01/evidence/probe-P1-email-no-at.png  | Bin 0 -> 18523 bytes
+ .../A-FR01/evidence/probe-P2-duplicate-seed.png    | Bin 0 -> 18523 bytes
+ .../evidence/probe-P3-valid-srs-password.png       | Bin 0 -> 29957 bytes
+ features/A-FR01/evidence/probe-results.json        |  35 +++++++++++++++++++++
+ 5 files changed, 43 insertions(+)
+
+commit b6be9aebceea124817668d6a80639bac68f04c92
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 20:37:26 +0700
+
+    fix(fr01): structure test - DRY label mapping via page object, bounded soft-assert waits
+    
+    The structure check duplicated the label table inside the spec (R11) and each
+    missing element waited the full 7s expect timeout; it now uses
+    RegisterPage.fieldOfLabel and a 1.5s timeout on the static page.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/pages/RegisterPage.ts       |  7 +++++++
+ automation/tests/fr01-register.spec.ts | 23 ++++++++++++-----------
+ 2 files changed, 19 insertions(+), 11 deletions(-)
+
+commit 7a5abb352bdc07ba78cc204b8ac15dc5dc5698de
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 20:36:37 +0700
+
+    fix(fr01): review AI draft - locators, missing confirm control, web-first waits, OK/REJ oracles
+    
+    Draft result: 19/19 failed on chromium/firefox/webkit (every test timed out on
+    locator.fill of the non-existent confirm field; structure test lost its soft
+    asserts when the page closed).
+    - POM: exact label anchors (Mat khau no longer matches Xac nhan mat khau),
+      fill() skips and reports a missing control instead of hanging, tracks
+      POST /api/register responses, native validity helper
+    - spec: remove waitForTimeout; REJ = feedback (poll) + stays on /register +
+      no 2xx register response + signal tied to the wrong field (native validity or
+      banner keyword); OK = /login + login function + 2xx response
+    - confirm-only oracles assert the confirm control exists (FR-01)
+    - A-AUTO-17 'email|confirm' field split (draft looked up an undefined keyword)
+    - reviewer slip fixed in iteration 1: has: locator rooted at form never matched
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/pages/RegisterPage.ts       |  85 +++++++++++++-----
+ automation/tests/fr01-register.spec.ts | 157 +++++++++++++++++++++++----------
+ features/A-FR01/draft-run-summary.md   |  35 ++++++++
+ 3 files changed, 210 insertions(+), 67 deletions(-)
+
+commit ea21d8a5296947aa3544e3e4e8e3036d9d15b139
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:56:51 +0700
+
+    test(fr01): AI draft data-driven register spec
+    
+    Verbatim AI draft (steps D1 page object, D2 spec skeleton, D3 assertions) with
+    the step prompts in features/A-FR01/ai-draft/prompts. Not yet reviewed.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/pages/RegisterPage.ts                   | 56 ++++++++++++++++
+ automation/tests/fr01-register.spec.ts             | 75 ++++++++++++++++++++++
+ features/A-FR01/ai-draft/pages/RegisterPage.ts     | 56 ++++++++++++++++
+ .../A-FR01/ai-draft/prompts/D1-page-object.txt     |  7 ++
+ features/A-FR01/ai-draft/prompts/D2-spec.txt       |  2 +
+ features/A-FR01/ai-draft/prompts/D3-assertions.txt |  3 +
+ .../tests/fr01-register.spec.d2-skeleton.ts        | 41 ++++++++++++
+ .../A-FR01/ai-draft/tests/fr01-register.spec.ts    | 75 ++++++++++++++++++++++
+ 8 files changed, 315 insertions(+)
+
+commit 2368783b71b260f5104bc6065f516f0f158c20d3
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:56:04 +0700
+
+    test(fr01): select 19 TCs, survey register DOM, add JSON test data
+    
+    - selection.md: HW02 A-TC -> A-AUTO mapping, non-automated TCs with reasons
+    - locator-inventory.md + dom-survey-register.json: real DOM (3 browsers)
+    - data/fr01-register.json: 19 rows (id/title/type/input/expected/trace)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/data/fr01-register.json       | 159 ++++++++++++++++
+ features/A-FR01/dom-survey-register.json | 314 +++++++++++++++++++++++++++++++
+ features/A-FR01/locator-inventory.md     |  45 +++++
+ features/A-FR01/selection.md             |  48 +++++
+ 4 files changed, 566 insertions(+)
+
+commit 8761ca82a28320e59ddac6d6170d735331fca5bd
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:53:01 +0700
+
+    docs(hw04): P01 checkpoint, working context and chat-B AI log (EXEC-P01-001)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P01-prompt.txt    |  22 ++++++
+ ai-log/execution/chat-b/checkpoint-P01.md |  43 +++++++++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |   1 +
+ ai-log/execution/chat-b/prompt_log.md     | 116 ++++++++++++++++++++++++++++++
+ submission-manifest.md                    |   2 +-
+ working-context.md                        |  15 ++--
+ 6 files changed, 193 insertions(+), 6 deletions(-)
+
+commit 3fe46d2c1fedd3314845b92d1189b609f7c0540e
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:51:29 +0700
+
+    chore(automation): wire skill matrix/verify/check scripts into npm scripts
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/README.md    | 9 +++++++++
+ automation/package.json | 6 +++++-
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+commit 55ad041e570ecfcc2cfab1dee1a32bae2c9065d6
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:51:29 +0700
+
+    feat(skill): add playwright-data-driven-automation skill
+    
+    Reusable workflow (S12 p18; AI-First Automation p12-15, 28-30): TC selection,
+    JSON/CSV test data schema, step-by-step AI prompts with ai-draft snapshots,
+    >=3 assertion patterns, feature x browser runs with Run-by reports, human review
+    checklist, failure triage and bug reporting. Scripts: run-matrix.mjs,
+    verify-report.mjs, check-data-driven.mjs. Source kept in _tools/skills/.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ skills/playwright-data-driven-automation/SKILL.md  | 126 +++++++++++++++++
+ .../assets/playwright.config.template.ts           |  49 +++++++
+ .../references/data-and-assertions.md              |  50 +++++++
+ .../references/prompt-templates.md                 |  66 +++++++++
+ .../references/review-checklist.md                 |  33 +++++
+ .../references/triage-and-bugs.md                  |  42 ++++++
+ .../scripts/check-data-driven.mjs                  |  83 +++++++++++
+ .../scripts/run-matrix.mjs                         | 153 +++++++++++++++++++++
+ .../scripts/verify-report.mjs                      |  77 +++++++++++
+ 9 files changed, 679 insertions(+)
+
+commit 2a9f8392219349a3e564f171dee92c42daf49425
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:46:11 +0700
+
+    docs(hw04): add assignment PDF and coordinator docs (chat A)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ 2026.HW04.Automation Testing_En.pdf | Bin 0 -> 463412 bytes
+ docs/assignment-analysis.md         |  54 ++++++++++++++++++++++++++++++++++++
+ docs/prompt-plan.md                 |  16 +++++++++++
+ docs/prompts/P00-INTAKE-SETUP.md    |  28 +++++++++++++++++++
+ docs/prompts/P01-SKILL.md           |  22 +++++++++++++++
+ docs/prompts/P02-FEATURE-A.md       |  15 ++++++++++
+ docs/prompts/P03-FEATURE-B.md       |  15 ++++++++++
+ docs/prompts/P04-FEATURE-C.md       |  15 ++++++++++
+ 8 files changed, 165 insertions(+)
+
+commit 87944b9f818f2caefa9cc4816d40e23bd2578434
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:45:27 +0700
+
+    docs(hw04): add P00 working context and chat-B AI log (EXEC-P00-001)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P00-prompt.txt    |  34 ++++++++
+ ai-log/execution/chat-b/checkpoint-P00.md |  40 +++++++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |   1 +
+ ai-log/execution/chat-b/prompt_log.md     | 139 ++++++++++++++++++++++++++++++
+ working-context.md                        |  45 ++++++++++
+ 5 files changed, 259 insertions(+)
+
+commit 7529ef72d26fa0a2ff2d1a6120fe6ab0dcdd2b81
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:44:07 +0700
+
+    test(smoke): add infra smoke spec for web home and admin login
+    
+    Infrastructure check only; not counted toward the >=12 feature test cases.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/tests/smoke.spec.ts | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+
+commit 6db6086cc14c06f83390ee1d06be666867596b07
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:44:06 +0700
+
+    chore(hw04): init playwright project with 3 browsers and Run-by HTML reporter
+    
+    - chromium/firefox/webkit projects; WEB_URL/ADMIN_URL/API_URL via env
+    - HTML report title + metadata: Run by 23120229 + ISO start timestamp
+    - REPORT_DIR/RUN_LABEL env so each feature x browser run has its own report
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ automation/README.md            |  33 ++++++++++++
+ automation/package-lock.json    | 111 ++++++++++++++++++++++++++++++++++++++++
+ automation/package.json         |  17 ++++++
+ automation/playwright.config.ts |  60 ++++++++++++++++++++++
+ automation/support/env.ts       |  20 ++++++++
+ automation/tsconfig.json        |  15 ++++++
+ 6 files changed, 256 insertions(+)
+
+commit 7baba145f6098aa36231ca2f5f70a56fed5830df
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-13 19:31:33 +0700
+
+    chore(hw04): init repo, add submission manifest and gitignore
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ .gitignore             | 22 ++++++++++++++++++++
+ submission-manifest.md | 54 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 76 insertions(+)
