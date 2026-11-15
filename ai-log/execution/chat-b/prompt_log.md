@@ -768,3 +768,523 @@ Thêm 1 commit log/context; hash nằm ở tin nhắn trả lời. Có 4 commit 
 Dừng sau P02, chờ prompt tiếp theo.
 ```
 
+
+## EXEC-P03-001
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P03-001",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) authored and sent this prompt as a cross-session message; not student-authored",
+  "occurred_at": "2026-11-15T18:19:57+07:00",
+  "timestamp_source": "observed",
+  "capture_status": "partial",
+  "source": "Prompt: cross-session message, saved verbatim to P03-prompt.txt. Output: checkpoint-P03.md (verbatim). occurred_at is the first tool-observed time after receipt (`date -Iseconds` at the start of the turn).",
+  "missing": [
+    "occurred_at is the first tool-observed time in the turn, not the exact receipt time.",
+    "Full tool call/result transcript not exported; short progress notes sent mid-turn are not included.",
+    "The hash of the commit containing this log is only in the final chat reply."
+  ],
+  "artifact_paths": [
+    "HW04/features/B-FR08/",
+    "HW04/automation/data/fr08-checkout.json",
+    "HW04/automation/pages/CartPage.ts",
+    "HW04/automation/pages/CheckoutPage.ts",
+    "HW04/automation/tests/fr08-checkout.spec.ts",
+    "HW04/automation/reports/fr08-chromium/",
+    "HW04/automation/reports/fr08-firefox/",
+    "HW04/automation/reports/fr08-webkit/",
+    "_tools/HW04/survey-fr08.js"
+  ],
+  "recorded_at": "2026-11-15T18:40:42+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Vai trò: Chat thực hiện. Tiếp tục HW04 (P03 — Feature B: FR-08 Checkout, Web :5173). A đã đối soát P02: chấp nhận (20 TC × 3 browser, review 10 lỗi AI, commit 4993ad4…ff5f10f). Giữ cùng chuẩn chất lượng review như FR-01.
+
+Áp dụng skill `playwright-data-driven-automation` (đọc SKILL.md của nó trước) + software-testing-ai-first. Oracle = SRS FR-08 (fixture giỏ theo FR-06/07, coupon FR-09 chỉ khi cần) (`eshop-sut/README.md`), không lấy hành vi code làm expected.
+
+Làm theo từng bước, **commit sau mỗi bước** có chạm `.spec.ts` khi phù hợp (đề §12 yêu cầu ≥8 commit chạm spec cho cả bài):
+1. Chọn ≥12 TC từ `HW02/features/b-fr08-checkout-web/04-test-cases.md` (12 TC; thiếu thì bổ sung TC mới có trace SRS, ghi rõ "bổ sung HW04"): guest bị chặn, 1 dòng/nhiều dòng/quantity, tổng tự tính và không sửa được, backend tính lại khi client gửi `total_amount` sai (dùng `page.route` hoặc API request để chứng minh), giỏ xóa sau thành công, giỏ rỗng, địa chỉ bắt buộc/biên nếu UI có… Mapping + TC không automate tại `HW04/features/B-FR08/selection.md`. Setup giỏ qua API/UI trong fixture, mỗi test độc lập (dùng user riêng đăng ký theo run nếu cần để không đụng giỏ nhau khi chạy song song 3 browser).
+2. Khảo sát DOM thật giỏ/checkout/xác nhận đơn và ghi locator inventory.
+3. Data file `HW04/automation/data/fr08-checkout.json` (giỏ fixture, số lượng, giá kỳ vọng tính độc lập, địa chỉ; không inline array trong spec). Giá lấy từ API catalog lúc chạy và so với công thức trong data, không hard-code tổng từ UI.
+4. Sinh bản **AI draft** của POM + spec (`pages/CartPage.ts`, `pages/CheckoutPage.ts`, `tests/fr08-checkout.spec.ts`) bằng prompt riêng từng bước; lưu nguyên văn bản draft vào `HW04/features/B-FR08/ai-draft/` và commit nguyên trạng (`test(fr08): AI draft data-driven checkout spec`).
+5. Chạy draft trên chromium/firefox/webkit, ghi kết quả thật.
+6. Human-review checklist của skill: liệt kê lỗi AI (selector, assertion, edge thiếu, wait, isolation, oracle), sửa, commit từng nhóm sửa (`fix(fr08): ...`). ≥3 assertion pattern khác nhau, ghi pattern nào ở TC nào. Lưu diff draft→final `HW04/features/B-FR08/review.md` (lỗi | bằng chứng | sửa | vì sao AI sai).
+7. Chạy bản cuối từng browser ra report riêng: `HW04/automation/reports/fr08-<browser>/index.html` (Run by: 23120229 + ISO). Fail do SUT giữ nguyên fail (không `test.fail`/skip để che), xác minh là bug thật bằng tay/ảnh; flaky thì sửa test. Ghi bảng kết quả `HW04/features/B-FR08/results.md` (TC × browser) và bug candidates (kèm screenshot) — chưa đăng Issues ở bước này. Đối chiếu bug HW02 đã có ở `datkrb/SUT_Issue` (#1–#11) để tránh trùng.
+
+AI log: `HW04/ai-log/execution/chat-b/`, ID `EXEC-P03-…`, ghi riêng từng prompt sinh code của bước 4 (đó là bằng chứng "drive AI step by step"); prompt này do chat A soạn và gửi.
+Checkpoint: số TC automated/pass/fail theo browser, bug candidates, tệp, commit hash, log ID. Dừng sau P03.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P03 — Feature B: FR-08 Checkout (chat B)
+
+**Kết quả:** 13 TC được automate (9 từ HW02 + 4 bổ sung ở HW04). Chạy cuối trên 3 browser ngày 2026-11-15, code `c1888f8`:
+
+| Browser | Pass | Fail |
+|---|---|---|
+| chromium | 7 | 6 |
+| firefox | 7 | 6 |
+| webkit | 7 | 6 |
+
+- Tổng 39 lần chạy: 21 pass, 18 fail, 0 flaky.
+- 3/3 report có “Run by: 23120229” + ISO timestamp (`verify-report` OK).
+- Mọi fail là bug SUT, không có lỗi test hay môi trường. Không dùng `test.fail` hay `skip`.
+
+### Bug candidates (chưa đăng)
+Cả 4 đều **trùng issue đã có**, nên không đề xuất tạo mới:
+- BC-B1, tổng sửa được: #4.
+- BC-B2, backend lưu `total_amount` client (1 / 900000000 / -100000): #5. Trường hợp tổng âm có thể dùng làm bằng chứng bổ sung cho #5.
+- BC-B3, checkout không có `h1`: #6.
+- BC-B4, giỏ không xóa sau khi thanh toán thành công: #15 (HW03).
+
+Ảnh nằm ở `features/B-FR08/evidence/failures/`. Bằng chứng backend là giá trị đọc từ `GET /api/orders/my-orders`, có trong thông điệp assertion của report.
+
+### Bản AI draft → review
+- Bản draft (commit `7e01cf6`, prompt D1–D3) chạy 5/13 pass trên mỗi browser.
+- 4 fail của draft là lỗi fixture:
+  - `page.goto` làm mất giỏ (giỏ chỉ ở state client);
+  - lần bấm đầu ở trang chi tiết bị bỏ qua (#21), nên dòng số lượng lớn hơn 1 không được thêm.
+- 2 TC pass với oracle sai hoặc quá chặt: guest bị ép redirect `/login`; API bị ép đúng mã 401.
+- `review.md` ghi 12 lỗi AI kèm commit sửa và nguyên nhân. Sửa thành 2 nhóm commit: `a61087b` (fixture/POM) và `c1888f8` (oracle). Riêng `a61087b` không biên dịch được vì spec vẫn là bản draft; điều này đã ghi rõ.
+- 8 nhóm assertion pattern; bảng TC dùng pattern nào có trong review.
+
+### Fixture
+- Mỗi test có user riêng, tạo và đăng nhập qua API, token đặt vào `localStorage`.
+- Giỏ dựng bằng UI, giá lấy từ `/api/products` lúc chạy, tổng kỳ vọng tính bằng Σ giá × số lượng.
+- Kiểm giỏ fixture (số dòng, số lượng) trước khi checkout.
+
+### TC không automate
+- B-TC-009: Tab order.
+- B-TC-010: checkout không có trường bắt buộc, nên điều kiện của TC không kích hoạt.
+- B-TC-012: không tạo được phiên hết hạn nếu không sửa token.
+- Phần màu/ngôn ngữ của B-TC-008 và phần icon giỏ rỗng.
+
+### Tệp
+- `features/B-FR08/`: `selection.md`, `locator-inventory.md`, `dom-survey-checkout.json`, `ai-draft/**`, `draft-run-summary.md`, `review.md`, `results.md`, `final-run/summary.{md,json}`, `evidence/{failures,report-shots}`.
+- `automation/`: `data/fr08-checkout.json`, `pages/CartPage.ts`, `pages/CheckoutPage.ts`, `tests/fr08-checkout.spec.ts`, `reports/fr08-{chromium,firefox,webkit}/` (4.6 / 9.2 / 4.7 MB).
+- `_tools/HW04/survey-fr08.js`, `_tools/HW04/work/p03-*.log`.
+
+### Commit
+| Commit | Nội dung | Có đổi spec? |
+|---|---|---|
+| `3a9bf45` | chọn TC, khảo sát DOM, data | không |
+| `7e01cf6` | AI draft | có |
+| `a61087b` | fix fixture | không (chỉ POM) |
+| `c1888f8` | fix oracle | có |
+| `7cff12d` | reports + docs | không |
+
+Thêm 1 commit log/context; hash nằm ở tin nhắn trả lời. Tổng số commit thay đổi `.spec.ts` từ đầu bài tới nay: 7 (smoke 1, fr01 4, fr08 2).
+
+### Giới hạn
+- Survey FR-08 và mỗi lần chạy test đều tạo user/đơn thật trong DB SUT. Dữ liệu này mất khi backend khởi động lại.
+- Human review của sinh viên: pending.
+
+### Log
+`EXEC-P03-001` (prompt P03 → checkpoint này), `EXEC-P03-002`, `003`, `004` (các bước D1, D2, D3 sinh draft).
+
+Dừng sau P03, chờ prompt tiếp theo.
+```
+
+
+## EXEC-P03-002
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P03-002",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P03 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/B-FR08/ai-draft/prompts/D1-page-objects.txt (verbatim). Output: draft file(s) written verbatim by B in reply, committed unchanged in 7e01cf6.",
+  "missing": [
+    "Exact time unknown. The draft was generated between 18:20 and 18:24 +07:00 on 2026-11-15 (the draft run started 18:24:02).",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat."
+  ],
+  "artifact_paths": [
+    "HW04/features/B-FR08/ai-draft/prompts/D1-page-objects.txt",
+    "HW04/features/B-FR08/ai-draft/pages/CartPage.ts",
+    "HW04/features/B-FR08/ai-draft/pages/CheckoutPage.ts"
+  ],
+  "recorded_at": "2026-11-15T18:40:42+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P03-002 · bước D1 · prompt B tự soạn từ khung P-c của skill playwright-data-driven-automation]
+Dùng locator đã chốt trong HW04/features/B-FR08/locator-inventory.md (khảo sát DOM thật trên 3 browser). Viết hai Page Object Playwright + TypeScript:
+- automation/pages/CartPage.ts: thêm sản phẩm theo tên từ trang chủ (nút "Thêm vào giỏ" trong thẻ có h2 tên) với số lượng (qty>1 qua trang chi tiết: ô spinbutton + nút "Thêm vào giỏ hàng"), mở giỏ qua link "Giỏ hàng" ở header, đọc dòng giỏ, xóa dòng, bấm "Tiến hành thanh toán", nhận biết giỏ rỗng.
+- automation/pages/CheckoutPage.ts: heading "Xác Nhận Đơn Hàng", listitem sản phẩm, ô tổng, dòng "Tổng thanh toán:", nút "Xác Nhận Thanh Toán", heading thành công "Thanh toán thành công!".
+Lưu ý: giỏ chỉ nằm ở state client, page.goto làm mất giỏ — điều hướng bằng link. Action không chứa assertion, không waitForTimeout.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/B-FR08/ai-draft/pages/CartPage.ts =====
+import { Locator, Page } from '@playwright/test';
+
+export interface CartLine {
+  product: string;
+  qty: number;
+}
+
+export class CartPage {
+  readonly page: Page;
+  readonly cartLink: Locator;
+  readonly homeLink: Locator;
+  readonly heading: Locator;
+  readonly emptyHeading: Locator;
+  readonly rows: Locator;
+  readonly checkoutButton: Locator;
+  readonly subtotal: Locator;
+
+  constructor(page: Page) {
+    this.page = page;
+    this.cartLink = page.getByRole('banner').getByRole('link', { name: 'Giỏ hàng' });
+    this.homeLink = page.getByRole('banner').getByRole('link', { name: 'EShop' });
+    this.heading = page.getByRole('heading', { name: 'Giỏ Hàng' });
+    this.emptyHeading = page.getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' });
+    this.rows = page.getByRole('table').getByRole('row');
+    this.checkoutButton = page.getByRole('button', { name: 'Tiến hành thanh toán' });
+    this.subtotal = page.getByText(/Tổng tạm tính/);
+  }
+
+  productCard(name: string): Locator {
+    return this.page
+      .locator('main div')
+      .filter({ has: this.page.getByRole('heading', { level: 2, name }) })
+      .last();
+  }
+
+  async openHome() {
+    await this.page.goto('/');
+  }
+
+  async addProduct(line: CartLine) {
+    const card = this.productCard(line.product);
+    if (line.qty === 1) {
+      await card.getByRole('button', { name: 'Thêm vào giỏ' }).click();
+    } else {
+      await card.getByRole('link', { name: 'Xem chi tiết' }).click();
+      await this.page.getByRole('spinbutton').fill(String(line.qty));
+      await this.page.getByRole('button', { name: 'Thêm vào giỏ hàng' }).click();
+      await this.homeLink.click();
+    }
+  }
+
+  async addAll(lines: CartLine[]) {
+    await this.openHome();
+    for (const line of lines) await this.addProduct(line);
+  }
+
+  async open() {
+    await this.cartLink.click();
+  }
+
+  row(product: string): Locator {
+    return this.rows.filter({ hasText: product });
+  }
+
+  async removeLine(product: string) {
+    await this.row(product).getByRole('button', { name: 'Xóa' }).click();
+  }
+
+  async proceedToCheckout() {
+    await this.checkoutButton.click();
+  }
+}
+
+// ===== features/B-FR08/ai-draft/pages/CheckoutPage.ts =====
+import { Locator, Page } from '@playwright/test';
+
+export class CheckoutPage {
+  readonly page: Page;
+  readonly heading: Locator;
+  readonly items: Locator;
+  readonly totalInput: Locator;
+  readonly totalText: Locator;
+  readonly confirmButton: Locator;
+  readonly successHeading: Locator;
+
+  constructor(page: Page) {
+    this.page = page;
+    this.heading = page.getByRole('heading', { name: 'Xác Nhận Đơn Hàng' });
+    this.items = page.getByRole('main').getByRole('listitem');
+    this.totalInput = page.getByRole('main').getByRole('spinbutton');
+    this.totalText = page.getByText(/^Tổng thanh toán:/);
+    this.confirmButton = page.getByRole('button', { name: 'Xác Nhận Thanh Toán' });
+    this.successHeading = page.getByRole('heading', { name: 'Thanh toán thành công!' });
+  }
+
+  async confirm() {
+    await this.confirmButton.click();
+  }
+}
+```
+
+
+## EXEC-P03-003
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P03-003",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P03 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/B-FR08/ai-draft/prompts/D2-spec.txt (verbatim). Output: draft file(s) written verbatim by B in reply, committed unchanged in 7e01cf6.",
+  "missing": [
+    "Exact time unknown. The draft was generated between 18:20 and 18:24 +07:00 on 2026-11-15 (the draft run started 18:24:02).",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat."
+  ],
+  "artifact_paths": [
+    "HW04/features/B-FR08/ai-draft/prompts/D2-spec.txt",
+    "HW04/features/B-FR08/ai-draft/tests/fr08-checkout.spec.d2-skeleton.ts"
+  ],
+  "recorded_at": "2026-11-15T18:40:43+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P03-003 · bước D2 · prompt B tự soạn từ khung P-d của skill]
+Viết automation/tests/fr08-checkout.spec.ts: import rows từ ../data/fr08-checkout.json (không định nghĩa dữ liệu trong spec), sinh test `${row.id} ${row.title}` theo 3A. Fixture: mỗi test đăng ký user riêng qua POST /api/register (email duy nhất theo project + thời gian), login qua POST /api/login, đặt token vào localStorage trước khi tải trang (addInitScript); auth "guest" thì bỏ qua; auth "none-api" chỉ dùng request. Lấy giá từ GET /api/products lúc chạy và tính tổng kỳ vọng = Σ price × qty theo data. Dựng giỏ bằng CartPage.addAll rồi mở giỏ/checkout bằng link. Rẽ nhánh theo expected.kind: guest-blocked, checkout-success, total-not-editable, server-recalculates (page.route sửa total_amount trong body POST /api/checkout), structure, empty-cart, api-unauthorized. Assertion chi tiết ở bước D3.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/B-FR08/ai-draft/tests/fr08-checkout.spec.d2-skeleton.ts =====
+import { test } from '@playwright/test';
+import rows from '../data/fr08-checkout.json';
+import { CartLine, CartPage } from '../pages/CartPage';
+import { CheckoutPage } from '../pages/CheckoutPage';
+import { API_URL } from '../support/env';
+
+type Row = (typeof rows)[number];
+
+test.describe('FR-08 Checkout', () => {
+  for (const row of rows as Row[]) {
+    test(`${row.id} ${row.title}`, async ({ page, request }, testInfo) => {
+      // Arrange: catalog prices
+      const products: { name: string; price: number }[] = await (await request.get(`${API_URL}/api/products`)).json();
+      const priceOf = (name: string) => Number(products.find((p) => p.name === name)!.price);
+      const cart = ((row.input as any).cart ?? []) as CartLine[];
+      const expectedTotal = cart.reduce((s, l) => s + priceOf(l.product) * l.qty, 0);
+
+      // Arrange: user
+      let token: string | undefined;
+      if (row.input.auth === 'user') {
+        const email = `b${testInfo.project.name}${Date.now()}@example.test`;
+        await request.post(`${API_URL}/api/register`, { data: { name: 'FR08 User', email, password: 'Aa1!bcdefg' } });
+        token = (await (await request.post(`${API_URL}/api/login`, { data: { email, password: 'Aa1!bcdefg' } })).json()).token;
+        await page.addInitScript((t) => localStorage.setItem('token', t), token!);
+      }
+
+      const cartPage = new CartPage(page);
+      const checkout = new CheckoutPage(page);
+
+      // Act + Assert theo row.expected.kind — chi tiết ở bước D3
+      switch (row.expected.kind) {
+        case 'guest-blocked':
+        case 'checkout-success':
+        case 'total-not-editable':
+        case 'server-recalculates':
+        case 'structure':
+        case 'empty-cart':
+        case 'api-unauthorized':
+          break;
+      }
+      void cartPage; void checkout; void expectedTotal;
+    });
+  }
+});
+```
+
+
+## EXEC-P03-004
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P03-004",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P03 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/B-FR08/ai-draft/prompts/D3-assertions.txt (verbatim). Output: draft file(s) written verbatim by B in reply, committed unchanged in 7e01cf6.",
+  "missing": [
+    "Exact time unknown. The draft was generated between 18:20 and 18:24 +07:00 on 2026-11-15 (the draft run started 18:24:02).",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat."
+  ],
+  "artifact_paths": [
+    "HW04/features/B-FR08/ai-draft/prompts/D3-assertions.txt",
+    "HW04/features/B-FR08/ai-draft/tests/fr08-checkout.spec.ts"
+  ],
+  "recorded_at": "2026-11-15T18:40:43+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P03-004 · bước D3 · prompt B tự soạn từ khung P-e của skill]
+Oracle (SRS FR-08/21, HW02 B-TC): checkout-success = checkout liệt kê đủ từng sản phẩm với số lượng, tổng hiển thị = tổng kỳ vọng, bấm xác nhận → "Thanh toán thành công!", và GET /api/orders/my-orders có đơn mới total_amount = tổng kỳ vọng; nếu cartClearedAfter thì mở giỏ phải trống. guest-blocked = không có thông báo thành công, không có POST /api/checkout 2xx. total-not-editable = người dùng không thay được tổng (không có control sửa được; tổng vẫn = kỳ vọng). server-recalculates = sửa total_amount trong request bằng page.route; đơn không được lưu với giá trị client (bị từ chối hoặc lưu đúng tổng giỏ). structure = đúng 1 h1, dòng tổng có ₫ và phân cách nghìn. empty-cart = thông báo giỏ trống, không có nút tiến hành thanh toán. api-unauthorized = POST /api/checkout không token → không 2xx.
+Dùng ≥3 pattern khác nhau (URL/visible/text, count, attribute/editable, response/API). Negative phải kiểm điều không được xảy ra. Không test.fail/test.skip để né; nghi SUT sai thì giữ assertion theo đặc tả.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/B-FR08/ai-draft/tests/fr08-checkout.spec.ts =====
+import { expect, test } from '@playwright/test';
+import rows from '../data/fr08-checkout.json';
+import { CartLine, CartPage } from '../pages/CartPage';
+import { CheckoutPage } from '../pages/CheckoutPage';
+import { API_URL } from '../support/env';
+
+type Row = (typeof rows)[number];
+
+const formatVnd = (n: number) => n.toLocaleString('vi-VN');
+
+test.describe('FR-08 Checkout', () => {
+  for (const row of rows as Row[]) {
+    test(`${row.id} ${row.title}`, async ({ page, request }, testInfo) => {
+      const input = row.input as any;
+      const expected = row.expected as any;
+
+      // Arrange: catalog prices
+      const products: { name: string; price: number }[] = await (await request.get(`${API_URL}/api/products`)).json();
+      const priceOf = (name: string) => Number(products.find((p) => p.name === name)!.price);
+      const cart = (input.cart ?? []) as CartLine[];
+      const finalCart = (input.updateTo ?? cart) as CartLine[];
+      const expectedTotal = finalCart.reduce((s, l) => s + priceOf(l.product) * l.qty, 0);
+
+      // Arrange: user
+      let token: string | undefined;
+      if (input.auth === 'user') {
+        const email = `b${testInfo.project.name}${Date.now()}@example.test`;
+        await request.post(`${API_URL}/api/register`, { data: { name: 'FR08 User', email, password: 'Aa1!bcdefg' } });
+        token = (await (await request.post(`${API_URL}/api/login`, { data: { email, password: 'Aa1!bcdefg' } })).json()).token;
+        await page.addInitScript((t) => localStorage.setItem('token', t), token!);
+      }
+
+      const cartPage = new CartPage(page);
+      const checkout = new CheckoutPage(page);
+
+      if (expected.kind === 'api-unauthorized') {
+        const res = await request.post(`${API_URL}/api/checkout`, { data: input.body });
+        expect(res.status()).toBe(401);
+        return;
+      }
+
+      // Act: build cart via UI
+      await cartPage.addAll(cart);
+      await cartPage.open();
+
+      if (expected.kind === 'empty-cart') {
+        await expect(cartPage.emptyHeading).toBeVisible();
+        await expect(cartPage.checkoutButton).toHaveCount(0);
+        return;
+      }
+
+      if (input.updateTo) {
+        await cartPage.removeLine(cart[0].product);
+        await cartPage.addAll(input.updateTo);
+        await cartPage.open();
+      }
+
+      if (expected.kind === 'guest-blocked') {
+        page.on('dialog', (d) => d.accept());
+        await cartPage.proceedToCheckout();
+        await expect(page).toHaveURL(/\/login/);
+        await expect(checkout.successHeading).toHaveCount(0);
+        return;
+      }
+
+      await cartPage.proceedToCheckout();
+      await expect(checkout.heading).toBeVisible();
+
+      // Assert: list + total
+      await expect(checkout.items).toHaveCount(finalCart.length);
+      for (const line of finalCart) {
+        await expect(checkout.items.filter({ hasText: line.product })).toContainText(`x ${line.qty}`);
+      }
+      await expect(checkout.totalText).toContainText(formatVnd(expectedTotal));
+
+      if (expected.kind === 'structure') {
+        await expect(page.locator('h1')).toHaveCount(expected.h1Count);
+        await expect(checkout.totalText).toContainText('₫');
+        return;
+      }
+
+      if (expected.kind === 'total-not-editable') {
+        await expect(checkout.totalInput).not.toBeEditable();
+        return;
+      }
+
+      if (expected.kind === 'server-recalculates') {
+        await page.route('**/api/checkout', async (route) => {
+          const body = route.request().postDataJSON();
+          body.total_amount = input.tamperTotal;
+          await route.continue({ postData: JSON.stringify(body) });
+        });
+      }
+
+      await checkout.confirm();
+      await expect(checkout.successHeading).toBeVisible();
+
+      const orders = await (
+        await request.get(`${API_URL}/api/orders/my-orders`, { headers: { Authorization: `Bearer ${token}` } })
+      ).json();
+      expect(orders[0].total_amount).toBe(expectedTotal);
+
+      if (expected.cartClearedAfter) {
+        await cartPage.open();
+        await expect(cartPage.emptyHeading).toBeVisible();
+      }
+    });
+  }
+});
+```
+
