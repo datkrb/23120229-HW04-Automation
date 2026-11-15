@@ -2,6 +2,8 @@
 
 AI không được làm, hoặc bị chặn không làm được, các việc dưới đây. Làm theo thứ tự rồi đánh dấu.
 
+> Repo public **đã tạo và push**: https://github.com/datkrb/23120229-HW04-Automation (chat A, theo đồng ý của em).
+>
 > GitHub Issues **đã đăng** ngày 2026-11-15 (chat A chạy sau khi em đồng ý): #39–#43 + 10 comment, xem `docs/github-issues.md` và ảnh `evidence/issues/`. Không còn là việc của em; chỉ nên mở lại kiểm tra.
 
 ## 1. Review và ký nhận
@@ -12,20 +14,9 @@ AI không được làm, hoặc bị chặn không làm được, các việc d�
 - [ ] Sửa nếu thấy sai. Đổi cột “Human review” trong `ai-audit.md` từ `pending` sang `confirmed` **chỉ cho những dòng đã thật sự review**.
 - [ ] Điền phần cam đoan/chữ ký trong `ai-audit.md` (mục AI Disclosure) và chỉnh `ai-critique.md` theo ý của em.
 
-## 2. Tạo repo GitHub public và push
+## 2. Tạo repo GitHub public và push — **ĐÃ XONG** (2026-11-15)
 
-Đề §12 yêu cầu repo public có ít nhất 8 commit chạm spec. Hiện có 9, xem `docs/spec-commit-count.md`.
-
-1. Trên github.com, tạo repo **Public** trống, ví dụ `datkrb/23120229-HW04-Automation`. Không tick tạo README.
-2. Chạy tại `D:\KI7\testing\HW04`:
-
-   ```
-   git remote add origin https://github.com/datkrb/23120229-HW04-Automation.git
-   git push -u origin main
-   ```
-
-3. Kiểm tra trên GitHub: có `automation/`, `features/`, `skills/`, các report. Report khoảng 55 MB tổng, mỗi tệp đều nhỏ hơn giới hạn 100 MB của GitHub.
-4. Điền link repo vào `README.md` và `report.md`, commit, push lại.
+Repo public [https://github.com/datkrb/23120229-HW04-Automation](https://github.com/datkrb/23120229-HW04-Automation) do **chat A** tạo và push `main` (tới `dcb14ed`) ngày 2026-11-15 sau khi sinh viên đồng ý; chat B không push. Em chỉ cần mở repo kiểm tra lại (có `automation/`, `features/`, `skills/`, report). Đề §12: ≥ 8 commit chạm spec — hiện 9, xem `docs/spec-commit-count.md`.
 
 ## 3. Quay và upload video Task 2 (15 điểm)
 

@@ -5,6 +5,7 @@
 | Sinh viên | MSSV **23120229** |
 | Bài | HW04-AI Automation Testing, môn Kiểm thử phần mềm, FIT HCMUS |
 | Ngày | 2026-11-13 → 2026-11-15 (Asia/Saigon, +07:00) |
+| Repo GitHub public | [https://github.com/datkrb/23120229-HW04-Automation](https://github.com/datkrb/23120229-HW04-Automation) |
 | Trạng thái review | AI (chat B) đã tự review và sửa script; **human review của sinh viên: pending** |
 
 Báo cáo do AI (Claude Code, chat B thực hiện) soạn từ các artifact thật trong repo. Mọi con số lấy từ `automation/reports/*/results.json`, `automation/reports/summary.json`, `features/*/review.md`, `bug-report.md` và `ai-log/`. Phần nào chưa làm thì ghi “chưa làm”.
@@ -254,6 +255,6 @@ Skill `playwright-data-driven-automation` nằm ở [skills/playwright-data-driv
 - Prompt sinh code D1–D3 do **chính chat B tự soạn** theo khung skill, trong cùng phiên đã có kết quả khảo sát DOM. Đây không phải một chat sạch tách biệt; đã khai trong AI log.
 - Xác nhận bug do AI chạy script; **chưa có thao tác tay của sinh viên**.
 - A-AUTO-09 / A-AUTO-20 dựa trên cách AI hiểu “tập ký tự đặc biệt” trong SRS; cần sinh viên xác nhận.
-- GitHub Issues: đã đăng bởi chat A theo đồng ý của sinh viên (không phải chat B). Repo public: chưa tạo / chưa push. Video Task 2: sinh viên tự quay và upload, link `<điền sau khi upload>`.
+- GitHub Issues: đã đăng bởi chat A theo đồng ý của sinh viên (không phải chat B). Repo public [https://github.com/datkrb/23120229-HW04-Automation](https://github.com/datkrb/23120229-HW04-Automation) do **chat A** tạo và push `main` (tới `dcb14ed`) ngày 2026-11-15 sau khi sinh viên đồng ý; chat B không push. Video Task 2: sinh viên tự quay và upload, link `<điền sau khi upload>`.
 - 9 report có trace, tổng khoảng 55 MB; cần lưu ý giới hạn Moodle 20 MB/tệp khi đóng gói.
 - Một số lượt chạy tạo dữ liệu thật trong DB local của SUT (user/đơn/coupon test). Dữ liệu này mất khi backend khởi động lại; coupon do test tạo đã được dọn.

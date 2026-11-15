@@ -84,5 +84,5 @@ AI được dùng ở mọi bước: điều phối, viết framework, skill, si
 | Prompt chính nguyên văn | `ai-log/execution/chat-b/P02-prompt.txt` (FR-01), `features/A-FR01/ai-draft/prompts/D1-page-object.txt`, `features/C-FR17/ai-draft/prompts/D3-assertions.txt`. Toàn bộ log: `ai-log/execution/chat-b/prompt_log.md` |
 | Phần AI đóng góp | Toàn bộ code trong `automation/` (config, pages, tests, data), skill trong `skills/`, script trong `_tools/HW04/`, mọi tài liệu Markdown của HW04, các lượt chạy test, ảnh evidence và bug report |
 | Cách xác minh và sửa | Chạy thật 3 browser; diff draft → final (`ea21d8a`→`4993ad4`, `7e01cf6`→`c1888f8`, `61518fd`→`ec9c5ae`); chạy lại kiểm ổn định; script tái hiện bug độc lập; `check-data-driven`; `verify-report` |
-| Phần sinh viên tự làm | **Chưa có bằng chứng.** Sinh viên cần tự làm: review, xác nhận bug bằng tay, quay video giọng thật, tạo repo public và push, đăng Issues |
+| Phần sinh viên tự làm | **Chưa có bằng chứng.** Sinh viên cần tự làm: review, xác nhận bug bằng tay, quay video giọng thật. (Đăng Issues và tạo/push repo public đã do chat A thực hiện ngày 2026-11-15 theo đồng ý của sinh viên, không phải thao tác tay của sinh viên.) |
 | Cam đoan / chữ ký | `<sinh viên tự xác nhận và ký sau khi review>` |

@@ -10,7 +10,7 @@
 
 Bài làm theo quy trình AI-first: AI sinh bản draft, sau đó review và sửa, có ghi audit.
 
-> Trạng thái: phần AI làm đã xong. Phần **sinh viên phải tự làm** liệt kê trong [user-handoff.md](user-handoff.md): review và ký, tạo repo public, quay video. GitHub Issues đã đăng (chat A, theo đồng ý của sinh viên). Human review: **pending**.
+> Trạng thái: phần AI làm đã xong. Phần **sinh viên phải tự làm** liệt kê trong [user-handoff.md](user-handoff.md): review và ký, quay video. Repo public đã tạo/push (chat A, theo đồng ý của sinh viên). GitHub Issues đã đăng (chat A, theo đồng ý của sinh viên). Human review: **pending**.
 
 ## Test summary
 
@@ -30,7 +30,7 @@ Số liệu từ lần chạy chính thức 2026-11-15, chi tiết ở [test-sum
 | GitHub Issues | **đã đăng**: [#39](https://github.com/datkrb/SUT_Issue/issues/39), [#40](https://github.com/datkrb/SUT_Issue/issues/40), [#41](https://github.com/datkrb/SUT_Issue/issues/41), [#42](https://github.com/datkrb/SUT_Issue/issues/42), [#43](https://github.com/datkrb/SUT_Issue/issues/43) + 10 comment vào #1, #2, #4, #5, #6, #8, #9, #10, #11, #15; ảnh chụp ở `evidence/issues/`; xem [docs/github-issues.md](docs/github-issues.md) |
 | Video Task 2 (YouTube Unlisted) | `<điền link sau khi upload>` |
 | Video demo Agent Skill | `<điền link sau khi upload>` (bản ghi local `demo/skill-demo.webm`, 29 MB > 20 MB/tệp của Moodle nên **không có trong ZIP**; nộp bằng link YouTube, tệp giữ trong repo) |
-| Repo GitHub public | `<điền sau khi push>` |
+| Repo GitHub public | [https://github.com/datkrb/23120229-HW04-Automation](https://github.com/datkrb/23120229-HW04-Automation) (chat A tạo/push theo đồng ý của sinh viên; commit sau `dcb14ed` được chat A push sau khi đối soát) |
 
 ## Self-assessment (§15)
 

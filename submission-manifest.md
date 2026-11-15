@@ -26,7 +26,7 @@ Student ID `23120229`. Phạm vi: A = FR-01 Đăng ký (Web :5173), B = FR-08 Ch
 | R14 | Khai công cụ trong AI Audit Report (AI, Playwright, reporter) | §8, tr.5 | `ai-audit.md` | bắt buộc | planned |
 | R15 | AI Audit Report: tên tool, ngày giờ, prompt, output cho từng tương tác; câu khai “I use AI tools for the following tasks” | §9, tr.5–6 | `ai-audit.md` + PDF, dẫn record ID của log B | bắt buộc | log B bắt đầu từ P00 |
 | R16 | AI Critique 200–300 từ (AI sai/thiên lệch/thiếu ở đâu, vì sao, nguyên tắc rút ra) | §10, tr.6 | `ai-critique.md` + PDF | bắt buộc | planned |
-| R17 | Repo GitHub **public**, ≥8 commit **thay đổi tệp `.spec.ts`** (commit chỉ README/PDF không tính); commit log dạng text | §12, tr.6 | git local `HW04/` + `git-log.txt` | bắt buộc | git local khởi tạo P00; **tạo repo public/push do sinh viên** |
+| R17 | Repo GitHub **public**, ≥8 commit **thay đổi tệp `.spec.ts`** (commit chỉ README/PDF không tính); commit log dạng text | §12, tr.6 | git local `HW04/` + `git-log.txt` | bắt buộc | git local khởi tạo P00; done 2026-11-15: https://github.com/datkrb/23120229-HW04-Automation (chat A tạo/push theo đồng ý của sinh viên) |
 | R18 | Commit message rõ cho từng bước của từng yêu cầu | Policy “Version Control” | lịch sử git | bắt buộc | đang áp dụng |
 | R19 | Báo cáo chính Markdown + PDF gồm automation report + review/gap analysis | §14, tr.7; Policy “PDF Copies” | `report.md` + `report.pdf` | bắt buộc | planned |
 | R20 | ZIP `23120229_HW04_AI_Automation_<NNN>.zip` (NNN 3 chữ số 000–100) chứa: report MD+PDF, link repo public, các HTML report, link video, AI Critique + Audit (MD+PDF), git log text, bug report + **ảnh chụp trang GitHub Issues**, README.md | §14, tr.7; Policy | ZIP | bắt buộc | planned |
