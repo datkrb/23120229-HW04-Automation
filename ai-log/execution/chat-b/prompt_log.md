@@ -2175,3 +2175,97 @@ Thông tin từ chat A (làm sau khi xong P06, như phần bổ sung P05 bước
 ### Log
 `EXEC-P05-002`.
 ```
+
+## EXEC-P07-001
+
+```text
+{
+  "id": "EXEC-P07-001",
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "occurred_at": "2026-11-15T21:08:00+07:00",
+  "timestamp_source": "estimated",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) authored and sent this prompt as a cross-session message; not student-authored",
+  "source": "Prompt: cross-session message, saved verbatim to P07-prompt.txt. Output: checkpoint-P07.md (verbatim).",
+  "capture_status": "partial",
+  "missing": [
+    "occurred_at estimated (commit cd234a1 is the first observable action of the turn); exact receipt time not observed.",
+    "The full tool call/result transcript is not exported.",
+    "Final QA ZIP sizes/SHA-256 and the hash of the commit holding this record are only in the final chat reply and _tools/HW04/work/P07/qa-package/ (the ZIP is rebuilt after this commit)."
+  ],
+  "artifact_paths": [
+    "HW04/pdf/",
+    "HW04/README.md",
+    "HW04/user-handoff.md",
+    "HW04/test-summary.md",
+    "HW04/report.md",
+    "HW04/evidence/issues/",
+    "_tools/HW04/render_pdfs.py",
+    "_tools/HW04/print_pdfs.js",
+    "_tools/HW04/package_submission.py",
+    "_tools/HW04/sync_p07_docs.py",
+    "_tools/HW04/shoot_issues.js",
+    "_tools/HW04/work/P07/"
+  ],
+  "redactions": [],
+  "recorded_at": "2026-11-15T21:08:42+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Vai trò: Chat thực hiện. Tiếp tục HW04 (P07 — PDF + đóng gói). A đã đối soát P06 (critique 295 từ, skill demo 6:20) và phần điền URL Issues #39–#43. Trước khi render: cập nhật README self-assessment/test summary vì Issues ĐÃ đăng (bỏ khoản trừ "Issues chưa đăng", giữ khoản human review pending), đồng bộ report/user-handoff (bỏ bước "đăng Issues" khỏi việc của sinh viên).
+
+1. Render PDF thật từ Markdown cho: `report.md`, `ai-audit.md`, `ai-critique.md` (+ disclosure nếu tách), `bug-report.md`, `test-summary.md`, `README.md` vào `HW04/pdf/`. Tái dùng công cụ render đã có (xem `_tools/README.md`, `_tools/HW03/`), script mới đặt ở `_tools/HW04/`. Mở/xem từng PDF (render ảnh trang đầu) kiểm tra tiếng Việt, bảng, ảnh không vỡ.
+2. Script đóng gói `_tools/HW04/package_submission.py`: staging theo §14 (report MD+PDF, README, audit/critique MD+PDF, git-log.txt, bug-report + ảnh issues, 9 HTML report thư mục đầy đủ, automation source không có node_modules/test-results, data, skill, demo script/metadata, evidence) → `HW04-submission/23120229_HW04_AI_Automation_<grade>.zip`, kiểm ≤20 MB/tệp (nếu vượt, tách theo chính sách), `SHA256SUMS.txt`, liệt kê nội dung zip. Grade lấy từ README self-assessment.
+Lưu ý: `demo/skill-demo.webm` 29 MB > 20 MB/tệp → không đưa vào ZIP (nộp link YouTube; giữ trong repo/local), ghi rõ trong README. Tạo **2 ZIP**: bản hiện tại `23120229_HW04_AI_Automation_<tổng tự chấm hiện tại>.zip` chỉ để QA nội bộ trong `_tools/HW04/work/` (không phải bản nộp), và script hỗ trợ tham số `--grade NNN` để sinh viên đóng gói lại sau khi điền link/video. Bản nộp chính thức đặt `HW04-submission/` chỉ khi grade do sinh viên chọn.
+3. QA: mọi link tương đối trong MD trỏ tới tệp có trong zip; không chứa token/mật khẩu thật ngoài tài khoản demo SRS; không chứa `_tools` nguyên khối, DB, cache.
+4. Commit (commit riêng trước tiên các thay đổi tài liệu điều phối A chưa track trong `HW04/docs/` — prompt-plan và prompts P02–P07 — message `docs(hw04): update coordinator prompts (chat A)`).
+
+AI log `EXEC-P07-…`. Checkpoint: đường dẫn ZIP, kích thước, SHA, danh sách việc còn lại của sinh viên. Dừng sau P07.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P07 — PDF + đóng gói (chat B)
+
+### Đồng bộ tài liệu (Issues đã đăng) — `_tools/HW04/sync_p07_docs.py`
+- `README.md`: A/B/C 22 → **24** (bỏ khoản trừ Issues; vẫn trừ 1 mỗi feature vì human review pending), tổng **71 → 77**; ghi rõ `demo/skill-demo.webm` (29 MB) không có trong ZIP, nộp bằng link YouTube; mục lục thêm `pdf/`, `evidence/issues/`.
+- `user-handoff.md`: bỏ bước “Đăng GitHub Issues” khỏi việc của sinh viên (còn 5 bước), thêm lệnh đóng gói `--grade NNN`.
+- `test-summary.md`, `report.md` §3: ghi Issues #39–#43 + 10 comment đã đăng (chat A, SV đồng ý), thêm EXEC-P05-002.
+
+### PDF — `pdf/` (`_tools/HW04/render_pdfs.py` + `print_pdfs.js`)
+- Markdown → HTML → Chromium print (Playwright). Không dùng lại renderer ReportLab của HW03 vì nó trải mọi bảng thành dòng “tiêu đề: giá trị” và bỏ code block; HW04 nhiều bảng/code.
+- 6 PDF: report 8 tr, ai-audit 4, ai-critique 1, bug-report 21 (có phụ lục 16 ảnh trang GitHub Issues, bản JPEG thu nhỏ), test-summary 2, README 3. Footer “HW04 · 23120229 · <tài liệu> · human review pending · x/y”.
+- QA: 0 ký tự thay thế (U+FFFD), 34 link tương đối viết lại theo `pdf/` và đều tồn tại; ảnh trong HTML đều tải được trước khi in. Đã xem bằng mắt: report tr.1 và tr.5 (bảng), bug-report tr.15 (ảnh comment), ai-audit tr.1–2.
+- Phát hiện khi xem: ảnh comment GitHub bị thanh tiêu đề sticky che 1 dòng → sửa `shoot_issues.js` (tắt sticky/fixed trước khi chụp), chụp lại 16 ảnh, kiểm lại 25/25 ảnh trong body hiển thị.
+
+### Đóng gói — `_tools/HW04/package_submission.py`
+- Nội dung = `git ls-files --cached --others --exclude-standard` của HW04 (nên không có node_modules, test-results kể cả `.auth` storageState, reports/_scratch), trừ `demo/skill-demo.webm`.
+- Mặc định (không `--grade`): bản **QA nội bộ** với điểm README (077) ở `_tools/HW04/work/P07/qa-package/` — **không phải bản nộp**. `--grade NNN` → `HW04-submission/` (chưa tạo, chờ sinh viên chọn điểm).
+- Vượt 20 MB nên tách: ZIP chính (tài liệu, PDF, source, data, skill, features, evidence, ai-log, demo metadata) + 3 ZIP report (mỗi thư mục report giữ nguyên). Tổng 5 tệp nộp kể cả `SHA256SUMS.txt`; mỗi ZIP có `.contents.txt`.
+- QA tự động: 89 link tương đối trong MD → 0 hỏng; 0 token GitHub/khóa trong tệp text; quét 3353 mục trong trace zip: 0 token GitHub, mật khẩu chỉ có `Admin123!`/`Test1234!` (tài khoản demo SRS) và dữ liệu test trong `data/*.json`; 0 đường dẫn cấm (`_tools`, DB, cache, node_modules).
+- Kích thước/SHA của bản QA cuối: xem `_tools/HW04/work/P07/qa-package/SHA256SUMS.txt` và `package-qa.json` (ZIP được build lại sau commit chứa log này, nên SHA cuối nằm trong tin nhắn trả lời).
+
+### Commit
+- `cd234a1` docs(hw04): update coordinator prompts (chat A)
+- `c6729be` đồng bộ tài liệu + 6 PDF + chụp lại ảnh comment
+- commit log/checkpoint P07: hash trong tin nhắn trả lời
+
+### Việc còn lại của sinh viên (`user-handoff.md`)
+1. Review và ký (`ai-audit.md` Human review, cam đoan), tự kiểm 5 bug mới.
+2. Tạo repo GitHub public, push, điền link repo.
+3. Quay video Task 2 (giọng thật, `whoami`/`hostname`), upload Unlisted, điền link.
+4. Upload `demo/skill-demo.webm` lên YouTube, điền link.
+5. Chọn điểm, chạy lại `git log --stat --date=iso > git-log.txt`, rồi `python _tools/HW04/package_submission.py --grade NNN` → nộp các tệp trong `HW04-submission/`.
+
+### Log
+`EXEC-P07-001`. Dừng sau P07.
+```
