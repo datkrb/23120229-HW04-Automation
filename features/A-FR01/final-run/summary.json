@@ -1,0 +1,636 @@
+{
+  "generatedAt": "2026-11-15T18:16:46+07:00",
+  "projectDir": "D:\\KI7\\testing\\HW04\\automation",
+  "runs": [
+    {
+      "feature": "fr01",
+      "browser": "chromium",
+      "label": "fr01-chromium",
+      "report": "reports/fr01-chromium",
+      "spec": "tests/fr01-register.spec.ts",
+      "started": "2026-11-15T18:09:03+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T11:09:14.157Z",
+        "duration": 117957.387,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 11,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T18:09:14+07:00",
+        "Run label": "fr01-chromium",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-01 Mật khẩu dài 8, mỗi nhóm 2 ký tự → đăng ký thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8483
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-02 Mật khẩu dài 9, mỗi nhóm sát cận dưới → đăng ký thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7736
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-03 Mật khẩu có đúng 1 chữ thường → đăng ký thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7742
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-04 Mật khẩu dài 7 đủ 4 nhóm → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 740
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-05 Mật khẩu không có chữ hoa → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 575
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-06 Mật khẩu không có chữ thường → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 555
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-07 Mật khẩu không có chữ số → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 579
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-08 Mật khẩu không có ký tự đặc biệt → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 578
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-09 Ký tự đặc biệt ngoài tập (#) → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 586
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-10 Mật khẩu và xác nhận để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 647
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-11 Họ tên để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 602
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-12 Email để trống → từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 604
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-13 Email thiếu @ → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7659
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-14 Email đã tồn tại (test@eshop.com) → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7844
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-15 Xác nhận mật khẩu khác mật khẩu → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7532
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-16 Xác nhận mật khẩu để trống → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7511
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-17 Email trùng và xác nhận lệch → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7904
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-18 Đăng ký email mới thành công rồi đăng ký lại cùng email → lần 2 bị từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7784
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-20 Dấu cách thay cho ký tự đặc biệt → từ chối",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7890
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-19 Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 14238
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr01",
+      "browser": "firefox",
+      "label": "fr01-firefox",
+      "report": "reports/fr01-firefox",
+      "spec": "tests/fr01-register.spec.ts",
+      "started": "2026-11-15T18:11:12+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T11:11:17.263Z",
+        "duration": 191836.614,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 11,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T18:11:17+07:00",
+        "Run label": "fr01-firefox",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-01 Mật khẩu dài 8, mỗi nhóm 2 ký tự → đăng ký thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11648
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-02 Mật khẩu dài 9, mỗi nhóm sát cận dưới → đăng ký thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11569
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-03 Mật khẩu có đúng 1 chữ thường → đăng ký thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11403
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-04 Mật khẩu dài 7 đủ 4 nhóm → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4339
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-05 Mật khẩu không có chữ hoa → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3116
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-06 Mật khẩu không có chữ thường → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3014
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-07 Mật khẩu không có chữ số → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3005
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-08 Mật khẩu không có ký tự đặc biệt → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2994
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-09 Ký tự đặc biệt ngoài tập (#) → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2971
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-10 Mật khẩu và xác nhận để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3052
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-11 Họ tên để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2974
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-12 Email để trống → từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2954
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-13 Email thiếu @ → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10287
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-14 Email đã tồn tại (test@eshop.com) → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11518
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-15 Xác nhận mật khẩu khác mật khẩu → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10914
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-16 Xác nhận mật khẩu để trống → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11029
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-17 Email trùng và xác nhận lệch → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11360
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-18 Đăng ký email mới thành công rồi đăng ký lại cùng email → lần 2 bị từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11316
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-20 Dấu cách thay cho ký tự đặc biệt → từ chối",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11678
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-19 Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 17975
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr01",
+      "browser": "webkit",
+      "label": "fr01-webkit",
+      "report": "reports/fr01-webkit",
+      "spec": "tests/fr01-register.spec.ts",
+      "started": "2026-11-15T18:14:29+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T11:14:33.769Z",
+        "duration": 132430.357,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 11,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T18:14:33+07:00",
+        "Run label": "fr01-webkit",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-01 Mật khẩu dài 8, mỗi nhóm 2 ký tự → đăng ký thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 9023
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-02 Mật khẩu dài 9, mỗi nhóm sát cận dưới → đăng ký thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8542
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-03 Mật khẩu có đúng 1 chữ thường → đăng ký thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8526
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-04 Mật khẩu dài 7 đủ 4 nhóm → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1555
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-05 Mật khẩu không có chữ hoa → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1382
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-06 Mật khẩu không có chữ thường → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1477
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-07 Mật khẩu không có chữ số → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1387
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-08 Mật khẩu không có ký tự đặc biệt → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1407
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-09 Ký tự đặc biệt ngoài tập (#) → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1486
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-10 Mật khẩu và xác nhận để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1511
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-11 Họ tên để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1499
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-12 Email để trống → từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1489
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-13 Email thiếu @ → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8486
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-14 Email đã tồn tại (test@eshop.com) → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8537
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-15 Xác nhận mật khẩu khác mật khẩu → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7887
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-16 Xác nhận mật khẩu để trống → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7857
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-17 Email trùng và xác nhận lệch → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8674
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-18 Đăng ký email mới thành công rồi đăng ký lại cùng email → lần 2 bị từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8606
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-20 Dấu cách thay cho ký tự đặc biệt → từ chối",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 8626
+        },
+        {
+          "file": "fr01-register.spec.ts",
+          "title": "FR-01 Đăng ký tài khoản › A-AUTO-19 Cấu trúc form: có ô xác nhận, type email/password, nhãn bắt buộc có *, đúng 1 h1",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 14662
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
