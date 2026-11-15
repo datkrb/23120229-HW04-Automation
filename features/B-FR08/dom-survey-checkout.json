@@ -1,0 +1,257 @@
+{
+  "chromium": {
+    "emptyCartGuest": "- main:\n  - heading \"Giỏ hàng của bạn đang trống\" [level=2]\n  - link \"Tiếp tục mua sắm\":\n    - /url: /",
+    "home": "- main:\n  - heading \"Danh sách sản phẩm\" [level=1]\n  - textbox \"Tìm kiếm...\"\n  - button \"Tìm\"\n  - heading \"iPhone 15 Pro Max\" [level=2]\n  - paragraph: 30,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/1\n  - button \"Thêm vào giỏ\"\n  - heading \"Samsung Galaxy S24 Ultra\" [level=2]\n  - paragraph: 28,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/2\n  - button \"Thêm vào giỏ\"\n  - heading \"MacBook Pro M3\" [level=2]\n  - paragraph: 45,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/3\n  - button \"Thêm vào giỏ\"\n  - heading \"Tai nghe AirPods Pro 2\" [level=2]\n  - paragraph: 6,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/4\n  - button \"Thêm vào giỏ\"\n  - heading \"Bàn phím cơ Keychron Q1\" [level=2]",
+    "cartGuestWithItem": "- main:\n  - heading \"Giỏ Hàng\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Sản phẩm Giá Số lượng Thành tiền Thao tác\":\n        - cell \"Sản phẩm\"\n        - cell \"Giá\"\n        - cell \"Số lượng\"\n        - cell \"Thành tiền\"\n        - cell \"Thao tác\"\n    - rowgroup:\n      - row \"Bàn phím cơ Keychron Q1 4,000,000 ₫ 1 4,000,000 ₫ Xóa\":\n        - cell \"Bàn phím cơ Keychron Q1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"Xóa\":\n          - button \"Xóa\"\n  - text: \"Tổng tạm tính: 4,000,000 ₫\"\n  - link \"← Mua tiếp\":\n    - /url: /\n  - button \"Tiến hành thanh toán\"",
+    "guestCheckoutDialog": "Bạn cần đăng nhập để thanh toán!",
+    "afterGuestCheckoutUrl": "http://localhost:5173/login",
+    "checkout": "- main:\n  - heading \"Xác Nhận Đơn Hàng\" [level=2]\n  - heading \"Sản phẩm:\" [level=3]\n  - list:\n    - listitem: Bàn phím cơ Keychron Q1 x 1 — 4,000,000 ₫\n  - text: \"Tổng tiền thanh toán (VND):\"\n  - spinbutton: \"4000000\"\n  - text: Mã Giảm Giá\n  - textbox \"Nhập mã giảm giá...\"\n  - button \"Áp dụng\" [disabled]\n  - text: \"Tổng thanh toán: 4,000,000 ₫\"\n  - button \"Xác Nhận Thanh Toán\"",
+    "checkoutControls": [
+      {
+        "tag": "h2",
+        "type": null,
+        "text": "Xác Nhận Đơn Hàng",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "h3",
+        "type": null,
+        "text": "Sản phẩm:",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "text": "Tổng tiền thanh toán (VND):",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "text": "",
+        "value": "4000000",
+        "readonly": false,
+        "disabled": false,
+        "placeholder": null
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "text": "Mã Giảm Giá",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "text": "",
+        "value": "",
+        "readonly": false,
+        "disabled": false,
+        "placeholder": "Nhập mã giảm giá..."
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "text": "Áp dụng",
+        "value": "",
+        "readonly": null,
+        "disabled": true,
+        "placeholder": null
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "text": "Xác Nhận Thanh Toán",
+        "value": "",
+        "readonly": null,
+        "disabled": false,
+        "placeholder": null
+      }
+    ],
+    "h1Count": 0,
+    "success": "- main:\n  - heading \"Thanh toán thành công!\" [level=2]\n  - paragraph: Cảm ơn bạn đã mua sắm tại EShop.\n  - button \"Quay lại trang chủ\"",
+    "cartAfterSuccess": "- main:\n  - heading \"Giỏ Hàng\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Sản phẩm Giá Số lượng Thành tiền Thao tác\":\n        - cell \"Sản phẩm\"\n        - cell \"Giá\"\n        - cell \"Số lượng\"\n        - cell \"Thành tiền\"\n        - cell \"Thao tác\"\n    - rowgroup:\n      - row \"Bàn phím cơ Keychron Q1 4,000,000 ₫ 1 4,000,000 ₫ Xóa\":\n        - cell \"Bàn phím cơ Keychron Q1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"Xóa\":\n          - button \"Xóa\"\n  - text: \"Tổng tạm tính: 4,000,000 ₫\"\n  - link \"← Mua tiếp\":\n    - /url: /\n  - button \"Tiến hành thanh toán\""
+  },
+  "firefox": {
+    "emptyCartGuest": "- main:\n  - heading \"Giỏ hàng của bạn đang trống\" [level=2]\n  - link \"Tiếp tục mua sắm\":\n    - /url: /",
+    "home": "- main:\n  - heading \"Danh sách sản phẩm\" [level=1]\n  - textbox \"Tìm kiếm...\"\n  - button \"Tìm\"\n  - heading \"iPhone 15 Pro Max\" [level=2]\n  - paragraph: 30,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/1\n  - button \"Thêm vào giỏ\"\n  - heading \"Samsung Galaxy S24 Ultra\" [level=2]\n  - paragraph: 28,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/2\n  - button \"Thêm vào giỏ\"\n  - heading \"MacBook Pro M3\" [level=2]\n  - paragraph: 45,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/3\n  - button \"Thêm vào giỏ\"\n  - heading \"Tai nghe AirPods Pro 2\" [level=2]\n  - paragraph: 6,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/4\n  - button \"Thêm vào giỏ\"\n  - heading \"Bàn phím cơ Keychron Q1\" [level=2]",
+    "cartGuestWithItem": "- main:\n  - heading \"Giỏ Hàng\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Sản phẩm Giá Số lượng Thành tiền Thao tác\":\n        - cell \"Sản phẩm\"\n        - cell \"Giá\"\n        - cell \"Số lượng\"\n        - cell \"Thành tiền\"\n        - cell \"Thao tác\"\n    - rowgroup:\n      - row \"Bàn phím cơ Keychron Q1 4,000,000 ₫ 1 4,000,000 ₫ Xóa\":\n        - cell \"Bàn phím cơ Keychron Q1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"Xóa\":\n          - button \"Xóa\"\n  - text: \"Tổng tạm tính: 4,000,000 ₫\"\n  - link \"← Mua tiếp\":\n    - /url: /\n  - button \"Tiến hành thanh toán\"",
+    "guestCheckoutDialog": "Bạn cần đăng nhập để thanh toán!",
+    "afterGuestCheckoutUrl": "http://localhost:5173/login",
+    "checkout": "- main:\n  - heading \"Xác Nhận Đơn Hàng\" [level=2]\n  - heading \"Sản phẩm:\" [level=3]\n  - list:\n    - listitem: Bàn phím cơ Keychron Q1 x 1 — 4,000,000 ₫\n  - text: \"Tổng tiền thanh toán (VND):\"\n  - spinbutton: \"4000000\"\n  - text: Mã Giảm Giá\n  - textbox \"Nhập mã giảm giá...\"\n  - button \"Áp dụng\" [disabled]\n  - text: \"Tổng thanh toán: 4,000,000 ₫\"\n  - button \"Xác Nhận Thanh Toán\"",
+    "checkoutControls": [
+      {
+        "tag": "h2",
+        "type": null,
+        "text": "Xác Nhận Đơn Hàng",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "h3",
+        "type": null,
+        "text": "Sản phẩm:",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "text": "Tổng tiền thanh toán (VND):",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "text": "",
+        "value": "4000000",
+        "readonly": false,
+        "disabled": false,
+        "placeholder": null
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "text": "Mã Giảm Giá",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "text": "",
+        "value": "",
+        "readonly": false,
+        "disabled": false,
+        "placeholder": "Nhập mã giảm giá..."
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "text": "Áp dụng",
+        "value": "",
+        "readonly": null,
+        "disabled": true,
+        "placeholder": null
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "text": "Xác Nhận Thanh Toán",
+        "value": "",
+        "readonly": null,
+        "disabled": false,
+        "placeholder": null
+      }
+    ],
+    "h1Count": 0,
+    "success": "- main:\n  - heading \"Thanh toán thành công!\" [level=2]\n  - paragraph: Cảm ơn bạn đã mua sắm tại EShop.\n  - button \"Quay lại trang chủ\"",
+    "cartAfterSuccess": "- main:\n  - heading \"Giỏ Hàng\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Sản phẩm Giá Số lượng Thành tiền Thao tác\":\n        - cell \"Sản phẩm\"\n        - cell \"Giá\"\n        - cell \"Số lượng\"\n        - cell \"Thành tiền\"\n        - cell \"Thao tác\"\n    - rowgroup:\n      - row \"Bàn phím cơ Keychron Q1 4,000,000 ₫ 1 4,000,000 ₫ Xóa\":\n        - cell \"Bàn phím cơ Keychron Q1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"Xóa\":\n          - button \"Xóa\"\n  - text: \"Tổng tạm tính: 4,000,000 ₫\"\n  - link \"← Mua tiếp\":\n    - /url: /\n  - button \"Tiến hành thanh toán\""
+  },
+  "webkit": {
+    "emptyCartGuest": "- main:\n  - heading \"Giỏ hàng của bạn đang trống\" [level=2]\n  - link \"Tiếp tục mua sắm\":\n    - /url: /",
+    "home": "- main:\n  - heading \"Danh sách sản phẩm\" [level=1]\n  - textbox \"Tìm kiếm...\"\n  - button \"Tìm\"\n  - heading \"iPhone 15 Pro Max\" [level=2]\n  - paragraph: 30,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/1\n  - button \"Thêm vào giỏ\"\n  - heading \"Samsung Galaxy S24 Ultra\" [level=2]\n  - paragraph: 28,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/2\n  - button \"Thêm vào giỏ\"\n  - heading \"MacBook Pro M3\" [level=2]\n  - paragraph: 45,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/3\n  - button \"Thêm vào giỏ\"\n  - heading \"Tai nghe AirPods Pro 2\" [level=2]\n  - paragraph: 6,000,000 VND\n  - link \"Xem chi tiết\":\n    - /url: /product/4\n  - button \"Thêm vào giỏ\"\n  - heading \"Bàn phím cơ Keychron Q1\" [level=2]",
+    "cartGuestWithItem": "- main:\n  - heading \"Giỏ Hàng\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Sản phẩm Giá Số lượng Thành tiền Thao tác\":\n        - cell \"Sản phẩm\"\n        - cell \"Giá\"\n        - cell \"Số lượng\"\n        - cell \"Thành tiền\"\n        - cell \"Thao tác\"\n    - rowgroup:\n      - row \"Bàn phím cơ Keychron Q1 4,000,000 ₫ 1 4,000,000 ₫ Xóa\":\n        - cell \"Bàn phím cơ Keychron Q1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"Xóa\":\n          - button \"Xóa\"\n  - text: \"Tổng tạm tính: 4,000,000 ₫\"\n  - link \"← Mua tiếp\":\n    - /url: /\n  - button \"Tiến hành thanh toán\"",
+    "guestCheckoutDialog": "Bạn cần đăng nhập để thanh toán!",
+    "afterGuestCheckoutUrl": "http://localhost:5173/login",
+    "checkout": "- main:\n  - heading \"Xác Nhận Đơn Hàng\" [level=2]\n  - heading \"Sản phẩm:\" [level=3]\n  - list:\n    - listitem: Bàn phím cơ Keychron Q1 x 1 — 4,000,000 ₫\n  - text: \"Tổng tiền thanh toán (VND):\"\n  - spinbutton: \"4000000\"\n  - text: Mã Giảm Giá\n  - textbox \"Nhập mã giảm giá...\"\n  - button \"Áp dụng\" [disabled]\n  - text: \"Tổng thanh toán: 4,000,000 ₫\"\n  - button \"Xác Nhận Thanh Toán\"",
+    "checkoutControls": [
+      {
+        "tag": "h2",
+        "type": null,
+        "text": "Xác Nhận Đơn Hàng",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "h3",
+        "type": null,
+        "text": "Sản phẩm:",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "text": "Tổng tiền thanh toán (VND):",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "text": "",
+        "value": "4000000",
+        "readonly": false,
+        "disabled": false,
+        "placeholder": null
+      },
+      {
+        "tag": "label",
+        "type": null,
+        "text": "Mã Giảm Giá",
+        "value": null,
+        "readonly": null,
+        "disabled": null,
+        "placeholder": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "text": "",
+        "value": "",
+        "readonly": false,
+        "disabled": false,
+        "placeholder": "Nhập mã giảm giá..."
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "text": "Áp dụng",
+        "value": "",
+        "readonly": null,
+        "disabled": true,
+        "placeholder": null
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "text": "Xác Nhận Thanh Toán",
+        "value": "",
+        "readonly": null,
+        "disabled": false,
+        "placeholder": null
+      }
+    ],
+    "h1Count": 0,
+    "success": "- main:\n  - heading \"Thanh toán thành công!\" [level=2]\n  - paragraph: Cảm ơn bạn đã mua sắm tại EShop.\n  - button \"Quay lại trang chủ\"",
+    "cartAfterSuccess": "- main:\n  - heading \"Giỏ Hàng\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Sản phẩm Giá Số lượng Thành tiền Thao tác\":\n        - cell \"Sản phẩm\"\n        - cell \"Giá\"\n        - cell \"Số lượng\"\n        - cell \"Thành tiền\"\n        - cell \"Thao tác\"\n    - rowgroup:\n      - row \"Bàn phím cơ Keychron Q1 4,000,000 ₫ 1 4,000,000 ₫ Xóa\":\n        - cell \"Bàn phím cơ Keychron Q1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"1\"\n        - cell \"4,000,000 ₫\"\n        - cell \"Xóa\":\n          - button \"Xóa\"\n  - text: \"Tổng tạm tính: 4,000,000 ₫\"\n  - link \"← Mua tiếp\":\n    - /url: /\n  - button \"Tiến hành thanh toán\""
+  }
+}

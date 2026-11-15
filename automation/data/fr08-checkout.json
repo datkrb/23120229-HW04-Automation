@@ -1,0 +1,110 @@
+[
+  {
+    "id": "B-AUTO-01",
+    "title": "Guest có giỏ P×1 không thanh toán được",
+    "type": "negative",
+    "input": { "auth": "guest", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }] },
+    "expected": { "kind": "guest-blocked" },
+    "trace": ["FR-08 chỉ người dùng đã đăng nhập", "HW02 B-TC-001"]
+  },
+  {
+    "id": "B-AUTO-02",
+    "title": "Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+    "type": "positive",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }] },
+    "expected": { "kind": "checkout-success", "formula": "sum(price × qty)" },
+    "trace": ["FR-08 tổng tự tính, hiển thị đầy đủ danh sách", "HW02 B-TC-002"]
+  },
+  {
+    "id": "B-AUTO-03",
+    "title": "Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+    "type": "positive",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 2 }, { "product": "Tai nghe AirPods Pro 2", "qty": 1 }] },
+    "expected": { "kind": "checkout-success", "formula": "sum(price × qty)", "cartClearedAfter": true },
+    "trace": ["FR-08 tổng tự tính", "FR-08 sau thanh toán thành công giỏ được xóa", "HW02 B-TC-003"]
+  },
+  {
+    "id": "B-AUTO-04",
+    "title": "Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+    "type": "positive",
+    "input": {
+      "auth": "user",
+      "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }],
+      "updateTo": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 2 }]
+    },
+    "expected": { "kind": "checkout-success", "formula": "sum(price × qty) of updateTo" },
+    "trace": ["FR-08 tổng tính từ giỏ hàng", "HW02 B-TC-004"]
+  },
+  {
+    "id": "B-AUTO-05",
+    "title": "Tổng tiền không cho người dùng sửa trực tiếp",
+    "type": "negative",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }], "typeTotal": "1" },
+    "expected": { "kind": "total-not-editable" },
+    "trace": ["FR-08 tổng tiền không cho phép người dùng chỉnh sửa trực tiếp", "HW02 B-TC-005"]
+  },
+  {
+    "id": "B-AUTO-06",
+    "title": "Client gửi total_amount = 1 → đơn không lưu 1",
+    "type": "negative",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }], "tamperTotal": 1 },
+    "expected": { "kind": "server-recalculates" },
+    "trace": ["FR-08 backend tự tính lại, không chấp nhận total_amount client", "HW02 B-TC-006"]
+  },
+  {
+    "id": "B-AUTO-07",
+    "title": "Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+    "type": "negative",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }], "tamperTotal": 900000000 },
+    "expected": { "kind": "server-recalculates" },
+    "trace": ["FR-08 backend tự tính lại", "HW02 B-TC-007"]
+  },
+  {
+    "id": "B-AUTO-08",
+    "title": "Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+    "type": "edge",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 2 }, { "product": "Tai nghe AirPods Pro 2", "qty": 1 }] },
+    "expected": { "kind": "structure", "h1Count": 1 },
+    "trace": ["FR-21 mỗi trang đúng 1 h1", "FR-21 ký hiệu ₫ với phân cách hàng nghìn", "HW02 B-TC-008"]
+  },
+  {
+    "id": "B-AUTO-09",
+    "title": "Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+    "type": "edge",
+    "input": { "auth": "user", "cart": [] },
+    "expected": { "kind": "empty-cart" },
+    "trace": ["FR-07/FR-08 giỏ rỗng (chính sách checkout rỗng chưa có oracle)", "HW02 B-TC-011"]
+  },
+  {
+    "id": "B-AUTO-10",
+    "title": "Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+    "type": "edge",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 3 }] },
+    "expected": { "kind": "checkout-success", "formula": "sum(price × qty)" },
+    "trace": ["FR-08 tổng tự tính", "HW04 bổ sung"]
+  },
+  {
+    "id": "B-AUTO-11",
+    "title": "Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+    "type": "positive",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }, { "product": "Tai nghe AirPods Pro 2", "qty": 1 }, { "product": "Samsung Galaxy S24 Ultra", "qty": 1 }] },
+    "expected": { "kind": "checkout-success", "formula": "sum(price × qty)" },
+    "trace": ["FR-08 giao diện hiển thị đầy đủ danh sách sản phẩm", "HW04 bổ sung"]
+  },
+  {
+    "id": "B-AUTO-12",
+    "title": "Client gửi total_amount âm → đơn không lưu giá trị âm",
+    "type": "negative",
+    "input": { "auth": "user", "cart": [{ "product": "Bàn phím cơ Keychron Q1", "qty": 1 }], "tamperTotal": -100000 },
+    "expected": { "kind": "server-recalculates" },
+    "trace": ["FR-08 backend tự tính lại", "HW04 bổ sung"]
+  },
+  {
+    "id": "B-AUTO-13",
+    "title": "POST /api/checkout không có token bị từ chối",
+    "type": "negative",
+    "input": { "auth": "none-api", "body": { "items": [], "total_amount": 1000 } },
+    "expected": { "kind": "api-unauthorized" },
+    "trace": ["FR-08 chỉ người dùng đã đăng nhập", "FR-12 token JWT", "HW04 bổ sung (API bổ trợ B-AUTO-01)"]
+  }
+]
