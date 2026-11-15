@@ -1,6 +1,6 @@
 # HW04 — Working context (chat B thực hiện)
 
-Cập nhật: 2026-11-13 ~19:53 (+07:00), sau P01. Hỗ trợ tiếp tục công việc; không thay prompt/output nguyên văn trong AI log.
+Cập nhật: 2026-11-15 ~18:25 (+07:00), sau P02. Hỗ trợ tiếp tục công việc; không thay prompt/output nguyên văn trong AI log.
 
 ## Vai trò
 
@@ -18,8 +18,9 @@ Cập nhật: 2026-11-13 ~19:53 (+07:00), sau P01. Hỗ trợ tiếp tục công
 | Bước | Trạng thái | Ghi chú |
 |---|---|---|
 | P00 intake + setup | completed, A đã chấp nhận | manifest, git local, Playwright 3 browser, SUT up, smoke 3/3 browser pass |
-| P01 Agent Skill | completed (chờ A đối soát) | skill `playwright-data-driven-automation` (nguồn `_tools/skills/`, bản nộp `HW04/skills/`); 3 script chạy thật trên smoke; npm `matrix`, `matrix:smoke`, `verify:reports`, `check:data` |
-| P02–P07 | chưa nhận prompt | xem `HW04/docs/prompt-plan.md` |
+| P01 Agent Skill | completed, A đã chấp nhận | skill `playwright-data-driven-automation` (nguồn `_tools/skills/`, bản nộp `HW04/skills/`); 3 script chạy thật trên smoke; npm `matrix`, `matrix:smoke`, `verify:reports`, `check:data` |
+| P02 FR-01 | completed (chờ A đối soát) | 20 TC; final 3 browser 9 pass/11 fail mỗi browser (2026-11-15, code 4993ad4); reports `automation/reports/fr01-*`; BC-A1/A2 trùng #1/#2, BC-A3/A4/A5 mới (chưa đăng) — `features/A-FR01/results.md` |
+| P03–P07 | chưa nhận prompt | xem `HW04/docs/prompt-plan.md` |
 
 ## Hạ tầng
 
@@ -45,6 +46,12 @@ Cập nhật: 2026-11-13 ~19:53 (+07:00), sau P01. Hỗ trợ tiếp tục công
 
 - `_tools/HW04/work/p01-skill-check/RESULTS.md` (bảng kiểm tra script, kể cả kiểm tra âm tính), `summary.{md,json}`, `failcheck-summary.md`, ảnh report, `fixtures/`.
 
+## Lưu ý P02
+
+- Report có trace: fr01-* tổng ~22 MB → cân nhắc tắt trace/tách ZIP trước P07.
+- Máy khởi động lại 2026-11-15; SUT khởi động lại bằng `start.ps1` (DB seed lại).
+- Probe khám phá FR-01: `_tools/HW04/probe-fr01.js` (tạo tài khoản trùng `test@eshop.com` trong DB đang chạy — đã mất sau restart; không chạy lại khi đang test FR-08 dùng `test@eshop.com`).
+
 ## Bước tiếp
 
-Chờ prompt P02 (FR-01) từ chat A. Khi làm feature: lưu bản AI đầu vào `automation/ai-draft/<feature>/` và commit riêng trước khi sửa; chạy `npm run matrix -- --feature …`, `npm run verify:reports`, `npm run check:data`.
+Chờ prompt P03 (FR-08) từ chat A. Khi làm feature: lưu bản AI đầu vào `automation/ai-draft/<feature>/` và commit riêng trước khi sửa; chạy `npm run matrix -- --feature …`, `npm run verify:reports`, `npm run check:data`.

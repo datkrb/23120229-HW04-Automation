@@ -253,3 +253,518 @@ Checkpoint: tệp tạo/sửa, kiểm chứng (script chạy thật ra gì), log
 Dừng sau P01, chờ prompt tiếp theo.
 ```
 
+
+## EXEC-P02-001
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P02-001",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) authored and sent this prompt as a cross-session message; not student-authored",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: cross-session message received by B, saved verbatim in P02-prompt.txt. Output: B's end-of-turn status messages from 2026-11-13, saved in P02-interim-outputs-2026-11-13.md. The final output for P02 is in EXEC-P02-005.",
+  "missing": [
+    "Exact receipt time unknown. Tool-observed times 2026-11-13: draft run started 19:57 (12:57Z), final run 20:46-20:55 +07:00.",
+    "Full tool call/result transcript not exported.",
+    "The turn that ran commit + final run3 was interrupted when the machine restarted, so it has no closing message."
+  ],
+  "artifact_paths": [
+    "HW04/features/A-FR01/",
+    "HW04/automation/data/fr01-register.json",
+    "HW04/automation/pages/RegisterPage.ts",
+    "HW04/automation/tests/fr01-register.spec.ts"
+  ],
+  "recorded_at": "2026-11-15T18:19:03+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Vai trò: Chat thực hiện. Tiếp tục HW04 (P02 — Feature A: FR-01 Đăng ký, Web :5173). A đã đối soát P01: chấp nhận (skill + scripts run-matrix/verify-report/check-data-driven, commit 55ad041…8761ca8). Dùng `run-matrix`, `verify-report`, `check-data-driven` của skill khi chạy/kiểm.
+
+Áp dụng skill `playwright-data-driven-automation` (đọc SKILL.md của nó trước) + software-testing-ai-first. Oracle = SRS FR-01 (`eshop-sut/README.md`), không lấy hành vi code làm expected.
+
+Làm theo từng bước, **commit sau mỗi bước** có chạm `.spec.ts` khi phù hợp (đề §12 yêu cầu ≥8 commit chạm spec cho cả bài):
+1. Chọn ≥12 TC (khuyến nghị 12–16) từ `HW02/features/a-fr01-register-web/04-test-cases.md`, phủ positive/negative/edge (bắt buộc trường, định dạng email, email trùng, mỗi điều kiện mật khẩu mạnh, biên 7/8 ký tự, ký tự đặc biệt ngoài tập, confirm không khớp, chuyển trang Login sau thành công…). Ghi mapping HW02 TC → HW04 auto ID và TC không automate + lý do tại `HW04/features/A-FR01/selection.md`.
+2. Khảo sát DOM thật trang đăng ký (role/label/placeholder/test-id, thông báo lỗi, HTML5 validation) và ghi locator inventory.
+3. Data file `HW04/automation/data/fr01-register.json` (không inline array trong spec). Email duy nhất sinh theo run từ template trong data (vd. `{{unique}}`), không hard-code email đã tồn tại trừ case trùng (`test@eshop.com`).
+4. Sinh bản **AI draft** của POM + spec (`pages/RegisterPage.ts`, `tests/fr01-register.spec.ts`) bằng prompt riêng từng bước; lưu nguyên văn bản draft vào `HW04/features/A-FR01/ai-draft/` và commit nguyên trạng (`test(fr01): AI draft data-driven register spec`).
+5. Chạy draft trên chromium/firefox/webkit, ghi kết quả thật.
+6. Human-review checklist của skill: liệt kê lỗi AI (selector, assertion, edge thiếu, wait, isolation, oracle), sửa, commit từng nhóm sửa (`fix(fr01): ...`). ≥3 assertion pattern khác nhau, ghi pattern nào ở TC nào. Lưu diff draft→final `HW04/features/A-FR01/review.md` (lỗi | bằng chứng | sửa | vì sao AI sai).
+7. Chạy bản cuối từng browser ra report riêng tại `HW04/automation/reports/fr01-<browser>/index.html` (đúng quy ước P00; Run by: 23120229 + ISO). Fail do SUT giữ nguyên fail (không `test.fail`/skip để che), xác minh là bug thật bằng tay/ảnh; flaky thì sửa test. Ghi bảng kết quả `HW04/features/A-FR01/results.md` (TC × browser) và bug candidates (kèm screenshot) — chưa đăng Issues ở bước này. Đối chiếu bug HW02 đã có ở `datkrb/SUT_Issue` (#1–#11, đọc công khai) để tránh trùng.
+
+AI log: `HW04/ai-log/execution/chat-b/`, ID `EXEC-P02-…`, ghi riêng từng prompt sinh code của bước 4 (đó là bằng chứng "drive AI step by step"); prompt này do chat A soạn và gửi.
+Checkpoint: số TC automated/pass/fail theo browser, bug candidates, tệp, commit hash, log ID. Dừng sau P02.
+```
+
+
+### AI output (verbatim)
+
+```text
+Các tin nhắn trạng thái chat B gửi ở cuối mỗi lượt ngày 2026-11-13, trong lúc bản draft FR-01 chạy nền. Đây là nguyên văn đã thấy trong chat; định dạng Markdown có thể khác chút về xuống dòng.
+
+--- (1) cuối lượt nhận prompt P02 ---
+Bản draft AI đang chạy trên 3 browser. Tôi chưa có checkpoint P02 nào để báo.
+
+- **Tốc độ:** draft chạy chậm, mỗi test chờ hết timeout 30 giây. Có thể do draft luôn điền vào ô “Xác nhận mật khẩu”, mà ô này không có trên trang. Ước tính khoảng 10 phút cho mỗi browser.
+- **Đã xong và commit:**
+  - `2368783`: chọn 19 TC, khảo sát DOM thật trên 3 browser, file data JSON.
+  - `ea21d8a`: bản AI draft nguyên trạng (D1 page object, D2 khung spec, D3 assertion), kèm prompt của từng bước.
+- **Bản sửa sau review:** đã soạn ở `_tools/HW04/work/fr01-stage/`. Tôi chờ draft chạy xong mới chép vào dự án, để không làm sai kết quả chạy draft.
+
+Khi draft chạy xong, tôi tiếp tục với review, chạy bản cuối và checkpoint P02.
+
+--- (2) sau sự kiện monitor chromium ---
+Đã có kết quả draft trên chromium: hầu hết test hết thời gian ở bước `locator.fill`. Nguyên nhân có thể là draft điền vào ô xác nhận mật khẩu, mà ô này không có trên trang; tôi sẽ kiểm tra khi viết review. Firefox và webkit vẫn đang chạy, tôi chưa đổi gì trong `automation/`.
+
+--- (3) sau sự kiện monitor firefox ---
+Firefox cho kết quả giống chromium: các test đều hết thời gian ở `locator.fill`. Tôi đang chờ webkit chạy xong rồi mới chép bản đã sửa vào dự án.
+
+--- (4) sau sự kiện monitor webkit bắt đầu ---
+Webkit đang chạy, đây là browser cuối của bản draft. Khi xong tôi sẽ chép bản đã sửa vào dự án.
+
+--- (5) lượt bị ngắt khi máy khởi động lại ---
+Không có tin nhắn kết thúc; lệnh commit + chạy lại cuối (run3) bị ngắt giữa firefox. Commit 1fb5055 và 4993ad4 đã được ghi trước khi ngắt (git log 2026-11-15 xác nhận).
+```
+
+
+## EXEC-P02-002
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P02-002",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P02 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/A-FR01/ai-draft/prompts/D1-page-object.txt (verbatim). Output: the draft file(s) written verbatim by B in reply, committed unchanged in ea21d8a.",
+  "missing": [
+    "Exact time unknown. The draft was committed in ea21d8a on 2026-11-13, before the 19:57 +07:00 draft run.",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat. Generation conditions are disclosed rather than a clean-room prompt."
+  ],
+  "artifact_paths": [
+    "HW04/features/A-FR01/ai-draft/prompts/D1-page-object.txt",
+    "HW04/features/A-FR01/ai-draft/pages/RegisterPage.ts"
+  ],
+  "recorded_at": "2026-11-15T18:19:03+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P02-002 · bước D1 · prompt B tự soạn từ khung P-c của skill playwright-data-driven-automation]
+Dùng locator đã chốt trong HW04/features/A-FR01/locator-inventory.md (khảo sát DOM thật /register trên 3 browser):
+- tiêu đề: getByRole('heading', { name: 'Đăng Ký Tài Khoản' }); card = heading.locator('..')
+- input không có label liên kết: neo bằng div chứa <label> có text "Họ Tên" / "Email" / "Mật khẩu" / "Xác nhận mật khẩu" rồi lấy input trong div đó
+- nút: getByRole('button', { name: 'Đăng Ký' })
+- banner lỗi app: div con trực tiếp của card (không role)
+Viết automation/pages/RegisterPage.ts (Playwright + TypeScript): mỗi locator một thuộc tính, action goto(), fill(input) điền name/email/password/confirm, submit(). Không chứa assertion, không dùng waitForTimeout.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/A-FR01/ai-draft/pages/RegisterPage.ts =====
+import { Locator, Page } from '@playwright/test';
+
+export interface RegisterInput {
+  name?: string;
+  email?: string;
+  password?: string;
+  confirm?: string;
+}
+
+export class RegisterPage {
+  readonly page: Page;
+  readonly heading: Locator;
+  readonly card: Locator;
+  readonly form: Locator;
+  readonly nameInput: Locator;
+  readonly emailInput: Locator;
+  readonly passwordInput: Locator;
+  readonly confirmInput: Locator;
+  readonly submitButton: Locator;
+  readonly errorBanner: Locator;
+
+  constructor(page: Page) {
+    this.page = page;
+    this.heading = page.getByRole('heading', { name: 'Đăng Ký Tài Khoản' });
+    this.card = this.heading.locator('..');
+    this.form = this.card.locator('form');
+    this.nameInput = this.fieldByLabel('Họ Tên');
+    this.emailInput = this.fieldByLabel('Email');
+    this.passwordInput = this.fieldByLabel('Mật khẩu');
+    this.confirmInput = this.fieldByLabel('Xác nhận mật khẩu');
+    this.submitButton = page.getByRole('button', { name: 'Đăng Ký' });
+    this.errorBanner = this.card.locator(':scope > div');
+  }
+
+  private fieldByLabel(label: string): Locator {
+    return this.form
+      .locator('div')
+      .filter({ has: this.page.locator('label', { hasText: label }) })
+      .locator('input');
+  }
+
+  async goto() {
+    await this.page.goto('/register');
+  }
+
+  async fill(input: RegisterInput) {
+    if (input.name !== undefined) await this.nameInput.fill(input.name);
+    if (input.email !== undefined) await this.emailInput.fill(input.email);
+    if (input.password !== undefined) await this.passwordInput.fill(input.password);
+    if (input.confirm !== undefined) await this.confirmInput.fill(input.confirm);
+  }
+
+  async submit() {
+    await this.submitButton.click();
+  }
+}
+```
+
+
+## EXEC-P02-003
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P02-003",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P02 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/A-FR01/ai-draft/prompts/D2-spec.txt (verbatim). Output: the draft file(s) written verbatim by B in reply, committed unchanged in ea21d8a.",
+  "missing": [
+    "Exact time unknown. The draft was committed in ea21d8a on 2026-11-13, before the 19:57 +07:00 draft run.",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat. Generation conditions are disclosed rather than a clean-room prompt."
+  ],
+  "artifact_paths": [
+    "HW04/features/A-FR01/ai-draft/prompts/D2-spec.txt",
+    "HW04/features/A-FR01/ai-draft/tests/fr01-register.spec.d2-skeleton.ts"
+  ],
+  "recorded_at": "2026-11-15T18:19:04+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P02-003 · bước D2 · prompt B tự soạn từ khung P-d của skill]
+Viết automation/tests/fr01-register.spec.ts: import rows từ ../data/fr01-register.json (không định nghĩa dữ liệu trong spec), lặp sinh test tên `${row.id} ${row.title}`, theo 3A (Arrange: RegisterPage.goto; Act: fill + submit; Assert theo expected.kind). Thay placeholder {{unique}} trong input bằng giá trị duy nhất theo project + thời gian để 3 browser không trùng email. Mỗi test tự setup, không phụ thuộc test khác. Rẽ nhánh theo expected.kind: success, reject, success-then-duplicate, structure. Assertion chi tiết để bước D3.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/A-FR01/ai-draft/tests/fr01-register.spec.d2-skeleton.ts =====
+import { test } from '@playwright/test';
+import rows from '../data/fr01-register.json';
+import { RegisterPage, RegisterInput } from '../pages/RegisterPage';
+
+type Row = (typeof rows)[number];
+
+function materialize(input: RegisterInput, unique: string): RegisterInput {
+  const out: RegisterInput = {};
+  for (const [k, v] of Object.entries(input)) {
+    (out as Record<string, string>)[k] = typeof v === 'string' ? v.replace('{{unique}}', unique) : v;
+  }
+  return out;
+}
+
+test.describe('FR-01 Đăng ký tài khoản', () => {
+  for (const row of rows as Row[]) {
+    test(`${row.id} ${row.title}`, async ({ page }, testInfo) => {
+      // Arrange
+      const unique = `a${testInfo.project.name}${Date.now()}`;
+      const input = materialize(row.input as RegisterInput, unique);
+      const register = new RegisterPage(page);
+      await register.goto();
+
+      // Act
+      await register.fill(input);
+      await register.submit();
+
+      // Assert — chi tiết ở bước D3 theo row.expected.kind
+      switch (row.expected.kind) {
+        case 'success':
+          break;
+        case 'reject':
+          break;
+        case 'success-then-duplicate':
+          break;
+        case 'structure':
+          break;
+      }
+    });
+  }
+});
+```
+
+
+## EXEC-P02-004
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P02-004",
+  "prompt_origin": "Self-authored by execution chat B from the skill's prompt template (P-c/P-d/P-e), as the step-by-step generation prompt required by P02 step 4. The same model wrote the prompt and the code within one session; it was not a separate AI tool or chat.",
+  "occurred_at": null,
+  "timestamp_source": "unknown",
+  "capture_status": "partial",
+  "source": "Prompt: features/A-FR01/ai-draft/prompts/D3-assertions.txt (verbatim). Output: the draft file(s) written verbatim by B in reply, committed unchanged in ea21d8a.",
+  "missing": [
+    "Exact time unknown. The draft was committed in ea21d8a on 2026-11-13, before the 19:57 +07:00 draft run.",
+    "The draft was generated in-context with access to the DOM survey and the earlier conversation, not in an isolated fresh chat. Generation conditions are disclosed rather than a clean-room prompt."
+  ],
+  "artifact_paths": [
+    "HW04/features/A-FR01/ai-draft/prompts/D3-assertions.txt",
+    "HW04/features/A-FR01/ai-draft/tests/fr01-register.spec.ts"
+  ],
+  "recorded_at": "2026-11-15T18:19:04+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+[EXEC-P02-004 · bước D3 · prompt B tự soạn từ khung P-e của skill]
+Oracle (SRS FR-01/21/22, HW02 §3): OK = response đăng ký thành công + tới trang có chức năng Đăng nhập (/login); REJ = không hoàn tất đăng ký (không chuyển trang, không có request đăng ký thành công) + có tín hiệu validation gắn với trường sai (native validity của ô đó hoặc banner lỗi app nhắc tới trường), không ép wording; structure = có ô xác nhận, email type=email, password/confirm type=password, nhãn bắt buộc có *, đúng 1 h1.
+Với từng expected.kind chọn assertion web-first, dùng ít nhất 3 pattern khác nhau trong suite (URL, response, nội dung/visible, attribute/validity, count, soft). Negative phải kiểm "không được xảy ra". Không test.fail/test.skip để né; nghi SUT sai thì giữ assertion theo đặc tả.
+```
+
+
+### AI output (verbatim)
+
+```text
+// ===== features/A-FR01/ai-draft/tests/fr01-register.spec.ts =====
+import { expect, test } from '@playwright/test';
+import rows from '../data/fr01-register.json';
+import { RegisterInput, RegisterPage } from '../pages/RegisterPage';
+
+type Row = (typeof rows)[number];
+
+function materialize(input: RegisterInput, unique: string): RegisterInput {
+  const out: RegisterInput = {};
+  for (const [k, v] of Object.entries(input)) {
+    (out as Record<string, string>)[k] = typeof v === 'string' ? v.replace('{{unique}}', unique) : v;
+  }
+  return out;
+}
+
+const FIELD_KEYWORDS: Record<string, RegExp> = {
+  name: /họ tên|tên/i,
+  email: /email/i,
+  password: /mật khẩu/i,
+  confirm: /xác nhận/i,
+};
+
+test.describe('FR-01 Đăng ký tài khoản', () => {
+  for (const row of rows as Row[]) {
+    test(`${row.id} ${row.title}`, async ({ page }, testInfo) => {
+      // Arrange
+      const unique = `a${testInfo.project.name}${Date.now()}`;
+      const input = materialize(row.input as RegisterInput, unique);
+      const register = new RegisterPage(page);
+      await register.goto();
+
+      if (row.expected.kind === 'structure') {
+        const exp = row.expected as any;
+        // Pattern: soft assertions over attributes / count
+        for (const label of exp.requiredLabels) {
+          await expect.soft(page.locator('label', { hasText: label })).toContainText('*');
+        }
+        await expect.soft(register.confirmInput).toBeVisible();
+        await expect.soft(register.emailInput).toHaveAttribute('type', exp.types.email);
+        await expect.soft(register.passwordInput).toHaveAttribute('type', exp.types.password);
+        await expect.soft(register.confirmInput).toHaveAttribute('type', exp.types.confirm);
+        await expect.soft(page.locator('h1')).toHaveCount(exp.h1Count);
+        return;
+      }
+
+      // Act
+      await register.fill(input);
+      const registerResponse = page.waitForResponse(
+        (r) => r.url().endsWith('/api/register') && r.request().method() === 'POST',
+      );
+      await register.submit();
+
+      // Assert
+      if (row.expected.kind === 'success') {
+        const res = await registerResponse;
+        expect(res.ok()).toBeTruthy();
+        await expect(page).toHaveURL(/\/login$/);
+      } else if (row.expected.kind === 'reject') {
+        await page.waitForTimeout(1000);
+        await expect(page).toHaveURL(/\/register$/);
+        const field = (row.expected as any).field as string;
+        await expect(register.errorBanner).toContainText(FIELD_KEYWORDS[field]);
+      } else if (row.expected.kind === 'success-then-duplicate') {
+        const res = await registerResponse;
+        expect(res.ok()).toBeTruthy();
+        await expect(page).toHaveURL(/\/login$/);
+        // second attempt with the same email
+        await register.goto();
+        await register.fill(input);
+        await register.submit();
+        await expect(page).toHaveURL(/\/register$/);
+        await expect(register.errorBanner).toContainText(/email/i);
+      }
+    });
+  }
+});
+```
+
+
+## EXEC-P02-005
+
+```text
+{
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "redactions": [],
+  "id": "EXEC-P02-005",
+  "prompt_origin": "AI orchestrator chat A sent this resume message as a cross-session message after the machine restart; not student-authored",
+  "occurred_at": "2026-11-15T18:05:00+07:00",
+  "timestamp_source": "observed",
+  "capture_status": "partial",
+  "source": "Prompt: cross-session message (P02-resume-prompt.txt, verbatim). Output: checkpoint-P02.md (verbatim checkpoint). occurred_at is approximate, taken from the SUT restart just after receipt (backend started ~18:0x; first final run at 18:09:14 +07:00).",
+  "missing": [
+    "occurred_at is approximate to the minute, not the exact receipt time.",
+    "Full tool call/result transcript not exported.",
+    "The hash of the commit containing this log is only in the final chat reply."
+  ],
+  "artifact_paths": [
+    "HW04/features/A-FR01/review.md",
+    "HW04/features/A-FR01/results.md",
+    "HW04/automation/reports/fr01-chromium/",
+    "HW04/automation/reports/fr01-firefox/",
+    "HW04/automation/reports/fr01-webkit/",
+    "HW04/working-context.md"
+  ],
+  "recorded_at": "2026-11-15T18:19:04+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Tiếp tục P02 (FR-01) sau khi máy khởi động lại (2026-11-15): SUT hiện tắt (:3000/:5173/:5174 không phản hồi) — khởi động lại bằng `eshop-sut/start.ps1`. Trạng thái A thấy: commit tới 4993ad4; chưa track `automation/reports/fr01-*`, `features/A-FR01/final-run/`, `features/A-FR01/evidence/report-shots/`, `ai-log/execution/chat-b/P02-prompt.txt`; còn thiếu `features/A-FR01/review.md`, `results.md`, bug candidates + screenshot, và log `EXEC-P02-…`. Nếu report fr01-* chạy trước khi sửa cuối (4993ad4) thì chạy lại 3 browser để report khớp code. Hoàn tất các bước 6–7 của P02, commit, ghi log, rồi trả checkpoint. Không ghi đè/xóa lịch sử đã có.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P02 — Feature A: FR-01 Đăng ký (chat B)
+
+**Kết quả:** 20 TC được automate (19 TC từ HW02 + 1 TC bổ sung). Chạy cuối trên 3 browser ngày 2026-11-15, code `4993ad4`:
+
+| Browser | Pass | Fail |
+|---|---|---|
+| chromium | 9 | 11 |
+| firefox | 9 | 11 |
+| webkit | 9 | 11 |
+
+- Tổng 60 lần chạy: 27 pass, 33 fail, 0 flaky, 0 skipped.
+- 3/3 report hiển thị “Run by: 23120229” + ISO timestamp (`verify-report` exit 0).
+- Mọi fail đều do SUT, đã phân loại trong `features/A-FR01/results.md`. Không dùng `test.fail` hay `skip`.
+
+### Bug candidates (chưa đăng Issues)
+- BC-A1, mật khẩu hợp lệ theo SRS bị từ chối: **trùng #1**.
+- BC-A2, thiếu ô xác nhận, thiếu `*`, email `type=text`, không có `h1`: **trùng #2**.
+- **Mới:**
+  - BC-A3: mật khẩu dùng dấu cách thay ký tự đặc biệt vẫn được chấp nhận (A-AUTO-20, 3 browser).
+  - BC-A4: email thiếu `@` vẫn đăng ký được (probe P1).
+  - BC-A5: email trùng `test@eshop.com` vẫn đăng ký được, tạo user id 4 (probe P2, đề xuất High).
+- BC-A4/A5 bị BC-A1 che trong suite: A-AUTO-13/14 fail vì thông báo mật khẩu. Bằng chứng cô lập lấy từ probe khám phá chạy trên chromium ngày 2026-11-13. Ảnh và JSON ở `features/A-FR01/evidence/`.
+
+### Bản AI draft → review
+- Bản draft (commit `ea21d8a`, 3 prompt D1–D3) chạy **0/19 pass trên cả 3 browser**. Mọi test timeout ở `fill` của ô confirm không tồn tại.
+- `features/A-FR01/review.md` ghi 10 lỗi AI. Mỗi lỗi có bằng chứng, commit sửa và nguyên nhân (prompt, model hay feature). Các nhóm chính:
+  - xử lý control thiếu;
+  - locator `hasText` khớp chuỗi con;
+  - `waitForTimeout`;
+  - REJ bỏ sót native validation;
+  - `field` ghép `email|confirm`;
+  - `waitForResponse` treo;
+  - oracle OK chưa chứng minh trang Đăng nhập;
+  - structure soft-timeout;
+  - thiếu biên dấu cách;
+  - thông điệp REJ mơ hồ.
+- Có ghi minh bạch 1 lỗi do chính reviewer tạo rồi tự sửa: `has:` neo vào form nên không bao giờ khớp.
+- 7 assertion pattern (`check-data-driven` OK): URL, visible, content, count, attribute/validity, response, soft, poll. Bảng TC dùng pattern nào có trong review.md.
+
+### TC không automate
+A-TC-019 (màu và ngôn ngữ), A-TC-020 (Tab order), A-TC-021 (Step Indicator, form 1 bước), A-TC-022 (phụ thuộc ô confirm), A-TC-023 (API). Lý do ở `selection.md`.
+
+### Tệp
+- `features/A-FR01/`: `selection.md`, `locator-inventory.md`, `dom-survey-register.json`, `ai-draft/**` (prompts D1–D3 + draft nguyên văn), `draft-run-summary.md`, `review.md`, `results.md`, `final-run/summary.{md,json}`, `evidence/{failures,report-shots,probe-*}`.
+- `automation/`: `data/fr01-register.json` (20 dòng), `pages/RegisterPage.ts`, `tests/fr01-register.spec.ts`, `reports/fr01-{chromium,firefox,webkit}/`.
+- `_tools/HW04/`: `survey-dom.js`, `probe-fr01.js`, `work/debug-fr01.spec.ts`, các log chạy `work/p02-*.log`.
+- `working-context.md`
+
+### Commit
+| Commit | Nội dung | Có đổi spec? |
+|---|---|---|
+| `2368783` | chọn TC, khảo sát DOM, data | không |
+| `ea21d8a` | AI draft | có |
+| `7a5abb3` | review fix | có |
+| `b6be9ae` | structure fix | có |
+| `1fb5055` | A-AUTO-20 + probe evidence | không (chỉ data) |
+| `4993ad4` | REJ fix | có |
+| `d1a7706` | reports + review/results | không |
+
+Thêm 1 commit log/context; hash nằm ở tin nhắn trả lời. Có 4 commit thay đổi `.spec.ts`, đóng góp vào yêu cầu ≥8 của §12.
+
+### Giới hạn / lưu ý cho A
+- Report có trace nên khá nặng: fr01-chromium 3.9 MB, firefox 14 MB, webkit 4.4 MB. 9 report có thể vượt giới hạn Moodle 20 MB/tệp khi đóng ZIP. Cân nhắc tắt trace cho lần chạy chính thức ở P05, hoặc tách ZIP.
+- A-AUTO-09 (`#` ngoài tập) và A-AUTO-20 là diễn giải SRS của AI, chờ sinh viên xác nhận.
+- Probe khám phá dùng mật khẩu chọn sau khi đọc code để cô lập lỗi bị che; không dùng làm oracle.
+- Máy khởi động lại giữa chừng. Lần chạy 2026-11-13 lúc 20:5x bị ngắt khi đang chạy firefox, nên đã chạy lại toàn bộ ngày 2026-11-15 sau khi `start.ps1` (DB được seed lại).
+- Human review của sinh viên: pending.
+
+### Log
+`HW04/ai-log/execution/chat-b/prompt_log.jsonl` + `.md`:
+- `EXEC-P02-001`: prompt P02 từ A, kèm các tin nhắn trạng thái ngày 11-13.
+- `EXEC-P02-002`, `003`, `004`: các bước D1, D2, D3 sinh draft.
+- `EXEC-P02-005`: prompt tiếp tục sau khởi động lại, output là checkpoint này.
+
+Dừng sau P02, chờ prompt tiếp theo.
+```
+
