@@ -1,3 +1,132 @@
+commit 202ada3f76be37d0a46b9caffeacf33bbe1cf4e0
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:08:42 +0700
+
+    log(P07): EXEC-P07-001 + checkpoint
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ ai-log/execution/chat-b/P07-prompt.txt    |  9 +++
+ ai-log/execution/chat-b/checkpoint-P07.md | 34 +++++++++++
+ ai-log/execution/chat-b/prompt_log.jsonl  |  1 +
+ ai-log/execution/chat-b/prompt_log.md     | 94 +++++++++++++++++++++++++++++++
+ 4 files changed, 138 insertions(+)
+
+commit c6729be5996fbca18e0cdb04f3c05e03e38a8bd5
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:08:01 +0700
+
+    docs(P07): sync README/handoff after Issues published; render 6 PDFs; retake comment shots without sticky header
+    
+    - README self-assessment A/B/C 22 -> 24 (Issues posted; -1 each remains for pending human review), total 71 -> 77
+    - user-handoff: Issues step removed from student tasks; packaging via package_submission.py --grade NNN
+    - pdf/: report, ai-audit, ai-critique, bug-report (+ GitHub Issues screenshots appendix), test-summary, README
+    - evidence/issues: comment shots retaken (GitHub sticky title bar had covered one line)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ README.md                                        |  14 +++++----
+ evidence/issues/HW04-BUG-01-issue-39.png         | Bin 227159 -> 227174 bytes
+ evidence/issues/HW04-BUG-02-issue-40.png         | Bin 198177 -> 198183 bytes
+ evidence/issues/HW04-BUG-03-issue-41.png         | Bin 256138 -> 258960 bytes
+ evidence/issues/HW04-BUG-04-issue-42.png         | Bin 317700 -> 317742 bytes
+ evidence/issues/HW04-BUG-05-issue-43.png         | Bin 218149 -> 218189 bytes
+ evidence/issues/HW04-DUP-01-issue-1-comment.png  | Bin 69520 -> 69518 bytes
+ evidence/issues/HW04-DUP-02-issue-2-comment.png  | Bin 87795 -> 83108 bytes
+ evidence/issues/HW04-DUP-03-issue-4-comment.png  | Bin 66568 -> 66567 bytes
+ evidence/issues/HW04-DUP-04-issue-5-comment.png  | Bin 76716 -> 76646 bytes
+ evidence/issues/HW04-DUP-05-issue-6-comment.png  | Bin 71825 -> 71824 bytes
+ evidence/issues/HW04-DUP-06-issue-15-comment.png | Bin 68495 -> 68493 bytes
+ evidence/issues/HW04-DUP-07-issue-8-comment.png  | Bin 92569 -> 92567 bytes
+ evidence/issues/HW04-DUP-08-issue-9-comment.png  | Bin 153506 -> 149830 bytes
+ evidence/issues/HW04-DUP-09-issue-10-comment.png | Bin 91842 -> 91903 bytes
+ evidence/issues/HW04-DUP-10-issue-11-comment.png | Bin 87380 -> 87441 bytes
+ evidence/issues/issues-screenshots.json          |   4 +--
+ pdf/README.pdf                                   | Bin 0 -> 139210 bytes
+ pdf/ai-audit.pdf                                 | Bin 0 -> 112342 bytes
+ pdf/ai-critique.pdf                              | Bin 0 -> 67466 bytes
+ pdf/bug-report.pdf                               | Bin 0 -> 2226333 bytes
+ pdf/report.pdf                                   | Bin 0 -> 193974 bytes
+ pdf/test-summary.pdf                             | Bin 0 -> 84216 bytes
+ report.md                                        |   2 +-
+ test-summary.md                                  |   2 +-
+ user-handoff.md                                  |  35 ++++++-----------------
+ working-context.md                               |   6 ++--
+ 27 files changed, 23 insertions(+), 40 deletions(-)
+
+commit cd234a131dddf53c5c05033bc2f95a663a93cff4
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:02:46 +0700
+
+    docs(hw04): update coordinator prompts (chat A)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ docs/prompt-plan.md                | 14 +++++++-------
+ docs/prompts/P02-FEATURE-A.md      |  2 +-
+ docs/prompts/P03-FEATURE-B.md      |  8 ++++----
+ docs/prompts/P04-FEATURE-C.md      |  8 ++++----
+ docs/prompts/P05-FINAL-RUN-BUGS.md | 10 ++++++++++
+ docs/prompts/P06-DOCS.md           | 16 ++++++++++++++++
+ docs/prompts/P07-PDF-ZIP.md        |  9 +++++++++
+ 7 files changed, 51 insertions(+), 16 deletions(-)
+
+commit acb7f81b8391fba90f938ad7c1db296fe9ad752b
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 21:02:13 +0700
+
+    docs(P05): fill real GitHub issue URLs (#39-#43 + 10 comments) and add public Issues screenshots
+    
+    Publishing was run by chat A with the student's consent; chat B only filled URLs from
+    receipts.json and captured read-only headless screenshots of the public pages.
+    AI log EXEC-P05-002.
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ README.md                                          |   6 +-
+ .../chat-b/P05-issues-followup-prompt.txt          |   1 +
+ ai-log/execution/chat-b/checkpoint-P05-issues.md   |  20 ++
+ ai-log/execution/chat-b/prompt_log.jsonl           |   1 +
+ ai-log/execution/chat-b/prompt_log.md              |  71 ++++++
+ bug-report.md                                      |  38 +--
+ docs/github-issues.md                              |  71 ++++--
+ evidence/issues/HW04-BUG-01-issue-39.png           | Bin 0 -> 227159 bytes
+ evidence/issues/HW04-BUG-02-issue-40.png           | Bin 0 -> 198177 bytes
+ evidence/issues/HW04-BUG-03-issue-41.png           | Bin 0 -> 256138 bytes
+ evidence/issues/HW04-BUG-04-issue-42.png           | Bin 0 -> 317700 bytes
+ evidence/issues/HW04-BUG-05-issue-43.png           | Bin 0 -> 218149 bytes
+ evidence/issues/HW04-DUP-01-issue-1-comment.png    | Bin 0 -> 69520 bytes
+ evidence/issues/HW04-DUP-02-issue-2-comment.png    | Bin 0 -> 87795 bytes
+ evidence/issues/HW04-DUP-03-issue-4-comment.png    | Bin 0 -> 66568 bytes
+ evidence/issues/HW04-DUP-04-issue-5-comment.png    | Bin 0 -> 76716 bytes
+ evidence/issues/HW04-DUP-05-issue-6-comment.png    | Bin 0 -> 71825 bytes
+ evidence/issues/HW04-DUP-06-issue-15-comment.png   | Bin 0 -> 68495 bytes
+ evidence/issues/HW04-DUP-07-issue-8-comment.png    | Bin 0 -> 92569 bytes
+ evidence/issues/HW04-DUP-08-issue-9-comment.png    | Bin 0 -> 153506 bytes
+ evidence/issues/HW04-DUP-09-issue-10-comment.png   | Bin 0 -> 91842 bytes
+ evidence/issues/HW04-DUP-10-issue-11-comment.png   | Bin 0 -> 87380 bytes
+ evidence/issues/issues-list.png                    | Bin 0 -> 363394 bytes
+ evidence/issues/issues-screenshots.json            | 272 +++++++++++++++++++++
+ features/A-FR01/results.md                         |   2 +-
+ features/B-FR08/results.md                         |   2 +-
+ features/C-FR17/results.md                         |   2 +-
+ report.md                                          |  16 +-
+ submission-manifest.md                             |   2 +-
+ user-handoff.md                                    |   8 +-
+ working-context.md                                 |   4 +-
+ 31 files changed, 460 insertions(+), 56 deletions(-)
+
+commit 0718893a5b755ba3d0585981b0f6146de32bc3fb
+Author: datkrb <nguyenhadatkrb2k5@gmail.com>
+Date:   2026-11-15 19:53:29 +0700
+
+    docs(hw04): git commit log (git log --stat --date=iso)
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+ git-log.txt | 1302 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 1302 insertions(+)
+
 commit ea745ca39443c08a451b04dc77a5147b86e75de1
 Author: datkrb <nguyenhadatkrb2k5@gmail.com>
 Date:   2026-11-15 19:53:28 +0700
