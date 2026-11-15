@@ -1,0 +1,383 @@
+{
+  "chromium": {
+    "login": "- heading \"Admin Login\" [level=2]\n- textbox \"Email\"\n- textbox \"Password\"\n- button \"Login\"",
+    "sidebar": "- heading \"EShop Admin\" [level=1]\n- list:\n  - listitem: Dashboard\n  - listitem: Danh mục\n  - listitem: Sản phẩm\n  - listitem: Mã Giảm Giá\n  - listitem: Đơn hàng\n  - listitem: Người dùng\n  - listitem: Đăng xuất",
+    "navItems": [
+      "Dashboard",
+      "Danh mục",
+      "Sản phẩm",
+      "Mã Giảm Giá",
+      "Đơn hàng",
+      "Người dùng",
+      "Đăng xuất"
+    ],
+    "coupons": "- heading \"Quản lý Mã Giảm Giá\" [level=2]\n- heading \"Tạo mã giảm giá mới\" [level=3]\n- 'textbox \"Mã coupon (VD: SAVE10)\"'\n- combobox:\n  - option \"Phần trăm (%)\" [selected]\n  - option \"Số tiền cố định (₫)\"\n- spinbutton\n- spinbutton: \"0\"\n- textbox:\n  - /placeholder: Ngày hết hạn\n- spinbutton: \"1\"\n- button \"Tạo mã\"\n- table:\n  - rowgroup:\n    - row \"Mã Loại Giá trị Đơn tối thiểu Hết hạn Giới hạn/người Hành động\":\n      - cell \"Mã\"\n      - cell \"Loại\"\n      - cell \"Giá trị\"\n      - cell \"Đơn tối thiểu\"\n      - cell \"Hết hạn\"\n      - cell \"Giới hạn/người\"\n      - cell \"Hành động\"\n  - rowgroup:\n    - row \"SAVE10 Phần trăm 10% 300,000 ₫ 2099-12-31 1 lần Xóa\":\n      - cell \"SAVE10\"\n      - cell \"Phần trăm\"\n      - cell \"10%\"\n      - cell \"300,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"BIGBUY Cố định 50,000 ₫ 500,000 ₫ 2099-12-31 1 lần Xóa\":\n      - cell \"BIGBUY\"\n      - cell \"Cố định\"\n      - cell \"50,000 ₫\"\n      - cell \"500,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"VIP100 Cố định 100,000 ₫ 300,000 ₫ 2099-12-31 2 lần Xóa\":\n      - cell \"VIP100\"\n      - cell \"Cố định\"\n      - cell \"100,000 ₫\"\n      - cell \"300,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"2 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"EXPIRED Phần trăm 20% 100,000 ₫ Hết hạn 1 lần Xóa\":\n      - cell \"EXPIRED\"\n      - cell \"Phần trăm\"\n      - cell \"20%\"\n      - cell \"100,000 ₫\"\n      - cell \"Hết hạn\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"",
+    "controls": [
+      {
+        "tag": "h1",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "EShop Admin"
+      },
+      {
+        "tag": "h2",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "Quản lý Mã Giảm Giá"
+      },
+      {
+        "tag": "h3",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "Tạo mã giảm giá mới"
+      },
+      {
+        "tag": "input",
+        "type": null,
+        "placeholder": "Mã coupon (VD: SAVE10)",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "select",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "percent",
+        "text": "Phần trăm (%)\nSố tiền cố định (₫)"
+      },
+      {
+        "tag": "option",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "percent",
+        "text": "Phần trăm (%)"
+      },
+      {
+        "tag": "option",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "fixed",
+        "text": "Số tiền cố định (₫)"
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Giá trị % (VD: 10)",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Đơn tối thiểu (₫)",
+        "required": false,
+        "min": null,
+        "value": "0",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "date",
+        "placeholder": "Ngày hết hạn",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Số lần dùng tối đa/người",
+        "required": false,
+        "min": "1",
+        "value": "1",
+        "text": ""
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "",
+        "text": "Tạo mã"
+      }
+    ],
+    "storageKeys": [
+      "adminToken"
+    ]
+  },
+  "firefox": {
+    "login": "- heading \"Admin Login\" [level=2]\n- textbox \"Email\"\n- textbox \"Password\"\n- button \"Login\"",
+    "sidebar": "- heading \"EShop Admin\" [level=1]\n- list:\n  - listitem: Dashboard\n  - listitem: Danh mục\n  - listitem: Sản phẩm\n  - listitem: Mã Giảm Giá\n  - listitem: Đơn hàng\n  - listitem: Người dùng\n  - listitem: Đăng xuất",
+    "navItems": [
+      "Dashboard",
+      "Danh mục",
+      "Sản phẩm",
+      "Mã Giảm Giá",
+      "Đơn hàng",
+      "Người dùng",
+      "Đăng xuất"
+    ],
+    "coupons": "- heading \"Quản lý Mã Giảm Giá\" [level=2]\n- heading \"Tạo mã giảm giá mới\" [level=3]\n- 'textbox \"Mã coupon (VD: SAVE10)\"'\n- combobox:\n  - option \"Phần trăm (%)\" [selected]\n  - option \"Số tiền cố định (₫)\"\n- spinbutton\n- spinbutton: \"0\"\n- textbox:\n  - /placeholder: Ngày hết hạn\n- spinbutton: \"1\"\n- button \"Tạo mã\"\n- table:\n  - rowgroup:\n    - row \"Mã Loại Giá trị Đơn tối thiểu Hết hạn Giới hạn/người Hành động\":\n      - cell \"Mã\"\n      - cell \"Loại\"\n      - cell \"Giá trị\"\n      - cell \"Đơn tối thiểu\"\n      - cell \"Hết hạn\"\n      - cell \"Giới hạn/người\"\n      - cell \"Hành động\"\n  - rowgroup:\n    - row \"SAVE10 Phần trăm 10% 300,000 ₫ 2099-12-31 1 lần Xóa\":\n      - cell \"SAVE10\"\n      - cell \"Phần trăm\"\n      - cell \"10%\"\n      - cell \"300,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"BIGBUY Cố định 50,000 ₫ 500,000 ₫ 2099-12-31 1 lần Xóa\":\n      - cell \"BIGBUY\"\n      - cell \"Cố định\"\n      - cell \"50,000 ₫\"\n      - cell \"500,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"VIP100 Cố định 100,000 ₫ 300,000 ₫ 2099-12-31 2 lần Xóa\":\n      - cell \"VIP100\"\n      - cell \"Cố định\"\n      - cell \"100,000 ₫\"\n      - cell \"300,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"2 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"EXPIRED Phần trăm 20% 100,000 ₫ Hết hạn 1 lần Xóa\":\n      - cell \"EXPIRED\"\n      - cell \"Phần trăm\"\n      - cell \"20%\"\n      - cell \"100,000 ₫\"\n      - cell \"Hết hạn\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"",
+    "controls": [
+      {
+        "tag": "h1",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "EShop Admin"
+      },
+      {
+        "tag": "h2",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "Quản lý Mã Giảm Giá"
+      },
+      {
+        "tag": "h3",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "Tạo mã giảm giá mới"
+      },
+      {
+        "tag": "input",
+        "type": null,
+        "placeholder": "Mã coupon (VD: SAVE10)",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "select",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "percent",
+        "text": ""
+      },
+      {
+        "tag": "option",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "percent",
+        "text": "Phần trăm (%)"
+      },
+      {
+        "tag": "option",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "fixed",
+        "text": "Số tiền cố định (₫)"
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Giá trị % (VD: 10)",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Đơn tối thiểu (₫)",
+        "required": false,
+        "min": null,
+        "value": "0",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "date",
+        "placeholder": "Ngày hết hạn",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Số lần dùng tối đa/người",
+        "required": false,
+        "min": "1",
+        "value": "1",
+        "text": ""
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "",
+        "text": "Tạo mã"
+      }
+    ],
+    "storageKeys": [
+      "adminToken"
+    ]
+  },
+  "webkit": {
+    "login": "- heading \"Admin Login\" [level=2]\n- textbox \"Email\"\n- textbox \"Password\"\n- button \"Login\"",
+    "sidebar": "- heading \"EShop Admin\" [level=1]\n- list:\n  - listitem: Dashboard\n  - listitem: Danh mục\n  - listitem: Sản phẩm\n  - listitem: Mã Giảm Giá\n  - listitem: Đơn hàng\n  - listitem: Người dùng\n  - listitem: Đăng xuất",
+    "navItems": [
+      "Dashboard",
+      "Danh mục",
+      "Sản phẩm",
+      "Mã Giảm Giá",
+      "Đơn hàng",
+      "Người dùng",
+      "Đăng xuất"
+    ],
+    "coupons": "- heading \"Quản lý Mã Giảm Giá\" [level=2]\n- heading \"Tạo mã giảm giá mới\" [level=3]\n- 'textbox \"Mã coupon (VD: SAVE10)\"'\n- combobox:\n  - option \"Phần trăm (%)\" [selected]\n  - option \"Số tiền cố định (₫)\"\n- spinbutton\n- spinbutton: \"0\"\n- textbox \"Ngày hết hạn\"\n- spinbutton: \"1\"\n- button \"Tạo mã\"\n- table:\n  - rowgroup:\n    - row \"Mã Loại Giá trị Đơn tối thiểu Hết hạn Giới hạn/người Hành động\":\n      - cell \"Mã\"\n      - cell \"Loại\"\n      - cell \"Giá trị\"\n      - cell \"Đơn tối thiểu\"\n      - cell \"Hết hạn\"\n      - cell \"Giới hạn/người\"\n      - cell \"Hành động\"\n  - rowgroup:\n    - row \"SAVE10 Phần trăm 10% 300,000 ₫ 2099-12-31 1 lần Xóa\":\n      - cell \"SAVE10\"\n      - cell \"Phần trăm\"\n      - cell \"10%\"\n      - cell \"300,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"BIGBUY Cố định 50,000 ₫ 500,000 ₫ 2099-12-31 1 lần Xóa\":\n      - cell \"BIGBUY\"\n      - cell \"Cố định\"\n      - cell \"50,000 ₫\"\n      - cell \"500,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"VIP100 Cố định 100,000 ₫ 300,000 ₫ 2099-12-31 2 lần Xóa\":\n      - cell \"VIP100\"\n      - cell \"Cố định\"\n      - cell \"100,000 ₫\"\n      - cell \"300,000 ₫\"\n      - cell \"2099-12-31\"\n      - cell \"2 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"\n    - row \"EXPIRED Phần trăm 20% 100,000 ₫ Hết hạn 1 lần Xóa\":\n      - cell \"EXPIRED\"\n      - cell \"Phần trăm\"\n      - cell \"20%\"\n      - cell \"100,000 ₫\"\n      - cell \"Hết hạn\"\n      - cell \"1 lần\"\n      - cell \"Xóa\":\n        - button \"Xóa\"",
+    "controls": [
+      {
+        "tag": "h1",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "EShop Admin"
+      },
+      {
+        "tag": "h2",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "Quản lý Mã Giảm Giá"
+      },
+      {
+        "tag": "h3",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": null,
+        "text": "Tạo mã giảm giá mới"
+      },
+      {
+        "tag": "input",
+        "type": null,
+        "placeholder": "Mã coupon (VD: SAVE10)",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "select",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "percent",
+        "text": ""
+      },
+      {
+        "tag": "option",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "percent",
+        "text": "Phần trăm (%)"
+      },
+      {
+        "tag": "option",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "fixed",
+        "text": "Số tiền cố định (₫)"
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Giá trị % (VD: 10)",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Đơn tối thiểu (₫)",
+        "required": false,
+        "min": null,
+        "value": "0",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "date",
+        "placeholder": "Ngày hết hạn",
+        "required": true,
+        "min": null,
+        "value": "",
+        "text": ""
+      },
+      {
+        "tag": "input",
+        "type": "number",
+        "placeholder": "Số lần dùng tối đa/người",
+        "required": false,
+        "min": "1",
+        "value": "1",
+        "text": ""
+      },
+      {
+        "tag": "button",
+        "type": null,
+        "placeholder": null,
+        "required": false,
+        "min": null,
+        "value": "",
+        "text": "Tạo mã"
+      }
+    ],
+    "storageKeys": [
+      "adminToken"
+    ]
+  }
+}

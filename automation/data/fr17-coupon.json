@@ -1,0 +1,146 @@
+[
+  {
+    "id": "C-AUTO-01",
+    "title": "Tạo coupon percent hợp lệ (d=1, m=0, u=1) và xem trong danh sách",
+    "type": "positive",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "created", "row": { "type": "Phần trăm", "value": "1%", "expiry": "2099-12-31", "uses": "1 lần" } },
+    "trace": ["FR-17 Thêm/Xem", "FR-17 discount dương, min ≥ 0, uses ≥ 1", "HW02 C-TC-001"]
+  },
+  {
+    "id": "C-AUTO-02",
+    "title": "Tạo coupon fixed hợp lệ (d=10, m=1, u=2) và xem trong danh sách",
+    "type": "positive",
+    "input": { "code": "{{code}}", "type": "fixed", "discount": "10", "minimum": "1", "expiry": "2099-12-31", "uses": "2" },
+    "expected": { "kind": "created", "row": { "type": "Cố định", "value": "10", "expiry": "2099-12-31", "uses": "2 lần" } },
+    "trace": ["FR-17 Thêm/Xem", "HW02 C-TC-002"]
+  },
+  {
+    "id": "C-AUTO-03",
+    "title": "Mã coupon để trống → từ chối",
+    "type": "negative",
+    "input": { "code": "", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "rejected", "field": "code" },
+    "trace": ["FR-17 code bắt buộc", "HW02 C-TC-003"]
+  },
+  {
+    "id": "C-AUTO-04",
+    "title": "Giá trị giảm để trống → từ chối",
+    "type": "negative",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "", "minimum": "0", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "rejected", "field": "discount" },
+    "trace": ["FR-17 discount_value bắt buộc", "HW02 C-TC-005"]
+  },
+  {
+    "id": "C-AUTO-05",
+    "title": "Ngày hết hạn để trống → từ chối",
+    "type": "negative",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "", "uses": "1" },
+    "expected": { "kind": "rejected", "field": "expiry" },
+    "trace": ["FR-17 expired_at bắt buộc", "HW02 C-TC-006"]
+  },
+  {
+    "id": "C-AUTO-06",
+    "title": "Đơn tối thiểu để trống → từ chối",
+    "type": "negative",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "rejected", "field": "minimum" },
+    "trace": ["FR-17 min_order_amount bắt buộc", "HW02 C-TC-007"]
+  },
+  {
+    "id": "C-AUTO-07",
+    "title": "Số lần dùng/người để trống → từ chối",
+    "type": "negative",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "" },
+    "expected": { "kind": "rejected", "field": "uses" },
+    "trace": ["FR-17 max_uses_per_user bắt buộc", "HW02 C-TC-008"]
+  },
+  {
+    "id": "C-AUTO-08",
+    "title": "Mã trùng với coupon đã tồn tại → từ chối, chỉ còn 1 bản ghi",
+    "type": "negative",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "1", "precreate": true },
+    "expected": { "kind": "rejected-duplicate", "field": "code" },
+    "trace": ["FR-17 code duy nhất", "HW02 C-TC-009"]
+  },
+  {
+    "id": "C-AUTO-09",
+    "title": "Giá trị giảm âm (-1) → từ chối",
+    "type": "edge",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "-1", "minimum": "0", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "rejected", "field": "discount" },
+    "trace": ["FR-17 discount_value dương", "HW02 C-TC-011"]
+  },
+  {
+    "id": "C-AUTO-10",
+    "title": "Giá trị giảm bằng 0 → từ chối",
+    "type": "edge",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "0", "minimum": "0", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "rejected", "field": "discount" },
+    "trace": ["FR-17 discount_value dương (biên 0)", "HW02 C-TC-012"]
+  },
+  {
+    "id": "C-AUTO-11",
+    "title": "Đơn tối thiểu âm (-1) → từ chối",
+    "type": "edge",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "-1", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "rejected", "field": "minimum" },
+    "trace": ["FR-17 min_order_amount >= 0 (biên -1)", "HW02 C-TC-013"]
+  },
+  {
+    "id": "C-AUTO-12",
+    "title": "Số lần dùng/người = 0 → từ chối",
+    "type": "edge",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "0" },
+    "expected": { "kind": "rejected", "field": "uses" },
+    "trace": ["FR-17 max_uses_per_user >= 1 (biên 0)", "HW02 C-TC-014"]
+  },
+  {
+    "id": "C-AUTO-13",
+    "title": "Xóa coupon của chính test → không còn trong danh sách",
+    "type": "positive",
+    "input": { "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "1", "precreate": true },
+    "expected": { "kind": "deleted" },
+    "trace": ["FR-17 Xóa", "HW02 C-TC-015"]
+  },
+  {
+    "id": "C-AUTO-14",
+    "title": "Guest không vào được quản lý coupon",
+    "type": "negative",
+    "input": { "auth": "guest" },
+    "expected": { "kind": "access-denied" },
+    "trace": ["FR-12 Admin chỉ dành cho role admin", "HW02 C-TC-017"]
+  },
+  {
+    "id": "C-AUTO-15",
+    "title": "User thường (test@eshop.com) không vào được quản lý coupon",
+    "type": "negative",
+    "input": { "auth": "user", "email": "test@eshop.com", "password": "Test1234!" },
+    "expected": { "kind": "access-denied" },
+    "trace": ["FR-12 Admin chỉ dành cho role admin", "SRS §1 tài khoản user", "HW02 C-TC-018"]
+  },
+  {
+    "id": "C-AUTO-16",
+    "title": "Ô loại chỉ cho chọn percent / fixed",
+    "type": "edge",
+    "input": {},
+    "expected": { "kind": "type-options", "options": ["percent", "fixed"] },
+    "trace": ["FR-17 type (percent/fixed)", "HW02 C-TC-004/C-TC-010 (phần UI)"]
+  },
+  {
+    "id": "C-AUTO-17",
+    "title": "API: token user thường tạo coupon → bị từ chối",
+    "type": "negative",
+    "input": { "auth": "user-api", "email": "test@eshop.com", "password": "Test1234!", "code": "{{code}}", "type": "percent", "discount": "1", "minimum": "0", "expiry": "2099-12-31", "uses": "1" },
+    "expected": { "kind": "api-forbidden" },
+    "trace": ["FR-12 POST /api/admin/* và /api/coupons yêu cầu role admin", "HW04 bổ sung"]
+  },
+  {
+    "id": "C-AUTO-18",
+    "title": "Form có dấu * cho 6 trường bắt buộc, trang có đúng 1 h1",
+    "type": "edge",
+    "input": {},
+    "expected": { "kind": "structure", "requiredFields": ["code", "type", "discount", "expiry", "minimum", "uses"], "h1Count": 1 },
+    "trace": ["FR-22 trường bắt buộc có *", "FR-21 đúng 1 h1", "FR-17 6 trường bắt buộc", "HW02 C-TC-019"]
+  }
+]
