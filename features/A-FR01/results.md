@@ -46,7 +46,7 @@ Lưu ý:
 - (a) Các test REJ về mật khẩu pass vì SUT có từ chối. Tuy nhiên validator của SUT từ chối **mọi** mật khẩu có ký tự đặc biệt hợp lệ (BC-A1). Vì vậy kết quả pass của 04–09 chỉ chứng minh “có từ chối”, không chứng minh validator kiểm đúng từng điều kiện.
 - (b) Không fail nào thuộc nhóm lỗi test hay lỗi môi trường. Các lỗi test đã sửa ở `review.md`.
 
-## 3. Bug candidates (chưa đăng Issues)
+## 3. Bug candidates (lúc viết chưa đăng Issues; đã đăng 2026-11-15, URL ở [docs/github-issues.md](../../docs/github-issues.md))
 
 Đã đối chiếu với `datkrb/SUT_Issue` #1–#38, đọc công khai qua API ngày 2026-11-15.
 

@@ -2104,3 +2104,74 @@ Còn 1 commit chứa log, context và git-log; hash nằm trong tin nhắn trả
 Dừng sau P06.
 ```
 
+
+## EXEC-P05-002
+
+```text
+{
+  "id": "EXEC-P05-002",
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) sent this follow-up as a cross-session message after P06; not student-authored. Publishing itself was done by chat A with the student's consent, not by B.",
+  "occurred_at": "2026-11-15T20:57:00+07:00",
+  "timestamp_source": "estimated",
+  "capture_status": "partial",
+  "source": "Prompt: cross-session message, saved verbatim to P05-issues-followup-prompt.txt. Output: checkpoint-P05-issues.md (verbatim).",
+  "missing": [
+    "occurred_at estimated from screenshot file times (first shot run ~20:57-20:58 +07:00); exact receipt time not observed.",
+    "The full tool call/result transcript is not exported.",
+    "The commit hash is only in the final chat reply."
+  ],
+  "artifact_paths": [
+    "HW04/evidence/issues/",
+    "HW04/docs/github-issues.md",
+    "HW04/bug-report.md",
+    "HW04/report.md",
+    "HW04/README.md",
+    "HW04/user-handoff.md",
+    "HW04/submission-manifest.md",
+    "HW04/features/*/results.md",
+    "HW04/working-context.md",
+    "_tools/HW04/shoot_issues.js",
+    "_tools/HW04/fill_issue_urls.py"
+  ],
+  "redactions": [],
+  "recorded_at": "2026-11-15T21:03:00+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Thông tin từ chat A (làm sau khi xong P06, như phần bổ sung P05 bước 5): sinh viên đã cho phép và chat A đã chạy `_tools/HW04/publish_p05.py` push-assets → verify-assets (25 PNG dùng trong body, readback OK) → publish. Kết quả: 5 issue mới datkrb/SUT_Issue #39 (BUG-01), #40, #41, #42, #43 (BUG-05) và 10 comment vào #1, #2, #4, #5, #6, #15, #8, #9, #10, #11; receipts + readback tại `_tools/HW04/work/P05/receipts.json`, `assets-verified.json`. Việc của bạn: (1) điền URL thật vào `HW04/docs/github-issues.md`, `bug-report.md`, README/report (thay placeholder), ghi rõ việc publish do chat A chạy theo đồng ý của sinh viên; (2) chụp trang Issues công khai (danh sách + từng issue #39–#43 có ảnh hiển thị) bằng Playwright headless, chỉ đọc, lưu `HW04/evidence/issues/`; (3) commit; ghi AI log `EXEC-P05-…`/`EXEC-P06-…` cho phần bạn làm. Không đăng/sửa gì thêm trên GitHub.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P05 bước 5 (bổ sung) — điền URL Issues + chụp trang Issues (chat B)
+
+**Ai đăng:** chat A chạy `publish_p05.py` ngày 2026-11-15 (13:56 UTC) sau khi sinh viên đồng ý. Chat B **không** đăng, không sửa gì trên GitHub; lượt này chỉ đọc trang công khai.
+
+### Điền URL (`_tools/HW04/fill_issue_urls.py`, nguồn `_tools/HW04/work/P05/receipts.json`, 15/15 `readback_verified`)
+- `docs/github-issues.md`: trạng thái ĐÃ ĐĂNG + ai đăng; bảng mapping có URL thật; mục ảnh chụp; phần bị chặn trước đó giữ làm lịch sử.
+- `bug-report.md`: dòng **GitHub issue** dưới mỗi BUG-01…05 (#39–#43); cột “Comment đã đăng” cho DUP-01…10.
+- `report.md` §9/§11, `README.md` (dòng GitHub Issues, căn cứ tự chấm), `user-handoff.md` (bước 2 đã xong), `submission-manifest.md` R10, `features/*/results.md` (tiêu đề bug candidates), `working-context.md`.
+- Không đổi điểm tự chấm; chỉ sửa căn cứ (còn trừ vì human review pending).
+
+### Ảnh chụp trang Issues (`_tools/HW04/shoot_issues.js`)
+- Playwright headless Chromium, không đăng nhập, chỉ GET; 2026-11-15 khoảng 20:58 +07:00.
+- `evidence/issues/issues-list.png`: danh sách (43 results), 5 issue HW04 ở đầu.
+- `HW04-BUG-0x-issue-NN.png` ×5: trang issue đầy đủ.
+- `HW04-DUP-xx-issue-NN-comment.png` ×10: khối comment HW04 trên issue cũ.
+- Kiểm tra ảnh: mọi `<img>` trong body có `naturalWidth > 0` — issue 3+2+3+3+1 = 12, comment 13, tổng 25 ảnh (khớp 25 PNG A đã verify); kết quả ở `evidence/issues/issues-screenshots.json`. Đã xem lại bằng mắt ảnh danh sách, #43 và comment #9.
+- Lỗi trong lượt: lần đầu `waitUntil: networkidle` timeout trên GitHub → đổi sang `load` + chờ markdown body; ảnh comment ban đầu chỉ chụp header 37 px (anchor `#issuecomment-id`) → sửa sang khối `.react-issue-comment` chứa anchor, chụp lại toàn bộ.
+
+### Log
+`EXEC-P05-002`.
+```

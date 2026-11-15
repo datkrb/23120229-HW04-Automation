@@ -22,7 +22,7 @@ Cập nhật: 2026-11-15 ~19:58 (+07:00), sau P06. Hỗ trợ tiếp tục công
 | P02 FR-01 | completed, A đã chấp nhận | 20 TC; final 3 browser 9 pass/11 fail mỗi browser (2026-11-15, code 4993ad4); reports `automation/reports/fr01-*`; BC-A1/A2 trùng #1/#2, BC-A3/A4/A5 mới (chưa đăng) — `features/A-FR01/results.md` |
 | P03 FR-08 | completed, A đã chấp nhận | 13 TC; final 3 browser 7 pass/6 fail mỗi browser (2026-11-15, code c1888f8); reports `automation/reports/fr08-*`; bug đều trùng #4/#5/#6/#15 — `features/B-FR08/results.md` |
 | P04 FR-17 | completed, A đã chấp nhận | 18 TC; final 3 browser 11 pass/7 fail mỗi browser (2026-11-15, code ec9c5ae); reports `automation/reports/fr17-*`; BC-C2 (uses rỗng) + BC-C5 (FR-12 API) mới, còn lại trùng #8–#11 — `features/C-FR17/results.md` |
-| P05 final run + bugs | bước 1–4 completed; bước 5 GitHub **bị chặn** (push bị policy từ chối, chưa đăng gì) | 9 run 153 exec 81 pass/72 fail/0 flaky, rerun 153/153 trùng; `test-summary.md`, `bug-report.md` (5 mới + 10 trùng); `docs/github-issues.md` + `docs/issue-bodies/` sẵn sàng; nhánh evidence local 79a0fe9 chưa push |
+| P05 final run + bugs | completed; bước 5 do **chat A** chạy 2026-11-15 sau khi SV đồng ý (#39–#43 + 10 comment); chat B điền URL + chụp `evidence/issues/` | 9 run 153 exec 81 pass/72 fail/0 flaky, rerun 153/153 trùng; `test-summary.md`, `bug-report.md` (5 mới + 10 trùng); `docs/github-issues.md` + `docs/issue-bodies/` sẵn sàng; nhánh evidence local 79a0fe9 chưa push |
 | P06 tài liệu | completed (chờ A đối soát) | report/audit(17, 6V/6I/5INC)/critique 295 từ/README/handoff/git-log/spec-count 9; video skill thật 6:20 `demo/skill-demo.webm`; video Task 2 + YouTube + repo public + Issues chờ SV |
 | P07 | chưa nhận prompt | PDF + ZIP |
 
@@ -58,4 +58,4 @@ Cập nhật: 2026-11-15 ~19:58 (+07:00), sau P06. Hỗ trợ tiếp tục công
 
 ## Bước tiếp
 
-Chờ P07 (PDF/ZIP) và phần sinh viên trong `user-handoff.md` (Issues chưa đăng, repo public chưa có, video Task 2 chưa quay). Khi làm feature: lưu bản AI đầu vào `automation/ai-draft/<feature>/` và commit riêng trước khi sửa; chạy `npm run matrix -- --feature …`, `npm run verify:reports`, `npm run check:data`.
+Chờ P07 (PDF/ZIP) và phần sinh viên trong `user-handoff.md` (Issues đã đăng #39–#43; repo public chưa có, video Task 2 chưa quay). Khi làm feature: lưu bản AI đầu vào `automation/ai-draft/<feature>/` và commit riêng trước khi sửa; chạy `npm run matrix -- --feature …`, `npm run verify:reports`, `npm run check:data`.

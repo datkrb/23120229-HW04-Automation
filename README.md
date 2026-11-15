@@ -10,7 +10,7 @@
 
 Bài làm theo quy trình AI-first: AI sinh bản draft, sau đó review và sửa, có ghi audit.
 
-> Trạng thái: phần AI làm đã xong. Phần **sinh viên phải tự làm** liệt kê trong [user-handoff.md](user-handoff.md): review và ký, tạo repo public, đăng Issues, quay video. Human review: **pending**.
+> Trạng thái: phần AI làm đã xong. Phần **sinh viên phải tự làm** liệt kê trong [user-handoff.md](user-handoff.md): review và ký, tạo repo public, quay video. GitHub Issues đã đăng (chat A, theo đồng ý của sinh viên). Human review: **pending**.
 
 ## Test summary
 
@@ -27,7 +27,7 @@ Số liệu từ lần chạy chính thức 2026-11-15, chi tiết ở [test-sum
 | Failed (đều do bug SUT, ổn định qua 2 lần chạy) | **72** |
 | Flaky | 0 |
 | Bug | **15**: 5 mới (HW04-BUG-01…05) + 10 đã có issue từ HW02/HW03 được automation tái hiện |
-| GitHub Issues | **chưa đăng**, xem [docs/github-issues.md](docs/github-issues.md) |
+| GitHub Issues | **đã đăng**: [#39](https://github.com/datkrb/SUT_Issue/issues/39), [#40](https://github.com/datkrb/SUT_Issue/issues/40), [#41](https://github.com/datkrb/SUT_Issue/issues/41), [#42](https://github.com/datkrb/SUT_Issue/issues/42), [#43](https://github.com/datkrb/SUT_Issue/issues/43) + 10 comment vào #1, #2, #4, #5, #6, #8, #9, #10, #11, #15; ảnh chụp ở `evidence/issues/`; xem [docs/github-issues.md](docs/github-issues.md) |
 | Video Task 2 (YouTube Unlisted) | `<điền link sau khi upload>` |
 | Video demo Agent Skill | `<điền link sau khi upload>` (bản ghi local: `demo/skill-demo.webm`) |
 | Repo GitHub public | `<điền sau khi push>` |
@@ -36,7 +36,7 @@ Số liệu từ lần chạy chính thức 2026-11-15, chi tiết ở [test-sum
 
 | No. | Criteria | Grade | Tự chấm hiện tại | Tự chấm khi hoàn tất phần sinh viên | Căn cứ |
 |---|---|---|---|---|---|
-| 1 | Task 1 – Feature A (FR-01) | 25 | 22 | 25 | 20 TC data-driven (JSON), 7 nhóm assertion, 3 report Run by, review 10 lỗi AI có diff, 5 bug (3 mới). Trừ vì Issues chưa đăng và human review chưa có |
+| 1 | Task 1 – Feature A (FR-01) | 25 | 22 | 25 | 20 TC data-driven (JSON), 7 nhóm assertion, 3 report Run by, review 10 lỗi AI có diff, 5 bug (3 mới). Trừ vì human review chưa có (Issues đã đăng) |
 | 1 | Task 1 – Feature B (FR-08) | 25 | 22 | 25 | 13 TC, fixture user/giỏ độc lập, tamper bằng `page.route`, review 12 lỗi AI, 4 bug trùng issue cũ. Trừ như trên |
 | 1 | Task 1 – Feature C (FR-17) | 25 | 22 | 25 | 18 TC, `storageState`, cleanup, kiểm FR-12 ở API, review 12 lỗi AI, 2 bug mới. Trừ như trên |
 | 2 | Task 2 – Demo video | 15 | 0 | 15 | Kịch bản ở [demo/task2-video-script.md](demo/task2-video-script.md). Đủ điểm chỉ khi sinh viên đã quay bằng giọng thật, có `whoami`/`hostname`, đã upload Unlisted và điền link |

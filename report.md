@@ -221,13 +221,13 @@ Chi tiết ở [bug-report.md](bug-report.md) (theo S08). Có 15 bug được su
 
 | ID | Tóm tắt | Severity / Priority | Issue |
 |---|---|---|---|
-| HW04-BUG-01 | [FR-01] Chấp nhận mật khẩu dùng dấu cách thay ký tự đặc biệt | Medium / Medium | `<issue URL sau khi đăng>` (xem [docs/github-issues.md](docs/github-issues.md)) |
-| HW04-BUG-02 | [FR-01] Chấp nhận email thiếu `@` | Medium / Medium | `<issue URL sau khi đăng>` |
-| HW04-BUG-03 | [FR-01] Đăng ký trùng email, tạo 2 tài khoản `test@eshop.com` | Serious / High | `<issue URL sau khi đăng>` |
-| HW04-BUG-04 | [FR-17] Tạo coupon khi “Số lần dùng tối đa/người” để trống | Medium / Low | `<issue URL sau khi đăng>` |
-| HW04-BUG-05 | [FR-12] Token user thường tạo được coupon qua API admin | Serious / High | `<issue URL sau khi đăng>` |
+| HW04-BUG-01 | [FR-01] Chấp nhận mật khẩu dùng dấu cách thay ký tự đặc biệt | Medium / Medium | [#39](https://github.com/datkrb/SUT_Issue/issues/39) |
+| HW04-BUG-02 | [FR-01] Chấp nhận email thiếu `@` | Medium / Medium | [#40](https://github.com/datkrb/SUT_Issue/issues/40) |
+| HW04-BUG-03 | [FR-01] Đăng ký trùng email, tạo 2 tài khoản `test@eshop.com` | Serious / High | [#41](https://github.com/datkrb/SUT_Issue/issues/41) |
+| HW04-BUG-04 | [FR-17] Tạo coupon khi “Số lần dùng tối đa/người” để trống | Medium / Low | [#42](https://github.com/datkrb/SUT_Issue/issues/42) |
+| HW04-BUG-05 | [FR-12] Token user thường tạo được coupon qua API admin | Serious / High | [#43](https://github.com/datkrb/SUT_Issue/issues/43) |
 
-**10 bug đã có issue**, automation tái hiện và dự kiến comment bằng chứng:
+**10 bug đã có issue**, automation tái hiện và đã comment bằng chứng (link comment trong [docs/github-issues.md](docs/github-issues.md)):
 
 | Issue | Nội dung |
 |---|---|
@@ -242,7 +242,7 @@ Chi tiết ở [bug-report.md](bug-report.md) (theo S08). Có 15 bug được su
 | [#11](https://github.com/datkrb/SUT_Issue/issues/11) | Form coupon thiếu nhãn `*` |
 | [#15](https://github.com/datkrb/SUT_Issue/issues/15) | Giỏ không được xóa sau thanh toán |
 
-**Trạng thái đăng:** **chưa đăng**. Lệnh push nhánh ảnh evidence bị chính sách quyền của phiên AI chặn. Nội dung, script và quy trình nằm sẵn ở [docs/github-issues.md](docs/github-issues.md); sinh viên quyết định cách đăng.
+**Trạng thái đăng:** **đã đăng** (5 issue + 10 comment). Đăng ngày 2026-11-15 (13:56 UTC, tức 20:56 +07:00) bởi **chat A**, sau khi sinh viên đồng ý, bằng `_tools/HW04/publish_p05.py` (push-assets → verify-assets → publish) với tài khoản `datkrb`. Chat B (phiên thực hiện) **không** chạy lệnh đăng; chat B chỉ soạn nội dung/script trước đó, rồi sau khi đăng thì điền URL và chụp trang Issues công khai ở chế độ chỉ đọc. Mapping đầy đủ ở [docs/github-issues.md](docs/github-issues.md); ảnh chụp trang Issues ở `evidence/issues/`.
 
 ## 10. Agent Skill (§7)
 
@@ -254,6 +254,6 @@ Skill `playwright-data-driven-automation` nằm ở [skills/playwright-data-driv
 - Prompt sinh code D1–D3 do **chính chat B tự soạn** theo khung skill, trong cùng phiên đã có kết quả khảo sát DOM. Đây không phải một chat sạch tách biệt; đã khai trong AI log.
 - Xác nhận bug do AI chạy script; **chưa có thao tác tay của sinh viên**.
 - A-AUTO-09 / A-AUTO-20 dựa trên cách AI hiểu “tập ký tự đặc biệt” trong SRS; cần sinh viên xác nhận.
-- GitHub Issues: chưa đăng. Repo public: chưa tạo / chưa push. Video Task 2: sinh viên tự quay và upload, link `<điền sau khi upload>`.
+- GitHub Issues: đã đăng bởi chat A theo đồng ý của sinh viên (không phải chat B). Repo public: chưa tạo / chưa push. Video Task 2: sinh viên tự quay và upload, link `<điền sau khi upload>`.
 - 9 report có trace, tổng khoảng 55 MB; cần lưu ý giới hạn Moodle 20 MB/tệp khi đóng gói.
 - Một số lượt chạy tạo dữ liệu thật trong DB local của SUT (user/đơn/coupon test). Dữ liệu này mất khi backend khởi động lại; coupon do test tạo đã được dọn.

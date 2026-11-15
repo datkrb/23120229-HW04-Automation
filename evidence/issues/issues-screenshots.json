@@ -1,0 +1,272 @@
+{
+  "taken_at": "2026-11-15T20:59:21+07:00",
+  "mode": "headless chromium, not logged in, read-only GET",
+  "shots": [
+    {
+      "file": "issues-list.png",
+      "url": "https://github.com/datkrb/SUT_Issue/issues?q=is%3Aissue",
+      "title": "Issues · datkrb/SUT_Issue · GitHub"
+    },
+    {
+      "file": "HW04-BUG-01-issue-39.png",
+      "id": "HW04-BUG-01",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/39",
+      "title": "[HW04][FR-01] Đăng ký chấp nhận mật khẩu không có ký tự đặc biệt thuộc tập SRS (dùng dấu cách) · Issue #39 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-01-1-before-submit.png",
+          "w": 1280,
+          "h": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-01-2-after-submit.png",
+          "w": 1280,
+          "h": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-A-AUTO-20-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-BUG-02-issue-40.png",
+      "id": "HW04-BUG-02",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/40",
+      "title": "[HW04][FR-01] Đăng ký chấp nhận email sai định dạng (thiếu @) · Issue #40 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-02-1-before-submit.png",
+          "w": 1280,
+          "h": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-02-2-after-submit.png",
+          "w": 1280,
+          "h": 800
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-BUG-03-issue-41.png",
+      "id": "HW04-BUG-03",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/41",
+      "title": "[HW04][FR-01] Đăng ký lại được email đã tồn tại → tài khoản trùng email · Issue #41 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-03-2-after-submit.png",
+          "w": 1280,
+          "h": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-03-4-admin-users-filtered.png",
+          "w": 960,
+          "h": 162
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-03-3-admin-users.png",
+          "w": 1280,
+          "h": 800
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-BUG-04-issue-42.png",
+      "id": "HW04-BUG-04",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/42",
+      "title": "[HW04][FR-17] Tạo coupon khi để trống “Số lần dùng tối đa/người” (tự gán 1) · Issue #42 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-04-1-before-submit.png",
+          "w": 1280,
+          "h": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-04-2-after-submit.png",
+          "w": 1280,
+          "h": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-C-AUTO-07-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-BUG-05-issue-43.png",
+      "id": "HW04-BUG-05",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/43",
+      "title": "[HW04][FR-12] API tạo coupon cho phép user thường (không kiểm role = admin) · Issue #43 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/HW04-BUG-05-1-admin-list-shows-user-created-coupon.png",
+          "w": 1280,
+          "h": 800
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-01-issue-1-comment.png",
+      "id": "HW04-DUP-01",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/1#issuecomment-6895381736",
+      "title": "[HW02 23120229] Đăng ký từ chối các mật khẩu thỏa chính sách FR-01 · Issue #1 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-A-AUTO-01-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-02-issue-2-comment.png",
+      "id": "HW04-DUP-02",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/2#issuecomment-6895382803",
+      "title": "[HW02 23120229] Form đăng ký thiếu confirm và sai cấu trúc heading input bắt buộc · Issue #2 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-A-AUTO-15-chromium.png",
+          "w": 1280,
+          "h": 720
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-A-AUTO-19-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-03-issue-4-comment.png",
+      "id": "HW04-DUP-03",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/4#issuecomment-6895383797",
+      "title": "[HW02 23120229] Checkout cho người dùng sửa trực tiếp tổng đơn hàng · Issue #4 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-B-AUTO-05-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-04-issue-5-comment.png",
+      "id": "HW04-DUP-04",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/5#issuecomment-6895384790",
+      "title": "[HW02 23120229] Backend checkout lưu tổng sai do client cung cấp · Issue #5 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-B-AUTO-06-chromium.png",
+          "w": 1280,
+          "h": 720
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-B-AUTO-12-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-05-issue-6-comment.png",
+      "id": "HW04-DUP-05",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/6#issuecomment-6895385784",
+      "title": "[HW02 23120229] Trang checkout thiếu heading breadcrumb badge và sai màu nút · Issue #6 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-B-AUTO-08-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-06-issue-15-comment.png",
+      "id": "HW04-DUP-06",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/15#issuecomment-6895386795",
+      "title": "[HW03][HW03-B-BUG-04] Giỏ vẫn còn hai dòng sau checkout thành công · Issue #15 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-B-AUTO-03-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-07-issue-8-comment.png",
+      "id": "HW04-DUP-07",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/8#issuecomment-6895387822",
+      "title": "[HW02 23120229] Tạo coupon chấp nhận minimum bắt buộc để trống · Issue #8 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-C-AUTO-06-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-08-issue-9-comment.png",
+      "id": "HW04-DUP-08",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/9#issuecomment-6895388726",
+      "title": "[HW02 23120229] Tạo coupon chấp nhận discount bằng không và số âm · Issue #9 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-C-AUTO-09-chromium.png",
+          "w": 1280,
+          "h": 720
+        },
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-C-AUTO-10-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-09-issue-10-comment.png",
+      "id": "HW04-DUP-09",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/10#issuecomment-6895389580",
+      "title": "[HW02 23120229] Tạo coupon chấp nhận minimum âm · Issue #10 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-C-AUTO-11-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    },
+    {
+      "file": "HW04-DUP-10-issue-11-comment.png",
+      "id": "HW04-DUP-10",
+      "url": "https://github.com/datkrb/SUT_Issue/issues/11#issuecomment-6895390400",
+      "title": "[HW02 23120229] Form Admin coupon thiếu nhãn dấu bắt buộc và sai màu nút tạo · Issue #11 · datkrb/SUT_Issue",
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/datkrb/SUT_Issue/79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8/evidence/HW04_23120229/suite-C-AUTO-18-chromium.png",
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "images_ok": true
+    }
+  ],
+  "finished_at": "2026-11-15T20:59:50+07:00"
+}

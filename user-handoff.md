@@ -10,9 +10,9 @@ AI không được làm, hoặc bị chặn không làm được, các việc d�
 - [ ] Sửa nếu thấy sai. Đổi cột “Human review” trong `ai-audit.md` từ `pending` sang `confirmed` **chỉ cho những dòng đã thật sự review**.
 - [ ] Điền phần cam đoan/chữ ký trong `ai-audit.md` (mục AI Disclosure) và chỉnh `ai-critique.md` theo ý của em.
 
-## 2. Đăng GitHub Issues
+## 2. Đăng GitHub Issues — **ĐÃ XONG** (2026-11-15)
 
-AI đã chuẩn bị đủ nội dung, nhưng lệnh push của phiên AI bị chặn.
+Đăng ngày 2026-11-15 (13:56 UTC, tức 20:56 +07:00) bởi **chat A**, sau khi sinh viên đồng ý, bằng `_tools/HW04/publish_p05.py` (push-assets → verify-assets → publish) với tài khoản `datkrb`. Chat B (phiên thực hiện) **không** chạy lệnh đăng; chat B chỉ soạn nội dung/script trước đó, rồi sau khi đăng thì điền URL và chụp trang Issues công khai ở chế độ chỉ đọc. URL ở `docs/github-issues.md`; ảnh chụp ở `evidence/issues/`. Em chỉ cần mở các issue để tự kiểm tra lại. Phần dưới giữ làm lịch sử.
 
 Chạy tại `D:\KI7\testing`:
 
@@ -28,8 +28,8 @@ Script làm 3 việc:
 - tạo 5 issue mới và 10 comment. Script idempotent nhờ marker và đọc lại từng mục sau khi đăng.
 
 Sau đó:
-- [ ] Mở `_tools/HW04/work/P05/receipts.json`, chép URL vào `docs/github-issues.md`, `bug-report.md`, `report.md` §9, thay `<issue URL sau khi đăng>`.
-- [ ] Chụp trang Issues (danh sách và từng issue mới) vào `evidence/issues/`. Đề §14 yêu cầu “screenshots of the bugs on the GitHub Issues page”.
+- [x] Mở `_tools/HW04/work/P05/receipts.json`, chép URL vào `docs/github-issues.md`, `bug-report.md`, `report.md` §9, thay `<issue URL sau khi đăng>`.
+- [x] Chụp trang Issues (danh sách và từng issue mới) vào `evidence/issues/`. Đề §14 yêu cầu “screenshots of the bugs on the GitHub Issues page”.
 
 ## 3. Tạo repo GitHub public và push
 

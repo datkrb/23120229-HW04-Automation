@@ -41,7 +41,7 @@ Lần chạy cuối: 2026-11-15, code HW04 `ec9c5ae`, SUT HEAD `85af3ba`, lệnh
 
 Không có fail nào thuộc nhóm lỗi test hoặc lỗi môi trường. Các lỗi test của bản draft đã được sửa, xem [review.md](review.md).
 
-## 3. Bug candidates (chưa đăng Issues)
+## 3. Bug candidates (lúc viết chưa đăng Issues; đã đăng 2026-11-15, URL ở [docs/github-issues.md](../../docs/github-issues.md))
 
 Đối chiếu với `datkrb/SUT_Issue`, đọc công khai ngày 2026-11-15:
 

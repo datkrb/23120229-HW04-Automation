@@ -33,6 +33,8 @@ Riêng ảnh `HW04-BUG-03-4` đã ẩn **hiển thị** các dòng không liên 
 
 ### HW04-BUG-01 — Đăng ký chấp nhận mật khẩu không có ký tự đặc biệt thuộc tập SRS (dùng dấu cách)
 
+**GitHub issue:** https://github.com/datkrb/SUT_Issue/issues/39 (đăng 2026-11-15 bởi chat A, sinh viên đồng ý; ảnh chụp `evidence/issues/HW04-BUG-01-issue-39.png`)
+
 | Trường | Nội dung |
 |---|---|
 | Function | FR-01 Đăng ký tài khoản (Web) |
@@ -54,6 +56,8 @@ Liên quan: cùng bộ kiểm mật khẩu với #1. #1 nói chiều “từ ch�
 
 ### HW04-BUG-02 — Đăng ký chấp nhận email sai định dạng (thiếu `@`)
 
+**GitHub issue:** https://github.com/datkrb/SUT_Issue/issues/40 (đăng 2026-11-15 bởi chat A, sinh viên đồng ý; ảnh chụp `evidence/issues/HW04-BUG-02-issue-40.png`)
+
 | Trường | Nội dung |
 |---|---|
 | Function | FR-01 |
@@ -73,6 +77,8 @@ Bằng chứng:
 
 ### HW04-BUG-03 — Đăng ký lại được email đã tồn tại, tạo tài khoản trùng email
 
+**GitHub issue:** https://github.com/datkrb/SUT_Issue/issues/41 (đăng 2026-11-15 bởi chat A, sinh viên đồng ý; ảnh chụp `evidence/issues/HW04-BUG-03-issue-41.png`)
+
 | Trường | Nội dung |
 |---|---|
 | Function | FR-01 |
@@ -90,6 +96,8 @@ Các bước tái hiện:
 Bằng chứng: `evidence/bugs/repro/HW04-BUG-03-2-after-submit.png`, `…-3-admin-users.png`, `…-4-admin-users-filtered.png`.
 
 ### HW04-BUG-04 — Tạo coupon khi để trống “Số lần dùng tối đa/người”; hệ thống tự gán 1
+
+**GitHub issue:** https://github.com/datkrb/SUT_Issue/issues/42 (đăng 2026-11-15 bởi chat A, sinh viên đồng ý; ảnh chụp `evidence/issues/HW04-BUG-04-issue-42.png`)
 
 | Trường | Nội dung |
 |---|---|
@@ -110,6 +118,8 @@ Phân biệt với #8: #8 chỉ nói về trường “Đơn tối thiểu”.
 
 ### HW04-BUG-05 — API tạo coupon cho phép user thường (không kiểm `role = admin`)
 
+**GitHub issue:** https://github.com/datkrb/SUT_Issue/issues/43 (đăng 2026-11-15 bởi chat A, sinh viên đồng ý; ảnh chụp `evidence/issues/HW04-BUG-05-issue-43.png`)
+
 | Trường | Nội dung |
 |---|---|
 | Function | FR-12 Kiểm soát truy cập / FR-17 |
@@ -129,20 +139,20 @@ Ghi chú: UI Admin có chặn user thường (C-AUTO-15 pass), nhưng backend th
 
 ## B. Bug đã có issue (HW02/HW03), HW04 tái hiện bằng automation, comment bằng chứng vào issue cũ
 
-| HW04 ID | Issue cũ | Tóm tắt | TC tự động (fail 3 browser × 2 lần) | Ảnh |
-|---|---|---|---|---|
-| HW04-DUP-01 | #1 | Mật khẩu hợp lệ FR-01 bị từ chối | A-AUTO-01/02/03/18 (che cả 13/14/17) | `attachments/A-AUTO-01-*.png` |
-| HW04-DUP-02 | #2 | Thiếu ô xác nhận mật khẩu; nhãn không có `*`; email `type=text`; không có `h1` | A-AUTO-15/16/19 | `attachments/A-AUTO-15-*.png`, `A-AUTO-19-*.png` |
-| HW04-DUP-03 | #4 | Tổng tiền checkout sửa được | B-AUTO-05 | `attachments/B-AUTO-05-*.png` |
-| HW04-DUP-04 | #5 | Backend lưu `total_amount` do client gửi; HW04 bổ sung trường hợp **tổng âm −100000** | B-AUTO-06/07/12 | `attachments/B-AUTO-06-*.png`, `B-AUTO-12-*.png` |
-| HW04-DUP-05 | #6 | Trang checkout không có `h1` | B-AUTO-08 | `attachments/B-AUTO-08-*.png` |
-| HW04-DUP-06 | #15 | Giỏ không xóa sau thanh toán thành công | B-AUTO-03 | `attachments/B-AUTO-03-*.png` |
-| HW04-DUP-07 | #8 | Coupon tạo được khi “Đơn tối thiểu” rỗng | C-AUTO-06 | `attachments/C-AUTO-06-*.png` |
-| HW04-DUP-08 | #9 | Discount −1 và 0 được chấp nhận | C-AUTO-09/10 | `attachments/C-AUTO-09-*.png`, `C-AUTO-10-*.png` |
-| HW04-DUP-09 | #10 | Minimum −1 được chấp nhận | C-AUTO-11 | `attachments/C-AUTO-11-*.png` |
-| HW04-DUP-10 | #11 | 6 trường coupon không có nhãn hay `*` | C-AUTO-18 | `attachments/C-AUTO-18-*.png` |
+| HW04 ID | Issue cũ | Tóm tắt | TC tự động (fail 3 browser × 2 lần) | Ảnh | Comment đã đăng |
+|---|---|---|---|---|---|
+| HW04-DUP-01 | #1 | Mật khẩu hợp lệ FR-01 bị từ chối | A-AUTO-01/02/03/18 (che cả 13/14/17) | `attachments/A-AUTO-01-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/1#issuecomment-6895381736) |
+| HW04-DUP-02 | #2 | Thiếu ô xác nhận mật khẩu; nhãn không có `*`; email `type=text`; không có `h1` | A-AUTO-15/16/19 | `attachments/A-AUTO-15-*.png`, `A-AUTO-19-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/2#issuecomment-6895382803) |
+| HW04-DUP-03 | #4 | Tổng tiền checkout sửa được | B-AUTO-05 | `attachments/B-AUTO-05-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/4#issuecomment-6895383797) |
+| HW04-DUP-04 | #5 | Backend lưu `total_amount` do client gửi; HW04 bổ sung trường hợp **tổng âm −100000** | B-AUTO-06/07/12 | `attachments/B-AUTO-06-*.png`, `B-AUTO-12-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/5#issuecomment-6895384790) |
+| HW04-DUP-05 | #6 | Trang checkout không có `h1` | B-AUTO-08 | `attachments/B-AUTO-08-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/6#issuecomment-6895385784) |
+| HW04-DUP-06 | #15 | Giỏ không xóa sau thanh toán thành công | B-AUTO-03 | `attachments/B-AUTO-03-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/15#issuecomment-6895386795) |
+| HW04-DUP-07 | #8 | Coupon tạo được khi “Đơn tối thiểu” rỗng | C-AUTO-06 | `attachments/C-AUTO-06-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/8#issuecomment-6895387822) |
+| HW04-DUP-08 | #9 | Discount −1 và 0 được chấp nhận | C-AUTO-09/10 | `attachments/C-AUTO-09-*.png`, `C-AUTO-10-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/9#issuecomment-6895388726) |
+| HW04-DUP-09 | #10 | Minimum −1 được chấp nhận | C-AUTO-11 | `attachments/C-AUTO-11-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/10#issuecomment-6895389580) |
+| HW04-DUP-10 | #11 | 6 trường coupon không có nhãn hay `*` | C-AUTO-18 | `attachments/C-AUTO-18-*.png` | [comment](https://github.com/datkrb/SUT_Issue/issues/11#issuecomment-6895390400) |
 
-Quyết định: không tạo issue trùng. Mỗi issue cũ nhận một comment `[HW04 23120229]` gồm TC tự động, browser, report và ảnh.
+Quyết định: không tạo issue trùng. Mỗi issue cũ nhận một comment `[HW04 23120229]` gồm TC tự động, browser, report và ảnh. Đã đăng 2026-11-15 (chat A, sinh viên đồng ý); ảnh chụp từng comment ở `evidence/issues/HW04-DUP-*-comment.png`.
 
 ## Thống kê (theo S08 “Statistics by defect type”)
 

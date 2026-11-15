@@ -38,7 +38,7 @@ Không có fail nào thuộc nhóm lỗi test hay lỗi môi trường. Các l�
 
 Bằng chứng backend cho BC-B2: thông điệp assertion trong report ghi rõ giá trị nhận được, ví dụ “backend không được lưu total_amount client (1) … Received array: [1]”. Giá trị này lấy từ `GET /api/orders/my-orders` của user test. Ảnh màn hình thành công: [B-AUTO-06](evidence/failures/B-AUTO-06-chromium.png), [B-AUTO-12](evidence/failures/B-AUTO-12-chromium.png).
 
-## 3. Bug candidates (chưa đăng Issues)
+## 3. Bug candidates (lúc viết chưa đăng Issues; đã đăng 2026-11-15, URL ở [docs/github-issues.md](../../docs/github-issues.md))
 
 Đối chiếu `datkrb/SUT_Issue` (đọc công khai ngày 2026-11-15):
 
