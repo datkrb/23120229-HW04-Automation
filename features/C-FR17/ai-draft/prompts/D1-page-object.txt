@@ -1,0 +1,7 @@
+[EXEC-P04-002 · bước D1 · prompt B tự soạn từ khung P-c của skill playwright-data-driven-automation]
+Dùng locator đã chốt trong HW04/features/C-FR17/locator-inventory.md (khảo sát DOM thật Admin :5174 trên 3 browser). Viết automation/pages/AdminCouponPage.ts (Playwright + TypeScript):
+- login(email, password) qua form Admin Login (placeholder Email/Password, nút Login);
+- openCoupons(): bấm mục "Mã Giảm Giá" ở sidebar (là <li>, không phải link), chờ heading "Quản lý Mã Giảm Giá";
+- fillForm(data) cho 6 trường (placeholder như inventory; type là select percent/fixed; expiry là input date), submit() bấm "Tạo mã";
+- row(code) dòng bảng có ô mã đúng code; deleteCoupon(code) bấm "Xóa" trong dòng đó.
+Không chứa assertion, không waitForTimeout.
