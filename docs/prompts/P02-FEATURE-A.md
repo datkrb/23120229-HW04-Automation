@@ -1,4 +1,4 @@
-Vai trò: Chat thực hiện. Tiếp tục HW04 (P02 — Feature A: FR-01 Đăng ký, Web :5173). A đã đối soát P01.
+Vai trò: Chat thực hiện. Tiếp tục HW04 (P02 — Feature A: FR-01 Đăng ký, Web :5173). A đã đối soát P01: chấp nhận (skill + scripts run-matrix/verify-report/check-data-driven, commit 55ad041…8761ca8). Dùng `run-matrix`, `verify-report`, `check-data-driven` của skill khi chạy/kiểm.
 
 Áp dụng skill `playwright-data-driven-automation` (đọc SKILL.md của nó trước) + software-testing-ai-first. Oracle = SRS FR-01 (`eshop-sut/README.md`), không lấy hành vi code làm expected.
 
