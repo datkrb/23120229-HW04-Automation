@@ -1,0 +1,447 @@
+{
+  "generatedAt": "2026-11-15T18:38:14+07:00",
+  "projectDir": "D:\\KI7\\testing\\HW04\\automation",
+  "runs": [
+    {
+      "feature": "fr08",
+      "browser": "chromium",
+      "label": "fr08-chromium",
+      "report": "reports/fr08-chromium",
+      "spec": "tests/fr08-checkout.spec.ts",
+      "started": "2026-11-15T18:33:27+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T11:33:32.019Z",
+        "duration": 75249.428,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T18:33:32+07:00",
+        "Run label": "fr08-chromium",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-01 Guest có giỏ P×1 không thanh toán được",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1381
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-02 Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1394
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-03 Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10796
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-04 Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5113
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-05 Tổng tiền không cho người dùng sửa trực tiếp",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10357
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-06 Client gửi total_amount = 1 → đơn không lưu 1",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2695
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-07 Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 1532
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-08 Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10578
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-09 Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 944
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-10 Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2996
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-11 Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1395
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-12 Client gửi total_amount âm → đơn không lưu giá trị âm",
+          "project": "chromium",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 1287
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-13 POST /api/checkout không có token bị từ chối",
+          "project": "chromium",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 343
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr08",
+      "browser": "firefox",
+      "label": "fr08-firefox",
+      "report": "reports/fr08-firefox",
+      "spec": "tests/fr08-checkout.spec.ts",
+      "started": "2026-11-15T18:34:47+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T11:34:54.695Z",
+        "duration": 122025.858,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T18:34:54+07:00",
+        "Run label": "fr08-firefox",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-01 Guest có giỏ P×1 không thanh toán được",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5838
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-02 Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4426
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-03 Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 13815
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-04 Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 8729
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-05 Tổng tiền không cho người dùng sửa trực tiếp",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 13666
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-06 Client gửi total_amount = 1 → đơn không lưu 1",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 6255
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-07 Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 7149
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-08 Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 14740
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-09 Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4530
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-10 Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5446
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-11 Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 3567
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-12 Client gửi total_amount âm → đơn không lưu giá trị âm",
+          "project": "firefox",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 3574
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-13 POST /api/checkout không có token bị từ chối",
+          "project": "firefox",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1406
+        }
+      ],
+      "errors": []
+    },
+    {
+      "feature": "fr08",
+      "browser": "webkit",
+      "label": "fr08-webkit",
+      "report": "reports/fr08-webkit",
+      "spec": "tests/fr08-checkout.spec.ts",
+      "started": "2026-11-15T18:36:56+07:00",
+      "exitCode": 1,
+      "stats": {
+        "startTime": "2026-11-15T11:37:01.833Z",
+        "duration": 72958.039,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "metadata": {
+        "Run by": "23120229",
+        "Run started (ISO 8601)": "2026-11-15T18:37:01+07:00",
+        "Run label": "fr08-webkit",
+        "Web URL": "http://localhost:5173",
+        "Admin URL": "http://localhost:5174",
+        "API URL": "http://localhost:3000",
+        "Host": "LAPTOP-S2UJ5VI8",
+        "actualWorkers": 1
+      },
+      "tests": [
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-01 Guest có giỏ P×1 không thanh toán được",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1976
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-02 Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2088
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-03 Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 12377
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-04 Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 5802
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-05 Tổng tiền không cho người dùng sửa trực tiếp",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 10654
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-06 Client gửi total_amount = 1 → đơn không lưu 1",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2363
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-07 Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2438
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-08 Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 11963
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-09 Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 1262
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-10 Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 4578
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-11 Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 2727
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-12 Client gửi total_amount âm → đơn không lưu giá trị âm",
+          "project": "webkit",
+          "status": "unexpected",
+          "result": "failed",
+          "attempts": 1,
+          "duration": 2262
+        },
+        {
+          "file": "fr08-checkout.spec.ts",
+          "title": "FR-08 Checkout › B-AUTO-13 POST /api/checkout không có token bị từ chối",
+          "project": "webkit",
+          "status": "expected",
+          "result": "passed",
+          "attempts": 1,
+          "duration": 428
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

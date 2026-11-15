@@ -1,0 +1,941 @@
+{
+  "config": {
+    "configFile": "D:\\KI7\\testing\\HW04\\automation\\playwright.config.ts",
+    "rootDir": "D:/KI7/testing/HW04/automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120229",
+      "Run started (ISO 8601)": "2026-11-15T18:33:32+07:00",
+      "Run label": "fr08-chromium",
+      "Web URL": "http://localhost:5173",
+      "Admin URL": "http://localhost:5174",
+      "API URL": "http://localhost:3000",
+      "Host": "LAPTOP-S2UJ5VI8",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/fr08-chromium",
+          "open": "never",
+          "title": "EShop HW04 — fr08-chromium — Run by: 23120229 — 2026-11-15T18:33:32+07:00"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/fr08-chromium/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/KI7/testing/HW04/automation/test-results/fr08-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120229",
+          "Run started (ISO 8601)": "2026-11-15T18:33:32+07:00",
+          "Run label": "fr08-chromium",
+          "Web URL": "http://localhost:5173",
+          "Admin URL": "http://localhost:5174",
+          "API URL": "http://localhost:3000",
+          "Host": "LAPTOP-S2UJ5VI8",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/KI7/testing/HW04/automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KI7/testing/HW04/automation/test-results/fr08-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120229",
+          "Run started (ISO 8601)": "2026-11-15T18:33:32+07:00",
+          "Run label": "fr08-chromium",
+          "Web URL": "http://localhost:5173",
+          "Admin URL": "http://localhost:5174",
+          "API URL": "http://localhost:3000",
+          "Host": "LAPTOP-S2UJ5VI8",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/KI7/testing/HW04/automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KI7/testing/HW04/automation/test-results/fr08-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120229",
+          "Run started (ISO 8601)": "2026-11-15T18:33:32+07:00",
+          "Run label": "fr08-chromium",
+          "Web URL": "http://localhost:5173",
+          "Admin URL": "http://localhost:5174",
+          "API URL": "http://localhost:3000",
+          "Host": "LAPTOP-S2UJ5VI8",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/KI7/testing/HW04/automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr08-checkout.spec.ts",
+      "file": "fr08-checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-08 Checkout",
+          "file": "fr08-checkout.spec.ts",
+          "line": 62,
+          "column": 6,
+          "specs": [
+            {
+              "title": "B-AUTO-01 Guest có giỏ P×1 không thanh toán được",
+              "ok": true,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1381,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:33:33.577Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-a8238660d828d13ebcca",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-02 Một dòng P×1: danh sách, tổng tự tính, thanh toán, đơn lưu đúng tổng",
+              "ok": true,
+              "tags": [
+                "positive"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1394,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:33:35.131Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-702d92422f55cccd7435",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-03 Nhiều dòng P×2 + Q×1: tổng đúng và giỏ được xóa sau thành công",
+              "ok": false,
+              "tags": [
+                "positive"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixture-workaround",
+                      "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10796,
+                      "error": {
+                        "message": "Error: FR-08: sau thanh toán thành công giỏ được xóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-08: sau thanh toán thành công giỏ được xóa with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\u001b[22m\n",
+                        "stack": "Error: FR-08: sau thanh toán thành công giỏ được xóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-08: sau thanh toán thành công giỏ được xóa with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:218:94",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                          "column": 94,
+                          "line": 218
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 216 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mcartClearedAfter) {\n \u001b[90m 217 |\u001b[39m         \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mopen()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 218 |\u001b[39m         \u001b[36mawait\u001b[39m expect(cartPage\u001b[33m.\u001b[39memptyHeading\u001b[33m,\u001b[39m \u001b[32m'FR-08: sau thanh toán thành công giỏ được xóa'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 219 |\u001b[39m       }\n \u001b[90m 220 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 221 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                            "column": 94,
+                            "line": 218
+                          },
+                          "message": "Error: FR-08: sau thanh toán thành công giỏ được xóa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-08: sau thanh toán thành công giỏ được xóa with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Giỏ hàng của bạn đang trống' })\u001b[22m\n\n\n  216 |       if (expected.cartClearedAfter) {\n  217 |         await cartPage.open();\n> 218 |         await expect(cartPage.emptyHeading, 'FR-08: sau thanh toán thành công giỏ được xóa').toBeVisible();\n      |                                                                                              ^\n  219 |       }\n  220 |     });\n  221 |   }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:218:94"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:33:36.570Z",
+                      "annotations": [
+                        {
+                          "type": "fixture-workaround",
+                          "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-5c5ba-giỏ-được-xóa-sau-thành-công-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-5c5ba-giỏ-được-xóa-sau-thành-công-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-5c5ba-giỏ-được-xóa-sau-thành-công-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                        "column": 94,
+                        "line": 218
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-9725f5f81ce8707e4c45",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-04 Giỏ cập nhật từ P×1 thành P×2 → checkout dùng giỏ mới",
+              "ok": true,
+              "tags": [
+                "positive"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixture-workaround",
+                      "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5113,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:33:52.053Z",
+                      "annotations": [
+                        {
+                          "type": "fixture-workaround",
+                          "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-be284d0c36aebafee309",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-05 Tổng tiền không cho người dùng sửa trực tiếp",
+              "ok": false,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10357,
+                      "error": {
+                        "message": "Error: không có ô tổng cho phép sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeEditable\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('main').getByRole('spinbutton')\nExpected: not editable\nReceived: editable\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - không có ô tổng cho phép sửa with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('main').getByRole('spinbutton')\u001b[22m\n\u001b[2m    5 × locator resolved to <input type=\"number\" value=\"4000000\" class=\"border p-2 rounded text-red-600 font-bold\"/>\u001b[22m\n\u001b[2m      - unexpected value \"editable\"\u001b[22m\n",
+                        "stack": "Error: không có ô tổng cho phép sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeEditable\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('main').getByRole('spinbutton')\nExpected: not editable\nReceived: editable\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - không có ô tổng cho phép sửa with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('main').getByRole('spinbutton')\u001b[22m\n\u001b[2m    5 × locator resolved to <input type=\"number\" value=\"4000000\" class=\"border p-2 rounded text-red-600 font-bold\"/>\u001b[22m\n\u001b[2m      - unexpected value \"editable\"\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:168:84",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                          "column": 84,
+                          "line": 168
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 166 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mkind \u001b[33m===\u001b[39m \u001b[32m'total-not-editable'\u001b[39m) {\n \u001b[90m 167 |\u001b[39m         \u001b[90m// A user must not be able to change the payable total directly (FR-08).\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 168 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(checkout\u001b[33m.\u001b[39mtotalInput\u001b[33m,\u001b[39m \u001b[32m'không có ô tổng cho phép sửa'\u001b[39m)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeEditable({ timeout\u001b[33m:\u001b[39m \u001b[35m1500\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 169 |\u001b[39m         \u001b[36mif\u001b[39m ((\u001b[36mawait\u001b[39m checkout\u001b[33m.\u001b[39mtotalInput\u001b[33m.\u001b[39mcount()) \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m \u001b[33m&&\u001b[39m (\u001b[36mawait\u001b[39m checkout\u001b[33m.\u001b[39mtotalInput\u001b[33m.\u001b[39misEditable())) {\n \u001b[90m 170 |\u001b[39m           \u001b[36mawait\u001b[39m checkout\u001b[33m.\u001b[39mtotalInput\u001b[33m.\u001b[39mfill(input\u001b[33m.\u001b[39mtypeTotal \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[32m'1'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// ordinary typing, no DOM forcing\u001b[39m\n \u001b[90m 171 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                            "column": 84,
+                            "line": 168
+                          },
+                          "message": "Error: không có ô tổng cho phép sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeEditable\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('main').getByRole('spinbutton')\nExpected: not editable\nReceived: editable\nTimeout:  1500ms\n\nCall log:\n\u001b[2m  - không có ô tổng cho phép sửa with timeout 1500ms\u001b[22m\n\u001b[2m  - waiting for getByRole('main').getByRole('spinbutton')\u001b[22m\n\u001b[2m    5 × locator resolved to <input type=\"number\" value=\"4000000\" class=\"border p-2 rounded text-red-600 font-bold\"/>\u001b[22m\n\u001b[2m      - unexpected value \"editable\"\u001b[22m\n\n\n  166 |       if (expected.kind === 'total-not-editable') {\n  167 |         // A user must not be able to change the payable total directly (FR-08).\n> 168 |         await expect.soft(checkout.totalInput, 'không có ô tổng cho phép sửa').not.toBeEditable({ timeout: 1500 });\n      |                                                                                    ^\n  169 |         if ((await checkout.totalInput.count()) > 0 && (await checkout.totalInput.isEditable())) {\n  170 |           await checkout.totalInput.fill(input.typeTotal ?? '1'); // ordinary typing, no DOM forcing\n  171 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:168:84"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                            "column": 96,
+                            "line": 172
+                          },
+                          "message": "Error: tổng vẫn tự tính từ giỏ sau khi người dùng thử sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('main').getByText(/^Tổng thanh toán:/)\nExpected pattern: \u001b[32m/4[.,\\s\\u202f]000[.,\\s\\u202f]000\\s*₫/\u001b[39m\nReceived string:  \u001b[31m\"Tổng thanh toán: 1 ₫\"\u001b[39m\nTimeout: 7000ms\n\nCall log:\n\u001b[2m  - tổng vẫn tự tính từ giỏ sau khi người dùng thử sửa with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('main').getByText(/^Tổng thanh toán:/)\u001b[22m\n\u001b[2m    11 × locator resolved to <span class=\"font-bold text-xl\">Tổng thanh toán: 1 ₫</span>\u001b[22m\n\u001b[2m       - unexpected value \"Tổng thanh toán: 1 ₫\"\u001b[22m\n\n\n  170 |           await checkout.totalInput.fill(input.typeTotal ?? '1'); // ordinary typing, no DOM forcing\n  171 |         }\n> 172 |         await expect(checkout.totalText, 'tổng vẫn tự tính từ giỏ sau khi người dùng thử sửa').toContainText(\n      |                                                                                                ^\n  173 |           amountPattern(expectedTotal),\n  174 |         );\n  175 |         return;\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:172:96"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:33:57.829Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-d9cf0-ho-người-dùng-sửa-trực-tiếp-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-d9cf0-ho-người-dùng-sửa-trực-tiếp-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-d9cf0-ho-người-dùng-sửa-trực-tiếp-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                        "column": 84,
+                        "line": 168
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-96ba345c2574791a2b75",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-06 Client gửi total_amount = 1 → đơn không lưu 1",
+              "ok": false,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "tamper",
+                      "description": "total_amount 4000000 → 1"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2695,
+                      "error": {
+                        "message": "Error: backend không được lưu total_amount client (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m1\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m1\u001b[27m]\u001b[39m",
+                        "stack": "Error: backend không được lưu total_amount client (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m1\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m1\u001b[27m]\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                          "column": 97,
+                          "line": 203
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 201 |\u001b[39m         \u001b[90m// Accepting the client value is the violation; a rejection or the cart total both satisfy FR-08.\u001b[39m\n \u001b[90m 202 |\u001b[39m         \u001b[36mconst\u001b[39m totals \u001b[33m=\u001b[39m orders\u001b[33m.\u001b[39mmap((o) \u001b[33m=>\u001b[39m \u001b[33mNumber\u001b[39m(o\u001b[33m.\u001b[39mtotal_amount))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 203 |\u001b[39m         expect(totals\u001b[33m,\u001b[39m \u001b[32m`backend không được lưu total_amount client (${input.tamperTotal})`\u001b[39m)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\n \u001b[90m     |\u001b[39m                                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 204 |\u001b[39m           input\u001b[33m.\u001b[39mtamperTotal\u001b[33m,\u001b[39m\n \u001b[90m 205 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 206 |\u001b[39m         \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m t \u001b[36mof\u001b[39m totals) expect(t\u001b[33m,\u001b[39m \u001b[32m'đơn (nếu tạo) phải có tổng tính lại từ giỏ'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                            "column": 97,
+                            "line": 203
+                          },
+                          "message": "Error: backend không được lưu total_amount client (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m1\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m1\u001b[27m]\u001b[39m\n\n  201 |         // Accepting the client value is the violation; a rejection or the cart total both satisfy FR-08.\n  202 |         const totals = orders.map((o) => Number(o.total_amount));\n> 203 |         expect(totals, `backend không được lưu total_amount client (${input.tamperTotal})`).not.toContain(\n      |                                                                                                 ^\n  204 |           input.tamperTotal,\n  205 |         );\n  206 |         for (const t of totals) expect(t, 'đơn (nếu tạo) phải có tổng tính lại từ giỏ').toBe(expectedTotal);\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:13.019Z",
+                      "annotations": [
+                        {
+                          "type": "tamper",
+                          "description": "total_amount 4000000 → 1"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-fb4dd--amount-1-→-đơn-không-lưu-1-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-fb4dd--amount-1-→-đơn-không-lưu-1-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-fb4dd--amount-1-→-đơn-không-lưu-1-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                        "column": 97,
+                        "line": 203
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-1cdc4e5064c2783d3583",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-07 Client gửi total_amount cao hơn giỏ → đơn không lưu giá trị client",
+              "ok": false,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "tamper",
+                      "description": "total_amount 4000000 → 900000000"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1532,
+                      "error": {
+                        "message": "Error: backend không được lưu total_amount client (900000000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m900000000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m900000000\u001b[27m]\u001b[39m",
+                        "stack": "Error: backend không được lưu total_amount client (900000000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m900000000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m900000000\u001b[27m]\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                          "column": 97,
+                          "line": 203
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 201 |\u001b[39m         \u001b[90m// Accepting the client value is the violation; a rejection or the cart total both satisfy FR-08.\u001b[39m\n \u001b[90m 202 |\u001b[39m         \u001b[36mconst\u001b[39m totals \u001b[33m=\u001b[39m orders\u001b[33m.\u001b[39mmap((o) \u001b[33m=>\u001b[39m \u001b[33mNumber\u001b[39m(o\u001b[33m.\u001b[39mtotal_amount))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 203 |\u001b[39m         expect(totals\u001b[33m,\u001b[39m \u001b[32m`backend không được lưu total_amount client (${input.tamperTotal})`\u001b[39m)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\n \u001b[90m     |\u001b[39m                                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 204 |\u001b[39m           input\u001b[33m.\u001b[39mtamperTotal\u001b[33m,\u001b[39m\n \u001b[90m 205 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 206 |\u001b[39m         \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m t \u001b[36mof\u001b[39m totals) expect(t\u001b[33m,\u001b[39m \u001b[32m'đơn (nếu tạo) phải có tổng tính lại từ giỏ'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                            "column": 97,
+                            "line": 203
+                          },
+                          "message": "Error: backend không được lưu total_amount client (900000000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m900000000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m900000000\u001b[27m]\u001b[39m\n\n  201 |         // Accepting the client value is the violation; a rejection or the cart total both satisfy FR-08.\n  202 |         const totals = orders.map((o) => Number(o.total_amount));\n> 203 |         expect(totals, `backend không được lưu total_amount client (${input.tamperTotal})`).not.toContain(\n      |                                                                                                 ^\n  204 |           input.tamperTotal,\n  205 |         );\n  206 |         for (const t of totals) expect(t, 'đơn (nếu tạo) phải có tổng tính lại từ giỏ').toBe(expectedTotal);\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:20.083Z",
+                      "annotations": [
+                        {
+                          "type": "tamper",
+                          "description": "total_amount 4000000 → 900000000"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-3576d-ơn-không-lưu-giá-trị-client-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-3576d-ơn-không-lưu-giá-trị-client-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-3576d-ơn-không-lưu-giá-trị-client-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                        "column": 97,
+                        "line": 203
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-bf083afd180377a1eeb8",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-08 Trang checkout: đúng 1 h1, tổng hiển thị có ₫ và phân cách hàng nghìn",
+              "ok": false,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixture-workaround",
+                      "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10578,
+                      "error": {
+                        "message": "Error: FR-21: trang có đúng 1 thẻ h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-21: trang có đúng 1 thẻ h1 with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    11 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                        "stack": "Error: FR-21: trang có đúng 1 thẻ h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-21: trang có đúng 1 thẻ h1 with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    11 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:158:80",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                          "column": 80,
+                          "line": 158
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 156 |\u001b[39m\n \u001b[90m 157 |\u001b[39m       \u001b[36mif\u001b[39m (expected\u001b[33m.\u001b[39mkind \u001b[33m===\u001b[39m \u001b[32m'structure'\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 158 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m'FR-21: trang có đúng 1 thẻ h1'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(expected\u001b[33m.\u001b[39mh1Count \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 159 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(checkout\u001b[33m.\u001b[39mtotalText\u001b[33m,\u001b[39m \u001b[32m'FR-21: ₫ + phân cách hàng nghìn'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\u001b[35m/\\d{1,3}([.,\\s]\\d{3})+\\s*₫/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 160 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(checkout\u001b[33m.\u001b[39mitems\u001b[33m.\u001b[39mfirst()\u001b[33m,\u001b[39m \u001b[32m'FR-21: thành tiền dòng có ₫ + phân cách'\u001b[39m)\u001b[33m.\u001b[39mtoContainText(\n \u001b[90m 161 |\u001b[39m           \u001b[35m/\\d{1,3}([.,\\s]\\d{3})+\\s*₫/\u001b[39m\u001b[33m,\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                            "column": 80,
+                            "line": 158
+                          },
+                          "message": "Error: FR-21: trang có đúng 1 thẻ h1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-21: trang có đúng 1 thẻ h1 with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    11 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  156 |\n  157 |       if (expected.kind === 'structure') {\n> 158 |         await expect.soft(page.locator('h1'), 'FR-21: trang có đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);\n      |                                                                                ^\n  159 |         await expect.soft(checkout.totalText, 'FR-21: ₫ + phân cách hàng nghìn').toContainText(/\\d{1,3}([.,\\s]\\d{3})+\\s*₫/);\n  160 |         await expect.soft(checkout.items.first(), 'FR-21: thành tiền dòng có ₫ + phân cách').toContainText(\n  161 |           /\\d{1,3}([.,\\s]\\d{3})+\\s*₫/,\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:158:80"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:24.118Z",
+                      "annotations": [
+                        {
+                          "type": "fixture-workaround",
+                          "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-0c312-ó-₫-và-phân-cách-hàng-nghìn-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-0c312-ó-₫-và-phân-cách-hàng-nghìn-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-0c312-ó-₫-và-phân-cách-hàng-nghìn-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                        "column": 80,
+                        "line": 158
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-f6d43bb0afff27565111",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-09 Giỏ rỗng: thông báo trống, không có nút tiến hành thanh toán",
+              "ok": true,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 944,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:37.442Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-04c7934aac750923b34c",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-10 Một dòng số lượng 3 (P×3): tổng = 3 × giá",
+              "ok": true,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixture-workaround",
+                      "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2996,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:38.616Z",
+                      "annotations": [
+                        {
+                          "type": "fixture-workaround",
+                          "description": "Bàn phím cơ Keychron Q1: lần bấm đầu \"Thêm vào giỏ hàng\" không thêm (issue #21), bấm lại"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-d009334a84be23e479ef",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-11 Ba sản phẩm khác nhau: checkout liệt kê đủ 3 dòng",
+              "ok": true,
+              "tags": [
+                "positive"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1395,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:41.647Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-f6ed0fa49c2b1c9e5e15",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-12 Client gửi total_amount âm → đơn không lưu giá trị âm",
+              "ok": false,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "tamper",
+                      "description": "total_amount 4000000 → -100000"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1287,
+                      "error": {
+                        "message": "Error: backend không được lưu total_amount client (-100000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m-100000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m-100000\u001b[27m]\u001b[39m",
+                        "stack": "Error: backend không được lưu total_amount client (-100000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m-100000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m-100000\u001b[27m]\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                          "column": 97,
+                          "line": 203
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 201 |\u001b[39m         \u001b[90m// Accepting the client value is the violation; a rejection or the cart total both satisfy FR-08.\u001b[39m\n \u001b[90m 202 |\u001b[39m         \u001b[36mconst\u001b[39m totals \u001b[33m=\u001b[39m orders\u001b[33m.\u001b[39mmap((o) \u001b[33m=>\u001b[39m \u001b[33mNumber\u001b[39m(o\u001b[33m.\u001b[39mtotal_amount))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 203 |\u001b[39m         expect(totals\u001b[33m,\u001b[39m \u001b[32m`backend không được lưu total_amount client (${input.tamperTotal})`\u001b[39m)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\n \u001b[90m     |\u001b[39m                                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 204 |\u001b[39m           input\u001b[33m.\u001b[39mtamperTotal\u001b[33m,\u001b[39m\n \u001b[90m 205 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 206 |\u001b[39m         \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m t \u001b[36mof\u001b[39m totals) expect(t\u001b[33m,\u001b[39m \u001b[32m'đơn (nếu tạo) phải có tổng tính lại từ giỏ'\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                            "column": 97,
+                            "line": 203
+                          },
+                          "message": "Error: backend không được lưu total_amount client (-100000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: not \u001b[32m-100000\u001b[39m\nReceived array:     \u001b[31m[\u001b[7m-100000\u001b[27m]\u001b[39m\n\n  201 |         // Accepting the client value is the violation; a rejection or the cart total both satisfy FR-08.\n  202 |         const totals = orders.map((o) => Number(o.total_amount));\n> 203 |         expect(totals, `backend không được lưu total_amount client (${input.tamperTotal})`).not.toContain(\n      |                                                                                                 ^\n  204 |           input.tamperTotal,\n  205 |         );\n  206 |         for (const t of totals) expect(t, 'đơn (nếu tạo) phải có tổng tính lại từ giỏ').toBe(expectedTotal);\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts:203:97"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:43.069Z",
+                      "annotations": [
+                        {
+                          "type": "tamper",
+                          "description": "total_amount 4000000 → -100000"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-e3115--→-đơn-không-lưu-giá-trị-âm-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-e3115--→-đơn-không-lưu-giá-trị-âm-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr08-chromium\\fr08-checkout-FR-08-Checko-e3115--→-đơn-không-lưu-giá-trị-âm-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr08-checkout.spec.ts",
+                        "column": 97,
+                        "line": 203
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-e978ea4a91d9a7fd733b",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            },
+            {
+              "title": "B-AUTO-13 POST /api/checkout không có token bị từ chối",
+              "ok": true,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 343,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:34:46.612Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e01848b7ce7ee3ad28-35176f4db54ddbe47a03",
+              "file": "fr08-checkout.spec.ts",
+              "line": 67,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T11:33:32.019Z",
+    "duration": 75249.428,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}
