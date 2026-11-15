@@ -1,0 +1,166 @@
+{
+  "evidence_branch": "hw04-23120229-evidence",
+  "evidence_commit": "79a0fe9eecd0207c4f3d9c7033c8f5cfc55e9fc8",
+  "payloads": [
+    {
+      "id": "HW04-BUG-01",
+      "action": "create-issue",
+      "title": "[HW04][FR-01] Đăng ký chấp nhận mật khẩu không có ký tự đặc biệt thuộc tập SRS (dùng dấu cách)",
+      "marker": "<!-- HW04-23120229:HW04-BUG-01 -->",
+      "body_file": "docs/issue-bodies/HW04-BUG-01.md",
+      "images": [
+        "HW04-BUG-01-1-before-submit.png",
+        "HW04-BUG-01-2-after-submit.png",
+        "suite-A-AUTO-20-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-BUG-02",
+      "action": "create-issue",
+      "title": "[HW04][FR-01] Đăng ký chấp nhận email sai định dạng (thiếu @)",
+      "marker": "<!-- HW04-23120229:HW04-BUG-02 -->",
+      "body_file": "docs/issue-bodies/HW04-BUG-02.md",
+      "images": [
+        "HW04-BUG-02-1-before-submit.png",
+        "HW04-BUG-02-2-after-submit.png"
+      ]
+    },
+    {
+      "id": "HW04-BUG-03",
+      "action": "create-issue",
+      "title": "[HW04][FR-01] Đăng ký lại được email đã tồn tại → tài khoản trùng email",
+      "marker": "<!-- HW04-23120229:HW04-BUG-03 -->",
+      "body_file": "docs/issue-bodies/HW04-BUG-03.md",
+      "images": [
+        "HW04-BUG-03-2-after-submit.png",
+        "HW04-BUG-03-4-admin-users-filtered.png",
+        "HW04-BUG-03-3-admin-users.png"
+      ]
+    },
+    {
+      "id": "HW04-BUG-04",
+      "action": "create-issue",
+      "title": "[HW04][FR-17] Tạo coupon khi để trống “Số lần dùng tối đa/người” (tự gán 1)",
+      "marker": "<!-- HW04-23120229:HW04-BUG-04 -->",
+      "body_file": "docs/issue-bodies/HW04-BUG-04.md",
+      "images": [
+        "HW04-BUG-04-1-before-submit.png",
+        "HW04-BUG-04-2-after-submit.png",
+        "suite-C-AUTO-07-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-BUG-05",
+      "action": "create-issue",
+      "title": "[HW04][FR-12] API tạo coupon cho phép user thường (không kiểm role = admin)",
+      "marker": "<!-- HW04-23120229:HW04-BUG-05 -->",
+      "body_file": "docs/issue-bodies/HW04-BUG-05.md",
+      "images": [
+        "HW04-BUG-05-1-admin-list-shows-user-created-coupon.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-01",
+      "action": "comment-existing",
+      "issue": 1,
+      "marker": "<!-- HW04-23120229:HW04-DUP-01 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-01.md",
+      "images": [
+        "suite-A-AUTO-01-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-02",
+      "action": "comment-existing",
+      "issue": 2,
+      "marker": "<!-- HW04-23120229:HW04-DUP-02 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-02.md",
+      "images": [
+        "suite-A-AUTO-15-chromium.png",
+        "suite-A-AUTO-19-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-03",
+      "action": "comment-existing",
+      "issue": 4,
+      "marker": "<!-- HW04-23120229:HW04-DUP-03 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-03.md",
+      "images": [
+        "suite-B-AUTO-05-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-04",
+      "action": "comment-existing",
+      "issue": 5,
+      "marker": "<!-- HW04-23120229:HW04-DUP-04 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-04.md",
+      "images": [
+        "suite-B-AUTO-06-chromium.png",
+        "suite-B-AUTO-12-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-05",
+      "action": "comment-existing",
+      "issue": 6,
+      "marker": "<!-- HW04-23120229:HW04-DUP-05 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-05.md",
+      "images": [
+        "suite-B-AUTO-08-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-06",
+      "action": "comment-existing",
+      "issue": 15,
+      "marker": "<!-- HW04-23120229:HW04-DUP-06 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-06.md",
+      "images": [
+        "suite-B-AUTO-03-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-07",
+      "action": "comment-existing",
+      "issue": 8,
+      "marker": "<!-- HW04-23120229:HW04-DUP-07 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-07.md",
+      "images": [
+        "suite-C-AUTO-06-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-08",
+      "action": "comment-existing",
+      "issue": 9,
+      "marker": "<!-- HW04-23120229:HW04-DUP-08 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-08.md",
+      "images": [
+        "suite-C-AUTO-09-chromium.png",
+        "suite-C-AUTO-10-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-09",
+      "action": "comment-existing",
+      "issue": 10,
+      "marker": "<!-- HW04-23120229:HW04-DUP-09 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-09.md",
+      "images": [
+        "suite-C-AUTO-11-chromium.png"
+      ]
+    },
+    {
+      "id": "HW04-DUP-10",
+      "action": "comment-existing",
+      "issue": 11,
+      "marker": "<!-- HW04-23120229:HW04-DUP-10 -->",
+      "body_file": "docs/issue-bodies/HW04-DUP-10.md",
+      "images": [
+        "suite-C-AUTO-18-chromium.png"
+      ]
+    }
+  ]
+}
