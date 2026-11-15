@@ -1,0 +1,91 @@
+{
+  "started": "2026-11-15T19:45:53+07:00",
+  "ended": "2026-11-15T19:52:14+07:00",
+  "runMatrixExit": 1,
+  "events": [
+    {
+      "t": "2026-11-15T19:45:53+07:00",
+      "scene": "title"
+    },
+    {
+      "t": "2026-11-15T19:46:00+07:00",
+      "scene": "1. SKILL.md — quy trình",
+      "file": "skills/playwright-data-driven-automation/SKILL.md"
+    },
+    {
+      "t": "2026-11-15T19:46:12+07:00",
+      "scene": "1b. SKILL.md — bước 3–6",
+      "file": "skills/playwright-data-driven-automation/SKILL.md"
+    },
+    {
+      "t": "2026-11-15T19:46:24+07:00",
+      "scene": "2. Test data tách riêng: data/fr08-checkout.json",
+      "file": "automation/data/fr08-checkout.json"
+    },
+    {
+      "t": "2026-11-15T19:46:34+07:00",
+      "scene": "3. Spec data-driven (import data, không mảng inline)",
+      "file": "automation/tests/fr08-checkout.spec.ts"
+    },
+    {
+      "t": "2026-11-15T19:46:46+07:00",
+      "scene": "3b. Page Object: CartPage",
+      "file": "automation/pages/CartPage.ts"
+    },
+    {
+      "t": "2026-11-15T19:46:54+07:00",
+      "scene": "3c. check-data-driven.mjs — kiểm data-driven + ≥3 pattern",
+      "command": "node ../skills/playwright-data-driven-automation/scripts/check-data-driven.mjs tests --ignore smoke"
+    },
+    {
+      "t": "2026-11-15T19:46:54+07:00",
+      "scene": "3c. check-data-driven.mjs — kiểm data-driven + ≥3 pattern",
+      "exit": 0
+    },
+    {
+      "t": "2026-11-15T19:46:59+07:00",
+      "scene": "4. run-matrix.mjs — FR-08 × chromium/firefox/webkit (chạy thật)",
+      "command": "node ../skills/playwright-data-driven-automation/scripts/run-matrix.mjs --project-dir . --student-id 23120229 --reports-dir reports/_scratch/skill-demo --feature fr08=tests/fr08-checkout.spec.ts"
+    },
+    {
+      "t": "2026-11-15T19:51:09+07:00",
+      "scene": "4. run-matrix.mjs — FR-08 × chromium/firefox/webkit (chạy thật)",
+      "exit": 1
+    },
+    {
+      "t": "2026-11-15T19:51:14+07:00",
+      "scene": "5. verify-report.mjs — “Run by: 23120229” + ISO",
+      "command": "node ../skills/playwright-data-driven-automation/scripts/verify-report.mjs --project-dir . --reports-dir reports/_scratch/skill-demo --student-id 23120229"
+    },
+    {
+      "t": "2026-11-15T19:51:17+07:00",
+      "scene": "5. verify-report.mjs — “Run by: 23120229” + ISO",
+      "exit": 0
+    },
+    {
+      "t": "2026-11-15T19:51:22+07:00",
+      "scene": "6. HTML report fr08-chromium",
+      "title": "Playwright Test Report"
+    },
+    {
+      "t": "2026-11-15T19:51:28+07:00",
+      "scene": "6. HTML report fr08-firefox",
+      "title": "Playwright Test Report"
+    },
+    {
+      "t": "2026-11-15T19:51:34+07:00",
+      "scene": "6. HTML report fr08-webkit",
+      "title": "Playwright Test Report"
+    },
+    {
+      "t": "2026-11-15T19:51:40+07:00",
+      "scene": "7. summary.md do run-matrix sinh",
+      "file": "automation/reports/_scratch/skill-demo/summary.md"
+    },
+    {
+      "t": "2026-11-15T19:51:52+07:00",
+      "scene": "8. Review bản AI draft FR-08 (gap analysis)",
+      "file": "features/B-FR08/review.md"
+    }
+  ]
+}

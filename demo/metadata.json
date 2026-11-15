@@ -1,0 +1,27 @@
+{
+  "file": "skill-demo.webm",
+  "bytes": 29427236,
+  "sha256": "419e54dba1e17c7ac5a2a6ed11c8a9d76a312586189275677993d150c67461de",
+  "duration": "00:06:20.84 (380.84 s, ffprobe via Playwright ffmpeg-1011)",
+  "video": "VP8 WebM 1280x720 25 fps, no audio",
+  "recorder": "Playwright 1.56.1 recordVideo, headless Chromium 141.0.7390.37, script _tools/HW04/record_skill_demo.js",
+  "recorded": {
+    "started": "2026-11-15T19:45:53+07:00",
+    "ended": "2026-11-15T19:52:14+07:00"
+  },
+  "os": "Windows 11 Home Single Language 10.0.26200",
+  "content": "Skill playwright-data-driven-automation end-to-end on FR-08: SKILL.md -> data/fr08-checkout.json -> spec + CartPage POM -> check-data-driven (live) -> run-matrix 3 browsers (live child process; 7 pass / 6 fail each, fails = known SUT bugs #4/#5/#6/#15) -> verify-report 3/3 Run by -> 3 HTML reports -> summary.md -> features/B-FR08/review.md",
+  "run_matrix_exit": 1,
+  "run_matrix_exit_note": "exit 1 because tests fail on real SUT bugs (expected), not a recording error",
+  "demo_reports": "automation/reports/_scratch/skill-demo/ (gitignored, official reports untouched)",
+  "text_cards": "render real file content with path + sha256 prefix; not narrated; identity label \"23120229 · skill demo · HW04\" on cards",
+  "frames_checked": [
+    "skill-demo-000003.png",
+    "skill-demo-000120.png",
+    "skill-demo-000330.png",
+    "skill-demo-000505.png",
+    "skill-demo-000545.png"
+  ],
+  "youtube": "<chưa upload — sinh viên upload Unlisted và điền link>",
+  "events": "skill-demo-events.json"
+}
