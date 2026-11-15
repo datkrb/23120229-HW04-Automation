@@ -1,0 +1,1107 @@
+{
+  "config": {
+    "configFile": "D:\\KI7\\testing\\HW04\\automation\\playwright.config.ts",
+    "rootDir": "D:/KI7/testing/HW04/automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120229",
+      "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+      "Run label": "fr17-firefox",
+      "Web URL": "http://localhost:5173",
+      "Admin URL": "http://localhost:5174",
+      "API URL": "http://localhost:3000",
+      "Host": "LAPTOP-S2UJ5VI8",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/fr17-firefox",
+          "open": "never",
+          "title": "EShop HW04 — fr17-firefox — Run by: 23120229 — 2026-11-15T18:55:17+07:00"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/fr17-firefox/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/KI7/testing/HW04/automation/test-results/fr17-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120229",
+          "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+          "Run label": "fr17-firefox",
+          "Web URL": "http://localhost:5173",
+          "Admin URL": "http://localhost:5174",
+          "API URL": "http://localhost:3000",
+          "Host": "LAPTOP-S2UJ5VI8",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/KI7/testing/HW04/automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KI7/testing/HW04/automation/test-results/fr17-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120229",
+          "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+          "Run label": "fr17-firefox",
+          "Web URL": "http://localhost:5173",
+          "Admin URL": "http://localhost:5174",
+          "API URL": "http://localhost:3000",
+          "Host": "LAPTOP-S2UJ5VI8",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/KI7/testing/HW04/automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KI7/testing/HW04/automation/test-results/fr17-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120229",
+          "Run started (ISO 8601)": "2026-11-15T18:55:17+07:00",
+          "Run label": "fr17-firefox",
+          "Web URL": "http://localhost:5173",
+          "Admin URL": "http://localhost:5174",
+          "API URL": "http://localhost:3000",
+          "Host": "LAPTOP-S2UJ5VI8",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/KI7/testing/HW04/automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr17-coupon.spec.ts",
+      "file": "fr17-coupon.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-17 Quản lý mã giảm giá",
+          "file": "fr17-coupon.spec.ts",
+          "line": 82,
+          "column": 6,
+          "specs": [
+            {
+              "title": "C-AUTO-01 Tạo coupon percent hợp lệ (d=1, m=0, u=1) và xem trong danh sách",
+              "ok": true,
+              "tags": [
+                "positive"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4491,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:55:19.327Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-71084ebe3596fc788c17",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-02 Tạo coupon fixed hợp lệ (d=10, m=1, u=2) và xem trong danh sách",
+              "ok": true,
+              "tags": [
+                "positive"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4434,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:55:28.481Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-1da0c8e617d860003014",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-03 Mã coupon để trống → từ chối",
+              "ok": true,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8323,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:55:32.927Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-092a9c472c42a363ca61",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-04 Giá trị giảm để trống → từ chối",
+              "ok": true,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8469,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:55:41.269Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-c25bd5eda446c4cae766",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-05 Ngày hết hạn để trống → từ chối",
+              "ok": true,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8429,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:55:49.755Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-f4b32e54daf70c6f7414",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-06 Đơn tối thiểu để trống → từ chối",
+              "ok": false,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3676,
+                      "error": {
+                        "message": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                          "column": 90,
+                          "line": 232
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 230 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'request tạo mã trùng không được thành công'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 231 |\u001b[39m         } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 232 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`dữ liệu sai (${field}) không được tạo thành công`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 233 |\u001b[39m           expect(after\u001b[33m,\u001b[39m \u001b[32m'không có bản ghi mới'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 234 |\u001b[39m           \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mcode) \u001b[36mawait\u001b[39m expect(admin\u001b[33m.\u001b[39mrow(input\u001b[33m.\u001b[39mcode)\u001b[33m,\u001b[39m \u001b[32m'không có dòng mới trong danh sách'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 90,
+                            "line": 232
+                          },
+                          "message": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  230 |           expect(res?.ok() ?? false, 'request tạo mã trùng không được thành công').toBe(false);\n  231 |         } else {\n> 232 |           expect(res?.ok() ?? false, `dữ liệu sai (${field}) không được tạo thành công`).toBe(false);\n      |                                                                                          ^\n  233 |           expect(after, 'không có bản ghi mới').toHaveLength(0);\n  234 |           if (input.code) await expect(admin.row(input.code), 'không có dòng mới trong danh sách').toHaveCount(0);\n  235 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:55:58.200Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--1c988-ối-thiểu-để-trống-→-từ-chối-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--1c988-ối-thiểu-để-trống-→-từ-chối-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                        "column": 90,
+                        "line": 232
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-77f53a9af0ac8bbd1444",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-07 Số lần dùng/người để trống → từ chối",
+              "ok": false,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3737,
+                      "error": {
+                        "message": "Error: dữ liệu sai (uses) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: dữ liệu sai (uses) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                          "column": 90,
+                          "line": 232
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 230 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'request tạo mã trùng không được thành công'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 231 |\u001b[39m         } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 232 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`dữ liệu sai (${field}) không được tạo thành công`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 233 |\u001b[39m           expect(after\u001b[33m,\u001b[39m \u001b[32m'không có bản ghi mới'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 234 |\u001b[39m           \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mcode) \u001b[36mawait\u001b[39m expect(admin\u001b[33m.\u001b[39mrow(input\u001b[33m.\u001b[39mcode)\u001b[33m,\u001b[39m \u001b[32m'không có dòng mới trong danh sách'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 90,
+                            "line": 232
+                          },
+                          "message": "Error: dữ liệu sai (uses) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  230 |           expect(res?.ok() ?? false, 'request tạo mã trùng không được thành công').toBe(false);\n  231 |         } else {\n> 232 |           expect(res?.ok() ?? false, `dữ liệu sai (${field}) không được tạo thành công`).toBe(false);\n      |                                                                                          ^\n  233 |           expect(after, 'không có bản ghi mới').toHaveLength(0);\n  234 |           if (input.code) await expect(admin.row(input.code), 'không có dòng mới trong danh sách').toHaveCount(0);\n  235 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:56:04.069Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--65550-ng-người-để-trống-→-từ-chối-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--65550-ng-người-để-trống-→-từ-chối-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                        "column": 90,
+                        "line": 232
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-5949b500330017c3cc98",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-08 Mã trùng với coupon đã tồn tại → từ chối, chỉ còn 1 bản ghi",
+              "ok": true,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "app-message",
+                      "description": "Lỗi: SQLITE_CONSTRAINT: UNIQUE constraint failed: coupons.code"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4310,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:56:14.653Z",
+                      "annotations": [
+                        {
+                          "type": "app-message",
+                          "description": "Lỗi: SQLITE_CONSTRAINT: UNIQUE constraint failed: coupons.code"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-2adb2114c527dafbc0ef",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-09 Giá trị giảm âm (-1) → từ chối",
+              "ok": false,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3713,
+                      "error": {
+                        "message": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                          "column": 90,
+                          "line": 232
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 230 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'request tạo mã trùng không được thành công'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 231 |\u001b[39m         } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 232 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`dữ liệu sai (${field}) không được tạo thành công`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 233 |\u001b[39m           expect(after\u001b[33m,\u001b[39m \u001b[32m'không có bản ghi mới'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 234 |\u001b[39m           \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mcode) \u001b[36mawait\u001b[39m expect(admin\u001b[33m.\u001b[39mrow(input\u001b[33m.\u001b[39mcode)\u001b[33m,\u001b[39m \u001b[32m'không có dòng mới trong danh sách'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 90,
+                            "line": 232
+                          },
+                          "message": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  230 |           expect(res?.ok() ?? false, 'request tạo mã trùng không được thành công').toBe(false);\n  231 |         } else {\n> 232 |           expect(res?.ok() ?? false, `dữ liệu sai (${field}) không được tạo thành công`).toBe(false);\n      |                                                                                          ^\n  233 |           expect(after, 'không có bản ghi mới').toHaveLength(0);\n  234 |           if (input.code) await expect(admin.row(input.code), 'không có dòng mới trong danh sách').toHaveCount(0);\n  235 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:56:23.671Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--ddfd6-iá-trị-giảm-âm--1-→-từ-chối-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--ddfd6-iá-trị-giảm-âm--1-→-từ-chối-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                        "column": 90,
+                        "line": 232
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-2e851333d1eff916c706",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-10 Giá trị giảm bằng 0 → từ chối",
+              "ok": false,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3643,
+                      "error": {
+                        "message": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                          "column": 90,
+                          "line": 232
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 230 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'request tạo mã trùng không được thành công'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 231 |\u001b[39m         } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 232 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`dữ liệu sai (${field}) không được tạo thành công`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 233 |\u001b[39m           expect(after\u001b[33m,\u001b[39m \u001b[32m'không có bản ghi mới'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 234 |\u001b[39m           \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mcode) \u001b[36mawait\u001b[39m expect(admin\u001b[33m.\u001b[39mrow(input\u001b[33m.\u001b[39mcode)\u001b[33m,\u001b[39m \u001b[32m'không có dòng mới trong danh sách'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 90,
+                            "line": 232
+                          },
+                          "message": "Error: dữ liệu sai (discount) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  230 |           expect(res?.ok() ?? false, 'request tạo mã trùng không được thành công').toBe(false);\n  231 |         } else {\n> 232 |           expect(res?.ok() ?? false, `dữ liệu sai (${field}) không được tạo thành công`).toBe(false);\n      |                                                                                          ^\n  233 |           expect(after, 'không có bản ghi mới').toHaveLength(0);\n  234 |           if (input.code) await expect(admin.row(input.code), 'không có dòng mới trong danh sách').toHaveCount(0);\n  235 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:56:29.566Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--e2a43-á-trị-giảm-bằng-0-→-từ-chối-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--e2a43-á-trị-giảm-bằng-0-→-từ-chối-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                        "column": 90,
+                        "line": 232
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-710edf81870d663b33ff",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-11 Đơn tối thiểu âm (-1) → từ chối",
+              "ok": false,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3703,
+                      "error": {
+                        "message": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                          "column": 90,
+                          "line": 232
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 230 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'request tạo mã trùng không được thành công'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 231 |\u001b[39m         } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 232 |\u001b[39m           expect(res\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mok() \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m`dữ liệu sai (${field}) không được tạo thành công`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 233 |\u001b[39m           expect(after\u001b[33m,\u001b[39m \u001b[32m'không có bản ghi mới'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 234 |\u001b[39m           \u001b[36mif\u001b[39m (input\u001b[33m.\u001b[39mcode) \u001b[36mawait\u001b[39m expect(admin\u001b[33m.\u001b[39mrow(input\u001b[33m.\u001b[39mcode)\u001b[33m,\u001b[39m \u001b[32m'không có dòng mới trong danh sách'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 235 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 90,
+                            "line": 232
+                          },
+                          "message": "Error: dữ liệu sai (minimum) không được tạo thành công\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  230 |           expect(res?.ok() ?? false, 'request tạo mã trùng không được thành công').toBe(false);\n  231 |         } else {\n> 232 |           expect(res?.ok() ?? false, `dữ liệu sai (${field}) không được tạo thành công`).toBe(false);\n      |                                                                                          ^\n  233 |           expect(after, 'không có bản ghi mới').toHaveLength(0);\n  234 |           if (input.code) await expect(admin.row(input.code), 'không có dòng mới trong danh sách').toHaveCount(0);\n  235 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:232:90"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:56:40.033Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--11cca-n-tối-thiểu-âm--1-→-từ-chối-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--11cca-n-tối-thiểu-âm--1-→-từ-chối-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                        "column": 90,
+                        "line": 232
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-7757bc7c88700477930f",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-12 Số lần dùng/người = 0 → từ chối",
+              "ok": true,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8400,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:56:50.530Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-5db257c314f0aa7543cf",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-13 Xóa coupon của chính test → không còn trong danh sách",
+              "ok": true,
+              "tags": [
+                "positive"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4382,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:57:03.621Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-a7ff5e21ab441277f3ed",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-14 Guest không vào được quản lý coupon",
+              "ok": true,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2655,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:57:08.018Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-deff8ecb5ea275ab051f",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-15 User thường (test@eshop.com) không vào được quản lý coupon",
+              "ok": true,
+              "tags": [
+                "eshop.com)",
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3237,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:57:10.688Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-6dd65b9b5efb042e8de9",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-16 Ô loại chỉ cho chọn percent / fixed",
+              "ok": true,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3331,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:57:13.941Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-eaab404b6655ac11d74f",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-17 API: token user thường tạo coupon → bị từ chối",
+              "ok": false,
+              "tags": [
+                "negative"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 78,
+                      "error": {
+                        "message": "Error: FR-12: token role=user phải bị từ chối (nhận 200)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: FR-12: token role=user phải bị từ chối (nhận 200)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:123:96",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                          "column": 96,
+                          "line": 123
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 121 |\u001b[39m           }\u001b[33m,\u001b[39m\n \u001b[90m 122 |\u001b[39m         })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 123 |\u001b[39m         expect\u001b[33m.\u001b[39msoft(res\u001b[33m.\u001b[39mok()\u001b[33m,\u001b[39m \u001b[32m`FR-12: token role=user phải bị từ chối (nhận ${res.status()})`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 124 |\u001b[39m         expect(\u001b[36mawait\u001b[39m couponsWithCode(request\u001b[33m,\u001b[39m input\u001b[33m.\u001b[39mcode\u001b[33m!\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m'không có coupon nào được tạo bởi user thường'\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m         \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 126 |\u001b[39m       }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 96,
+                            "line": 123
+                          },
+                          "message": "Error: FR-12: token role=user phải bị từ chối (nhận 200)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  121 |           },\n  122 |         });\n> 123 |         expect.soft(res.ok(), `FR-12: token role=user phải bị từ chối (nhận ${res.status()})`).toBe(false);\n      |                                                                                                ^\n  124 |         expect(await couponsWithCode(request, input.code!), 'không có coupon nào được tạo bởi user thường').toHaveLength(0);\n  125 |         return;\n  126 |       }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:123:96"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 109,
+                            "line": 124
+                          },
+                          "message": "Error: không có coupon nào được tạo bởi user thường\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"HW4FI1794743837297R0\", \"discount_value\": 1, \"expired_at\": \"2099-12-31\", \"id\": 61, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"percent\"}]\u001b[39m\n\n  122 |         });\n  123 |         expect.soft(res.ok(), `FR-12: token role=user phải bị từ chối (nhận ${res.status()})`).toBe(false);\n> 124 |         expect(await couponsWithCode(request, input.code!), 'không có coupon nào được tạo bởi user thường').toHaveLength(0);\n      |                                                                                                             ^\n  125 |         return;\n  126 |       }\n  127 |\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:124:109"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:57:17.286Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--36b9d-ờng-tạo-coupon-→-bị-từ-chối-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                        "column": 96,
+                        "line": 123
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-bde6f269125e801327b1",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            },
+            {
+              "title": "C-AUTO-18 Form có dấu * cho 6 trường bắt buộc, trang có đúng 1 h1",
+              "ok": false,
+              "tags": [
+                "edge"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3467,
+                      "error": {
+                        "message": "Error: FR-22: trường bắt buộc \"code\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m",
+                        "stack": "Error: FR-22: trường bắt buộc \"code\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106",
+                        "location": {
+                          "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                          "column": 106,
+                          "line": 175
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 173 |\u001b[39m           \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m'FR-21: đúng 1 thẻ h1'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(expected\u001b[33m.\u001b[39mh1Count \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m \u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 174 |\u001b[39m           \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m field \u001b[36mof\u001b[39m expected\u001b[33m.\u001b[39mrequiredFields \u001b[33m?\u001b[39m\u001b[33m?\u001b[39m []) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m             expect\u001b[33m.\u001b[39msoft(\u001b[36mawait\u001b[39m admin\u001b[33m.\u001b[39mlabelText(field)\u001b[33m,\u001b[39m \u001b[32m`FR-22: trường bắt buộc \"${field}\" có nhãn kèm *`\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[32m'*'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m           }\n \u001b[90m 177 |\u001b[39m           \u001b[36mreturn\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 178 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 106,
+                            "line": 175
+                          },
+                          "message": "Error: FR-22: trường bắt buộc \"code\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n  173 |           await expect.soft(page.locator('h1'), 'FR-21: đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);\n  174 |           for (const field of expected.requiredFields ?? []) {\n> 175 |             expect.soft(await admin.labelText(field), `FR-22: trường bắt buộc \"${field}\" có nhãn kèm *`).toContain('*');\n      |                                                                                                          ^\n  176 |           }\n  177 |           return;\n  178 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 106,
+                            "line": 175
+                          },
+                          "message": "Error: FR-22: trường bắt buộc \"type\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n  173 |           await expect.soft(page.locator('h1'), 'FR-21: đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);\n  174 |           for (const field of expected.requiredFields ?? []) {\n> 175 |             expect.soft(await admin.labelText(field), `FR-22: trường bắt buộc \"${field}\" có nhãn kèm *`).toContain('*');\n      |                                                                                                          ^\n  176 |           }\n  177 |           return;\n  178 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 106,
+                            "line": 175
+                          },
+                          "message": "Error: FR-22: trường bắt buộc \"discount\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n  173 |           await expect.soft(page.locator('h1'), 'FR-21: đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);\n  174 |           for (const field of expected.requiredFields ?? []) {\n> 175 |             expect.soft(await admin.labelText(field), `FR-22: trường bắt buộc \"${field}\" có nhãn kèm *`).toContain('*');\n      |                                                                                                          ^\n  176 |           }\n  177 |           return;\n  178 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 106,
+                            "line": 175
+                          },
+                          "message": "Error: FR-22: trường bắt buộc \"expiry\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n  173 |           await expect.soft(page.locator('h1'), 'FR-21: đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);\n  174 |           for (const field of expected.requiredFields ?? []) {\n> 175 |             expect.soft(await admin.labelText(field), `FR-22: trường bắt buộc \"${field}\" có nhãn kèm *`).toContain('*');\n      |                                                                                                          ^\n  176 |           }\n  177 |           return;\n  178 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 106,
+                            "line": 175
+                          },
+                          "message": "Error: FR-22: trường bắt buộc \"minimum\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n  173 |           await expect.soft(page.locator('h1'), 'FR-21: đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);\n  174 |           for (const field of expected.requiredFields ?? []) {\n> 175 |             expect.soft(await admin.labelText(field), `FR-22: trường bắt buộc \"${field}\" có nhãn kèm *`).toContain('*');\n      |                                                                                                          ^\n  176 |           }\n  177 |           return;\n  178 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                            "column": 106,
+                            "line": 175
+                          },
+                          "message": "Error: FR-22: trường bắt buộc \"uses\" có nhãn kèm *\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n  173 |           await expect.soft(page.locator('h1'), 'FR-21: đúng 1 thẻ h1').toHaveCount(expected.h1Count ?? 1);\n  174 |           for (const field of expected.requiredFields ?? []) {\n> 175 |             expect.soft(await admin.labelText(field), `FR-22: trường bắt buộc \"${field}\" có nhãn kèm *`).toContain('*');\n      |                                                                                                          ^\n  176 |           }\n  177 |           return;\n  178 |         }\n    at D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts:175:106"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-15T11:57:19.563Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--2b5fd-bắt-buộc-trang-có-đúng-1-h1-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--2b5fd-bắt-buộc-trang-có-đúng-1-h1-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KI7\\testing\\HW04\\automation\\test-results\\fr17-firefox\\fr17-coupon-FR-17-Quản-lý--2b5fd-bắt-buộc-trang-có-đúng-1-h1-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KI7\\testing\\HW04\\automation\\tests\\fr17-coupon.spec.ts",
+                        "column": 106,
+                        "line": 175
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "08eae273b0ad1ac50d6c-735c9abeefe6ce95404b",
+              "file": "fr17-coupon.spec.ts",
+              "line": 99,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T11:55:17.807Z",
+    "duration": 130933.43099999998,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}
