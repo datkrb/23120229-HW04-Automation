@@ -2269,3 +2269,61 @@ AI log `EXEC-P07-…`. Checkpoint: đường dẫn ZIP, kích thước, SHA, dan
 ### Log
 `EXEC-P07-001`. Dừng sau P07.
 ```
+
+## EXEC-P08-001
+
+```text
+{
+  "id": "EXEC-P08-001",
+  "tool": "Claude Code desktop app (Code tab), execution chat B",
+  "model": "claude-opus-5-5 (Opus 5.5, per system environment)",
+  "occurred_at": "2026-11-15T21:20:00+07:00",
+  "timestamp_source": "estimated",
+  "chat_role": "execution B",
+  "chat_alias": "chat-b",
+  "thread_id": "local_3a36d9d4-84fe-4f01-9e0b-d07eb815edfb (as listed by chat A in HW04/docs/prompt-plan.md; not independently verified by B)",
+  "prompt_origin": "AI orchestrator chat A (session local_8f71b54f-a935-4aab-b94a-932f8a30f545) sent this as a cross-session message; not student-authored. Repo creation/push was done by chat A with the student's consent, not by B.",
+  "source": "Prompt: cross-session message, saved verbatim to P08-prompt.txt. Output: checkpoint-P08.md (verbatim).",
+  "capture_status": "partial",
+  "missing": [
+    "occurred_at estimated; exact receipt time not observed.",
+    "The full tool call/result transcript is not exported.",
+    "Final QA ZIP sizes/SHA-256 and the commit hashes after e71a4a4 are only in the final chat reply and _tools/HW04/work/P07/qa-package/."
+  ],
+  "artifact_paths": [
+    "HW04/README.md",
+    "HW04/report.md",
+    "HW04/user-handoff.md",
+    "HW04/ai-audit.md",
+    "HW04/submission-manifest.md",
+    "HW04/working-context.md",
+    "HW04/pdf/",
+    "HW04/git-log.txt",
+    "_tools/HW04/sync_p08_repo.py",
+    "_tools/HW04/work/P07/qa-package/"
+  ],
+  "redactions": [],
+  "recorded_at": "2026-11-15T21:14:55+07:00"
+}
+```
+
+
+### Prompt (verbatim)
+
+```text
+Thông tin từ chat A (P08 nhỏ): sinh viên đã cho phép và chat A đã tạo repo **public** https://github.com/datkrb/23120229-HW04-Automation và push `main` tới `dcb14ed` (GET ẩn danh 200, HEAD khớp). Việc của bạn: thay mọi placeholder link repo (`<điền sau khi push>`…) trong `README.md`, `report.md`, `user-handoff.md` (đánh dấu bước 2 đã xong do chat A thực hiện theo đồng ý của sinh viên), render lại các PDF bị ảnh hưởng, regenerate `git-log.txt`, chạy lại `package_submission.py` bản QA, commit, ghi log `EXEC-P08-…`. KHÔNG push (chat A sẽ push sau khi đối soát). Video vẫn là việc của sinh viên. Trả checkpoint ngắn.
+```
+
+
+### AI output (verbatim)
+
+```text
+## Checkpoint P08 — link repo public (chat B)
+
+- Repo https://github.com/datkrb/23120229-HW04-Automation do **chat A** tạo/push (tới `dcb14ed`) theo đồng ý của sinh viên. Chat B **không push**.
+- Điền link bằng `_tools/HW04/sync_p08_repo.py`: `README.md` (dòng Repo GitHub public, trạng thái), `report.md` (bảng đầu + §11), `user-handoff.md` (bước 2 ĐÃ XONG, còn 4 bước của sinh viên), `ai-audit.md` (dòng “Phần sinh viên tự làm”: Issues/repo do chat A làm, không phải thao tác tay của sinh viên), `submission-manifest.md` R17, `working-context.md`. Không còn placeholder `<điền sau khi push>` ngoài văn bản prompt của A.
+- Render lại 6 PDF (`render_pdfs.py`): 34 link tương đối, 0 hỏng; README.pdf và report.pdf có link repo.
+- `git-log.txt` tạo lại; ZIP QA 077 build lại ở `_tools/HW04/work/P07/qa-package/` (không phải bản nộp; kích thước/SHA trong `SHA256SUMS.txt` và tin nhắn trả lời).
+- Còn lại của sinh viên: review & ký; video Task 2 + YouTube; upload video skill; chọn điểm → `package_submission.py --grade NNN`.
+- Log `EXEC-P08-001`.
+```
